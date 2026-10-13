@@ -1,0 +1,23 @@
+{
+  "name": "DREAMS — Tu negocio en un solo lugar",
+  "short_name": "DREAMS",
+  "description": "Ventas, inventario, cobros, clientes y tu página web desde el celular.",
+  "id": "/dashboard",
+  "start_url": "/dashboard?app=1",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FBF9F5",
+  "theme_color": "#111111",
+  "lang": "es-CO",
+  "icons": [
+    { "src": "/icons/dreams-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/dreams-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/dreams-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Venta rápida", "short_name": "Vender", "url": "/venta-rapida", "icons": [{ "src": "/icons/dreams-192.png", "sizes": "192x192" }] },
+    { "name": "Ventas", "url": "/ventas", "icons": [{ "src": "/icons/dreams-192.png", "sizes": "192x192" }] },
+    { "name": "Catálogo para compartir", "url": "/catalogo", "icons": [{ "src": "/icons/dreams-192.png", "sizes": "192x192" }] }
+  ]
+}

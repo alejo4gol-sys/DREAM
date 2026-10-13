@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  /* Paleta por defecto (DREAMS). Se reemplaza en tiempo real con la paleta del negocio. */
+  --primary: 17 17 17;
+  --primary-soft: 42 40 38;
+  --on-primary: 255 255 255;
+  --sand-50: 251 249 245;
+  --sand-100: 246 241 232;
+  --sand-200: 237 228 211;
+  --sand-300: 226 212 186;
+  --sand-400: 205 184 150;
+  --sand-500: 182 156 114;
+  --sand-600: 143 118 81;
+  --line: 232 225 212;
+}
+
+html, body {
+  background: rgb(var(--sand-50));
+  transition: background-color .2s ease;
+  color: #111111;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 h-10 text-sm font-medium transition
+      disabled:opacity-50 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sand-400 focus-visible:ring-offset-2 focus-visible:ring-offset-sand-50 whitespace-nowrap;
+  }
+  .btn-primary { @apply btn bg-primary text-on-primary hover:bg-primary-soft; }
+  .btn-secondary { @apply btn bg-white text-ink border border-line hover:bg-sand-100; }
+  .btn-ghost { @apply btn text-ink-muted hover:text-ink hover:bg-sand-100; }
+  .btn-danger { @apply btn bg-white text-bad border border-line hover:bg-red-50; }
+  .btn-sm { @apply h-8 px-3 text-xs rounded-lg; }
+
+  .input {
+    @apply w-full h-10 rounded-xl border border-line bg-white px-3 text-sm text-ink placeholder:text-ink-faint
+      focus:outline-none focus:ring-2 focus:ring-sand-300 focus:border-sand-400 transition disabled:bg-sand-100;
+  }
+  textarea.input { @apply h-auto py-2 min-h-[80px]; }
+  .label { @apply block text-xs font-medium text-ink-muted mb-1.5; }
+  .card { @apply bg-white border border-line rounded-2xl shadow-card; }
+  .chip { @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-[11px] font-medium; }
+
+  .table { @apply w-full text-sm; }
+  .table th { @apply text-[11px] font-semibold uppercase tracking-wider text-ink-muted px-4 py-3 bg-sand-50 border-b border-line whitespace-nowrap; }
+  .table th:not(.text-right):not(.text-center) { text-align: left; }
+  .table td { @apply px-4 py-3 border-b border-line/70 align-middle; }
+  .table tbody tr { @apply hover:bg-sand-50/70 transition-colors; }
+  .table tbody tr:last-child td { @apply border-b-0; }
+}
+
+/* Impresión de comprobantes */
+@media print {
+  body { background: #fff; }
+  .no-print { display: none !important; }
+  .print-area { box-shadow: none !important; border: none !important; }
+}
+
+/* Evita que tablas anchas desborden columnas de grid en móvil */
+.grid > * { min-width: 0; }
+
+/* Portada: barra de progreso y texto del montaje de video */
+@keyframes grow { from { width: 0; } to { width: 100%; } }
+@keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }

@@ -1,0 +1,26 @@
+# Caddy: HTTPS automático (Let's Encrypt) para el dominio de DREAMS.
+{
+	email {$CORREO_SSL}
+}
+
+www.{$DOMINIO} {
+	redir https://{$DOMINIO}{uri} permanent
+}
+
+{$DOMINIO} {
+	encode zstd gzip
+	# Archivos subidos (logos, fotos de productos) y la API los atiende el servidor de la API.
+	handle /uploads/* {
+		reverse_proxy api:4000
+	}
+	handle /api/* {
+		reverse_proxy api:4000
+	}
+	handle {
+		reverse_proxy web:3000
+	}
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		-Server
+	}
+}

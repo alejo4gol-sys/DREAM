@@ -1,0 +1,16 @@
+{
+  "name": "dream",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/api",
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace apps/api & npm run dev --workspace apps/web",
+    "db:migrate": "npm run db:migrate --workspace apps/api",
+    "db:seed": "npm run seed --workspace apps/api --",
+    "test": "npm test --workspace apps/api",
+    "db:seed:demo": "npm run seed --workspace apps/api -- --demo"
+  }
+}

@@ -1,0 +1,77 @@
+# DREAMS — entorno completo con un solo comando:  docker compose up --build
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: dream
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-dream-dev-password}
+      POSTGRES_DB: dream
+    volumes: [pgdata:/var/lib/postgresql/data]
+    ports: ["5432:5432"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dream"]
+      interval: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+
+  api:
+    build: { context: ., dockerfile: apps/api/Dockerfile }
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgresql://dream:${POSTGRES_PASSWORD:-dream-dev-password}@db:5432/dream
+      REDIS_URL: redis://redis:6379
+      JWT_SECRET: ${JWT_SECRET:-dev-only-jwt-secret-change-me-0123456789abcdef}
+      ENCRYPTION_KEY: ${ENCRYPTION_KEY:-ZGV2LW9ubHktZW5jcnlwdGlvbi1rZXktMzJieXRlcyE=}
+      WEB_ORIGIN: ${WEB_ORIGIN:-http://localhost:3000}
+      RUN_MIGRATIONS: "true"
+      UPLOAD_DIR: /app/uploads
+      WOMPI_SAAS_PUBLIC_KEY: ${WOMPI_SAAS_PUBLIC_KEY:-}
+      WOMPI_SAAS_PRIVATE_KEY: ${WOMPI_SAAS_PRIVATE_KEY:-}
+      WOMPI_SAAS_INTEGRITY_SECRET: ${WOMPI_SAAS_INTEGRITY_SECRET:-}
+      WOMPI_SAAS_EVENT_SECRET: ${WOMPI_SAAS_EVENT_SECRET:-}
+      MERCADOLIBRE_ACCESS_TOKEN: ${MERCADOLIBRE_ACCESS_TOKEN:-}
+      EBAY_CLIENT_ID: ${EBAY_CLIENT_ID:-}
+      EBAY_CLIENT_SECRET: ${EBAY_CLIENT_SECRET:-}
+      SERPAPI_API_KEY: ${SERPAPI_API_KEY:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      ANTHROPIC_MODEL: ${ANTHROPIC_MODEL:-}
+      # Avisos por WhatsApp (WhatsApp Business Platform de Meta). Ver docs/WHATSAPP.md
+      WHATSAPP_TOKEN: ${WHATSAPP_TOKEN:-}
+      WHATSAPP_PHONE_NUMBER_ID: ${WHATSAPP_PHONE_NUMBER_ID:-}
+      WHATSAPP_APP_SECRET: ${WHATSAPP_APP_SECRET:-}
+      WHATSAPP_VERIFY_TOKEN: ${WHATSAPP_VERIFY_TOKEN:-}
+      APP_PUBLIC_URL: ${APP_PUBLIC_URL:-}
+      PROCESS_WATCH_ENABLED: ${PROCESS_WATCH_ENABLED:-true}
+      PLATFORM_ADMIN_EMAILS: ${PLATFORM_ADMIN_EMAILS:-}
+      # Número de WhatsApp de soporte de DREAMS (botón flotante). Ej. 573001234567
+      SUPPORT_WHATSAPP: ${SUPPORT_WHATSAPP:-}
+      # Facturación electrónica con Factus: solo para pruebas locales con un simulador
+      FACTUS_BASE_URL: ${FACTUS_BASE_URL:-}
+    volumes: [uploads:/app/uploads]
+    depends_on:
+      db: { condition: service_healthy }
+      redis: { condition: service_started }
+    ports: ["4000:4000"]
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+      args: { API_INTERNAL_URL: http://api:4000 }
+    depends_on: [api]
+    ports: ["3000:3000"]
+
+  # Enlace público temporal (https://xxxx.trycloudflare.com) para abrir DREAMS desde el celular u otro computador.
+  # Se activa solo con:  docker compose --profile publico up -d tunel   (lo hace compartir-dream.sh)
+  tunel:
+    image: cloudflare/cloudflared:latest
+    command: tunnel --no-autoupdate --url http://web:3000
+    depends_on: [web]
+    profiles: ["publico"]
+
+volumes:
+  pgdata:
+  uploads:

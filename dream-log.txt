@@ -1,0 +1,340 @@
+=== Tue Oct 13 14:51:06 -05 2026 ===
+>> Deteniendo lo anterior...
+ Container dream-web-1 Stopping 
+ Container dream-web-1 Stopped 
+ Container dream-web-1 Removing 
+ Container dream-web-1 Removed 
+ Container dream-api-1 Stopping 
+ Container dream-api-1 Stopped 
+ Container dream-api-1 Removing 
+ Container dream-api-1 Removed 
+ Container dream-redis-1 Stopping 
+ Container dream-db-1 Stopping 
+ Container dream-db-1 Stopped 
+ Container dream-db-1 Removing 
+ Container dream-db-1 Removed 
+ Container dream-redis-1 Stopped 
+ Container dream-redis-1 Removing 
+ Container dream-redis-1 Removed 
+ Network dream_default Removing 
+ Network dream_default Resource is still in use 
+>> Videos de la portada...
+>> Construyendo (puede tardar varios minutos)...
+ Image dream-web Building 
+ Image dream-api Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.07kB done
+#1 DONE 0.0s
+
+#2 [web internal] load build definition from Dockerfile
+#2 transferring dockerfile: 978B done
+#2 DONE 0.0s
+
+#3 [api internal] load build definition from Dockerfile
+#3 transferring dockerfile: 1.03kB done
+#3 DONE 0.0s
+
+#4 [web internal] load metadata for docker.io/library/node:22-slim
+#4 ...
+
+#5 [auth] library/node:pull token for registry-1.docker.io
+#5 DONE 0.0s
+
+#4 [web internal] load metadata for docker.io/library/node:22-slim
+#4 DONE 0.9s
+
+#6 [api internal] load .dockerignore
+#6 transferring context: 153B done
+#6 DONE 0.0s
+
+#7 [web build 1/8] FROM docker.io/library/node:22-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392
+#7 resolve docker.io/library/node:22-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392 done
+#7 DONE 0.0s
+
+#8 [api internal] load build context
+#8 transferring context: 399.82kB 0.0s done
+#8 DONE 0.0s
+
+#9 [web internal] load build context
+#9 transferring context: 463.72kB 0.0s done
+#9 DONE 0.0s
+
+#10 [api build 4/8] COPY apps/api/package.json apps/api/
+#10 CACHED
+
+#11 [api build 3/8] COPY package.json package-lock.json ./
+#11 CACHED
+
+#12 [api build 5/8] COPY apps/web/package.json apps/web/
+#12 CACHED
+
+#13 [api build 6/8] RUN npm install --workspace apps/api --include-workspace-root=false --no-audit --no-fund
+#13 CACHED
+
+#14 [web build 5/8] COPY apps/web/package.json apps/web/
+#14 CACHED
+
+#15 [web build 3/8] COPY package.json package-lock.json ./
+#15 CACHED
+
+#16 [web build 2/8] WORKDIR /app
+#16 CACHED
+
+#17 [web build 4/8] COPY apps/api/package.json apps/api/
+#17 CACHED
+
+#18 [web build 6/8] RUN npm install --workspace apps/web --include-workspace-root=false --no-audit --no-fund
+#18 CACHED
+
+#19 [api build 7/8] COPY apps/api apps/api
+#19 DONE 0.1s
+
+#20 [web build 7/8] COPY apps/web apps/web
+#20 DONE 0.3s
+
+#21 [api build 8/8] RUN npm run build --workspace apps/api && mkdir -p apps/api/node_modules
+#21 0.461 
+#21 0.461 > @dream/api@0.1.0 build
+#21 0.461 > rm -rf dist && tsc -p tsconfig.build.json
+#21 0.461 
+#21 DONE 6.1s
+
+#22 [web build 8/8] RUN npm run build --workspace apps/web
+#22 0.233 
+#22 0.233 > @dream/web@0.1.0 build
+#22 0.233 > next build
+#22 0.233 
+#22 0.730   ▲ Next.js 14.2.35
+#22 0.730 
+#22 0.748    Creating an optimized production build ...
+#22 ...
+
+#23 [api stage-1 3/8] COPY --from=build /app/node_modules /app/node_modules
+#23 CACHED
+
+#24 [api stage-1 2/8] WORKDIR /app/apps/api
+#24 CACHED
+
+#25 [api stage-1 4/8] COPY --from=build /app/apps/api/node_modules ./node_modules
+#25 CACHED
+
+#26 [api stage-1 5/8] COPY --from=build /app/apps/api/dist ./dist
+#26 DONE 0.1s
+
+#27 [api stage-1 6/8] COPY --from=build /app/apps/api/drizzle ./drizzle
+#27 DONE 0.0s
+
+#22 [web build 8/8] RUN npm run build --workspace apps/web
+#22 ...
+
+#28 [api stage-1 7/8] COPY apps/api/package.json ./
+#28 DONE 0.0s
+
+#29 [api stage-1 8/8] RUN chmod -R a+rX /app/apps/api && mkdir -p /app/uploads && chown -R node:node /app/uploads
+#29 DONE 0.3s
+
+#22 [web build 8/8] RUN npm run build --workspace apps/web
+#22 ...
+
+#30 [api] exporting to image
+#30 exporting layers 0.1s done
+#30 exporting manifest sha256:9830a57aab1519c2dd894d5f7c4529401e896bdcf7d843eaa57403f25906e110 done
+#30 exporting config sha256:f0153cd98b9c2bd02a5e68239a5cf849d1719ce53a99aeac8a5a19aa563ce0c3 done
+#30 exporting attestation manifest sha256:d0e841b8b9d1f5ce4fda72807fda82018879dbe95d0ddb4ce2d6ee8d9f57a33b done
+#30 exporting manifest list sha256:6ee47a81e54c445f2df4dbd7c6c71333a0d0a276d9db8e632f4ffffd60bc4362
+#30 exporting manifest list sha256:6ee47a81e54c445f2df4dbd7c6c71333a0d0a276d9db8e632f4ffffd60bc4362 done
+#30 naming to docker.io/library/dream-api:latest done
+#30 unpacking to docker.io/library/dream-api:latest 0.0s done
+#30 DONE 0.2s
+
+#31 [api] resolving provenance for metadata file
+#31 DONE 0.0s
+
+#22 [web build 8/8] RUN npm run build --workspace apps/web
+#22 12.09  ✓ Compiled successfully
+#22 12.09    Linting and checking validity of types ...
+#22 16.41    Collecting page data ...
+#22 16.70    Generating static pages (0/48) ...
+#22 17.06    Generating static pages (12/48) 
+#22 17.09    Generating static pages (24/48) 
+#22 17.23    Generating static pages (36/48) 
+#22 17.30  ✓ Generating static pages (48/48)
+#22 17.46    Finalizing page optimization ...
+#22 17.46    Collecting build traces ...
+#22 22.07 
+#22 22.07 Route (app)                              Size     First Load JS
+#22 22.07 ┌ ○ /                                    6.59 kB         103 kB
+#22 22.07 ├ ○ /_not-found                          159 B          87.7 kB
+#22 22.07 ├ ○ /admin                               3.92 kB         105 kB
+#22 22.07 ├ ○ /agenda                              6.24 kB         112 kB
+#22 22.07 ├ ○ /asistente                           8.17 kB         100 kB
+#22 22.07 ├ ○ /ayuda                               1.46 kB         112 kB
+#22 22.07 ├ ○ /ayuda/app.webmanifest               0 B                0 B
+#22 22.07 ├ ƒ /ayuda/seguimiento/[code]            1.73 kB         112 kB
+#22 22.07 ├ ○ /bancos                              6.99 kB          99 kB
+#22 22.07 ├ ○ /bienvenida                          4.76 kB         105 kB
+#22 22.07 ├ ○ /catalogo                            5.63 kB         106 kB
+#22 22.07 ├ ○ /clientes                            2.36 kB         108 kB
+#22 22.07 ├ ƒ /clientes/[id]                       3.83 kB         114 kB
+#22 22.07 ├ ○ /comparar-precios                    9.45 kB          97 kB
+#22 22.07 ├ ○ /configuracion                       12.7 kB         127 kB
+#22 22.07 ├ ○ /contabilidad                        6.24 kB         204 kB
+#22 22.07 ├ ○ /dashboard                           10.8 kB         236 kB
+#22 22.07 ├ ○ /devoluciones                        8.38 kB         109 kB
+#22 22.07 ├ ○ /facturas                            4.96 kB         111 kB
+#22 22.07 ├ ƒ /facturas/[id]                       7.01 kB         119 kB
+#22 22.07 ├ ○ /facturas/ajustes                    11.6 kB         118 kB
+#22 22.07 ├ ○ /finanzas                            5.85 kB         107 kB
+#22 22.07 ├ ○ /honorarios                          2.47 kB         122 kB
+#22 22.07 ├ ○ /ingresar                            2.37 kB         103 kB
+#22 22.07 ├ ○ /inventario                          4.75 kB        96.7 kB
+#22 22.07 ├ ○ /mayoristas                          7.35 kB         108 kB
+#22 22.07 ├ ○ /mi-tienda                           20.2 kB         118 kB
+#22 22.07 ├ ○ /negocios                            8.16 kB         104 kB
+#22 22.07 ├ ƒ /negocios/[slug]                     8.84 kB         105 kB
+#22 22.07 ├ ○ /paquetes                            6.18 kB         107 kB
+#22 22.07 ├ ○ /pedidos-web                         8.4 kB          109 kB
+#22 22.07 ├ ○ /plantillas                          6.37 kB         110 kB
+#22 22.07 ├ ○ /politica-de-datos                   144 B           100 kB
+#22 22.07 ├ ○ /procesos                            2.91 kB         113 kB
+#22 22.07 ├ ƒ /procesos/[id]                       4.03 kB        91.5 kB
+#22 22.07 ├ ○ /productos                           9.57 kB         102 kB
+#22 22.07 ├ ○ /proveedores                         1.55 kB         107 kB
+#22 22.07 ├ ƒ /proveedores/[id]                    2.18 kB         108 kB
+#22 22.07 ├ ○ /publicidad                          13.1 kB         105 kB
+#22 22.07 ├ ○ /recuperar                           5.51 kB         102 kB
+#22 22.07 ├ ○ /redes                               8.67 kB         206 kB
+#22 22.07 ├ ○ /registro                            2.97 kB         104 kB
+#22 22.07 ├ ○ /reportes                            4.59 kB        96.6 kB
+#22 22.07 ├ ○ /restablecer                         5.85 kB         102 kB
+#22 22.07 ├ ○ /servicios                           5.97 kB         103 kB
+#22 22.07 ├ ○ /solicitudes                         6.35 kB         140 kB
+#22 22.07 ├ ○ /terminos                            3.34 kB         117 kB
+#22 22.07 ├ ○ /terminos-y-condiciones              144 B           100 kB
+#22 22.07 ├ ƒ /tienda/[slug]                       27.7 kB         121 kB
+#22 22.07 ├ ○ /trabajos                            5.97 kB         112 kB
+#22 22.07 ├ ƒ /trabajos/[id]                       11.3 kB         143 kB
+#22 22.07 ├ ○ /venta-rapida                        6.54 kB         113 kB
+#22 22.07 ├ ○ /ventas                              4.18 kB         105 kB
+#22 22.07 ├ ƒ /ventas/[id]                         6.26 kB         118 kB
+#22 22.07 └ ○ /ventas/nueva                        6.38 kB        98.4 kB
+#22 22.07 + First Load JS shared by all            87.5 kB
+#22 22.07   ├ chunks/1528-d0b04777038a4e0f.js      31.9 kB
+#22 22.07   ├ chunks/1dd3208c-0f798378dc3f4853.js  53.6 kB
+#22 22.07   └ other shared chunks (total)          2.01 kB
+#22 22.07 
+#22 22.07 
+#22 22.07 ○  (Static)   prerendered as static content
+#22 22.07 ƒ  (Dynamic)  server-rendered on demand
+#22 22.07 
+#22 DONE 22.2s
+
+#16 [web build 2/8] WORKDIR /app
+#16 CACHED
+
+#32 [web stage-1 3/5] COPY --from=build /app/apps/web/.next/standalone ./
+#32 DONE 0.3s
+
+#33 [web stage-1 4/5] COPY --from=build /app/apps/web/public ./apps/web/public
+#33 DONE 0.0s
+
+#34 [web stage-1 5/5] COPY --from=build /app/apps/web/.next/static ./apps/web/.next/static
+#34 DONE 0.0s
+
+#35 [web] exporting to image
+#35 exporting layers
+#35 exporting layers 0.4s done
+#35 exporting manifest sha256:2c1a64ddba36b00f2d5e1667327070b1f1202d9d4959a186732138bf61fbeae1 done
+#35 exporting config sha256:b835e190460cc4b8f98d95ff3cb9fa6c5131ac44ff1117b04af8d42baee745c8 done
+#35 exporting attestation manifest sha256:6a43c7a250bb0209fb8fd618e3c7697b7384faffd2031b565ad508568c6d9d8b done
+#35 exporting manifest list sha256:a366abec2d2024e81c913ec4e1b752eebe36f3c9b7a8a7a581ed24d03286c3e6 done
+#35 naming to docker.io/library/dream-web:latest done
+#35 unpacking to docker.io/library/dream-web:latest
+#35 unpacking to docker.io/library/dream-web:latest 0.3s done
+#35 DONE 0.7s
+
+#36 [web] resolving provenance for metadata file
+#36 DONE 0.0s
+ Image dream-web Built 
+ Image dream-api Built 
+>> Encendiendo...
+ Container dream-db-1 Creating 
+ Container dream-redis-1 Creating 
+ Container dream-db-1 Created 
+ Container dream-redis-1 Created 
+ Container dream-api-1 Creating 
+ Container dream-api-1 Created 
+ Container dream-web-1 Creating 
+ Container dream-web-1 Created 
+ Container dream-db-1 Starting 
+ Container dream-redis-1 Starting 
+ Container dream-db-1 Started 
+ Container dream-redis-1 Started 
+ Container dream-db-1 Waiting 
+ Container dream-db-1 Healthy 
+ Container dream-api-1 Starting 
+ Container dream-api-1 Started 
+ Container dream-web-1 Starting 
+ Container dream-web-1 Started 
+>> Esperando a que el servidor responda...
+Servidor listo.
+>> Cargando planes, roles y negocio de ejemplo...
+✔ Planes y roles sembrados
+ℹ El usuario demo ya existe; no se repite la siembra.
+ℹ El demo de servicios ya existe; no se repite la siembra.
+✔ Demo de crecimiento: referidos, lista mayorista, paquetes y reseñas
+>> Estado:
+NAME            IMAGE                           COMMAND                  SERVICE   CREATED         STATUS                   PORTS
+dream-api-1     dream-api                       "docker-entrypoint.s…"   api       9 seconds ago   Up 3 seconds             0.0.0.0:4000->4000/tcp, [::]:4000->4000/tcp
+dream-db-1      postgres:16-alpine              "docker-entrypoint.s…"   db        9 seconds ago   Up 8 seconds (healthy)   0.0.0.0:5432->5432/tcp, [::]:5432->5432/tcp
+dream-redis-1   redis:7-alpine                  "docker-entrypoint.s…"   redis     9 seconds ago   Up 8 seconds             0.0.0.0:6379->6379/tcp, [::]:6379->6379/tcp
+dream-tunel-1   cloudflare/cloudflared:latest   "cloudflared --no-au…"   tunel     4 days ago      Up 4 days                
+dream-web-1     dream-web                       "docker-entrypoint.s…"   web       9 seconds ago   Up 3 seconds             0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp
+>> Últimos registros del servidor:
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/wholesale/price-lists, POST} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/wholesale/price-lists/:id, PUT} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/wholesale/price-lists/:id, DELETE} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/wholesale/price-lists/:id/items, GET} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/wholesale/price-lists/:id/items, PUT} route[39m[38;5;3m +1ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/wholesale/resolve, GET} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/wholesale/customers/:id, PUT} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/wholesale/receivables, GET} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBrochureController {/api/brochure}:[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/brochure/pdf, GET} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/brochure/canva, GET} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/brochure/feed-info, GET} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/brochure/feed/:slug, GET} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mLegalTemplatesController {/api/legal}:[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/legal/templates, GET} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/legal/templates/suggest/:jobId, GET} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/legal/templates/:id, GET} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/legal/templates, POST} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/legal/templates/import, POST} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/legal/templates/:id, PUT} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/legal/templates/:id, DELETE} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/legal/templates/:id/render, POST} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/legal/documents, GET} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/legal/documents/:id, GET} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/legal/documents, POST} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/legal/documents/:id, PUT} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/legal/documents/:id, DELETE} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/legal/documents/:id/word, GET} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/legal/documents/:id/pdf, GET} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mReviewsController {/api/reviews}:[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/reviews/public/:slug, GET} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/reviews/public/:slug/profile, GET} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/reviews/public/:slug, POST} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/reviews, GET} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/reviews/:id/reply, POST} route[39m[38;5;3m +1ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/reviews/:id/report, POST} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/reviews/admin/reported, GET} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/reviews/admin/:id, PATCH} route[39m[38;5;3m +0ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +14ms[39m
+api-1  | [32m[Nest] 1  - [39m10/13/2026, 7:51:42 PM [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mAPI DREAMS escuchando en http://localhost:4000/api[39m
+>> Últimos registros de la web:
+web-1  |   ▲ Next.js 14.2.35
+web-1  |   - Local:        http://localhost:3000
+web-1  |   - Network:      http://0.0.0.0:3000
+web-1  | 
+web-1  |  ✓ Starting...
+web-1  |  ✓ Ready in 34ms

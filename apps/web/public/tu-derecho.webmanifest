@@ -1,0 +1,12 @@
+{
+  "name": "Tu Derecho — orientación jurídica gratuita",
+  "short_name": "Tu Derecho",
+  "description": "Cuéntanos tu problema legal y te orientamos gratis, en lenguaje sencillo.",
+  "start_url": "/ayuda",
+  "scope": "/ayuda",
+  "display": "standalone",
+  "background_color": "#F7F5F0",
+  "theme_color": "#0F3D5E",
+  "lang": "es-CO",
+  "icons": [{ "src": "/tu-derecho-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

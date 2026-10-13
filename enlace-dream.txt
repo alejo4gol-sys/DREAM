@@ -1,0 +1,25 @@
+=== Thu Oct  8 19:21:05 -05 2026 ===
+>> Creando el enlace público...
+ Container dream-api-1 Running 
+ Container dream-web-1 Running 
+ Container dream-db-1 Running 
+ Container dream-redis-1 Running 
+ Container dream-tunel-1 Creating 
+ Container dream-tunel-1 Created 
+ Container dream-db-1 Waiting 
+ Container dream-db-1 Healthy 
+ Container dream-tunel-1 Starting 
+ Container dream-tunel-1 Started 
+>> Autorizando el enlace en el servidor...
+
+============================================================
+  ENLACE PÚBLICO (celular con datos o cualquier red):
+    https://explicit-districts-duo-satisfaction.trycloudflare.com
+
+  En la misma red Wi-Fi de este Mac también funciona:
+    http://192.168.1.71:3000
+
+  Usuario demo: demo@dream.co  ·  Contraseña: Dream2026
+  El enlace funciona mientras este Mac esté encendido.
+  Para apagarlo:  docker compose --profile publico stop tunel
+============================================================

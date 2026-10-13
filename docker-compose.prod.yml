@@ -1,0 +1,36 @@
+# DREAMS en un servidor de internet (producción).
+# Uso en el servidor:  docker compose -f docker-compose.yml -f docker-compose.prod.yml --env-file deploy/.env.produccion up -d --build
+# - Solo Caddy queda expuesto (puertos 80 y 443) y obtiene el certificado HTTPS automáticamente.
+# - La base de datos, Redis, la API y la web quedan cerradas al exterior.
+services:
+  db:
+    ports: !reset []
+    restart: unless-stopped
+  redis:
+    ports: !reset []
+    restart: unless-stopped
+  api:
+    ports: !reset []
+    restart: unless-stopped
+    environment:
+      WEB_ORIGIN: https://${DOMINIO}
+      APP_PUBLIC_URL: https://${DOMINIO}
+  web:
+    ports: !reset []
+    restart: unless-stopped
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports: ["80:80", "443:443"]
+    environment:
+      DOMINIO: ${DOMINIO}
+      CORREO_SSL: ${CORREO_SSL}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on: [web, api]
+
+volumes:
+  caddy_data:
+  caddy_config:

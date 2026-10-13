@@ -1,0 +1,160 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1791483703319,
+      "tag": "0000_init",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1791489715913,
+      "tag": "0001_redes_personales",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1791490915922,
+      "tag": "0002_paleta_marca",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1791492000000,
+      "tag": "0003_tienda_en_linea",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1791493000000,
+      "tag": "0004_pedidos_tienda",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1791494000000,
+      "tag": "0005_pagos_wompi",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1791495000000,
+      "tag": "0006_perfiles_tienda",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1791496000000,
+      "tag": "0007_stock_variantes_agenda",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1791497000000,
+      "tag": "0008_envios_recogidas",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1791498000000,
+      "tag": "0009_agenda_pedidos",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1791499000000,
+      "tag": "0010_pago_planes",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1791500000000,
+      "tag": "0011_atribucion_campanas",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1791501000000,
+      "tag": "0012_sitio_web_cupones_carritos",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1791502000000,
+      "tag": "0013_devoluciones_conocimiento",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1791503000000,
+      "tag": "0014_tutoriales",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "7",
+      "when": 1791504000000,
+      "tag": "0015_negocios_de_servicios",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "7",
+      "when": 1791505000000,
+      "tag": "0016_calculadora_honorarios",
+      "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1791506000000,
+      "tag": "0017_facturacion",
+      "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "7",
+      "when": 1791507000000,
+      "tag": "0018_terminos_legales",
+      "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "7",
+      "when": 1791508000000,
+      "tag": "0019_tu_derecho",
+      "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "7",
+      "when": 1791509000000,
+      "tag": "0020_seguimiento_procesos",
+      "breakpoints": true
+    },
+    {
+      "idx": 21,
+      "version": "7",
+      "when": 1791510000000,
+      "tag": "0021_crecimiento",
+      "breakpoints": true
+    }
+  ]
+}
