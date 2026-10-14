@@ -1,0 +1,1414 @@
+{
+ "templates": [
+  {
+   "code": "CIVIL-EJECUTIVA-PAGARE-01",
+   "area": "civil",
+   "category": "Demanda",
+   "title": "Demanda ejecutiva por pagaré",
+   "description": "Para cobrar judicialmente una obligación dineraria contenida en pagaré que sea clara, expresa y exigible.",
+   "body": "# DEMANDA EJECUTIVA POR PAGARÉ\n\nSeñor(a)\n{{juez_civil_competente}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandado:** {{deudor}}\n**Asunto:** Proceso ejecutivo singular\n\n## PRETENSIONES\n\n1. Librar mandamiento de pago contra {{deudor}} por la suma de {{capital_pagare}}.\n\n2. Ordenar el pago de los intereses de plazo causados y de los intereses moratorios a la tasa máxima legal certificada por la Superintendencia Financiera (artículo 884 del Código de Comercio), o a la pactada si es inferior, desde {{fecha_mora}} hasta el pago total.\n\n3. Condenar en costas y agencias en derecho.\n\n## HECHOS\n\n1. El demandado suscribió el pagaré el {{fecha_suscripcion_pagare}} a favor de {{cliente_nombre}}.\n\n2. La obligación debía pagarse el {{fecha_vencimiento_pagare}} y no fue cancelada.\n\n3. El pagaré contiene una obligación clara, expresa y exigible y presta mérito ejecutivo.\n\n{{hechos_adicionales_ejecutivo}}\n\n## FUNDAMENTOS DE DERECHO\n\n{{fundamentos_ejecutivo}}\n\n## MEDIDAS CAUTELARES\n\nSolicito embargar y secuestrar los bienes, cuentas, salarios, derechos o establecimientos identificados en {{bienes_cautelares}}.\n\n## PRUEBAS Y ANEXOS\n\n1. Pagaré, cuyo original queda bajo custodia del demandante y se exhibirá cuando el despacho lo requiera, o documento electrónico verificable.\n\n2. Carta de instrucciones, si el pagaré se firmó con espacios en blanco (artículo 622 del Código de Comercio).\n\n3. Liquidación del crédito.\n\n{{anexos_ejecutivo}}\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## NOTIFICACIONES\n\n{{notificaciones_civiles}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_civil_competente",
+     "label": "Juzgado civil competente",
+     "help": "Según la cuantía (arts. 25 y 26 del CGP): mínima (hasta 40 SMMLV) juez de pequeñas causas o civil municipal en única instancia; menor (más de 40 y hasta 150) civil municipal; mayor (más de 150) civil del circuito."
+    },
+    {
+     "key": "deudor",
+     "label": "Deudor"
+    },
+    {
+     "key": "capital_pagare",
+     "label": "Capital adeudado"
+    },
+    {
+     "key": "fecha_mora",
+     "label": "Fecha inicial de mora"
+    },
+    {
+     "key": "fecha_suscripcion_pagare",
+     "label": "Fecha de suscripción del pagaré"
+    },
+    {
+     "key": "fecha_vencimiento_pagare",
+     "label": "Fecha de vencimiento"
+    },
+    {
+     "key": "hechos_adicionales_ejecutivo",
+     "label": "Hechos adicionales"
+    },
+    {
+     "key": "fundamentos_ejecutivo",
+     "label": "Fundamentos jurídicos"
+    },
+    {
+     "key": "bienes_cautelares",
+     "label": "Bienes o derechos sobre los que se solicitan medidas"
+    },
+    {
+     "key": "anexos_ejecutivo",
+     "label": "Anexos"
+    },
+    {
+     "key": "notificaciones_civiles",
+     "label": "Notificaciones de las partes"
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital de las partes y envío de la demanda",
+     "help": "Indique el canal digital de las partes (art. 6 de la Ley 2213 de 2022) y la constancia de envío simultáneo de la demanda al demandado, salvo que se pidan medidas cautelares previas o se desconozca su dirección."
+    }
+   ],
+   "keywords": [
+    "demanda ejecutiva",
+    "pagaré",
+    "cobro judicial",
+    "mandamiento de pago",
+    "embargo"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 25, 26, 82, 422, 424, 430, 431 y 599; Código de Comercio, artículos 619, 621, 622, 709 a 711 y 884; Ley 2213 de 2022, artículo 6."
+  },
+  {
+   "code": "CIVIL-EJECUTIVA-LETRA-02",
+   "area": "civil",
+   "category": "Demanda",
+   "title": "Demanda ejecutiva por letra de cambio",
+   "description": "Para cobrar una obligación incorporada en letra de cambio no pagada a su vencimiento.",
+   "body": "# DEMANDA EJECUTIVA POR LETRA DE CAMBIO\n\nSeñor(a)\n{{juez_civil_competente}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandado:** {{deudor}}\n\n## PRETENSIONES\n\n1. Librar mandamiento de pago por {{capital_letra}}.\n\n2. Ordenar el pago de los intereses moratorios a la tasa máxima legal certificada por la Superintendencia Financiera (artículo 884 del Código de Comercio), desde {{fecha_mora_letra}} hasta el pago total.\n\n3. Condenar en costas y agencias en derecho.\n\n## HECHOS\n\n{{hechos_letra}}\n\n## TÍTULO EJECUTIVO\n\nLa letra de cambio identifica al obligado, contiene la promesa u orden de pago, la suma, fecha de vencimiento, beneficiario y firma o aceptación correspondiente. Se anexa el título y la constancia de presentación o protesto cuando sea exigible.\n\n## MEDIDAS CAUTELARES\n\n{{medidas_letra}}\n\n## PRUEBAS Y ANEXOS\n\n{{anexos_letra}}\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## NOTIFICACIONES\n\n{{notificaciones_civiles}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_civil_competente",
+     "label": "Juzgado competente",
+     "help": "Según la cuantía (arts. 25 y 26 del CGP): mínima (hasta 40 SMMLV) juez de pequeñas causas o civil municipal en única instancia; menor (más de 40 y hasta 150) civil municipal; mayor (más de 150) civil del circuito."
+    },
+    {
+     "key": "deudor",
+     "label": "Deudor o aceptante"
+    },
+    {
+     "key": "capital_letra",
+     "label": "Capital"
+    },
+    {
+     "key": "fecha_mora_letra",
+     "label": "Fecha de mora"
+    },
+    {
+     "key": "hechos_letra",
+     "label": "Hechos"
+    },
+    {
+     "key": "medidas_letra",
+     "label": "Medidas cautelares"
+    },
+    {
+     "key": "anexos_letra",
+     "label": "Anexos"
+    },
+    {
+     "key": "notificaciones_civiles",
+     "label": "Notificaciones"
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital de las partes y envío de la demanda",
+     "help": "Indique el canal digital de las partes (art. 6 de la Ley 2213 de 2022) y la constancia de envío simultáneo de la demanda al demandado, salvo que se pidan medidas cautelares previas o se desconozca su dirección."
+    }
+   ],
+   "keywords": [
+    "letra de cambio",
+    "ejecutivo",
+    "título valor",
+    "aceptante",
+    "cobro"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 25, 26, 82, 422, 430 y 599; Código de Comercio, artículos 619, 621, 671 a 708 y 884; Ley 2213 de 2022, artículo 6."
+  },
+  {
+   "code": "CIVIL-EJECUTIVA-FACTURA-03",
+   "area": "civil",
+   "category": "Demanda",
+   "title": "Demanda ejecutiva por factura",
+   "description": "Para cobrar judicialmente una factura de venta o de servicios que cumpla los requisitos legales y no haya sido pagada.",
+   "body": "# DEMANDA EJECUTIVA POR FACTURA\n\nSeñor(a)\n{{juez_civil_competente}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandado:** {{deudor}}\n\n## PRETENSIONES\n\n1. Librar mandamiento de pago por {{valor_factura}}.\n\n2. Ordenar el pago de los intereses moratorios a la tasa máxima legal certificada por la Superintendencia Financiera (artículo 884 del Código de Comercio), desde {{fecha_mora_factura}} hasta el pago total.\n\n3. Condenar en costas y agencias en derecho.\n\n## HECHOS\n\n{{hechos_factura}}\n\n## TÍTULO\n\nLa factura fue expedida, entregada, aceptada expresa o tácitamente y no fue objetada dentro de la oportunidad legal, según {{soportes_entrega_aceptacion}}.\n\n## PRUEBAS Y ANEXOS\n\n{{anexos_factura}}\n\n## MEDIDAS CAUTELARES\n\n{{medidas_factura}}\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## NOTIFICACIONES\n\n{{notificaciones_civiles}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_civil_competente",
+     "label": "Juzgado competente",
+     "help": "Según la cuantía (arts. 25 y 26 del CGP): mínima (hasta 40 SMMLV) juez de pequeñas causas o civil municipal en única instancia; menor (más de 40 y hasta 150) civil municipal; mayor (más de 150) civil del circuito."
+    },
+    {
+     "key": "deudor",
+     "label": "Deudor"
+    },
+    {
+     "key": "valor_factura",
+     "label": "Valor de la factura"
+    },
+    {
+     "key": "fecha_mora_factura",
+     "label": "Fecha de mora"
+    },
+    {
+     "key": "hechos_factura",
+     "label": "Hechos"
+    },
+    {
+     "key": "soportes_entrega_aceptacion",
+     "label": "Pruebas de entrega y aceptación",
+     "help": "Recibo de la mercancía o del servicio y aceptación expresa, o tácita si no hubo reclamo dentro de los 3 días hábiles siguientes a la recepción (art. 773 C.Co.). Si es factura electrónica, aporte su representación gráfica y los eventos de recibo y aceptación registrados (Decreto 1154 de 2020)."
+    },
+    {
+     "key": "anexos_factura",
+     "label": "Anexos"
+    },
+    {
+     "key": "medidas_factura",
+     "label": "Medidas cautelares"
+    },
+    {
+     "key": "notificaciones_civiles",
+     "label": "Notificaciones"
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital de las partes y envío de la demanda",
+     "help": "Indique el canal digital de las partes (art. 6 de la Ley 2213 de 2022) y la constancia de envío simultáneo de la demanda al demandado, salvo que se pidan medidas cautelares previas o se desconozca su dirección."
+    }
+   ],
+   "keywords": [
+    "factura",
+    "factura electrónica",
+    "proceso ejecutivo",
+    "aceptación",
+    "cobro"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 82, 422, 430 y 599; Código de Comercio, artículos 772 a 779 y 884 (modificados por la Ley 1231 de 2008 y la Ley 1676 de 2013); Decreto 1154 de 2020 (factura electrónica como título valor)."
+  },
+  {
+   "code": "CIVIL-EJECUTIVA-CONTRATO-04",
+   "area": "civil",
+   "category": "Demanda",
+   "title": "Demanda ejecutiva por contrato",
+   "description": "Para exigir obligaciones claras, expresas y exigibles contenidas en contrato, acta de conciliación, transacción o documento proveniente del deudor.",
+   "body": "# DEMANDA EJECUTIVA POR CONTRATO\n\nSeñor(a)\n{{juez_civil_competente}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandado:** {{deudor}}\n\n## PRETENSIONES\n\n1. Librar mandamiento de pago por {{obligacion_principal_contrato}}.\n\n2. Ordenar el pago de intereses, cláusula penal o perjuicios moratorios por {{conceptos_adicionales_ejecutivo}}.\n\n3. Condenar en costas.\n\n## HECHOS\n\n{{hechos_contrato_ejecutivo}}\n\n## TÍTULO EJECUTIVO\n\nEl contrato y sus anexos contienen obligaciones claras, expresas y exigibles, provienen del deudor y constituyen plena prueba en su contra.\n\n## PRUEBAS Y MEDIDAS\n\n{{pruebas_contrato_ejecutivo}}\n\n{{medidas_contrato_ejecutivo}}\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## NOTIFICACIONES\n\n{{notificaciones_civiles}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_civil_competente",
+     "label": "Juzgado competente",
+     "help": "Según la cuantía (arts. 25 y 26 del CGP): mínima (hasta 40 SMMLV) juez de pequeñas causas o civil municipal en única instancia; menor (más de 40 y hasta 150) civil municipal; mayor (más de 150) civil del circuito."
+    },
+    {
+     "key": "deudor",
+     "label": "Deudor"
+    },
+    {
+     "key": "obligacion_principal_contrato",
+     "label": "Obligación principal"
+    },
+    {
+     "key": "conceptos_adicionales_ejecutivo",
+     "label": "Intereses, cláusula penal u otros conceptos"
+    },
+    {
+     "key": "hechos_contrato_ejecutivo",
+     "label": "Hechos"
+    },
+    {
+     "key": "pruebas_contrato_ejecutivo",
+     "label": "Pruebas y anexos"
+    },
+    {
+     "key": "medidas_contrato_ejecutivo",
+     "label": "Medidas cautelares"
+    },
+    {
+     "key": "notificaciones_civiles",
+     "label": "Notificaciones"
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital de las partes y envío de la demanda",
+     "help": "Indique el canal digital de las partes (art. 6 de la Ley 2213 de 2022) y la constancia de envío simultáneo de la demanda al demandado, salvo que se pidan medidas cautelares previas o se desconozca su dirección."
+    }
+   ],
+   "keywords": [
+    "ejecutivo contractual",
+    "contrato",
+    "obligación exigible",
+    "mandamiento",
+    "cobro"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 82, 422, 424, 426, 430 y 599; Código Civil, artículos 1602 y 1603."
+  },
+  {
+   "code": "CIVIL-MEDIDAS-CAUTELARES-05",
+   "area": "civil",
+   "category": "Solicitud",
+   "title": "Solicitud de medidas cautelares en proceso civil",
+   "description": "Para solicitar embargo, secuestro, inscripción de demanda u otra medida cautelar en proceso ejecutivo o declarativo.",
+   "body": "# SOLICITUD DE MEDIDAS CAUTELARES\n\nSeñor(a)\n{{juez_civil_competente}}\nE. S. D.\n\n**Proceso:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n**Solicitante:** {{cliente_nombre}}\n\n## MEDIDAS SOLICITADAS\n\nSolicito decretar las siguientes medidas:\n\n{{medidas_solicitadas_civiles}}\n\n## BIENES O DERECHOS\n\n{{bienes_medidas_civiles}}\n\n## FUNDAMENTO Y NECESIDAD\n\nLa medida es necesaria, proporcional y útil para asegurar {{finalidad_medida_cautelar}}. Existe riesgo de que {{riesgo_cautelar}}.\n\nCuando legalmente se exija, ofrezco prestar caución por la suma o porcentaje que fije el despacho (en procesos declarativos, el 20 % del valor de las pretensiones, artículo 590 numeral 2 del CGP): {{caucion_ofrecida}}.\n\n## SOLICITUD\n\nSolicito decretar y comunicar las medidas por el medio más expedito, antes de la notificación a la contraparte cuando la ley lo permita. Cuando la medida se pide con la demanda, no es necesario agotar la conciliación prejudicial (artículo 590, parágrafo 1, del CGP).\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_civil_competente",
+     "label": "Juzgado competente"
+    },
+    {
+     "key": "medidas_solicitadas_civiles",
+     "label": "Medidas cautelares solicitadas"
+    },
+    {
+     "key": "bienes_medidas_civiles",
+     "label": "Bienes o derechos afectados"
+    },
+    {
+     "key": "finalidad_medida_cautelar",
+     "label": "Finalidad"
+    },
+    {
+     "key": "riesgo_cautelar",
+     "label": "Riesgo que se pretende evitar"
+    },
+    {
+     "key": "caucion_ofrecida",
+     "label": "Caución ofrecida"
+    }
+   ],
+   "keywords": [
+    "medidas cautelares",
+    "embargo",
+    "secuestro",
+    "inscripción demanda",
+    "caución"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 588 a 604."
+  },
+  {
+   "code": "CIVIL-DEMANDA-VERBAL-06",
+   "area": "civil",
+   "category": "Demanda",
+   "title": "Demanda de proceso verbal",
+   "description": "Para controversias civiles que deben tramitarse por el proceso verbal, según la naturaleza o cuantía del asunto.",
+   "body": "# DEMANDA DE PROCESO VERBAL\n\nSeñor(a)\n{{juez_civil_competente}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandado:** {{contraparte}}\n\n## PRETENSIONES\n\n{{pretensiones_verbal}}\n\n## HECHOS\n\n{{hechos_verbal}}\n\n## FUNDAMENTOS DE DERECHO\n\n{{fundamentos_verbal}}\n\n## JURAMENTO ESTIMATORIO\n\nBajo la gravedad del juramento estimo razonadamente los perjuicios, frutos, mejoras o compensaciones así: {{juramento_estimatorio_verbal}}.\n\n## PRUEBAS\n\n{{pruebas_verbal}}\n\n## ANEXOS\n\n{{anexos_verbal}}\n\n## REQUISITO DE PROCEDIBILIDAD\n\n{{requisito_conciliacion}}\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## NOTIFICACIONES\n\n{{notificaciones_civiles}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_civil_competente",
+     "label": "Juzgado competente",
+     "help": "Según la cuantía (arts. 25 y 26 del CGP): mínima (hasta 40 SMMLV) juez de pequeñas causas o civil municipal en única instancia; menor (más de 40 y hasta 150) civil municipal; mayor (más de 150) civil del circuito."
+    },
+    {
+     "key": "pretensiones_verbal",
+     "label": "Pretensiones"
+    },
+    {
+     "key": "hechos_verbal",
+     "label": "Hechos"
+    },
+    {
+     "key": "fundamentos_verbal",
+     "label": "Fundamentos de derecho"
+    },
+    {
+     "key": "juramento_estimatorio_verbal",
+     "label": "Juramento estimatorio",
+     "help": "Discriminar cada concepto y cuantía; no incluir daños extrapatrimoniales"
+    },
+    {
+     "key": "pruebas_verbal",
+     "label": "Pruebas"
+    },
+    {
+     "key": "anexos_verbal",
+     "label": "Anexos"
+    },
+    {
+     "key": "notificaciones_civiles",
+     "label": "Notificaciones"
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital de las partes y envío de la demanda",
+     "help": "Indique el canal digital de las partes (art. 6 de la Ley 2213 de 2022) y la constancia de envío simultáneo de la demanda al demandado, salvo que se pidan medidas cautelares previas o se desconozca su dirección."
+    },
+    {
+     "key": "requisito_conciliacion",
+     "label": "Conciliación extrajudicial (requisito de procedibilidad)",
+     "help": "Constancia de conciliación extrajudicial fallida, o la razón por la que no se exige (p. ej., se solicitan medidas cautelares, art. 590 parágrafo 1 del CGP)."
+    }
+   ],
+   "keywords": [
+    "proceso verbal",
+    "demanda civil",
+    "pretensiones",
+    "juramento estimatorio",
+    "CGP"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 82 a 84, 206, 368 a 373; Ley 2213 de 2022."
+  },
+  {
+   "code": "CIVIL-DEMANDA-VERBAL-SUMARIO-07",
+   "area": "civil",
+   "category": "Demanda",
+   "title": "Demanda de proceso verbal sumario",
+   "description": "Para asuntos civiles que la ley somete al trámite verbal sumario y, por regla general, a única instancia.",
+   "body": "# DEMANDA DE PROCESO VERBAL SUMARIO\n\nSeñor(a)\n{{juez_civil_competente}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandado:** {{contraparte}}\n\n## PRETENSIONES\n\n{{pretensiones_verbal_sumario}}\n\n## HECHOS\n\n{{hechos_verbal_sumario}}\n\n## FUNDAMENTOS\n\n{{fundamentos_verbal_sumario}}\n\n## CUANTÍA Y COMPETENCIA\n\n{{cuantia_competencia_sumario}}\n\n## PRUEBAS Y ANEXOS\n\n{{pruebas_anexos_sumario}}\n\n## REQUISITO DE PROCEDIBILIDAD\n\n{{requisito_conciliacion}}\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## NOTIFICACIONES\n\n{{notificaciones_civiles}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_civil_competente",
+     "label": "Juzgado competente",
+     "help": "Según la cuantía (arts. 25 y 26 del CGP): mínima (hasta 40 SMMLV) juez de pequeñas causas o civil municipal en única instancia; menor (más de 40 y hasta 150) civil municipal; mayor (más de 150) civil del circuito."
+    },
+    {
+     "key": "pretensiones_verbal_sumario",
+     "label": "Pretensiones"
+    },
+    {
+     "key": "hechos_verbal_sumario",
+     "label": "Hechos"
+    },
+    {
+     "key": "fundamentos_verbal_sumario",
+     "label": "Fundamentos de derecho"
+    },
+    {
+     "key": "cuantia_competencia_sumario",
+     "label": "Cuantía y competencia",
+     "help": "Asuntos del art. 390 del CGP y los de mínima cuantía, que se tramitan en única instancia."
+    },
+    {
+     "key": "pruebas_anexos_sumario",
+     "label": "Pruebas y anexos"
+    },
+    {
+     "key": "notificaciones_civiles",
+     "label": "Notificaciones"
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital de las partes y envío de la demanda",
+     "help": "Indique el canal digital de las partes (art. 6 de la Ley 2213 de 2022) y la constancia de envío simultáneo de la demanda al demandado, salvo que se pidan medidas cautelares previas o se desconozca su dirección."
+    },
+    {
+     "key": "requisito_conciliacion",
+     "label": "Conciliación extrajudicial (requisito de procedibilidad)",
+     "help": "Constancia de conciliación extrajudicial fallida, o la razón por la que no se exige (p. ej., se solicitan medidas cautelares, art. 590 parágrafo 1 del CGP)."
+    }
+   ],
+   "keywords": [
+    "verbal sumario",
+    "proceso civil",
+    "única instancia",
+    "demanda",
+    "CGP"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 82 a 84, 390 a 392; Ley 2213 de 2022."
+  },
+  {
+   "code": "CIVIL-RESTITUCION-INMUEBLE-08",
+   "area": "civil",
+   "category": "Demanda",
+   "title": "Demanda de restitución de inmueble arrendado",
+   "description": "Para obtener la restitución de un inmueble por terminación o incumplimiento del contrato de arrendamiento.",
+   "body": "# DEMANDA DE RESTITUCIÓN DE INMUEBLE ARRENDADO\n\nSeñor(a)\n{{juez_civil_competente}}\nE. S. D.\n\n**Demandante:** {{arrendador}}\n**Demandado:** {{arrendatario}}\n\n## PRETENSIONES\n\n1. Declarar terminado el contrato de arrendamiento celebrado el {{fecha_contrato_arrendamiento}}.\n\n2. Ordenar al demandado restituir el inmueble ubicado en {{inmueble_arrendado}}.\n\n3. Condenar al pago de los cánones, servicios, cláusula penal y demás sumas adeudadas por {{sumas_reclamadas_arrendamiento}}, cuya ejecución podrá adelantarse a continuación de la sentencia, y en costas.\n\n## HECHOS\n\n{{hechos_restitucion}}\n\n## CAUSAL\n\nLa restitución se solicita por {{causal_restitucion}}.\n\n## PRUEBAS\n\n{{pruebas_restitucion}}\n\n## MEDIDAS CAUTELARES\n\n{{medidas_restitucion}}\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## ANEXOS Y NOTIFICACIONES\n\n{{anexos_restitucion}}\n\n{{notificaciones_civiles}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_civil_competente",
+     "label": "Juzgado competente",
+     "help": "Según la cuantía (arts. 25 y 26 del CGP): mínima (hasta 40 SMMLV) juez de pequeñas causas o civil municipal en única instancia; menor (más de 40 y hasta 150) civil municipal; mayor (más de 150) civil del circuito."
+    },
+    {
+     "key": "arrendador",
+     "label": "Arrendador demandante"
+    },
+    {
+     "key": "arrendatario",
+     "label": "Arrendatario demandado"
+    },
+    {
+     "key": "fecha_contrato_arrendamiento",
+     "label": "Fecha del contrato"
+    },
+    {
+     "key": "inmueble_arrendado",
+     "label": "Identificación y dirección del inmueble"
+    },
+    {
+     "key": "sumas_reclamadas_arrendamiento",
+     "label": "Cánones y demás sumas reclamadas"
+    },
+    {
+     "key": "hechos_restitucion",
+     "label": "Hechos"
+    },
+    {
+     "key": "causal_restitucion",
+     "label": "Causal de terminación o restitución",
+     "help": "Ej. mora en el pago de cánones, vencimiento del plazo con preaviso, destinación distinta. Si la causal es solo la mora, el proceso es de única instancia y el demandado no será oído mientras no pague o consigne los cánones (art. 384 del CGP)."
+    },
+    {
+     "key": "pruebas_restitucion",
+     "label": "Pruebas",
+     "help": "Debe aportarse prueba documental del contrato, confesión del arrendatario o prueba testimonial sumaria (art. 384 num. 1 del CGP)"
+    },
+    {
+     "key": "medidas_restitucion",
+     "label": "Medidas cautelares"
+    },
+    {
+     "key": "anexos_restitucion",
+     "label": "Anexos"
+    },
+    {
+     "key": "notificaciones_civiles",
+     "label": "Notificaciones"
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital de las partes y envío de la demanda",
+     "help": "Indique el canal digital de las partes (art. 6 de la Ley 2213 de 2022) y la constancia de envío simultáneo de la demanda al demandado, salvo que se pidan medidas cautelares previas o se desconozca su dirección."
+    }
+   ],
+   "keywords": [
+    "restitución inmueble",
+    "arrendamiento",
+    "desalojo",
+    "cánones",
+    "arrendatario"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 82, 384 y 590; Código Civil, artículos 1973 a 2044; Ley 820 de 2003 (vivienda urbana)."
+  },
+  {
+   "code": "CIVIL-PERTENENCIA-09",
+   "area": "civil",
+   "category": "Demanda",
+   "title": "Demanda de declaración de pertenencia",
+   "description": "Para solicitar la declaración judicial de adquisición del dominio por prescripción adquisitiva de dominio.",
+   "body": "# DEMANDA DE DECLARACIÓN DE PERTENENCIA\n\nSeñor(a)\n{{juez_civil_competente}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandado:** {{titular_derecho_real}}\n\n## PRETENSIONES\n\n1. Declarar que {{cliente_nombre}} adquirió por prescripción adquisitiva el dominio del inmueble ubicado en {{inmueble_pertenencia}}.\n\n2. Ordenar la inscripción de la sentencia en la oficina de registro de instrumentos públicos.\n\n3. Ordenar el emplazamiento de las personas indeterminadas que se crean con derechos sobre el bien, la inscripción de la demanda en el folio de matrícula y la instalación de la valla prevista en el artículo 375 del CGP.\n\n## HECHOS DE LA POSESIÓN\n\n{{hechos_posesion}}\n\nLa prescripción invocada es {{tipo_prescripcion}}.\n\n## IDENTIFICACIÓN DEL INMUEBLE\n\n**Linderos:** {{linderos_inmueble}}.\n**Matrícula inmobiliaria:** {{matricula_inmobiliaria}}.\n**Cédula catastral:** {{cedula_catastral}}.\n\n## PRUEBAS\n\n{{pruebas_pertenencia}}\n\n## ANEXOS\n\nCertificado especial del registrador de instrumentos públicos sobre los titulares de derechos reales (artículo 375, numeral 5, del CGP), certificado de tradición, plano, dictamen y documentos sobre la posesión: {{anexos_pertenencia}}.\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## NOTIFICACIONES\n\n{{notificaciones_civiles}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_civil_competente",
+     "label": "Juzgado competente",
+     "help": "Según la cuantía (arts. 25 y 26 del CGP): mínima (hasta 40 SMMLV) juez de pequeñas causas o civil municipal en única instancia; menor (más de 40 y hasta 150) civil municipal; mayor (más de 150) civil del circuito."
+    },
+    {
+     "key": "titular_derecho_real",
+     "label": "Titular inscrito del derecho real",
+     "help": "Titulares inscritos según el certificado especial del registrador, y personas indeterminadas"
+    },
+    {
+     "key": "inmueble_pertenencia",
+     "label": "Ubicación del inmueble"
+    },
+    {
+     "key": "hechos_posesion",
+     "label": "Hechos de la posesión"
+    },
+    {
+     "key": "linderos_inmueble",
+     "label": "Linderos"
+    },
+    {
+     "key": "matricula_inmobiliaria",
+     "label": "Matrícula inmobiliaria"
+    },
+    {
+     "key": "cedula_catastral",
+     "label": "Cédula catastral"
+    },
+    {
+     "key": "pruebas_pertenencia",
+     "label": "Pruebas"
+    },
+    {
+     "key": "anexos_pertenencia",
+     "label": "Anexos"
+    },
+    {
+     "key": "notificaciones_civiles",
+     "label": "Notificaciones"
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital de las partes y envío de la demanda",
+     "help": "Indique el canal digital de las partes (art. 6 de la Ley 2213 de 2022) y la constancia de envío simultáneo de la demanda al demandado, salvo que se pidan medidas cautelares previas o se desconozca su dirección."
+    },
+    {
+     "key": "tipo_prescripcion",
+     "label": "Tipo de prescripción y tiempo de posesión",
+     "help": "Ordinaria: 5 años con justo título y buena fe. Extraordinaria: 10 años (Ley 791 de 2002). Indique desde cuándo y cómo ha poseído."
+    }
+   ],
+   "keywords": [
+    "pertenencia",
+    "prescripción adquisitiva",
+    "posesión",
+    "inmueble",
+    "dominio"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 82, 83, 375 y 592; Código Civil, artículos 2512, 2518, 2527 a 2532 (modificados por la Ley 791 de 2002). Para pequeña propiedad, ver Ley 1561 de 2012."
+  },
+  {
+   "code": "CIVIL-DIVISORIA-10",
+   "area": "civil",
+   "category": "Demanda",
+   "title": "Demanda divisoria",
+   "description": "Para solicitar la división material o la venta de un bien común entre comuneros.",
+   "body": "# DEMANDA DIVISORIA\n\nSeñor(a)\n{{juez_civil_competente}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandados:** {{comuneros}}\n\n## PRETENSIONES\n\n1. Decretar la división material del bien identificado como {{bien_comun}}, si es jurídicamente posible.\n\n2. Subsidiariamente, ordenar la venta del bien y distribuir el producto conforme a las cuotas de los comuneros.\n\n3. Reconocer las mejoras por {{valor_mejoras}}.\n\n## HECHOS\n\n{{hechos_divisoria}}\n\n## CUOTAS Y TÍTULO\n\n{{cuotas_derechos_comuneros}}\n\n## PRUEBAS Y AVALÚO\n\nSe aporta certificado de tradición y dictamen pericial que determina el valor, tipo de división, partición y mejoras: {{prueba_avaluo_divisoria}}.\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## ANEXOS Y NOTIFICACIONES\n\n{{anexos_divisoria}}\n\n{{notificaciones_civiles}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_civil_competente",
+     "label": "Juzgado competente",
+     "help": "Según la cuantía (arts. 25 y 26 del CGP): mínima (hasta 40 SMMLV) juez de pequeñas causas o civil municipal en única instancia; menor (más de 40 y hasta 150) civil municipal; mayor (más de 150) civil del circuito."
+    },
+    {
+     "key": "comuneros",
+     "label": "Demás comuneros"
+    },
+    {
+     "key": "bien_comun",
+     "label": "Identificación del bien común"
+    },
+    {
+     "key": "valor_mejoras",
+     "label": "Valor de mejoras"
+    },
+    {
+     "key": "hechos_divisoria",
+     "label": "Hechos"
+    },
+    {
+     "key": "cuotas_derechos_comuneros",
+     "label": "Cuotas y derechos de los comuneros"
+    },
+    {
+     "key": "prueba_avaluo_divisoria",
+     "label": "Certificado y dictamen pericial"
+    },
+    {
+     "key": "anexos_divisoria",
+     "label": "Anexos"
+    },
+    {
+     "key": "notificaciones_civiles",
+     "label": "Notificaciones"
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital de las partes y envío de la demanda",
+     "help": "Indique el canal digital de las partes (art. 6 de la Ley 2213 de 2022) y la constancia de envío simultáneo de la demanda al demandado, salvo que se pidan medidas cautelares previas o se desconozca su dirección."
+    }
+   ],
+   "keywords": [
+    "divisoria",
+    "comunidad",
+    "comuneros",
+    "venta del bien",
+    "división material"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 82 y 406 a 418; Código Civil, artículos 1374 y 2322 y siguientes."
+  },
+  {
+   "code": "CIVIL-RESPONSABILIDAD-CONTRACTUAL-11",
+   "area": "civil",
+   "category": "Demanda",
+   "title": "Demanda de responsabilidad civil contractual",
+   "description": "Para obtener indemnización por incumplimiento, cumplimiento defectuoso o mora en una obligación contractual.",
+   "body": "# DEMANDA DE RESPONSABILIDAD CIVIL CONTRACTUAL\n\nSeñor(a)\n{{juez_civil_competente}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandado:** {{contraparte}}\n\n## PRETENSIONES\n\n1. Declarar que {{contraparte}} incumplió el contrato de {{contrato_incumplido}}.\n\n2. Ordenar el cumplimiento, resolución o terminación del contrato, según corresponda.\n\n3. Condenar al pago de daño emergente, lucro cesante, cláusula penal, intereses y demás perjuicios por {{valor_pretensiones}}.\n\n## HECHOS\n\n{{hechos_responsabilidad_contractual}}\n\n## FUNDAMENTOS\n\n{{fundamentos_responsabilidad_contractual}}\n\n## JURAMENTO ESTIMATORIO\n\nBajo la gravedad del juramento estimo razonadamente, discriminando cada concepto, los perjuicios patrimoniales así (artículo 206 del CGP): {{juramento_responsabilidad_contractual}}.\n\n## REQUISITO DE PROCEDIBILIDAD\n\n{{requisito_conciliacion}}\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## PRUEBAS Y NOTIFICACIONES\n\n{{pruebas_responsabilidad_contractual}}\n\n{{notificaciones_civiles}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_civil_competente",
+     "label": "Juzgado competente",
+     "help": "Según la cuantía (arts. 25 y 26 del CGP): mínima (hasta 40 SMMLV) juez de pequeñas causas o civil municipal en única instancia; menor (más de 40 y hasta 150) civil municipal; mayor (más de 150) civil del circuito."
+    },
+    {
+     "key": "contrato_incumplido",
+     "label": "Contrato incumplido"
+    },
+    {
+     "key": "valor_pretensiones",
+     "label": "Valor de las pretensiones"
+    },
+    {
+     "key": "hechos_responsabilidad_contractual",
+     "label": "Hechos"
+    },
+    {
+     "key": "fundamentos_responsabilidad_contractual",
+     "label": "Fundamentos jurídicos"
+    },
+    {
+     "key": "juramento_responsabilidad_contractual",
+     "label": "Juramento estimatorio"
+    },
+    {
+     "key": "pruebas_responsabilidad_contractual",
+     "label": "Pruebas"
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital de las partes y envío de la demanda",
+     "help": "Indique el canal digital de las partes (art. 6 de la Ley 2213 de 2022) y la constancia de envío simultáneo de la demanda al demandado, salvo que se pidan medidas cautelares previas o se desconozca su dirección."
+    },
+    {
+     "key": "notificaciones_civiles",
+     "label": "Direcciones físicas y electrónicas de las partes"
+    },
+    {
+     "key": "requisito_conciliacion",
+     "label": "Conciliación extrajudicial (requisito de procedibilidad)",
+     "help": "Constancia de conciliación extrajudicial fallida, o la razón por la que no se exige (p. ej., se solicitan medidas cautelares, art. 590 parágrafo 1 del CGP)."
+    }
+   ],
+   "keywords": [
+    "responsabilidad contractual",
+    "incumplimiento",
+    "daño emergente",
+    "lucro cesante",
+    "contrato"
+   ],
+   "legalBasis": "Código Civil, artículos 1494, 1546, 1602 a 1604, 1608, 1613 a 1617; Código General del Proceso, artículos 82, 206 y 368; Ley 2220 de 2022 (conciliación como requisito de procedibilidad)."
+  },
+  {
+   "code": "CIVIL-RESPONSABILIDAD-EXTRACONTRACTUAL-12",
+   "area": "civil",
+   "category": "Demanda",
+   "title": "Demanda de responsabilidad civil extracontractual",
+   "description": "Para reclamar la reparación de daños causados por conducta dolosa o culposa sin vínculo contractual con la víctima.",
+   "body": "# DEMANDA DE RESPONSABILIDAD CIVIL EXTRACONTRACTUAL\n\nSeñor(a)\n{{juez_civil_competente}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandado:** {{contraparte}}\n\n## PRETENSIONES\n\n1. Declarar que {{contraparte}} es civilmente responsable por los daños causados.\n\n2. Condenar al pago de perjuicios materiales por {{perjuicios_materiales_extra}}.\n\n3. Condenar al pago de perjuicios inmateriales por {{perjuicios_inmateriales_extra}}.\n\n4. Ordenar las medidas de reparación que correspondan y condenar en costas.\n\n## HECHOS\n\n{{hechos_responsabilidad_extra}}\n\n## CONDUCTA, DAÑO Y NEXO CAUSAL\n\nConducta u omisión: {{conducta_danosa}}.\n\nDaño: {{danos_extra}}\n\nNexo causal: {{nexo_causal_extra}}\n\n## JURAMENTO ESTIMATORIO\n\nPara los perjuicios patrimoniales, bajo juramento estimo: {{juramento_extra}}. No se incluyen daños extrapatrimoniales en el juramento estimatorio.\n\n## REQUISITO DE PROCEDIBILIDAD\n\n{{requisito_conciliacion}}\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## PRUEBAS Y NOTIFICACIONES\n\n{{pruebas_responsabilidad_extra}}\n\n{{notificaciones_civiles}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_civil_competente",
+     "label": "Juzgado competente",
+     "help": "Según la cuantía (arts. 25 y 26 del CGP): mínima (hasta 40 SMMLV) juez de pequeñas causas o civil municipal en única instancia; menor (más de 40 y hasta 150) civil municipal; mayor (más de 150) civil del circuito."
+    },
+    {
+     "key": "perjuicios_materiales_extra",
+     "label": "Perjuicios materiales"
+    },
+    {
+     "key": "perjuicios_inmateriales_extra",
+     "label": "Perjuicios inmateriales"
+    },
+    {
+     "key": "hechos_responsabilidad_extra",
+     "label": "Hechos"
+    },
+    {
+     "key": "conducta_danosa",
+     "label": "Conducta u omisión dañosa"
+    },
+    {
+     "key": "danos_extra",
+     "label": "Daños"
+    },
+    {
+     "key": "nexo_causal_extra",
+     "label": "Nexo causal"
+    },
+    {
+     "key": "juramento_extra",
+     "label": "Juramento estimatorio de perjuicios patrimoniales"
+    },
+    {
+     "key": "pruebas_responsabilidad_extra",
+     "label": "Pruebas"
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital de las partes y envío de la demanda",
+     "help": "Indique el canal digital de las partes (art. 6 de la Ley 2213 de 2022) y la constancia de envío simultáneo de la demanda al demandado, salvo que se pidan medidas cautelares previas o se desconozca su dirección."
+    },
+    {
+     "key": "notificaciones_civiles",
+     "label": "Direcciones físicas y electrónicas de las partes"
+    },
+    {
+     "key": "requisito_conciliacion",
+     "label": "Conciliación extrajudicial (requisito de procedibilidad)",
+     "help": "Constancia de conciliación extrajudicial fallida, o la razón por la que no se exige (p. ej., se solicitan medidas cautelares, art. 590 parágrafo 1 del CGP)."
+    }
+   ],
+   "keywords": [
+    "responsabilidad extracontractual",
+    "culpa",
+    "daño",
+    "nexo causal",
+    "indemnización"
+   ],
+   "legalBasis": "Código Civil, artículos 2341, 2343, 2344, 2347, 2356 y concordantes; Código General del Proceso, artículos 82, 206 y 368; Ley 2220 de 2022."
+  },
+  {
+   "code": "CIVIL-CONTESTACION-13",
+   "area": "civil",
+   "category": "Contestación",
+   "title": "Contestación de demanda civil",
+   "description": "Para responder de manera expresa y concreta las pretensiones y hechos de una demanda civil.",
+   "body": "# CONTESTACIÓN DE DEMANDA\n\nSeñor(a)\n{{juzgado_civil}}\nE. S. D.\n\n**Proceso:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n**Demandante:** {{demandante_civil}}\n**Demandado:** {{cliente_nombre}}\n\nDentro del término de traslado ({{termino_traslado}}) contesto la demanda así:\n\n## PRONUNCIAMIENTO SOBRE LAS PRETENSIONES\n\n{{respuesta_pretensiones}}\n\n## PRONUNCIAMIENTO SOBRE LOS HECHOS\n\nCada hecho se contesta de forma expresa: si es cierto, no es cierto o no le consta a la parte, con las razones (la falta de pronunciamiento expreso se presume como cierta, artículo 97 del CGP).\n\nHecho 1: {{respuesta_hecho_1}}\n\nHecho 2: {{respuesta_hecho_2}}\n\nHecho 3: {{respuesta_hecho_3}}\n\n{{respuestas_demas_hechos}}\n\n## EXCEPCIONES DE MÉRITO\n\n{{excepciones_merito}}\n\n## JURAMENTO ESTIMATORIO\n\nSi se reclaman perjuicios, frutos, mejoras o compensaciones a favor del demandado, se estiman así: {{juramento_demandado}}.\n\n## PRUEBAS\n\n{{pruebas_contestacion}}\n\n## ANEXOS Y NOTIFICACIONES\n\n{{anexos_contestacion}}\n\n{{notificaciones_civiles}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juzgado_civil",
+     "label": "Juzgado civil"
+    },
+    {
+     "key": "demandante_civil",
+     "label": "Demandante"
+    },
+    {
+     "key": "respuesta_pretensiones",
+     "label": "Respuesta a cada pretensión"
+    },
+    {
+     "key": "respuesta_hecho_1",
+     "label": "Respuesta al hecho 1"
+    },
+    {
+     "key": "respuesta_hecho_2",
+     "label": "Respuesta al hecho 2"
+    },
+    {
+     "key": "respuesta_hecho_3",
+     "label": "Respuesta al hecho 3"
+    },
+    {
+     "key": "respuestas_demas_hechos",
+     "label": "Respuesta a los demás hechos"
+    },
+    {
+     "key": "excepciones_merito",
+     "label": "Excepciones de mérito"
+    },
+    {
+     "key": "juramento_demandado",
+     "label": "Juramento estimatorio del demandado"
+    },
+    {
+     "key": "pruebas_contestacion",
+     "label": "Pruebas"
+    },
+    {
+     "key": "anexos_contestacion",
+     "label": "Anexos"
+    },
+    {
+     "key": "notificaciones_civiles",
+     "label": "Notificaciones"
+    },
+    {
+     "key": "termino_traslado",
+     "label": "Término de traslado",
+     "help": "Verbal: 20 días (art. 369). Verbal sumario: 10 días (art. 391). Ejecutivo: 10 días para excepciones (art. 442)."
+    }
+   ],
+   "keywords": [
+    "contestación demanda",
+    "demanda civil",
+    "hechos",
+    "excepciones",
+    "defensa"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 96, 97, 100, 206, 369, 391 y 442."
+  },
+  {
+   "code": "CIVIL-EXCEPCIONES-PREVIAS-14",
+   "area": "civil",
+   "category": "Excepciones",
+   "title": "Excepciones previas en proceso civil",
+   "description": "Para alegar defectos procesales o formales que deben resolverse antes de continuar el proceso. En el proceso ejecutivo los hechos que configuren excepciones previas se alegan mediante recurso de reposición contra el mandamiento de pago (art. 442 num. 3).",
+   "body": "# EXCEPCIONES PREVIAS\n\nSeñor(a)\n{{juzgado_civil}}\nE. S. D.\n\n**Proceso:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n**Demandado:** {{cliente_nombre}}\n\nDentro del término de traslado de la demanda, y en escrito separado (artículo 101 del CGP), formulo las siguientes excepciones previas:\n\n## EXCEPCIÓN PRIMERA: {{excepcion_previa_1}}\n\n{{fundamento_excepcion_previa_1}}\n\n## EXCEPCIÓN SEGUNDA: {{excepcion_previa_2}}\n\n{{fundamento_excepcion_previa_2}}\n\n## PRUEBAS\n\n{{pruebas_excepciones_previas}}\n\n## PETICIONES\n\n1. Declarar probadas las excepciones propuestas.\n\n2. Adoptar la consecuencia procesal correspondiente, incluida la remisión, corrección, integración, suspensión o terminación del proceso cuando proceda.\n\n3. Condenar en costas si hay lugar.\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juzgado_civil",
+     "label": "Juzgado civil"
+    },
+    {
+     "key": "excepcion_previa_1",
+     "label": "Primera excepción previa",
+     "help": "Solo las del art. 100 del CGP: falta de jurisdicción o competencia, cláusula compromisoria, incapacidad o indebida representación, ineptitud de la demanda, no comprender a todos los litisconsortes necesarios, pleito pendiente, entre otras."
+    },
+    {
+     "key": "fundamento_excepcion_previa_1",
+     "label": "Fundamento de la primera excepción"
+    },
+    {
+     "key": "excepcion_previa_2",
+     "label": "Segunda excepción previa",
+     "help": "Opcional"
+    },
+    {
+     "key": "fundamento_excepcion_previa_2",
+     "label": "Fundamento de la segunda excepción",
+     "help": "Opcional"
+    },
+    {
+     "key": "pruebas_excepciones_previas",
+     "label": "Pruebas"
+    }
+   ],
+   "keywords": [
+    "excepciones previas",
+    "competencia",
+    "ineptitud demanda",
+    "pleito pendiente",
+    "nulidad"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 100, 101, 102 y 442 numeral 3."
+  },
+  {
+   "code": "CIVIL-EXCEPCIONES-MERITO-15",
+   "area": "civil",
+   "category": "Excepciones",
+   "title": "Excepciones de mérito en proceso civil",
+   "description": "Para controvertir el fundamento sustancial de las pretensiones de la demanda.",
+   "body": "# EXCEPCIONES DE MÉRITO\n\nSeñor(a)\n{{juzgado_civil}}\nE. S. D.\n\n**Proceso:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n**Demandado:** {{cliente_nombre}}\n\n## EXCEPCIÓN PRIMERA: {{excepcion_merito_1}}\n\n{{fundamento_excepcion_merito_1}}\n\n## EXCEPCIÓN SEGUNDA: {{excepcion_merito_2}}\n\n{{fundamento_excepcion_merito_2}}\n\n## EXCEPCIÓN GENÉRICA\n\nSolicito declarar de oficio cualquier excepción que resulte probada (artículo 282 del CGP). Las de prescripción, compensación y nulidad relativa se alegan expresamente en este escrito cuando correspondan.\n\n## PRUEBAS\n\n{{pruebas_excepciones_merito}}\n\n## PETICIONES\n\n1. Declarar probadas las excepciones.\n\n2. Negar las pretensiones de la demanda.\n\n3. Condenar en costas y agencias en derecho.\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juzgado_civil",
+     "label": "Juzgado civil"
+    },
+    {
+     "key": "excepcion_merito_1",
+     "label": "Primera excepción de mérito"
+    },
+    {
+     "key": "fundamento_excepcion_merito_1",
+     "label": "Fundamento de la primera excepción"
+    },
+    {
+     "key": "excepcion_merito_2",
+     "label": "Segunda excepción de mérito",
+     "help": "Opcional"
+    },
+    {
+     "key": "fundamento_excepcion_merito_2",
+     "label": "Fundamento de la segunda excepción",
+     "help": "Opcional"
+    },
+    {
+     "key": "pruebas_excepciones_merito",
+     "label": "Pruebas"
+    }
+   ],
+   "keywords": [
+    "excepciones de mérito",
+    "defensa civil",
+    "prescripción",
+    "pago",
+    "inexistencia obligación"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 96, 164, 167, 206 y 282; Código Civil según la obligación discutida."
+  },
+  {
+   "code": "CIVIL-RECURSO-REPOSICION-16",
+   "area": "civil",
+   "category": "Recurso",
+   "title": "Recurso de reposición civil",
+   "description": "Para solicitar que el mismo juez reforme o revoque un auto no susceptible de apelación o como recurso subsidiario.",
+   "body": "# RECURSO DE REPOSICIÓN\n\nSeñor(a)\n{{juzgado_civil}}\nE. S. D.\n\n**Proceso:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n\nDentro de los tres (3) días siguientes a su notificación (artículo 318 del CGP), interpongo recurso de reposición contra el auto de fecha {{fecha_auto_recurrido}}, notificado el {{fecha_notificacion_auto}}, por las siguientes razones:\n\n## FUNDAMENTOS\n\n{{fundamentos_reposicion_civil}}\n\n## PETICIONES\n\n1. Reponer el auto recurrido.\n\n2. En su lugar, disponer {{decision_reposicion_civil}}.\n\n3. Subsidiariamente, conceder la apelación si el auto es apelable.\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juzgado_civil",
+     "label": "Juzgado civil"
+    },
+    {
+     "key": "fecha_auto_recurrido",
+     "label": "Fecha del auto"
+    },
+    {
+     "key": "fecha_notificacion_auto",
+     "label": "Fecha de notificación"
+    },
+    {
+     "key": "fundamentos_reposicion_civil",
+     "label": "Fundamentos"
+    },
+    {
+     "key": "decision_reposicion_civil",
+     "label": "Decisión solicitada"
+    }
+   ],
+   "keywords": [
+    "reposición civil",
+    "auto",
+    "recurso",
+    "revocar",
+    "reformar"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 318, 321 y 322."
+  },
+  {
+   "code": "CIVIL-RECURSO-APELACION-17",
+   "area": "civil",
+   "category": "Recurso",
+   "title": "Recurso de apelación civil (interposición y reparos concretos)",
+   "description": "Para apelar una sentencia o un auto apelable (art. 321). Contra la sentencia se precisan aquí los reparos concretos dentro de los 3 días siguientes y la sustentación se hace ante el superior. Contra autos, la sustentación se presenta ante el juez de primera instancia en el mismo término.",
+   "body": "# RECURSO DE APELACIÓN\n\nSeñor(a)\n{{juzgado_primera_instancia}}\nE. S. D.\n\n**Proceso:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n\nDentro de los tres (3) días siguientes a su notificación (artículo 322 del CGP), interpongo recurso de apelación contra {{providencia_apelada}}, proferida el {{fecha_providencia_apelada}}.\n\n## REPAROS CONCRETOS\n\n{{reparos_apelacion_civil}}\n\n## SUSTENTACIÓN\n\n{{sustentacion_apelacion_civil}}\n\n## SOLICITUD\n\nSolicito conceder el recurso en el efecto que corresponda y remitir el expediente al superior para que revoque, modifique o adicione la providencia en el sentido de {{decision_apelacion_civil}}.\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juzgado_primera_instancia",
+     "label": "Juzgado que profirió la providencia"
+    },
+    {
+     "key": "providencia_apelada",
+     "label": "Sentencia o auto apelado"
+    },
+    {
+     "key": "fecha_providencia_apelada",
+     "label": "Fecha de la providencia"
+    },
+    {
+     "key": "reparos_apelacion_civil",
+     "label": "Reparos concretos"
+    },
+    {
+     "key": "sustentacion_apelacion_civil",
+     "label": "Sustentación",
+     "help": "Para autos: sustentación completa. Para sentencias: puede dejarse como «La sustentación se presentará ante el superior en la oportunidad del artículo 12 de la Ley 2213 de 2022»."
+    },
+    {
+     "key": "decision_apelacion_civil",
+     "label": "Decisión solicitada"
+    }
+   ],
+   "keywords": [
+    "apelación civil",
+    "sentencia",
+    "auto apelable",
+    "reparos concretos",
+    "superior"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 320 a 327; Ley 2213 de 2022, artículo 12."
+  },
+  {
+   "code": "CIVIL-LIQUIDACION-CREDITO-18",
+   "area": "civil",
+   "category": "Solicitud",
+   "title": "Liquidación del crédito",
+   "description": "Para presentar la liquidación actualizada de capital, intereses, costas y demás conceptos dentro de un proceso ejecutivo.",
+   "body": "# LIQUIDACIÓN DEL CRÉDITO\n\nSeñor(a)\n{{juzgado_civil}}\nE. S. D.\n\n**Proceso:** Ejecutivo de {{tipo_titulo_ejecutivo}}\n**Radicado:** {{radicado}}\n**Ejecutante:** {{cliente_nombre}}\n**Ejecutado:** {{deudor}}\n\nPresento liquidación del crédito con corte al {{fecha_corte_liquidacion}}:\n\n| Concepto | Valor |\n|---|---:|\n| Capital | {{capital_liquidacion}} |\n| Intereses de plazo | {{intereses_plazo_liquidacion}} |\n| Intereses moratorios | {{intereses_mora_liquidacion}} |\n| Costas y agencias aprobadas | {{costas_liquidacion}} |\n| Otros conceptos | {{otros_conceptos_liquidacion}} |\n| Total | {{total_liquidacion}} |\n\nLa liquidación se efectúa conforme a la tasa, periodos y abonos que se detallan en {{memoria_calculo_liquidacion}}.\n\nSolicito aprobarla, ordenar el pago y continuar la ejecución por el saldo que resulte.\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juzgado_civil",
+     "label": "Juzgado civil"
+    },
+    {
+     "key": "tipo_titulo_ejecutivo",
+     "label": "Tipo de título ejecutivo"
+    },
+    {
+     "key": "deudor",
+     "label": "Ejecutado"
+    },
+    {
+     "key": "fecha_corte_liquidacion",
+     "label": "Fecha de corte"
+    },
+    {
+     "key": "capital_liquidacion",
+     "label": "Capital"
+    },
+    {
+     "key": "intereses_plazo_liquidacion",
+     "label": "Intereses de plazo"
+    },
+    {
+     "key": "intereses_mora_liquidacion",
+     "label": "Intereses de mora"
+    },
+    {
+     "key": "costas_liquidacion",
+     "label": "Costas y agencias"
+    },
+    {
+     "key": "otros_conceptos_liquidacion",
+     "label": "Otros conceptos"
+    },
+    {
+     "key": "total_liquidacion",
+     "label": "Total"
+    },
+    {
+     "key": "memoria_calculo_liquidacion",
+     "label": "Memoria de cálculo",
+     "help": "Tasa aplicada mes a mes (interés bancario corriente certificado por la Superfinanciera × 1,5 para mora), periodos y abonos imputados primero a intereses (art. 1653 C.C.)"
+    }
+   ],
+   "keywords": [
+    "liquidación crédito",
+    "ejecutivo",
+    "intereses",
+    "capital",
+    "costas"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 446 y 447; Código de Comercio, artículo 884; Código Civil, artículo 1653."
+  },
+  {
+   "code": "CIVIL-ENTREGA-TITULOS-19",
+   "area": "civil",
+   "category": "Solicitud",
+   "title": "Solicitud de entrega de títulos judiciales",
+   "description": "Para solicitar la entrega o pago de depósitos judiciales constituidos a favor de una parte o beneficiario.",
+   "body": "# SOLICITUD DE ENTREGA DE TÍTULOS JUDICIALES\n\nSeñor(a)\n{{juzgado_civil}}\nE. S. D.\n\n**Proceso:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n**Beneficiario:** {{cliente_nombre}}\n\nSolicito ordenar la entrega del título o depósito judicial identificado con {{identificacion_titulo_judicial}}, por valor de {{valor_titulo_judicial}}, constituido dentro del proceso de la referencia.\n\n## FUNDAMENTO\n\nEl depósito corresponde a {{origen_titulo_judicial}} y se encuentra disponible porque {{razon_entrega_titulo}}.\n\nSolicito que el pago se realice a {{medio_entrega_titulo}} y se expida la constancia correspondiente.\n\n## ANEXOS\n\n{{anexos_titulo_judicial}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juzgado_civil",
+     "label": "Juzgado civil"
+    },
+    {
+     "key": "identificacion_titulo_judicial",
+     "label": "Número o identificación del título"
+    },
+    {
+     "key": "valor_titulo_judicial",
+     "label": "Valor"
+    },
+    {
+     "key": "origen_titulo_judicial",
+     "label": "Origen del depósito"
+    },
+    {
+     "key": "razon_entrega_titulo",
+     "label": "Razón jurídica de la entrega"
+    },
+    {
+     "key": "medio_entrega_titulo",
+     "label": "Medio o cuenta de pago"
+    },
+    {
+     "key": "anexos_titulo_judicial",
+     "label": "Anexos"
+    }
+   ],
+   "keywords": [
+    "título judicial",
+    "depósito judicial",
+    "entrega",
+    "pago",
+    "juzgado"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 447 y 455; reglamentación vigente del Consejo Superior de la Judicatura sobre depósitos judiciales."
+  },
+  {
+   "code": "CIVIL-NULIDAD-PROCESAL-20",
+   "area": "civil",
+   "category": "Solicitud",
+   "title": "Solicitud de nulidad procesal",
+   "description": "Para alegar una causal legal de nulidad y solicitar que se invalide la actuación afectada.",
+   "body": "# SOLICITUD DE NULIDAD PROCESAL\n\nSeñor(a)\n{{juzgado_civil}}\nE. S. D.\n\n**Proceso:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n\nSolicito declarar la nulidad de {{actuacion_nula}} con fundamento en la causal prevista en el numeral {{numeral_nulidad}} del artículo 133 del Código General del Proceso.\n\n## HECHOS\n\n{{hechos_nulidad_procesal}}\n\n## AFECTACIÓN DEL DERECHO DE DEFENSA\n\n{{afectacion_defensa_nulidad}}\n\n## OPORTUNIDAD Y AUSENCIA DE SANEAMIENTO\n\nLa nulidad se alega en la primera oportunidad procesal en que la parte pudo hacerlo y no ha sido saneada porque {{justificacion_no_saneamiento}}.\n\n## PETICIONES\n\n1. Declarar la nulidad desde {{momento_nulidad}}.\n\n2. Dejar sin efectos las actuaciones posteriores que dependan de la actuación viciada.\n\n3. Ordenar rehacer el trámite garantizando el debido proceso.\n\n## PRUEBAS\n\n{{pruebas_nulidad_procesal}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juzgado_civil",
+     "label": "Juzgado civil"
+    },
+    {
+     "key": "actuacion_nula",
+     "label": "Actuación cuya nulidad se solicita"
+    },
+    {
+     "key": "numeral_nulidad",
+     "label": "Numeral del artículo 133 del CGP"
+    },
+    {
+     "key": "hechos_nulidad_procesal",
+     "label": "Hechos"
+    },
+    {
+     "key": "afectacion_defensa_nulidad",
+     "label": "Afectación del debido proceso o defensa"
+    },
+    {
+     "key": "justificacion_no_saneamiento",
+     "label": "Razones por las que no se saneó"
+    },
+    {
+     "key": "momento_nulidad",
+     "label": "Actuación desde la cual debe invalidarse"
+    },
+    {
+     "key": "pruebas_nulidad_procesal",
+     "label": "Pruebas"
+    }
+   ],
+   "keywords": [
+    "nulidad procesal",
+    "debido proceso",
+    "notificación",
+    "defensa",
+    "CGP"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 133 a 138; Constitución Política, artículo 29."
+  },
+  {
+   "code": "CIVIL-LLAMAMIENTO-GARANTIA-21",
+   "area": "civil",
+   "category": "Solicitud",
+   "title": "Llamamiento en garantía",
+   "description": "Para vincular al proceso a quien, por ley o contrato, deba indemnizar o reembolsar total o parcialmente el pago de una eventual condena. Se formula con la demanda o dentro del término para contestarla; si el llamado no se notifica dentro de los 6 meses siguientes, el llamamiento será ineficaz (art. 66).",
+   "body": "# LLAMAMIENTO EN GARANTÍA\n\nSeñor(a)\n{{juzgado_civil}}\nE. S. D.\n\n**Proceso:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n**Solicitante:** {{cliente_nombre}}\n**Llamado en garantía:** {{llamado_garantia}}\n\nSolicito vincular como llamado en garantía a {{llamado_garantia}}, con fundamento en la relación jurídica consistente en {{relacion_garantia}}.\n\n## HECHOS\n\n{{hechos_llamamiento}}\n\n## RELACIÓN JURÍDICA\n\nEl llamado debe responder o reembolsar la eventual condena porque {{fundamento_reembolso_garantia}}.\n\n## PETICIONES\n\n1. Admitir el llamamiento.\n\n2. Ordenar la notificación personal del llamado y correrle traslado.\n\n3. Resolver en la sentencia la relación sustancial y las indemnizaciones o restituciones correspondientes.\n\n## ANEXOS\n\n{{anexos_llamamiento}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juzgado_civil",
+     "label": "Juzgado civil"
+    },
+    {
+     "key": "llamado_garantia",
+     "label": "Persona o entidad llamada"
+    },
+    {
+     "key": "relacion_garantia",
+     "label": "Relación legal o contractual"
+    },
+    {
+     "key": "hechos_llamamiento",
+     "label": "Hechos"
+    },
+    {
+     "key": "fundamento_reembolso_garantia",
+     "label": "Fundamento del reembolso o indemnización"
+    },
+    {
+     "key": "anexos_llamamiento",
+     "label": "Anexos"
+    }
+   ],
+   "keywords": [
+    "llamamiento en garantía",
+    "aseguradora",
+    "reembolso",
+    "tercero",
+    "vinculación"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 64, 65 y 66; Código de Comercio, artículos 1036 y siguientes (seguro)."
+  },
+  {
+   "code": "CIVIL-OBJECION-JURAMENTO-22",
+   "area": "civil",
+   "category": "Memorial",
+   "title": "Objeción al juramento estimatorio",
+   "description": "Para objetar razonadamente la cuantificación de perjuicios, frutos, mejoras o compensaciones realizada por la contraparte.",
+   "body": "# OBJECIÓN AL JURAMENTO ESTIMATORIO\n\nSeñor(a)\n{{juzgado_civil}}\nE. S. D.\n\n**Proceso:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n\nDentro del término de traslado objeto el juramento estimatorio presentado por {{parte_estimante}}.\n\n## CONCEPTOS OBJETADOS\n\n{{conceptos_objetados_juramento}}\n\n## RAZONES DE INEXACTITUD\n\n{{razones_objecion_juramento}}\n\n## CUANTÍA ALTERNATIVA\n\nLa cuantía que razonablemente corresponde, sin que implique aceptación de responsabilidad, sería {{cuantia_alternativa_juramento}}.\n\n## PRUEBAS\n\n{{pruebas_objecion_juramento}}\n\n## SOLICITUD\n\nSolicito tener por formulada la objeción, conceder a quien hizo la estimación el término de cinco (5) días para aportar o solicitar pruebas (artículo 206 del CGP), decretar las pruebas y no reconocer sumas que no sean demostradas.\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juzgado_civil",
+     "label": "Juzgado civil"
+    },
+    {
+     "key": "parte_estimante",
+     "label": "Parte que presentó el juramento"
+    },
+    {
+     "key": "conceptos_objetados_juramento",
+     "label": "Conceptos objetados"
+    },
+    {
+     "key": "razones_objecion_juramento",
+     "label": "Razones de inexactitud"
+    },
+    {
+     "key": "cuantia_alternativa_juramento",
+     "label": "Cuantía alternativa"
+    },
+    {
+     "key": "pruebas_objecion_juramento",
+     "label": "Pruebas"
+    }
+   ],
+   "keywords": [
+    "juramento estimatorio",
+    "objeción",
+    "perjuicios",
+    "cuantificación",
+    "prueba"
+   ],
+   "legalBasis": "Código General del Proceso, artículo 206."
+  },
+  {
+   "code": "CIVIL-TRANSACCION-23",
+   "area": "civil",
+   "category": "Contrato",
+   "title": "Contrato de transacción civil",
+   "description": "Para terminar extrajudicialmente un litigio pendiente o prevenir uno eventual mediante concesiones recíprocas.",
+   "body": "# CONTRATO DE TRANSACCIÓN\n\nEntre {{parte_a}}, identificado(a) con {{documento_parte_a}}, y {{parte_b}}, identificado(a) con {{documento_parte_b}}, se celebra el presente contrato de transacción, que se rige por los artículos 2469 y siguientes del Código Civil.\n\n## ANTECEDENTES\n\n{{antecedentes_transaccion}}\n\n## CONCESIONES RECÍPROCAS\n\n{{concesiones_parte_a}}\n\n{{concesiones_parte_b}}\n\n## ACUERDO\n\nLas partes acuerdan que {{acuerdo_transaccional}}.\n\nEl acuerdo comprende únicamente los derechos disponibles relacionados con {{objeto_transaccion}}. No comprende derechos de terceros ni materias legalmente indisponibles.\n\n## EFECTOS\n\nUna vez cumplidas las obligaciones pactadas, las partes se declaran a paz y salvo respecto del objeto transigido y solicitarán al juez la terminación del proceso identificado con {{radicado_transaccion}}, si existe.\n\n## INCUMPLIMIENTO\n\nEn caso de incumplimiento, la parte cumplida podrá exigir {{consecuencia_incumplimiento_transaccion}}.\n\nLa transacción produce el efecto de cosa juzgada en última instancia (artículo 2483 del Código Civil).\n\nEn {{ciudad}}, a {{fecha}}.\n\n\n{{parte_a}}\n{{documento_parte_a}}\n\n\n{{parte_b}}\n{{documento_parte_b}}",
+   "fields": [
+    {
+     "key": "parte_a",
+     "label": "Parte A"
+    },
+    {
+     "key": "parte_b",
+     "label": "Parte B"
+    },
+    {
+     "key": "antecedentes_transaccion",
+     "label": "Antecedentes del litigio"
+    },
+    {
+     "key": "concesiones_parte_a",
+     "label": "Concesiones de la parte A"
+    },
+    {
+     "key": "concesiones_parte_b",
+     "label": "Concesiones de la parte B"
+    },
+    {
+     "key": "acuerdo_transaccional",
+     "label": "Acuerdo final"
+    },
+    {
+     "key": "objeto_transaccion",
+     "label": "Derechos objeto de transacción"
+    },
+    {
+     "key": "radicado_transaccion",
+     "label": "Radicado del proceso",
+     "help": "Opcional"
+    },
+    {
+     "key": "consecuencia_incumplimiento_transaccion",
+     "label": "Consecuencia del incumplimiento"
+    },
+    {
+     "key": "documento_parte_a",
+     "label": "Documento de la parte A"
+    },
+    {
+     "key": "documento_parte_b",
+     "label": "Documento de la parte B"
+    }
+   ],
+   "keywords": [
+    "transacción",
+    "acuerdo civil",
+    "litigio",
+    "concesiones",
+    "terminación proceso"
+   ],
+   "legalBasis": "Código Civil, artículos 2469 a 2487; Código General del Proceso, artículo 312."
+  },
+  {
+   "code": "CIVIL-ARRENDAMIENTO-24",
+   "area": "civil",
+   "category": "Contrato",
+   "title": "Contrato de arrendamiento de inmueble",
+   "description": "Para regular el arrendamiento de un inmueble destinado a vivienda, comercio, oficina u otra actividad lícita.",
+   "body": "# CONTRATO DE ARRENDAMIENTO\n\nEntre {{arrendador_contrato}}, identificado(a) con {{documento_arrendador}}, quien se denominará EL ARRENDADOR, y {{arrendatario_contrato}}, identificado(a) con {{documento_arrendatario}}, quien se denominará EL ARRENDATARIO, se celebra el presente contrato.\n\n## INMUEBLE Y DESTINACIÓN\n\nEL ARRENDADOR entrega en arrendamiento el inmueble ubicado en {{inmueble_contrato_arrendamiento}}, para ser destinado exclusivamente a {{destinacion_inmueble}}.\n\n## PLAZO Y ENTREGA\n\nEl contrato inicia el {{fecha_inicio_arrendamiento}} y termina el {{fecha_fin_arrendamiento}}. El inmueble se entrega en el estado descrito en {{acta_entrega_arrendamiento}}.\n\n## CANON Y FORMA DE PAGO\n\nEl canon mensual es de {{canon_arrendamiento}}, pagadero dentro de los primeros {{dias_pago_canon}} días de cada periodo mediante {{medio_pago_canon}}.\n\n## REAJUSTE\n\nCada doce (12) meses de ejecución del contrato, el canon se reajustará {{regla_reajuste}}.\n\n## OBLIGACIONES\n\nEL ARRENDATARIO pagará oportunamente, conservará el inmueble, atenderá servicios y reparaciones a su cargo y lo restituirá al terminar el contrato. EL ARRENDADOR garantizará el goce pacífico y realizará las reparaciones que legalmente le correspondan.\n\n## GARANTÍAS Y TERMINACIÓN\n\n{{garantias_terminacion_arrendamiento}}\n\n## NOTIFICACIONES\n\n{{notificaciones_arrendamiento}}\n\nEn {{ciudad}}, a {{fecha}}.\n\n\nEL ARRENDADOR\n{{arrendador_contrato}}\n{{documento_arrendador}}\n\n\nEL ARRENDATARIO\n{{arrendatario_contrato}}\n{{documento_arrendatario}}",
+   "fields": [
+    {
+     "key": "arrendador_contrato",
+     "label": "Arrendador"
+    },
+    {
+     "key": "arrendatario_contrato",
+     "label": "Arrendatario"
+    },
+    {
+     "key": "inmueble_contrato_arrendamiento",
+     "label": "Identificación y dirección del inmueble"
+    },
+    {
+     "key": "destinacion_inmueble",
+     "label": "Destinación"
+    },
+    {
+     "key": "fecha_inicio_arrendamiento",
+     "label": "Fecha de inicio"
+    },
+    {
+     "key": "fecha_fin_arrendamiento",
+     "label": "Fecha de terminación"
+    },
+    {
+     "key": "acta_entrega_arrendamiento",
+     "label": "Acta o descripción de entrega"
+    },
+    {
+     "key": "canon_arrendamiento",
+     "label": "Canon"
+    },
+    {
+     "key": "dias_pago_canon",
+     "label": "Día límite de pago"
+    },
+    {
+     "key": "medio_pago_canon",
+     "label": "Medio de pago"
+    },
+    {
+     "key": "garantias_terminacion_arrendamiento",
+     "label": "Garantías y reglas de terminación",
+     "help": "Codeudores o póliza. En vivienda urbana no se pueden exigir depósitos en dinero (art. 16 de la Ley 820 de 2003). Incluya preaviso y causales de terminación."
+    },
+    {
+     "key": "notificaciones_arrendamiento",
+     "label": "Notificaciones"
+    },
+    {
+     "key": "documento_arrendador",
+     "label": "Documento del arrendador"
+    },
+    {
+     "key": "documento_arrendatario",
+     "label": "Documento del arrendatario"
+    },
+    {
+     "key": "regla_reajuste",
+     "label": "Regla de reajuste del canon",
+     "help": "En vivienda urbana, máximo el IPC del año anterior y sin superar el 1 % del valor comercial del inmueble (arts. 18 y 20 de la Ley 820 de 2003)"
+    }
+   ],
+   "keywords": [
+    "contrato arrendamiento",
+    "inmueble",
+    "canon",
+    "arrendador",
+    "arrendatario"
+   ],
+   "legalBasis": "Código Civil, artículos 1973 a 2044; Ley 820 de 2003 (vivienda urbana); Código de Comercio, artículos 518 a 524 (locales comerciales)."
+  },
+  {
+   "code": "CIVIL-CONCILIACION-EXTRAJUDICIAL-25",
+   "area": "civil",
+   "category": "Solicitud",
+   "title": "Solicitud de conciliación extrajudicial en derecho (civil)",
+   "description": "Para convocar a la contraparte a conciliación ante un centro de conciliación, notario o conciliador, como requisito de procedibilidad de procesos declarativos civiles.",
+   "body": "Señores\n{{centro_conciliacion}}\nCiudad\n\n**Convocante:** {{cliente_nombre}}\n**Convocado:** {{contraparte}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, por medio de apoderado(a), solicito citar a audiencia de conciliación extrajudicial en derecho a {{contraparte}}, identificado(a) con {{documento_convocado}}.\n\n## HECHOS\n\n{{hechos_conciliacion}}\n\n## PRETENSIONES\n\n{{pretensiones_conciliacion}}\n\n## CUANTÍA\n\n{{cuantia_conciliacion}}\n\n## PRUEBAS Y ANEXOS\n\n{{pruebas_conciliacion}}\n\n## NOTIFICACIONES\n\n**Convocante:** {{cliente_correo}}. Apoderado(a): {{abogado_correo}}. Convocado: {{direccion_convocado}}.\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "centro_conciliacion",
+     "label": "Centro de conciliación, notaría o conciliador"
+    },
+    {
+     "key": "documento_convocado",
+     "label": "Documento del convocado"
+    },
+    {
+     "key": "hechos_conciliacion",
+     "label": "Hechos"
+    },
+    {
+     "key": "pretensiones_conciliacion",
+     "label": "Pretensiones"
+    },
+    {
+     "key": "cuantia_conciliacion",
+     "label": "Cuantía"
+    },
+    {
+     "key": "pruebas_conciliacion",
+     "label": "Pruebas y anexos"
+    },
+    {
+     "key": "direccion_convocado",
+     "label": "Dirección física y electrónica del convocado"
+    }
+   ],
+   "keywords": [
+    "conciliación",
+    "requisito de procedibilidad",
+    "centro de conciliación",
+    "audiencia",
+    "civil"
+   ],
+   "legalBasis": "Ley 2220 de 2022; Código General del Proceso, artículo 590 parágrafo 1."
+  }
+ ]
+}

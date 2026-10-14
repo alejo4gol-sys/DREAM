@@ -1,0 +1,816 @@
+{
+ "templates": [
+  {
+   "code": "ADMINISTRATIVO-PETICION-PARTICULAR-01",
+   "area": "administrativo",
+   "category": "Petición",
+   "title": "Derecho de petición de interés particular",
+   "description": "Para solicitar a una autoridad el reconocimiento de un derecho, la resolución de una situación jurídica, la prestación de un servicio o una decisión sobre un asunto individual.",
+   "body": "# DERECHO DE PETICIÓN DE INTERÉS PARTICULAR\n\nSeñores\n{{entidad_destinataria}}\nCiudad\n\n**Peticionario:** {{cliente_nombre}}\n**Asunto:** Derecho de petición de interés particular\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, actuando {{forma_actuacion}}, presento petición respetuosa para que se resuelva de fondo lo siguiente:\n\n## HECHOS\n\n{{hechos_peticion}}\n\n## PETICIONES\n\n1. {{peticion_1}}\n\n2. {{peticion_2}}\n\n3. {{peticion_3}}\n\n## FUNDAMENTOS\n\n{{fundamentos_peticion}}\n\n## DOCUMENTOS\n\n{{documentos_peticion}}\n\nSolicito que la respuesta se emita dentro de los quince (15) días hábiles siguientes a la recepción (artículo 14 de la Ley 1437 de 2011) y que sea completa, clara, congruente y de fondo, y que sea enviada al correo {{cliente_correo}} y al correo del apoderado {{abogado_correo}}.\n\nEn caso de no ser competente, solicito remitir la petición a la autoridad competente dentro de los cinco (5) días siguientes e informarme de dicha remisión (artículo 21 de la Ley 1437 de 2011).\n\n## NOTIFICACIONES\n\n{{cliente_nombre}}: {{cliente_correo}}.\n\n{{abogado_nombre}}: {{abogado_correo}}.\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "entidad_destinataria",
+     "label": "Entidad o autoridad destinataria"
+    },
+    {
+     "key": "hechos_peticion",
+     "label": "Hechos"
+    },
+    {
+     "key": "peticion_1",
+     "label": "Primera petición"
+    },
+    {
+     "key": "peticion_2",
+     "label": "Segunda petición",
+     "help": "Opcional: si no la usa, borre la línea en el borrador"
+    },
+    {
+     "key": "peticion_3",
+     "label": "Tercera petición",
+     "help": "Opcional: si no la usa, borre la línea en el borrador"
+    },
+    {
+     "key": "fundamentos_peticion",
+     "label": "Fundamentos fácticos y jurídicos"
+    },
+    {
+     "key": "documentos_peticion",
+     "label": "Documentos que se anexan"
+    },
+    {
+     "key": "forma_actuacion",
+     "label": "Cómo actúa el peticionario",
+     "help": "Ej. «en nombre propio» o «por medio de apoderado(a), según poder adjunto». La petición no requiere abogado."
+    }
+   ],
+   "keywords": [
+    "derecho de petición",
+    "interés particular",
+    "entidad pública",
+    "reconocimiento de derecho",
+    "solicitud"
+   ],
+   "legalBasis": "Constitución Política, artículo 23; Ley 1437 de 2011, artículos 13 a 21, sustituidos por la Ley Estatutaria 1755 de 2015."
+  },
+  {
+   "code": "ADMINISTRATIVO-PETICION-INFORMACION-02",
+   "area": "administrativo",
+   "category": "Petición",
+   "title": "Solicitud de información y documentos públicos",
+   "description": "Para solicitar información pública, consultar documentos o pedir copias físicas o digitales a una autoridad.",
+   "body": "# DERECHO DE PETICIÓN DE INFORMACIÓN Y DOCUMENTOS\n\nSeñores\n{{entidad_destinataria}}\nCiudad\n\n**Solicitante:** {{cliente_nombre}}\n\n## INFORMACIÓN O DOCUMENTOS SOLICITADOS\n\nSolicito acceso, consulta y/o copia de los siguientes documentos o informaciones:\n\n{{informacion_documentos_solicitados}}\n\n## FINALIDAD\n\nLa información se solicita para {{finalidad_solicitud_informacion}}.\n\n## TÉRMINO\n\nSolicito que la información se entregue dentro de los diez (10) días hábiles siguientes a la recepción de esta solicitud (artículo 14, numeral 1, de la Ley 1437 de 2011).\n\n## MEDIO DE ENTREGA\n\nSolicito que la información sea entregada en formato {{formato_entrega}} al correo {{cliente_correo}}. Si existen costos de reproducción, solicito informar previamente su valor.\n\nSi algún documento está sometido a reserva, solicito indicar la norma específica que la establece, explicar las razones de la reserva y entregar la información no reservada o parcialmente accesible. En caso de rechazo por reserva, desde ahora insisto en la solicitud para que se remita al tribunal o juez administrativo competente, conforme al artículo 26 de la Ley 1437 de 2011.\n\n## ANEXOS\n\n{{anexos_informacion}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "entidad_destinataria",
+     "label": "Entidad destinataria"
+    },
+    {
+     "key": "informacion_documentos_solicitados",
+     "label": "Información o documentos solicitados"
+    },
+    {
+     "key": "finalidad_solicitud_informacion",
+     "label": "Finalidad de la solicitud"
+    },
+    {
+     "key": "formato_entrega",
+     "label": "Formato de entrega",
+     "help": "PDF, Excel, consulta presencial u otro"
+    },
+    {
+     "key": "anexos_informacion",
+     "label": "Anexos"
+    }
+   ],
+   "keywords": [
+    "información pública",
+    "copias",
+    "documentos",
+    "acceso",
+    "transparencia"
+   ],
+   "legalBasis": "Constitución Política, artículos 23 y 74; Ley 1437 de 2011, artículos 14, 24 a 27 y 29, sustituidos por la Ley 1755 de 2015; Ley 1712 de 2014."
+  },
+  {
+   "code": "ADMINISTRATIVO-PETICION-PRIVADA-03",
+   "area": "administrativo",
+   "category": "Petición",
+   "title": "Derecho de petición ante entidad privada",
+   "description": "Para ejercer el derecho de petición ante una organización privada, prestador de servicio público o entidad que deba garantizar derechos fundamentales.",
+   "body": "# DERECHO DE PETICIÓN ANTE ENTIDAD PRIVADA\n\nSeñores\n{{entidad_privada}}\nCiudad\n\n**Peticionario:** {{cliente_nombre}}\n\n## HECHOS\n\n{{hechos_peticion_privada}}\n\n## PETICIONES\n\n1. {{peticion_privada_1}}\n\n2. {{peticion_privada_2}}\n\n3. {{peticion_privada_3}}\n\n## FUNDAMENTOS\n\nLa petición se formula para garantizar {{derecho_o_interes_protegido}} y obtener información, respuesta o actuación relacionada con {{relacion_con_entidad_privada}}.\n\n## ANEXOS\n\n{{anexos_peticion_privada}}\n\nSolicito respuesta de fondo dentro de los quince (15) días hábiles siguientes a su recepción (artículos 14 y 32 de la Ley 1437 de 2011) y que sea enviada a {{cliente_correo}} y {{abogado_correo}}.\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "entidad_privada",
+     "label": "Entidad privada destinataria"
+    },
+    {
+     "key": "hechos_peticion_privada",
+     "label": "Hechos"
+    },
+    {
+     "key": "peticion_privada_1",
+     "label": "Primera petición"
+    },
+    {
+     "key": "peticion_privada_2",
+     "label": "Segunda petición",
+     "help": "Opcional: si no la usa, borre la línea en el borrador"
+    },
+    {
+     "key": "peticion_privada_3",
+     "label": "Tercera petición",
+     "help": "Opcional: si no la usa, borre la línea en el borrador"
+    },
+    {
+     "key": "derecho_o_interes_protegido",
+     "label": "Derecho o interés protegido"
+    },
+    {
+     "key": "relacion_con_entidad_privada",
+     "label": "Relación con la entidad privada"
+    },
+    {
+     "key": "anexos_peticion_privada",
+     "label": "Anexos"
+    }
+   ],
+   "keywords": [
+    "petición entidad privada",
+    "empresa",
+    "servicio público",
+    "derecho de petición",
+    "reclamo"
+   ],
+   "legalBasis": "Constitución Política, artículo 23; Ley 1437 de 2011, artículos 14, 32 y 33, sustituidos por la Ley 1755 de 2015; normas especiales aplicables (servicios públicos, salud, financiero)."
+  },
+  {
+   "code": "ADMINISTRATIVO-RECURSO-REPOSICION-04",
+   "area": "administrativo",
+   "category": "Recurso",
+   "title": "Recurso de reposición contra acto administrativo",
+   "description": "Para solicitar a la misma autoridad que aclare, modifique, adicione o revoque un acto administrativo definitivo. Se presenta dentro de los 10 días siguientes a la notificación. No es obligatorio para demandar (la apelación sí, cuando procede).",
+   "body": "# RECURSO DE REPOSICIÓN\n\nSeñores\n{{entidad_destinataria}}\nCiudad\n\n**Recurrente:** {{cliente_nombre}}\n**Acto recurrido:** {{acto_recurrido}}\n**Radicado:** {{radicado_administrativo}}\n\nDentro de los diez (10) días siguientes a su notificación (artículo 76 de la Ley 1437 de 2011), interpongo y sustento recurso de reposición contra el acto administrativo notificado el {{fecha_notificacion_acto}}.\n\n## HECHOS Y ANTECEDENTES\n\n{{antecedentes_recurso_administrativo}}\n\n## MOTIVOS DE INCONFORMIDAD\n\n{{motivos_recurso_administrativo}}\n\n## PRUEBAS\n\n{{pruebas_recurso_administrativo}}\n\n## PETICIONES\n\n1. Que se admita y tramite el recurso.\n\n2. Que se decreten y practiquen las pruebas solicitadas (artículo 79 de la Ley 1437 de 2011).\n\n3. Que se revoque, modifique, aclare o adicione el acto recurrido en el sentido de {{decision_solicitada}}.\n\n4. Subsidiariamente, que se adopte la decisión jurídicamente procedente con fundamento en las razones expuestas.\n\n## NOTIFICACIONES\n\n{{notificaciones_administrativas}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "entidad_destinataria",
+     "label": "Autoridad que expidió el acto"
+    },
+    {
+     "key": "acto_recurrido",
+     "label": "Identificación del acto administrativo"
+    },
+    {
+     "key": "radicado_administrativo",
+     "label": "Radicado o número del acto"
+    },
+    {
+     "key": "fecha_notificacion_acto",
+     "label": "Fecha de notificación"
+    },
+    {
+     "key": "antecedentes_recurso_administrativo",
+     "label": "Antecedentes"
+    },
+    {
+     "key": "motivos_recurso_administrativo",
+     "label": "Motivos jurídicos y fácticos"
+    },
+    {
+     "key": "pruebas_recurso_administrativo",
+     "label": "Pruebas"
+    },
+    {
+     "key": "decision_solicitada",
+     "label": "Decisión solicitada"
+    },
+    {
+     "key": "notificaciones_administrativas",
+     "label": "Direcciones y correos de notificación"
+    }
+   ],
+   "keywords": [
+    "recurso de reposición",
+    "acto administrativo",
+    "revocar",
+    "modificar",
+    "administrativo"
+   ],
+   "legalBasis": "Ley 1437 de 2011, artículos 74 a 82."
+  },
+  {
+   "code": "ADMINISTRATIVO-RECURSO-APELACION-05",
+   "area": "administrativo",
+   "category": "Recurso",
+   "title": "Recurso de apelación contra acto administrativo",
+   "description": "Para solicitar al superior funcional que revise un acto administrativo cuando la apelación sea procedente.",
+   "body": "# RECURSO DE APELACIÓN\n\nSeñores\n{{autoridad_que_expide_acto}}\nPara ante {{superior_funcional}}\nCiudad\n\n**Recurrente:** {{cliente_nombre}}\n**Acto recurrido:** {{acto_recurrido}}\n**Radicado:** {{radicado_administrativo}}\n\nDentro de los diez (10) días siguientes a su notificación (artículo 76 de la Ley 1437 de 2011), interpongo y sustento recurso de apelación, {{modalidad_apelacion}}, contra el acto notificado el {{fecha_notificacion_acto}}.\n\n## ANTECEDENTES\n\n{{antecedentes_apelacion}}\n\n## MOTIVOS DE APELACIÓN\n\n{{motivos_apelacion}}\n\n## PRUEBAS\n\n{{pruebas_apelacion}}\n\n## PETICIONES\n\n1. Que se conceda el recurso y se remita el expediente al superior competente.\n\n2. Que se revoque o modifique el acto recurrido y se decida {{decision_solicitada}}.\n\n3. Que se valoren las pruebas y argumentos expuestos.\n\nSi la apelación se interpone en subsidio de reposición, solicito que se conceda si la reposición es decidida desfavorablemente. Se advierte que este recurso, cuando procede, es obligatorio para acudir a la jurisdicción contencioso administrativa (artículo 161, numeral 2, de la Ley 1437 de 2011).\n\n## NOTIFICACIONES\n\n{{notificaciones_administrativas}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "autoridad_que_expide_acto",
+     "label": "Autoridad que expidió el acto"
+    },
+    {
+     "key": "superior_funcional",
+     "label": "Superior funcional",
+     "help": "No procede apelación contra las decisiones de ministros, directores de departamento administrativo, superintendentes y jefes de entidades descentralizadas o constitucionalmente autónomas (art. 74 num. 2)"
+    },
+    {
+     "key": "acto_recurrido",
+     "label": "Identificación del acto"
+    },
+    {
+     "key": "radicado_administrativo",
+     "label": "Radicado o número del acto"
+    },
+    {
+     "key": "fecha_notificacion_acto",
+     "label": "Fecha de notificación"
+    },
+    {
+     "key": "antecedentes_apelacion",
+     "label": "Antecedentes"
+    },
+    {
+     "key": "motivos_apelacion",
+     "label": "Motivos de apelación"
+    },
+    {
+     "key": "pruebas_apelacion",
+     "label": "Pruebas"
+    },
+    {
+     "key": "decision_solicitada",
+     "label": "Decisión solicitada"
+    },
+    {
+     "key": "notificaciones_administrativas",
+     "label": "Direcciones y correos de notificación"
+    },
+    {
+     "key": "modalidad_apelacion",
+     "label": "Modalidad",
+     "help": "«directamente» o «en subsidio del de reposición»"
+    }
+   ],
+   "keywords": [
+    "recurso de apelación",
+    "superior funcional",
+    "acto administrativo",
+    "vía administrativa",
+    "recurso"
+   ],
+   "legalBasis": "Ley 1437 de 2011, artículos 74 a 82 y 161 numeral 2."
+  },
+  {
+   "code": "ADMINISTRATIVO-REVOCATORIA-DIRECTA-06",
+   "area": "administrativo",
+   "category": "Solicitud",
+   "title": "Solicitud de revocatoria directa",
+   "description": "Para solicitar que la autoridad revoque directamente un acto administrativo por oposición manifiesta a la ley o la Constitución, afectación del interés público o agravio injustificado.",
+   "body": "# SOLICITUD DE REVOCATORIA DIRECTA\n\nSeñores\n{{entidad_competente}}\nCiudad\n\n**Solicitante:** {{cliente_nombre}}\n**Acto administrativo:** {{acto_revocatoria}}\n\n## ANTECEDENTES\n\n{{antecedentes_revocatoria}}\n\n## CAUSAL INVOCADA\n\nLa solicitud se fundamenta en la causal del artículo 93 de la Ley 1437 de 2011 consistente en {{causal_revocatoria}}, porque {{explicacion_causal_revocatoria}}.\n\n## PROCEDENCIA\n\nManifiesto que {{situacion_recursos_y_caducidad}}. También informo que {{situacion_demanda_contenciosa}}, teniendo en cuenta que la revocatoria directa no procede cuando se ha notificado el auto admisorio de la demanda.\n\n## ADVERTENCIA\n\nEsta solicitud y la decisión que la resuelva no reviven los términos para interponer recursos ni para demandar, ni dan lugar a la aplicación del silencio administrativo (artículo 96 de la Ley 1437 de 2011).\n\n## PETICIONES\n\n1. Que se admita la solicitud.\n\n2. Que se revoque totalmente el acto administrativo identificado.\n\n3. Subsidiariamente, que se revoque parcialmente y se adopte la decisión de {{decision_solicitada}}.\n\n4. Que la solicitud se resuelva dentro de los dos (2) meses siguientes a su presentación (artículo 95 de la Ley 1437 de 2011).\n\n## PRUEBAS Y ANEXOS\n\n{{pruebas_revocatoria}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "entidad_competente",
+     "label": "Autoridad que expidió el acto o superior funcional"
+    },
+    {
+     "key": "acto_revocatoria",
+     "label": "Acto objeto de revocatoria"
+    },
+    {
+     "key": "antecedentes_revocatoria",
+     "label": "Antecedentes"
+    },
+    {
+     "key": "causal_revocatoria",
+     "label": "Causal invocada",
+     "help": "1. Manifiesta oposición a la Constitución o la ley. 2. No conformidad con el interés público o social. 3. Agravio injustificado a una persona. Por la causal 1 no procede a petición de parte si el peticionario interpuso los recursos (art. 94)."
+    },
+    {
+     "key": "explicacion_causal_revocatoria",
+     "label": "Explicación de la causal"
+    },
+    {
+     "key": "situacion_recursos_y_caducidad",
+     "label": "Información sobre recursos y caducidad"
+    },
+    {
+     "key": "situacion_demanda_contenciosa",
+     "label": "Información sobre demanda contencioso administrativa"
+    },
+    {
+     "key": "decision_solicitada",
+     "label": "Decisión solicitada"
+    },
+    {
+     "key": "pruebas_revocatoria",
+     "label": "Pruebas y anexos"
+    }
+   ],
+   "keywords": [
+    "revocatoria directa",
+    "acto administrativo",
+    "artículo 93",
+    "legalidad",
+    "agravio injustificado"
+   ],
+   "legalBasis": "Ley 1437 de 2011, artículos 93 a 97."
+  },
+  {
+   "code": "ADMINISTRATIVO-CONCILIACION-PROCURADURIA-07",
+   "area": "administrativo",
+   "category": "Solicitud",
+   "title": "Solicitud de conciliación prejudicial ante la Procuraduría",
+   "description": "Para agotar el requisito de procedibilidad en asuntos conciliables de nulidad y restablecimiento del derecho, reparación directa o controversias contractuales. La solicitud suspende el término de caducidad en los términos de la ley.",
+   "body": "# SOLICITUD DE CONCILIACIÓN EXTRAJUDICIAL EN ASUNTOS ADMINISTRATIVOS\n\nSeñor(a)\nPROCURADOR(A) JUDICIAL PARA ASUNTOS ADMINISTRATIVOS\n{{procuraduria_competente}}\nCiudad\n\n**Convocante:** {{cliente_nombre}}\n**Convocado:** {{entidad_convocada}}\n**Apoderado:** {{abogado_nombre}}\n\n## IDENTIFICACIÓN DE LAS PARTES\n\n{{identificacion_partes_conciliacion}}\n\n## HECHOS\n\n{{hechos_conciliacion_administrativa}}\n\n## FUNDAMENTOS JURÍDICOS\n\n{{fundamentos_conciliacion_administrativa}}\n\n## PRETENSIONES DE LA EVENTUAL DEMANDA\n\n{{pretensiones_eventual_demanda}}\n\n## FÓRMULA DE CONCILIACIÓN\n\n{{formula_conciliacion_administrativa}}\n\n## CUANTÍA Y MEDIO DE CONTROL\n\n**Cuantía estimada:** {{cuantia_conciliacion}}\n**Medio de control:** {{medio_control_conciliacion}}\n\n## PRUEBAS\n\n{{pruebas_conciliacion_administrativa}}\n\n## AGOTAMIENTO DE LA ACTUACIÓN ADMINISTRATIVA\n\n{{agotamiento_actuacion_administrativa}}\n\n## ENVÍO A LA PARTE CONVOCADA\n\nCopia de esta solicitud y sus anexos se remitió a la entidad convocada: {{constancia_envio_convocado}}.\n\n## SOLICITUDES\n\n1. Que se admita la solicitud y se cite a las partes a audiencia.\n\n2. Que se tenga por agotado el requisito de procedibilidad cuando se expida la constancia correspondiente.\n\n3. Que se remita copia a la Agencia Nacional de Defensa Jurídica del Estado cuando legalmente corresponda.\n\n## NOTIFICACIONES\n\n{{notificaciones_conciliacion}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "procuraduria_competente",
+     "label": "Procuraduría Judicial competente"
+    },
+    {
+     "key": "entidad_convocada",
+     "label": "Entidad pública convocada"
+    },
+    {
+     "key": "identificacion_partes_conciliacion",
+     "label": "Identificación de partes y representantes"
+    },
+    {
+     "key": "hechos_conciliacion_administrativa",
+     "label": "Hechos"
+    },
+    {
+     "key": "fundamentos_conciliacion_administrativa",
+     "label": "Fundamentos jurídicos"
+    },
+    {
+     "key": "pretensiones_eventual_demanda",
+     "label": "Pretensiones de la eventual demanda"
+    },
+    {
+     "key": "formula_conciliacion_administrativa",
+     "label": "Fórmula de conciliación"
+    },
+    {
+     "key": "cuantia_conciliacion",
+     "label": "Cuantía razonada"
+    },
+    {
+     "key": "medio_control_conciliacion",
+     "label": "Medio de control que se ejercería",
+     "help": "Nulidad y restablecimiento del derecho, reparación directa o controversias contractuales. En asuntos laborales y pensionales la conciliación es facultativa."
+    },
+    {
+     "key": "pruebas_conciliacion_administrativa",
+     "label": "Pruebas"
+    },
+    {
+     "key": "agotamiento_actuacion_administrativa",
+     "label": "Agotamiento de recursos y procedimiento administrativo"
+    },
+    {
+     "key": "notificaciones_conciliacion",
+     "label": "Direcciones y correos de notificación"
+    },
+    {
+     "key": "constancia_envio_convocado",
+     "label": "Constancia de envío a la entidad convocada",
+     "help": "Correo de notificaciones judiciales de la entidad y fecha de envío"
+    }
+   ],
+   "keywords": [
+    "conciliación prejudicial",
+    "Procuraduría",
+    "nulidad y restablecimiento",
+    "reparación directa",
+    "controversias contractuales"
+   ],
+   "legalBasis": "Ley 1437 de 2011, artículos 138, 140, 141 y 161 numeral 1 (modificado por la Ley 2080 de 2021); Ley 2220 de 2022 (conciliación extrajudicial en asuntos de lo contencioso administrativo)."
+  },
+  {
+   "code": "ADMINISTRATIVO-DEMANDA-NULIDAD-08",
+   "area": "administrativo",
+   "category": "Demanda",
+   "title": "Demanda de nulidad contra acto administrativo general",
+   "description": "Para solicitar la nulidad de un acto administrativo de carácter general por infracción del ordenamiento jurídico.",
+   "body": "# DEMANDA DE NULIDAD\n\nSeñor(a)\n{{juez_o_tribunal_contencioso}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandado:** {{entidad_autora_acto}}\n\n## ACTO DEMANDADO\n\n{{acto_general_demandado}}\n\n## PRETENSIONES\n\n1. Que se declare la nulidad total o parcial del acto administrativo identificado.\n\n2. Que se ordenen las medidas consecuenciales legalmente procedentes.\n\n## HECHOS\n\n{{hechos_nulidad}}\n\n## NORMAS VIOLADAS Y CONCEPTO DE VIOLACIÓN\n\n**Normas violadas:** {{normas_violadas_nulidad}}\n**Concepto de violación:** {{concepto_violacion_nulidad}}\n\n## COMPETENCIA, OPORTUNIDAD Y PROCEDENCIA\n\n{{competencia_oportunidad_nulidad}}\n\n## MEDIDA CAUTELAR\n\n{{medida_cautelar_nulidad}}\n\n## PRUEBAS\n\n{{pruebas_nulidad}}\n\n## ANEXOS\n\nSe anexa copia del acto demandado y las constancias de publicación, comunicación o ejecución disponibles, junto con el poder y los demás documentos pertinentes.\n\n{{anexos_nulidad}}\n\n## ENVÍO SIMULTÁNEO\n\nDe conformidad con el numeral 8 del artículo 162 de la Ley 1437 de 2011 (adicionado por la Ley 2080 de 2021), la demanda y sus anexos se enviaron simultáneamente por medio electrónico a la parte demandada: {{constancia_envio_demanda}}.\n\n## NOTIFICACIONES\n\n{{notificaciones_demanda_administrativa}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_o_tribunal_contencioso",
+     "label": "Juzgado o tribunal administrativo competente"
+    },
+    {
+     "key": "entidad_autora_acto",
+     "label": "Entidad que expidió el acto"
+    },
+    {
+     "key": "acto_general_demandado",
+     "label": "Identificación y texto del acto general"
+    },
+    {
+     "key": "hechos_nulidad",
+     "label": "Hechos"
+    },
+    {
+     "key": "normas_violadas_nulidad",
+     "label": "Normas violadas"
+    },
+    {
+     "key": "concepto_violacion_nulidad",
+     "label": "Concepto de violación"
+    },
+    {
+     "key": "competencia_oportunidad_nulidad",
+     "label": "Competencia, oportunidad y procedencia",
+     "help": "La nulidad puede demandarse en cualquier tiempo (art. 164 num. 1 lit. a). Competencia según la autoridad que expidió el acto: Consejo de Estado (nacional), tribunal (departamental) o juez administrativo (municipal y distrital)."
+    },
+    {
+     "key": "pruebas_nulidad",
+     "label": "Pruebas"
+    },
+    {
+     "key": "anexos_nulidad",
+     "label": "Anexos"
+    },
+    {
+     "key": "notificaciones_demanda_administrativa",
+     "label": "Notificaciones"
+    },
+    {
+     "key": "medida_cautelar_nulidad",
+     "label": "Solicitud de suspensión provisional (si se pide)",
+     "help": "Puede pedirse en la demanda o en escrito separado (arts. 229 a 231 del CPACA). Escriba «No se solicita» si no aplica."
+    },
+    {
+     "key": "constancia_envio_demanda",
+     "label": "Constancia de envío simultáneo de la demanda",
+     "help": "Correo al que se envió y fecha. No se exige si se piden medidas cautelares previas o se desconoce el canal digital del demandado."
+    }
+   ],
+   "keywords": [
+    "demanda de nulidad",
+    "acto general",
+    "CPACA",
+    "concepto de violación",
+    "contencioso administrativo"
+   ],
+   "legalBasis": "Constitución Política, artículo 237; Ley 1437 de 2011, artículos 137, 149, 151, 155, 162 a 166 y 229 a 231; Ley 2080 de 2021."
+  },
+  {
+   "code": "ADMINISTRATIVO-DEMANDA-NULIDAD-RESTABLECIMIENTO-09",
+   "area": "administrativo",
+   "category": "Demanda",
+   "title": "Demanda de nulidad y restablecimiento del derecho",
+   "description": "Para controvertir un acto administrativo particular, expreso o presunto, y obtener el restablecimiento del derecho o la reparación del daño.",
+   "body": "# DEMANDA DE NULIDAD Y RESTABLECIMIENTO DEL DERECHO\n\nSeñor(a)\n{{juez_o_tribunal_contencioso}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandada:** {{entidad_demandada}}\n\n## ACTOS DEMANDADOS\n\n{{actos_demandados}}\n\n## PRETENSIONES\n\n1. Que se declare la nulidad de los actos demandados.\n\n2. Que, como restablecimiento del derecho, se ordene {{restablecimiento_solicitado}}.\n\n3. Que se reconozcan y paguen los perjuicios, diferencias, indexaciones, intereses y demás conceptos legalmente procedentes por {{valor_pretensiones}}.\n\n4. Que se condene en costas cuando haya lugar.\n\n## HECHOS\n\n{{hechos_nulidad_restablecimiento}}\n\n## NORMAS VIOLADAS Y CONCEPTO DE VIOLACIÓN\n\n{{normas_y_concepto_violacion}}\n\n## COMPETENCIA, CADUCIDAD Y REQUISITOS PREVIOS\n\n{{competencia_caducidad_requisitos}}\n\n## PRUEBAS\n\n{{pruebas_nulidad_restablecimiento}}\n\n## ENVÍO SIMULTÁNEO\n\nDe conformidad con el numeral 8 del artículo 162 de la Ley 1437 de 2011 (adicionado por la Ley 2080 de 2021), la demanda y sus anexos se enviaron simultáneamente por medio electrónico a la parte demandada: {{constancia_envio_demanda}}.\n\n## ANEXOS Y NOTIFICACIONES\n\n{{anexos_nulidad_restablecimiento}}\n\n{{notificaciones_demanda_administrativa}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_o_tribunal_contencioso",
+     "label": "Juzgado o tribunal competente"
+    },
+    {
+     "key": "entidad_demandada",
+     "label": "Entidad demandada"
+    },
+    {
+     "key": "actos_demandados",
+     "label": "Actos administrativos demandados"
+    },
+    {
+     "key": "restablecimiento_solicitado",
+     "label": "Restablecimiento solicitado"
+    },
+    {
+     "key": "valor_pretensiones",
+     "label": "Estimación razonada de la cuantía",
+     "help": "Determina la competencia (art. 157 del CPACA)"
+    },
+    {
+     "key": "hechos_nulidad_restablecimiento",
+     "label": "Hechos"
+    },
+    {
+     "key": "normas_y_concepto_violacion",
+     "label": "Normas violadas y concepto de violación"
+    },
+    {
+     "key": "competencia_caducidad_requisitos",
+     "label": "Competencia, caducidad, recursos y conciliación",
+     "help": "Fecha de notificación o publicación del acto. Caducidad: 4 meses (art. 164 num. 2 lit. d); en cualquier tiempo si es acto presunto o prestaciones periódicas. Recursos obligatorios agotados (art. 161 num. 2) y constancia de conciliación cuando sea exigible."
+    },
+    {
+     "key": "pruebas_nulidad_restablecimiento",
+     "label": "Pruebas"
+    },
+    {
+     "key": "anexos_nulidad_restablecimiento",
+     "label": "Anexos"
+    },
+    {
+     "key": "notificaciones_demanda_administrativa",
+     "label": "Notificaciones"
+    },
+    {
+     "key": "constancia_envio_demanda",
+     "label": "Constancia de envío simultáneo de la demanda",
+     "help": "Correo al que se envió y fecha. No se exige si se piden medidas cautelares previas o se desconoce el canal digital del demandado."
+    }
+   ],
+   "keywords": [
+    "nulidad y restablecimiento",
+    "acto particular",
+    "acto presunto",
+    "caducidad",
+    "reparación"
+   ],
+   "legalBasis": "Constitución Política, artículos 29, 90 y 229; Ley 1437 de 2011, artículos 138, 157, 161 a 166; Ley 2080 de 2021; Ley 2220 de 2022."
+  },
+  {
+   "code": "ADMINISTRATIVO-DEMANDA-REPARACION-DIRECTA-10",
+   "area": "administrativo",
+   "category": "Demanda",
+   "title": "Demanda de reparación directa",
+   "description": "Para solicitar la reparación de un daño antijurídico causado por acción, omisión, hecho, operación administrativa u ocupación imputable al Estado.",
+   "body": "# DEMANDA DE REPARACIÓN DIRECTA\n\nSeñor(a)\n{{juez_o_tribunal_contencioso}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandada:** {{entidad_demandada}}\n\n## PRETENSIONES\n\n1. Que se declare responsable a {{entidad_demandada}} por los daños antijurídicos causados a {{cliente_nombre}}.\n\n2. Que se condene al pago de {{perjuicios_materiales_reparacion}} por daño emergente y lucro cesante.\n\n3. Que se reconozcan los perjuicios inmateriales y demás medidas de reparación: {{perjuicios_inmateriales_reparacion}}.\n\n4. Que se actualicen las sumas y se reconozcan intereses conforme a la ley.\n\n## HECHOS\n\n{{hechos_reparacion_directa}}\n\n## IMPUTACIÓN Y NEXO CAUSAL\n\n{{imputacion_nexo_causal}}\n\n## CADUCIDAD Y CONCILIACIÓN\n\nLa demanda se presenta dentro de los dos (2) años siguientes a la ocurrencia de la acción u omisión causante del daño, o a la fecha en que el demandante tuvo o debió tener conocimiento de él si fue posterior (artículo 164, numeral 2, literal i, de la Ley 1437 de 2011), contados desde {{fecha_conocimiento_dano}}. Se agotó la conciliación extrajudicial cuando era exigible, así: {{conciliacion_reparacion}}.\n\n## ESTIMACIÓN RAZONADA DE LA CUANTÍA\n\n{{cuantia_razonada}}\n\n## PRUEBAS\n\n{{pruebas_reparacion_directa}}\n\n## ENVÍO SIMULTÁNEO\n\nDe conformidad con el numeral 8 del artículo 162 de la Ley 1437 de 2011 (adicionado por la Ley 2080 de 2021), la demanda y sus anexos se enviaron simultáneamente por medio electrónico a la parte demandada: {{constancia_envio_demanda}}.\n\n## ANEXOS Y NOTIFICACIONES\n\n{{anexos_reparacion_directa}}\n\n{{notificaciones_demanda_administrativa}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_o_tribunal_contencioso",
+     "label": "Juzgado o tribunal competente"
+    },
+    {
+     "key": "entidad_demandada",
+     "label": "Entidad pública demandada"
+    },
+    {
+     "key": "perjuicios_materiales_reparacion",
+     "label": "Perjuicios materiales"
+    },
+    {
+     "key": "perjuicios_inmateriales_reparacion",
+     "label": "Perjuicios inmateriales y medidas de reparación"
+    },
+    {
+     "key": "hechos_reparacion_directa",
+     "label": "Hechos"
+    },
+    {
+     "key": "imputacion_nexo_causal",
+     "label": "Imputación jurídica y nexo causal"
+    },
+    {
+     "key": "fecha_conocimiento_dano",
+     "label": "Fecha del daño o de su conocimiento"
+    },
+    {
+     "key": "conciliacion_reparacion",
+     "label": "Información sobre conciliación prejudicial"
+    },
+    {
+     "key": "pruebas_reparacion_directa",
+     "label": "Pruebas"
+    },
+    {
+     "key": "anexos_reparacion_directa",
+     "label": "Anexos"
+    },
+    {
+     "key": "notificaciones_demanda_administrativa",
+     "label": "Notificaciones"
+    },
+    {
+     "key": "cuantia_razonada",
+     "label": "Estimación razonada de la cuantía",
+     "help": "Determina la competencia (art. 157 del CPACA)"
+    },
+    {
+     "key": "constancia_envio_demanda",
+     "label": "Constancia de envío simultáneo de la demanda",
+     "help": "Correo al que se envió y fecha. No se exige si se piden medidas cautelares previas o se desconoce el canal digital del demandado."
+    }
+   ],
+   "keywords": [
+    "reparación directa",
+    "daño antijurídico",
+    "responsabilidad estatal",
+    "omisión",
+    "operación administrativa"
+   ],
+   "legalBasis": "Constitución Política, artículo 90; Ley 1437 de 2011, artículos 140, 157, 161, 162, 164 y 166; Ley 2080 de 2021; Ley 2220 de 2022."
+  },
+  {
+   "code": "ADMINISTRATIVO-DEMANDA-CONTRACTUAL-11",
+   "area": "administrativo",
+   "category": "Demanda",
+   "title": "Demanda de controversias contractuales",
+   "description": "Para controvertir actos contractuales, incumplimientos, nulidad, liquidación, desequilibrio económico o responsabilidad derivada de contratos estatales.",
+   "body": "# DEMANDA DE CONTROVERSIAS CONTRACTUALES\n\nSeñor(a)\n{{juez_o_tribunal_contencioso}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandada:** {{entidad_demandada}}\n**Contrato estatal:** {{contrato_estatal}}\n\n## PRETENSIONES\n\n1. Que se declare {{pretension_contractual_principal}}.\n\n2. Que se declare el incumplimiento, nulidad, rompimiento del equilibrio económico o responsabilidad contractual de {{parte_responsable}}.\n\n3. Que se condene al pago de {{valor_pretensiones_contractuales}}, incluidos actualización, intereses, perjuicios y demás conceptos procedentes.\n\n4. Que se adopten las medidas derivadas de la liquidación o terminación contractual.\n\n## HECHOS\n\n{{hechos_contractuales_administrativos}}\n\n## FUNDAMENTOS DE DERECHO\n\n{{fundamentos_contractuales_admin}}\n\n## CADUCIDAD Y CONCILIACIÓN\n\n{{caducidad_conciliacion_contractual}}\n\n## PRUEBAS\n\n{{pruebas_contractuales_administrativas}}\n\n## ENVÍO SIMULTÁNEO\n\nDe conformidad con el numeral 8 del artículo 162 de la Ley 1437 de 2011 (adicionado por la Ley 2080 de 2021), la demanda y sus anexos se enviaron simultáneamente por medio electrónico a la parte demandada: {{constancia_envio_demanda}}.\n\n## ANEXOS Y NOTIFICACIONES\n\n{{anexos_contractuales_administrativos}}\n\n{{notificaciones_demanda_administrativa}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_o_tribunal_contencioso",
+     "label": "Juzgado o tribunal competente"
+    },
+    {
+     "key": "entidad_demandada",
+     "label": "Entidad demandada"
+    },
+    {
+     "key": "contrato_estatal",
+     "label": "Contrato estatal y número"
+    },
+    {
+     "key": "pretension_contractual_principal",
+     "label": "Pretensión contractual principal"
+    },
+    {
+     "key": "parte_responsable",
+     "label": "Parte a quien se atribuye responsabilidad"
+    },
+    {
+     "key": "valor_pretensiones_contractuales",
+     "label": "Valor de las pretensiones"
+    },
+    {
+     "key": "hechos_contractuales_administrativos",
+     "label": "Hechos"
+    },
+    {
+     "key": "fundamentos_contractuales_admin",
+     "label": "Fundamentos jurídicos"
+    },
+    {
+     "key": "caducidad_conciliacion_contractual",
+     "label": "Caducidad y conciliación prejudicial",
+     "help": "Caducidad de 2 años según las reglas del art. 164 num. 2 lit. j del CPACA (cuenta según haya o no liquidación del contrato). Indique fechas y la constancia de conciliación."
+    },
+    {
+     "key": "pruebas_contractuales_administrativas",
+     "label": "Pruebas"
+    },
+    {
+     "key": "anexos_contractuales_administrativos",
+     "label": "Anexos"
+    },
+    {
+     "key": "notificaciones_demanda_administrativa",
+     "label": "Notificaciones"
+    },
+    {
+     "key": "constancia_envio_demanda",
+     "label": "Constancia de envío simultáneo de la demanda",
+     "help": "Correo al que se envió y fecha. No se exige si se piden medidas cautelares previas o se desconoce el canal digital del demandado."
+    }
+   ],
+   "keywords": [
+    "controversias contractuales",
+    "contrato estatal",
+    "incumplimiento",
+    "equilibrio económico",
+    "liquidación"
+   ],
+   "legalBasis": "Ley 1437 de 2011, artículos 141, 157, 161, 162, 164 y 166; Ley 80 de 1993; Ley 1150 de 2007; Ley 2080 de 2021; Ley 2220 de 2022."
+  },
+  {
+   "code": "ADMINISTRATIVO-SILENCIO-12",
+   "area": "administrativo",
+   "category": "Solicitud",
+   "title": "Invocación del silencio administrativo positivo",
+   "description": "Para hacer valer el silencio administrativo positivo cuando una norma especial lo establece. El silencio negativo no necesita ser declarado: permite demandar el acto ficto en cualquier tiempo, y la autoridad sigue obligada a decidir.",
+   "body": "# INVOCACIÓN DEL SILENCIO ADMINISTRATIVO POSITIVO\n\nSeñores\n{{entidad_destinataria}}\nCiudad\n\n**Solicitante:** {{cliente_nombre}}\n**Petición o recurso:** {{peticion_o_recurso_silencio}}\n\n## ANTECEDENTES\n\n{{antecedentes_silencio}}\n\nLa solicitud o recurso fue radicado el {{fecha_radicacion_silencio}} y la autoridad no notificó decisión dentro del término de {{termino_decision}} previsto en la norma especial.\n\n## EFECTO INVOCADO\n\nSolicito reconocer los efectos del silencio administrativo positivo previsto en {{norma_silencio_positivo}}, porque {{fundamento_silencio}}.\n\nSe anexa la constancia o copia de la petición y la declaración jurada de no haber sido notificada decisión dentro del término legal, para efectos de su protocolización mediante escritura pública (artículo 85 de la Ley 1437 de 2011).\n\n## PETICIONES\n\n1. Que se reconozca la configuración del silencio administrativo positivo y sus efectos.\n\n2. Que se adopten las consecuencias jurídicas correspondientes respecto de {{efecto_solicitado}}.\n\n3. Que se expida el acto, certificación o constancia que corresponda.\n\n## ANEXOS\n\n{{anexos_silencio}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "entidad_destinataria",
+     "label": "Autoridad destinataria"
+    },
+    {
+     "key": "peticion_o_recurso_silencio",
+     "label": "Petición o recurso que originó el silencio"
+    },
+    {
+     "key": "antecedentes_silencio",
+     "label": "Antecedentes"
+    },
+    {
+     "key": "fecha_radicacion_silencio",
+     "label": "Fecha de radicación"
+    },
+    {
+     "key": "fundamento_silencio",
+     "label": "Fundamento legal y fáctico"
+    },
+    {
+     "key": "efecto_solicitado",
+     "label": "Efecto jurídico solicitado"
+    },
+    {
+     "key": "anexos_silencio",
+     "label": "Anexos"
+    },
+    {
+     "key": "norma_silencio_positivo",
+     "label": "Norma que establece el silencio positivo",
+     "help": "Solo procede cuando una ley lo prevé expresamente (art. 84 del CPACA)"
+    },
+    {
+     "key": "termino_decision",
+     "label": "Término para decidir",
+     "help": "El que fije la norma especial que consagra el silencio positivo"
+    }
+   ],
+   "keywords": [
+    "silencio administrativo",
+    "silencio positivo",
+    "silencio negativo",
+    "acto ficto",
+    "CPACA"
+   ],
+   "legalBasis": "Ley 1437 de 2011, artículos 83 a 86; normas especiales que establecen el silencio positivo."
+  },
+  {
+   "code": "ADMINISTRATIVO-QUEJA-13",
+   "area": "administrativo",
+   "category": "Recurso",
+   "title": "Recurso de queja (apelación rechazada)",
+   "description": "Para acudir al superior cuando la autoridad rechaza el recurso de apelación. Se presenta dentro de los 5 días siguientes a la notificación del rechazo.",
+   "body": "Señores\n{{superior_funcional}}\nCiudad\n\n**Recurrente:** {{cliente_nombre}}\n**Decisión que rechazó la apelación:** {{decision_rechazo}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, dentro de los cinco (5) días siguientes a la notificación de la decisión que rechazó el recurso de apelación (artículo 74, numeral 3, de la Ley 1437 de 2011), interpongo recurso de queja.\n\n## ANTECEDENTES\n\nEl acto {{acto_recurrido}} fue apelado el {{fecha_apelacion}}. Mediante {{decision_rechazo}}, notificada el {{fecha_notificacion_rechazo}}, la autoridad rechazó la apelación.\n\n## RAZONES POR LAS QUE LA APELACIÓN DEBIÓ CONCEDERSE\n\n{{razones_queja}}\n\n## PETICIÓN\n\nQue se conceda el recurso de apelación y se resuelva de fondo.\n\n## ANEXOS\n\nCopia de la decisión que rechazó la apelación. {{anexos_queja}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "superior_funcional",
+     "label": "Superior de la autoridad que rechazó la apelación"
+    },
+    {
+     "key": "decision_rechazo",
+     "label": "Decisión que rechazó la apelación"
+    },
+    {
+     "key": "acto_recurrido",
+     "label": "Acto apelado"
+    },
+    {
+     "key": "fecha_apelacion",
+     "label": "Fecha de la apelación"
+    },
+    {
+     "key": "fecha_notificacion_rechazo",
+     "label": "Fecha de notificación del rechazo"
+    },
+    {
+     "key": "razones_queja",
+     "label": "Razones por las que la apelación procedía"
+    },
+    {
+     "key": "anexos_queja",
+     "label": "Otros anexos"
+    }
+   ],
+   "keywords": [
+    "recurso de queja",
+    "apelación rechazada",
+    "superior",
+    "acto administrativo",
+    "recurso"
+   ],
+   "legalBasis": "Ley 1437 de 2011, artículo 74 numeral 3."
+  },
+  {
+   "code": "ADMINISTRATIVO-SUSPENSION-PROVISIONAL-14",
+   "area": "administrativo",
+   "category": "Solicitud",
+   "title": "Solicitud de medida cautelar de suspensión provisional",
+   "description": "Para pedir, en la demanda o en escrito separado, la suspensión provisional de los efectos de un acto administrativo demandado.",
+   "body": "Señor(a)\n{{juez_o_tribunal_contencioso}}\nE. S. D.\n\n**Medio de control:** {{tipo_proceso}}\n**Demandante:** {{cliente_nombre}}\n**Demandada:** {{contraparte}}\n**Radicado:** {{radicado}}\n\n{{abogado_nombre}}, apoderado(a) de la parte demandante, solicito decretar la suspensión provisional de los efectos de {{acto_suspender}}.\n\n## NORMAS VIOLADAS Y CONFRONTACIÓN\n\nLa violación surge del análisis del acto demandado y su confrontación con las normas superiores invocadas, así como del estudio de las pruebas que se allegan:\n\n{{confrontacion_normativa}}\n\n## PERJUICIOS\n\n{{perjuicios_sumarios}}\n\n## PETICIÓN\n\nQue se decrete la suspensión provisional de los efectos del acto demandado, previo traslado a la parte demandada, sin exigir caución por tratarse de la suspensión de un acto administrativo (artículos 231, 232 y 233 de la Ley 1437 de 2011).\n\n## PRUEBAS\n\n{{pruebas_medida}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_o_tribunal_contencioso",
+     "label": "Juzgado o tribunal"
+    },
+    {
+     "key": "acto_suspender",
+     "label": "Acto cuyos efectos se pide suspender"
+    },
+    {
+     "key": "confrontacion_normativa",
+     "label": "Confrontación entre el acto y las normas superiores"
+    },
+    {
+     "key": "perjuicios_sumarios",
+     "label": "Prueba sumaria de los perjuicios",
+     "help": "Obligatoria cuando además se pide restablecimiento del derecho e indemnización (art. 231). Escriba «No aplica» en nulidad simple."
+    },
+    {
+     "key": "pruebas_medida",
+     "label": "Pruebas que se allegan"
+    }
+   ],
+   "keywords": [
+    "suspensión provisional",
+    "medida cautelar",
+    "acto administrativo",
+    "CPACA",
+    "contencioso administrativo"
+   ],
+   "legalBasis": "Ley 1437 de 2011, artículos 229 a 233."
+  }
+ ]
+}

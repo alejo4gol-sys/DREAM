@@ -1,0 +1,1065 @@
+{
+ "templates": [
+  {
+   "code": "CONSTITUCIONAL-TUTELA-01",
+   "area": "constitucional",
+   "category": "Tutela",
+   "title": "Acción de tutela por vulneración de derechos fundamentales",
+   "description": "Plantilla general para solicitar la protección inmediata de uno o varios derechos fundamentales vulnerados o amenazados por una autoridad pública o un particular.",
+   "body": "# ACCIÓN DE TUTELA\n\nSeñor(a)\n{{juez}}\nE. S. D.\n\n**Accionante:** {{cliente_nombre}}\n**Accionado:** {{contraparte}}\n**Asunto:** Acción de tutela para la protección de derechos fundamentales\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, actuando {{forma_actuacion}}, interpongo acción de tutela contra {{contraparte}}, por la vulneración o amenaza de los derechos fundamentales a {{derechos_fundamentales}}.\n\n## HECHOS\n\n{{hechos}}\n\n## DERECHOS FUNDAMENTALES VULNERADOS\n\n{{derechos_fundamentales}}\n\n## PRETENSIONES\n\n1. Que se amparen los derechos fundamentales invocados.\n\n2. Que se ordene a {{contraparte}} realizar {{conducta_solicitada}} dentro del término que establezca el despacho.\n\n3. Que se adopten las demás medidas necesarias para el restablecimiento efectivo de los derechos vulnerados.\n\n## PROCEDENCIA DE LA ACCIÓN\n\n**Legitimación.** {{legitimacion}}\n\n**Inmediatez.** La vulneración ocurrió el {{fecha_vulneracion}} y la acción se presenta en un término razonable. {{inmediatez}}\n\n**Subsidiariedad.** {{subsidiariedad}} En caso de que exista otro medio de defensa judicial, se solicita el amparo como mecanismo transitorio para evitar un perjuicio irremediable, consistente en {{perjuicio_irremediable}}.\n\n## FUNDAMENTOS DE DERECHO\n\nInvoco los artículos 1, 2, 5, 13, 29, 86 y demás disposiciones constitucionales aplicables; el Decreto 2591 de 1991; la Ley 2213 de 2022 y las demás normas pertinentes.\n\n## PRUEBAS\n\nSolicito tener como pruebas los siguientes documentos y elementos:\n\n{{pruebas}}\n\n## JURAMENTO\n\nBajo la gravedad del juramento manifiesto que no he presentado otra acción de tutela por los mismos hechos y derechos, salvo lo siguiente: {{otras_tutelas}}.\n\n## MEDIDA PROVISIONAL\n\n{{solicitud_medida_provisional}}\n\n## NOTIFICACIONES\n\nEl accionante recibirá notificaciones en {{cliente_correo}} y {{cliente_direccion_notificaciones}}. El accionado podrá ser notificado en {{contraparte_correo}} y {{contraparte_direccion}}. El abogado recibirá notificaciones en {{abogado_correo}}.\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nApoderado(a) · T.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez",
+     "label": "Juez al que se dirige",
+     "help": "Ej. Juez Civil Municipal de Bogotá (Reparto)"
+    },
+    {
+     "key": "derechos_fundamentales",
+     "label": "Derechos fundamentales invocados"
+    },
+    {
+     "key": "hechos",
+     "label": "Hechos de la vulneración",
+     "help": "Un hecho por párrafo, en orden cronológico"
+    },
+    {
+     "key": "conducta_solicitada",
+     "label": "Conducta que debe ordenar el juez"
+    },
+    {
+     "key": "perjuicio_irremediable",
+     "label": "Descripción del perjuicio irremediable",
+     "help": "Escriba «No aplica» si se pide como mecanismo principal"
+    },
+    {
+     "key": "pruebas",
+     "label": "Pruebas que se aportan o solicitan"
+    },
+    {
+     "key": "otras_tutelas",
+     "label": "Información sobre otras acciones de tutela"
+    },
+    {
+     "key": "solicitud_medida_provisional",
+     "label": "Solicitud de medida provisional",
+     "help": "Indicar No aplica si no se solicita"
+    },
+    {
+     "key": "cliente_direccion_notificaciones",
+     "label": "Dirección física para notificaciones del cliente"
+    },
+    {
+     "key": "contraparte_correo",
+     "label": "Correo electrónico de la parte accionada"
+    },
+    {
+     "key": "contraparte_direccion",
+     "label": "Dirección física de la parte accionada"
+    },
+    {
+     "key": "forma_actuacion",
+     "label": "Cómo actúa el accionante",
+     "help": "Ej. «en nombre propio», «por medio de apoderado judicial, según poder adjunto» o «como agente oficioso de …, quien no puede promover su propia defensa porque …»"
+    },
+    {
+     "key": "legitimacion",
+     "label": "Legitimación por activa y por pasiva",
+     "help": "Quién es titular del derecho y por qué la accionada es la responsable (autoridad, particular que presta servicio público, subordinación o indefensión)"
+    },
+    {
+     "key": "fecha_vulneracion",
+     "label": "Fecha de la vulneración o de la última actuación"
+    },
+    {
+     "key": "inmediatez",
+     "label": "Explicación adicional de inmediatez",
+     "help": "Si pasó mucho tiempo, explique por qué (vulneración continuada, situación de debilidad, etc.). Puede dejarse vacío."
+    },
+    {
+     "key": "subsidiariedad",
+     "label": "Por qué no hay otro medio de defensa idóneo y eficaz"
+    }
+   ],
+   "keywords": [
+    "tutela",
+    "derechos fundamentales",
+    "amparo",
+    "acción constitucional",
+    "vulneración"
+   ],
+   "legalBasis": "Constitución Política, artículos 1, 2, 5, 13, 29 y 86; Decreto 2591 de 1991 (artículos 1, 5, 6, 10, 14 y 37); Decreto 1069 de 2015, modificado por el Decreto 333 de 2021 (reglas de reparto)."
+  },
+  {
+   "code": "CONSTITUCIONAL-TUTELA-SALUD-02",
+   "area": "constitucional",
+   "category": "Tutela",
+   "title": "Acción de tutela por negación o demora en servicios de salud",
+   "description": "Para solicitar medicamentos, procedimientos, tratamientos, citas, transporte, servicios no autorizados o continuidad de atención en salud.",
+   "body": "# ACCIÓN DE TUTELA PARA LA PROTECCIÓN DEL DERECHO A LA SALUD\n\nSeñor(a)\n{{juez}}\nE. S. D.\n\n**Accionante:** {{cliente_nombre}}\n**Accionada:** {{eps}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, interpongo acción de tutela contra {{eps}}{{ips}}, por la vulneración de mis derechos fundamentales a la salud, vida digna, integridad personal, seguridad social y los demás que resulten comprometidos.\n\n## HECHOS\n\n{{hechos_salud}}\n\n## PRETENSIONES\n\n1. Que se amparen los derechos fundamentales invocados.\n\n2. Que se ordene a {{eps}} autorizar y garantizar {{servicio_salud}} en las condiciones prescritas por el médico tratante.\n\n3. Que se garantice el tratamiento integral respecto de la patología {{diagnostico}} cuando resulte médicamente indicado.\n\n4. Que se eliminen las barreras administrativas que han impedido la atención oportuna.\n\n5. Que se ordene a la accionada abstenerse de exigir copagos o cuotas moderadoras cuando el accionante no tenga capacidad económica para asumirlos, si a ello hubiere lugar.\n\n## PROCEDENCIA\n\n{{procedencia_salud}}\n\n## FUNDAMENTOS DE DERECHO\n\nLa protección solicitada se fundamenta en los artículos 11, 13, 48, 49 y 86 de la Constitución Política, la Ley Estatutaria 1751 de 2015, el Decreto 2591 de 1991 y las demás normas aplicables.\n\n## PRUEBAS Y ANEXOS\n\nSe aportan las órdenes médicas, historias clínicas, negaciones, autorizaciones, comunicaciones y demás documentos relacionados con la solicitud.\n\n{{pruebas_salud}}\n\n## JURAMENTO\n\nBajo la gravedad del juramento manifiesto que no he presentado otra acción de tutela por los mismos hechos y derechos: {{otras_tutelas}}.\n\n## MEDIDA PROVISIONAL\n\nSolicito que, mientras se decide la acción, se ordene provisionalmente {{medida_salud}}, debido a {{urgencia_salud}}.\n\n## NOTIFICACIONES\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nApoderado(a) · T.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez",
+     "label": "Juez al que se dirige"
+    },
+    {
+     "key": "eps",
+     "label": "EPS accionada"
+    },
+    {
+     "key": "ips",
+     "label": "Otras accionadas o vinculadas (IPS, Adres, secretaría de salud)",
+     "help": "Escriba con una coma al inicio, ej. «, la IPS Clínica X y la Adres». Si no hay, deje vacío y borre la línea en el borrador."
+    },
+    {
+     "key": "hechos_salud",
+     "label": "Hechos médicos y administrativos"
+    },
+    {
+     "key": "servicio_salud",
+     "label": "Medicamento, procedimiento, tratamiento o servicio solicitado"
+    },
+    {
+     "key": "diagnostico",
+     "label": "Diagnóstico o condición médica"
+    },
+    {
+     "key": "pruebas_salud",
+     "label": "Pruebas médicas y administrativas"
+    },
+    {
+     "key": "otras_tutelas",
+     "label": "Información sobre otras tutelas"
+    },
+    {
+     "key": "medida_salud",
+     "label": "Medida provisional de salud"
+    },
+    {
+     "key": "urgencia_salud",
+     "label": "Razones de urgencia médica"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    },
+    {
+     "key": "procedencia_salud",
+     "label": "Procedencia (subsidiariedad e inmediatez)",
+     "help": "Ej. urgencia del tratamiento, sujeto de especial protección (menor, adulto mayor, persona con discapacidad o enfermedad catastrófica), falta de idoneidad del mecanismo ante la Superintendencia Nacional de Salud"
+    }
+   ],
+   "keywords": [
+    "tutela",
+    "salud",
+    "EPS",
+    "medicamento",
+    "tratamiento",
+    "procedimiento"
+   ],
+   "legalBasis": "Constitución Política, artículos 11, 13, 48, 49 y 86; Ley Estatutaria 1751 de 2015; Ley 1122 de 2007 y Ley 1949 de 2019 (función jurisdiccional de la Superintendencia Nacional de Salud); Decreto 2591 de 1991."
+  },
+  {
+   "code": "CONSTITUCIONAL-TUTELA-PETICION-03",
+   "area": "constitucional",
+   "category": "Tutela",
+   "title": "Acción de tutela por vulneración del derecho de petición",
+   "description": "Para exigir respuesta pronta, congruente, de fondo y debidamente notificada a una petición no contestada o contestada deficientemente.",
+   "body": "# ACCIÓN DE TUTELA POR VULNERACIÓN DEL DERECHO DE PETICIÓN\n\nSeñor(a)\n{{juez}}\nE. S. D.\n\n**Accionante:** {{cliente_nombre}}\n**Accionada:** {{contraparte}}\n\n## HECHOS\n\n1. El {{fecha_peticion}} presenté ante {{contraparte}} una petición cuyo objeto fue {{objeto_peticion}}.\n\n2. La petición fue recibida el {{fecha_recepcion_peticion}}, como consta en {{prueba_recepcion}}.\n\n3. El término legal para responder, de {{termino_respuesta}} días hábiles, venció el {{fecha_vencimiento}}.\n\n4. A la fecha no se ha emitido respuesta, o la respuesta no resolvió de fondo, de manera clara, precisa, congruente y oportuna lo solicitado.\n\n{{hechos_adicionales}}\n\n## PRETENSIONES\n\n1. Que se ampare el derecho fundamental de petición.\n\n2. Que se ordene a {{contraparte}} emitir y notificar una respuesta de fondo, clara, precisa, congruente y completa respecto de cada solicitud formulada.\n\n## FUNDAMENTOS DE DERECHO\n\nInvoco los artículos 23 y 86 de la Constitución Política, la Ley 1755 de 2015, el Decreto 2591 de 1991 y las demás normas aplicables.\n\n## PRUEBAS\n\n{{pruebas}}\n\n## JURAMENTO\n\nManifiesto bajo la gravedad del juramento que no he presentado otra acción de tutela por los mismos hechos y derechos, salvo {{otras_tutelas}}.\n\n## NOTIFICACIONES\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nApoderado(a) · T.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez",
+     "label": "Juez al que se dirige"
+    },
+    {
+     "key": "fecha_peticion",
+     "label": "Fecha de presentación de la petición"
+    },
+    {
+     "key": "objeto_peticion",
+     "label": "Objeto de la petición"
+    },
+    {
+     "key": "fecha_recepcion_peticion",
+     "label": "Fecha de recepción por la entidad"
+    },
+    {
+     "key": "prueba_recepcion",
+     "label": "Prueba de radicación o entrega"
+    },
+    {
+     "key": "hechos_adicionales",
+     "label": "Hechos adicionales"
+    },
+    {
+     "key": "pruebas",
+     "label": "Pruebas"
+    },
+    {
+     "key": "otras_tutelas",
+     "label": "Información sobre otras tutelas"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    },
+    {
+     "key": "termino_respuesta",
+     "label": "Término legal para responder (días hábiles)",
+     "help": "15 por regla general; 10 para documentos e información; 30 para consultas (art. 14 de la Ley 1437 de 2011)"
+    },
+    {
+     "key": "fecha_vencimiento",
+     "label": "Fecha en que venció el término"
+    }
+   ],
+   "keywords": [
+    "tutela",
+    "derecho de petición",
+    "respuesta de fondo",
+    "silencio administrativo",
+    "petición"
+   ],
+   "legalBasis": "Constitución Política, artículos 23 y 86; Ley 1437 de 2011, artículos 13 a 33, sustituidos por la Ley Estatutaria 1755 de 2015 (incluye peticiones ante particulares, art. 32); Decreto 2591 de 1991."
+  },
+  {
+   "code": "CONSTITUCIONAL-TUTELA-MINIMO-VITAL-04",
+   "area": "constitucional",
+   "category": "Tutela",
+   "title": "Acción de tutela por afectación del mínimo vital",
+   "description": "Para solicitar protección urgente cuando una actuación u omisión amenaza la subsistencia digna del accionante o de su núcleo familiar.",
+   "body": "# ACCIÓN DE TUTELA PARA LA PROTECCIÓN DEL MÍNIMO VITAL\n\nSeñor(a)\n{{juez}}\nE. S. D.\n\n**Accionante:** {{cliente_nombre}}\n**Accionada:** {{contraparte}}\n\n## HECHOS\n\n{{hechos_minimo_vital}}\n\n## SITUACIÓN DE VULNERABILIDAD\n\nEl accionante y su núcleo familiar dependen de {{fuente_ingreso}} para atender sus necesidades básicas. La actuación u omisión de {{contraparte}} ha generado {{afectacion_minimo_vital}}.\n\n## PRETENSIONES\n\n1. Que se amparen los derechos fundamentales al mínimo vital, vida digna, dignidad humana, igualdad y los demás que resulten vulnerados.\n\n2. Que se ordene a {{contraparte}} realizar {{orden_solicitada}}.\n\n3. Que se adopten medidas urgentes para evitar la agravación del perjuicio.\n\n## PROCEDENCIA\n\n{{procedencia_minimo_vital}}\n\n## FUNDAMENTOS DE DERECHO\n\nConstitución Política, artículos 1, 11, 13, 25, 48, 53 y 86; Decreto 2591 de 1991; y demás normas aplicables.\n\n## PRUEBAS\n\n{{pruebas}}\n\n## JURAMENTO Y NOTIFICACIONES\n\nBajo la gravedad del juramento manifiesto que no he presentado otra tutela por los mismos hechos y derechos: {{otras_tutelas}}.\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nApoderado(a) · T.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez",
+     "label": "Juez al que se dirige"
+    },
+    {
+     "key": "hechos_minimo_vital",
+     "label": "Hechos que afectan el mínimo vital"
+    },
+    {
+     "key": "fuente_ingreso",
+     "label": "Fuente principal de ingresos"
+    },
+    {
+     "key": "afectacion_minimo_vital",
+     "label": "Descripción de la afectación"
+    },
+    {
+     "key": "orden_solicitada",
+     "label": "Orden que se solicita"
+    },
+    {
+     "key": "pruebas",
+     "label": "Pruebas"
+    },
+    {
+     "key": "otras_tutelas",
+     "label": "Información sobre otras tutelas"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    },
+    {
+     "key": "procedencia_minimo_vital",
+     "label": "Procedencia (subsidiariedad, inmediatez y perjuicio irremediable)",
+     "help": "Por qué la vía ordinaria no es eficaz frente a la urgencia de subsistencia"
+    }
+   ],
+   "keywords": [
+    "tutela",
+    "mínimo vital",
+    "vida digna",
+    "subsistencia",
+    "vulnerabilidad"
+   ],
+   "legalBasis": "Constitución Política, artículos 1, 11, 13, 25, 48, 53 y 86; Decreto 2591 de 1991."
+  },
+  {
+   "code": "CONSTITUCIONAL-TUTELA-DEBIDO-PROCESO-05",
+   "area": "constitucional",
+   "category": "Tutela",
+   "title": "Acción de tutela por vulneración del debido proceso",
+   "description": "Para controvertir actuaciones administrativas o judiciales que desconocen garantías esenciales del debido proceso.",
+   "body": "# ACCIÓN DE TUTELA POR VULNERACIÓN DEL DEBIDO PROCESO\n\nSeñor(a)\n{{juez}}\nE. S. D.\n\n**Accionante:** {{cliente_nombre}}\n**Accionada:** {{contraparte}}\n**Actuación cuestionada:** {{actuacion_cuestionada}}\n\n## HECHOS\n\n{{hechos_debido_proceso}}\n\n## DERECHOS VULNERADOS\n\nSe invocan los derechos al debido proceso, defensa, contradicción, acceso a la administración de justicia, igualdad y los demás que resulten aplicables.\n\n## PROCEDENCIA\n\n{{procedencia_debido_proceso}}\n\n## PRETENSIONES\n\n1. Que se amparen los derechos fundamentales invocados.\n\n2. Que se deje sin efectos {{acto_o_actuacion}} y se ordene a {{contraparte}} adoptar {{actuacion_correctiva}}.\n\n3. Que se ordene rehacer la actuación desde la etapa en que ocurrió la vulneración, garantizando el derecho de defensa y contradicción.\n\n## PRUEBAS\n\n{{pruebas}}\n\n## JURAMENTO Y NOTIFICACIONES\n\nManifiesto bajo la gravedad del juramento que no he presentado otra tutela por los mismos hechos y derechos: {{otras_tutelas}}.\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nApoderado(a) · T.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez",
+     "label": "Juez al que se dirige"
+    },
+    {
+     "key": "actuacion_cuestionada",
+     "label": "Actuación, decisión o proceso cuestionado"
+    },
+    {
+     "key": "hechos_debido_proceso",
+     "label": "Hechos de la vulneración"
+    },
+    {
+     "key": "procedencia_debido_proceso",
+     "label": "Justificación de procedencia",
+     "help": "Explique por qué no hay otro medio idóneo y eficaz (o ya se agotó), la inmediatez y, si es una actuación procesal, la incidencia directa de la irregularidad en la decisión. Si es contra una providencia judicial use la plantilla específica."
+    },
+    {
+     "key": "acto_o_actuacion",
+     "label": "Acto o actuación que se solicita dejar sin efectos"
+    },
+    {
+     "key": "actuacion_correctiva",
+     "label": "Actuación correctiva solicitada"
+    },
+    {
+     "key": "pruebas",
+     "label": "Pruebas"
+    },
+    {
+     "key": "otras_tutelas",
+     "label": "Información sobre otras tutelas"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    }
+   ],
+   "keywords": [
+    "tutela",
+    "debido proceso",
+    "defensa",
+    "contradicción",
+    "actuación administrativa"
+   ],
+   "legalBasis": "Constitución Política, artículos 29, 86 y 229; Decreto 2591 de 1991; Ley 2213 de 2022."
+  },
+  {
+   "code": "CONSTITUCIONAL-TUTELA-EDUCACION-06",
+   "area": "constitucional",
+   "category": "Tutela",
+   "title": "Acción de tutela por vulneración del derecho a la educación",
+   "description": "Para proteger el acceso, permanencia, continuidad, inclusión o calidad mínima del servicio educativo.",
+   "body": "# ACCIÓN DE TUTELA POR VULNERACIÓN DEL DERECHO A LA EDUCACIÓN\n\nSeñor(a)\n{{juez}}\nE. S. D.\n\n**Accionante:** {{cliente_nombre}}, en nombre propio o en representación de {{nombre_estudiante}}\n**Accionada:** {{institucion_educativa}}\n\n## HECHOS\n\n{{hechos_educacion}}\n\n## PRETENSIONES\n\n1. Que se ampare el derecho fundamental a la educación y los derechos conexos invocados.\n\n2. Que se ordene a {{institucion_educativa}} garantizar {{medida_educativa}}.\n\n3. Que se adopten ajustes razonables o medidas de inclusión cuando sean necesarios.\n\n## FUNDAMENTOS DE DERECHO\n\nConstitución Política, artículos 13, 44, 67 y 86; Decreto 2591 de 1991; Ley 115 de 1994; Ley 1098 de 2006 cuando se trate de niños, niñas o adolescentes; Ley Estatutaria 1618 de 2013 y Decreto 1421 de 2017 sobre educación inclusiva y ajustes razonables; y demás normas aplicables.\n\n## PRUEBAS, JURAMENTO Y NOTIFICACIONES\n\n{{pruebas}}\n\nBajo la gravedad del juramento manifiesto que no he presentado otra tutela por los mismos hechos y derechos: {{otras_tutelas}}.\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nApoderado(a) · T.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez",
+     "label": "Juez al que se dirige"
+    },
+    {
+     "key": "institucion_educativa",
+     "label": "Institución educativa accionada"
+    },
+    {
+     "key": "hechos_educacion",
+     "label": "Hechos"
+    },
+    {
+     "key": "medida_educativa",
+     "label": "Medida educativa solicitada"
+    },
+    {
+     "key": "pruebas",
+     "label": "Pruebas"
+    },
+    {
+     "key": "otras_tutelas",
+     "label": "Información sobre otras tutelas"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    },
+    {
+     "key": "nombre_estudiante",
+     "label": "Estudiante afectado",
+     "help": "Si el cliente actúa por su hijo(a) menor de edad, escriba su nombre; si es el mismo estudiante escriba «sí mismo(a)»."
+    }
+   ],
+   "keywords": [
+    "tutela",
+    "educación",
+    "matrícula",
+    "inclusión",
+    "estudiante"
+   ],
+   "legalBasis": "Constitución Política, artículos 13, 44, 67 y 86; Decreto 2591 de 1991; Ley 115 de 1994; Ley 1098 de 2006; Ley Estatutaria 1618 de 2013; Decreto 1421 de 2017."
+  },
+  {
+   "code": "CONSTITUCIONAL-TUTELA-HABEAS-DATA-07",
+   "area": "constitucional",
+   "category": "Tutela",
+   "title": "Acción de tutela por vulneración del habeas data",
+   "description": "Para proteger los derechos de actualización, rectificación, inclusión, exclusión o circulación adecuada de datos personales y financieros.",
+   "body": "# ACCIÓN DE TUTELA POR VULNERACIÓN DEL HABEAS DATA\n\nSeñor(a)\n{{juez}}\nE. S. D.\n\n**Accionante:** {{cliente_nombre}}\n**Accionada:** {{responsable_datos}}\n\n## HECHOS\n\n{{hechos_habeas_data}}\n\n## RECLAMO PREVIO\n\nEl {{fecha_reclamo_datos}} presenté reclamación ante {{responsable_datos}} solicitando {{solicitud_datos}}. La entidad {{respuesta_reclamo_datos}}.\n\n## PRETENSIONES\n\n1. Que se amparen los derechos fundamentales al habeas data, intimidad, buen nombre y los demás que resulten vulnerados.\n\n2. Que se ordene rectificar, actualizar, suprimir o corregir el dato identificado como {{dato_cuestionado}}.\n\n3. Que se comunique la corrección a las fuentes, operadores o terceros que hayan recibido el dato, cuando corresponda.\n\n## FUNDAMENTOS DE DERECHO\n\nConstitución Política, artículos 15 y 86; Ley Estatutaria 1266 de 2008, modificada por la Ley 2157 de 2021; Ley Estatutaria 1581 de 2012; Decreto 2591 de 1991 (artículo 42, numeral 6, sobre la solicitud previa de rectificación); y demás normas aplicables.\n\n## PRUEBAS, JURAMENTO Y NOTIFICACIONES\n\n{{pruebas}}\n\nBajo la gravedad del juramento manifiesto que no he presentado otra tutela por los mismos hechos y derechos: {{otras_tutelas}}.\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nApoderado(a) · T.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez",
+     "label": "Juez al que se dirige"
+    },
+    {
+     "key": "responsable_datos",
+     "label": "Entidad responsable o encargada del tratamiento de datos"
+    },
+    {
+     "key": "hechos_habeas_data",
+     "label": "Hechos"
+    },
+    {
+     "key": "fecha_reclamo_datos",
+     "label": "Fecha del reclamo previo"
+    },
+    {
+     "key": "solicitud_datos",
+     "label": "Solicitud de rectificación, actualización o supresión"
+    },
+    {
+     "key": "respuesta_reclamo_datos",
+     "label": "Respuesta recibida o falta de respuesta"
+    },
+    {
+     "key": "dato_cuestionado",
+     "label": "Dato objeto de controversia"
+    },
+    {
+     "key": "pruebas",
+     "label": "Pruebas"
+    },
+    {
+     "key": "otras_tutelas",
+     "label": "Información sobre otras tutelas"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    }
+   ],
+   "keywords": [
+    "tutela",
+    "habeas data",
+    "dato negativo",
+    "rectificación",
+    "buen nombre"
+   ],
+   "legalBasis": "Constitución Política, artículos 15 y 86; Ley 1266 de 2008, modificada por la Ley 2157 de 2021; Ley 1581 de 2012; Decreto 2591 de 1991, artículo 42 numeral 6."
+  },
+  {
+   "code": "CONSTITUCIONAL-TUTELA-ESTABILIDAD-08",
+   "area": "constitucional",
+   "category": "Tutela",
+   "title": "Acción de tutela por estabilidad laboral reforzada",
+   "description": "Para solicitar protección constitucional frente a despido o desvinculación de persona en condición de debilidad manifiesta, embarazo, discapacidad, salud o fuero especial.",
+   "body": "# ACCIÓN DE TUTELA POR ESTABILIDAD LABORAL REFORZADA\n\nSeñor(a)\n{{juez}}\nE. S. D.\n\n**Accionante:** {{cliente_nombre}}\n**Accionada:** {{empleador}}\n\n## HECHOS\n\n{{hechos_estabilidad}}\n\n## CONDICIÓN DE ESPECIAL PROTECCIÓN\n\nEl accionante presenta {{condicion_especial}}. {{prueba_conocimiento_empleador}}\n\n## PRETENSIONES\n\n1. Que se amparen los derechos fundamentales al trabajo, estabilidad laboral reforzada, mínimo vital, seguridad social, igualdad y vida digna.\n\n2. Que se deje sin efectos la terminación del vínculo laboral y se ordene el reintegro, reubicación o medida correspondiente.\n\n3. Que se ordene el pago de salarios, prestaciones y aportes dejados de percibir cuando resulte procedente.\n\n4. Que se ordene el pago de la indemnización equivalente a ciento ochenta (180) días de salario prevista en el artículo 26 de la Ley 361 de 1997, por haberse terminado el vínculo sin autorización del inspector del trabajo, cuando resulte procedente.\n\n5. Que se advierta al empleador que cualquier desvinculación futura requiere la autorización administrativa correspondiente.\n\n## PROCEDENCIA TRANSITORIA\n\nLos medios ordinarios no son eficaces en este caso, o existe un perjuicio irremediable, porque {{perjuicio_laboral}}.\n\n## FUNDAMENTOS DE DERECHO\n\nConstitución Política, artículos 13, 25, 47, 48, 53 y 86; Ley 361 de 1997, artículo 26; Código Sustantivo del Trabajo, artículos 239 a 241 (fuero de maternidad), cuando aplique; Decreto 2591 de 1991; y demás normas aplicables.\n\n## PRUEBAS, JURAMENTO Y NOTIFICACIONES\n\n{{pruebas}}\n\nBajo la gravedad del juramento manifiesto que no he presentado otra tutela por los mismos hechos y derechos: {{otras_tutelas}}.\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nApoderado(a) · T.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez",
+     "label": "Juez al que se dirige"
+    },
+    {
+     "key": "empleador",
+     "label": "Empleador accionado"
+    },
+    {
+     "key": "hechos_estabilidad",
+     "label": "Hechos laborales y de salud"
+    },
+    {
+     "key": "condicion_especial",
+     "label": "Condición de especial protección"
+    },
+    {
+     "key": "prueba_conocimiento_empleador",
+     "label": "Conocimiento del empleador y su prueba",
+     "help": "Ej. «Esta situación era conocida por el empleador antes de la terminación, como consta en …». En fuero de maternidad revise el alcance del conocimiento del empleador según el precedente constitucional vigente."
+    },
+    {
+     "key": "perjuicio_laboral",
+     "label": "Perjuicio irremediable o afectación urgente"
+    },
+    {
+     "key": "pruebas",
+     "label": "Pruebas"
+    },
+    {
+     "key": "otras_tutelas",
+     "label": "Información sobre otras tutelas"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    }
+   ],
+   "keywords": [
+    "tutela",
+    "estabilidad laboral reforzada",
+    "reintegro",
+    "discapacidad",
+    "embarazo",
+    "salud"
+   ],
+   "legalBasis": "Constitución Política, artículos 13, 25, 43, 47, 48, 53 y 86; Ley 361 de 1997, artículo 26; Código Sustantivo del Trabajo, artículos 239 a 241; Decreto 2591 de 1991."
+  },
+  {
+   "code": "CONSTITUCIONAL-TUTELA-PROVIDENCIA-09",
+   "area": "constitucional",
+   "category": "Tutela",
+   "title": "Acción de tutela contra providencia judicial",
+   "description": "Para solicitar la protección excepcional de derechos fundamentales afectados directamente por una providencia judicial.",
+   "body": "# ACCIÓN DE TUTELA CONTRA PROVIDENCIA JUDICIAL\n\nSeñor(a)\n{{juez_tutela}}\nE. S. D.\n\n**Accionante:** {{cliente_nombre}}\n**Autoridad judicial accionada:** {{autoridad_judicial}}\n**Providencia cuestionada:** {{providencia_cuestionada}}\n\n## HECHOS\n\n{{hechos_providencia}}\n\n## REQUISITOS GENERALES DE PROCEDENCIA\n\nEl asunto tiene relevancia constitucional; se agotaron los medios ordinarios y extraordinarios disponibles, salvo la justificación indicada; la acción se presenta dentro de un término razonable; la irregularidad procesal, si existe, tiene incidencia directa en la decisión; se identifican claramente los hechos y derechos vulnerados; y la providencia no corresponde a una sentencia de tutela.\n\n{{justificacion_procedencia}}\n\n## CAUSAL ESPECÍFICA DE PROCEDIBILIDAD\n\nConforme a los criterios fijados por la Corte Constitucional en la sentencia C-590 de 2005,la providencia incurre en {{causal_defecto}}, consistente en {{explicacion_defecto}}.\n\n## DERECHOS FUNDAMENTALES VULNERADOS\n\n{{derechos_vulnerados}}\n\n## PRETENSIONES\n\n1. Que se amparen los derechos fundamentales invocados.\n\n2. Que se deje sin efectos {{providencia_cuestionada}} en lo estrictamente necesario para restablecer los derechos vulnerados.\n\n3. Que se ordene a la autoridad judicial accionada emitir una nueva decisión respetuosa de la Constitución y de las garantías procesales.\n\n## PRUEBAS Y ANEXOS\n\n{{pruebas}}\n\n## JURAMENTO Y NOTIFICACIONES\n\nBajo la gravedad del juramento manifiesto que no he presentado otra tutela por los mismos hechos y derechos: {{otras_tutelas}}.\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nApoderado(a) · T.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_tutela",
+     "label": "Juez competente para conocer la tutela"
+    },
+    {
+     "key": "autoridad_judicial",
+     "label": "Despacho o corporación accionada"
+    },
+    {
+     "key": "providencia_cuestionada",
+     "label": "Providencia objeto de tutela"
+    },
+    {
+     "key": "hechos_providencia",
+     "label": "Antecedentes procesales"
+    },
+    {
+     "key": "justificacion_procedencia",
+     "label": "Justificación de los requisitos generales"
+    },
+    {
+     "key": "causal_defecto",
+     "label": "Defecto alegado",
+     "help": "Orgánico, procedimental absoluto, fáctico, sustantivo, error inducido, falta de motivación, desconocimiento del precedente o violación directa de la Constitución"
+    },
+    {
+     "key": "explicacion_defecto",
+     "label": "Explicación concreta del defecto"
+    },
+    {
+     "key": "derechos_vulnerados",
+     "label": "Derechos fundamentales vulnerados"
+    },
+    {
+     "key": "pruebas",
+     "label": "Pruebas y copias del expediente"
+    },
+    {
+     "key": "otras_tutelas",
+     "label": "Información sobre otras tutelas"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    }
+   ],
+   "keywords": [
+    "tutela contra sentencia",
+    "providencia judicial",
+    "defecto fáctico",
+    "defecto sustantivo",
+    "precedente"
+   ],
+   "legalBasis": "Constitución Política, artículos 29, 86, 228 y 229; Decreto 2591 de 1991; Corte Constitucional, sentencia C-590 de 2005 (requisitos generales y causales específicas de procedibilidad); Decreto 1069 de 2015, modificado por el Decreto 333 de 2021 (reparto)."
+  },
+  {
+   "code": "CONSTITUCIONAL-IMPUGNACION-10",
+   "area": "constitucional",
+   "category": "Recurso",
+   "title": "Impugnación del fallo de tutela",
+   "description": "Para impugnar, dentro de los 3 días siguientes a la notificación, el fallo de primera instancia que negó, concedió parcialmente o declaró improcedente la tutela. Se radica ante el mismo juez que falló.",
+   "body": "# IMPUGNACIÓN DEL FALLO DE TUTELA\n\nSeñor(a)\n{{juez_primera_instancia}}\nE. S. D.\n\n**Accionante:** {{cliente_nombre}}\n**Accionado:** {{contraparte}}\n**Radicado:** {{radicado}}\n**Asunto:** Impugnación del fallo de tutela\n\nDentro de los tres (3) días siguientes a su notificación (artículo 31 del Decreto 2591 de 1991), impugno el fallo proferido el {{fecha_fallo}}, notificado el {{fecha_notificacion_fallo}}, por las siguientes razones:\n\n## MOTIVOS DE INCONFORMIDAD\n\n{{motivos_impugnacion}}\n\n## ERROR EN LA VALORACIÓN DE LOS HECHOS O PRUEBAS\n\n{{errores_valoracion}}\n\n## DERECHOS FUNDAMENTALES COMPROMETIDOS\n\n{{derechos_fundamentales}}\n\n## SOLICITUD\n\nSolicito al superior funcional que revoque, modifique o adicione el fallo impugnado y, en su lugar, conceda la protección solicitada en los términos de las pretensiones de la acción de tutela.\n\nLa impugnación se presenta sin perjuicio del cumplimiento inmediato de las órdenes impartidas en el fallo.\n\n## NOTIFICACIONES\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nApoderado(a) · T.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_primera_instancia",
+     "label": "Juez que profirió el fallo"
+    },
+    {
+     "key": "fecha_fallo",
+     "label": "Fecha del fallo"
+    },
+    {
+     "key": "fecha_notificacion_fallo",
+     "label": "Fecha de notificación"
+    },
+    {
+     "key": "motivos_impugnacion",
+     "label": "Motivos de inconformidad"
+    },
+    {
+     "key": "errores_valoracion",
+     "label": "Errores de valoración de hechos o pruebas"
+    },
+    {
+     "key": "derechos_fundamentales",
+     "label": "Derechos fundamentales"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    }
+   ],
+   "keywords": [
+    "impugnación",
+    "fallo de tutela",
+    "segunda instancia",
+    "recurso constitucional",
+    "tutela"
+   ],
+   "legalBasis": "Constitución Política, artículo 86; Decreto 2591 de 1991, artículos 31 y 32; Ley 2213 de 2022."
+  },
+  {
+   "code": "CONSTITUCIONAL-DESACATO-11",
+   "area": "constitucional",
+   "category": "Solicitud",
+   "title": "Incidente de desacato por incumplimiento de fallo de tutela",
+   "description": "Para solicitar la apertura de incidente contra quien incumple una orden impartida en un fallo de tutela.",
+   "body": "# INCIDENTE DE DESACATO\n\nSeñor(a)\n{{juez_tutela}}\nE. S. D.\n\n**Incidentante:** {{cliente_nombre}}\n**Incidentado:** {{responsable_cumplimiento}}\n**Radicado:** {{radicado}}\n\n## HECHOS\n\n1. Mediante fallo del {{fecha_fallo}}, el despacho amparó los derechos fundamentales de {{cliente_nombre}} y ordenó {{orden_fallo}}.\n\n2. El fallo fue notificado y se encontraba vigente desde {{fecha_ejecutoria}}.\n\n3. Vencido el plazo otorgado, la orden no ha sido cumplida o se ha cumplido de forma parcial, aparente o defectuosa.\n\n{{hechos_incumplimiento}}\n\n## SOLICITUDES\n\n1. Que se requiera al responsable para que informe sobre el cumplimiento del fallo y, de persistir el incumplimiento, a su superior jerárquico para que lo haga cumplir y abra el procedimiento disciplinario correspondiente (artículo 27 del Decreto 2591 de 1991).\n\n2. Que se abra y tramite el incidente de desacato.\n\n3. Que se declare el incumplimiento y se impongan las sanciones previstas en el artículo 52 del Decreto 2591 de 1991 (arresto hasta de seis meses y multa hasta de veinte salarios mínimos mensuales), previa verificación de la responsabilidad subjetiva, decisión que se consultará con el superior.\n\n4. Que se adopten las medidas necesarias para el cumplimiento integral e inmediato de la sentencia.\n\n## PRUEBAS\n\n{{pruebas}}\n\n## NOTIFICACIONES\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nApoderado(a) · T.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_tutela",
+     "label": "Juez que profirió o conserva competencia sobre el fallo"
+    },
+    {
+     "key": "responsable_cumplimiento",
+     "label": "Persona o autoridad responsable del cumplimiento",
+     "help": "Nombre y cargo de la persona natural encargada de cumplir (ej. gerente o representante legal de la EPS)"
+    },
+    {
+     "key": "fecha_fallo",
+     "label": "Fecha del fallo"
+    },
+    {
+     "key": "orden_fallo",
+     "label": "Orden cuyo cumplimiento se solicita"
+    },
+    {
+     "key": "fecha_ejecutoria",
+     "label": "Fecha de ejecutoria o notificación"
+    },
+    {
+     "key": "hechos_incumplimiento",
+     "label": "Hechos del incumplimiento"
+    },
+    {
+     "key": "pruebas",
+     "label": "Pruebas"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    }
+   ],
+   "keywords": [
+    "desacato",
+    "incumplimiento tutela",
+    "fallo de tutela",
+    "sanción",
+    "cumplimiento"
+   ],
+   "legalBasis": "Decreto 2591 de 1991, artículos 27 y 52; Constitución Política, artículo 86."
+  },
+  {
+   "code": "CONSTITUCIONAL-MEDIDA-PROVISIONAL-12",
+   "area": "constitucional",
+   "category": "Solicitud",
+   "title": "Solicitud de medida provisional en acción de tutela",
+   "description": "Para solicitar al juez constitucional una orden urgente destinada a evitar la consumación o agravación de la vulneración mientras se decide la tutela.",
+   "body": "# SOLICITUD DE MEDIDA PROVISIONAL\n\nSeñor(a)\n{{juez}}\nE. S. D.\n\n**Accionante:** {{cliente_nombre}}\n**Accionado:** {{contraparte}}\n**Radicado:** {{radicado}}\n\nDentro de la acción de tutela de la referencia solicito decretar la siguiente medida provisional:\n\n## MEDIDA SOLICITADA\n\n{{medida_provisional}}\n\n## FUNDAMENTO DE URGENCIA\n\nLa medida es necesaria porque existe un riesgo cierto, inminente y grave de que {{riesgo_inminente}}. La falta de intervención inmediata produciría {{consecuencia_dano}}.\n\n## PROPORCIONALIDAD Y TEMPORALIDAD\n\nLa medida solicitada es adecuada para proteger provisionalmente los derechos invocados, resulta necesaria frente al riesgo descrito y se mantendrá únicamente mientras se adopta la decisión correspondiente o desaparezcan las circunstancias que la justifican.\n\n## PRUEBAS\n\n{{pruebas}}\n\n## PETICIÓN\n\nSolicito que la medida sea decretada desde la presentación de la acción, se comunique por el medio más expedito y se ordenen las actuaciones necesarias para su cumplimiento.\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nApoderado(a) · T.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez",
+     "label": "Juez de tutela"
+    },
+    {
+     "key": "medida_provisional",
+     "label": "Orden provisional solicitada"
+    },
+    {
+     "key": "riesgo_inminente",
+     "label": "Riesgo cierto, grave e inminente"
+    },
+    {
+     "key": "consecuencia_dano",
+     "label": "Daño que se produciría"
+    },
+    {
+     "key": "pruebas",
+     "label": "Pruebas de la urgencia"
+    }
+   ],
+   "keywords": [
+    "medida provisional",
+    "tutela",
+    "urgencia",
+    "perjuicio irremediable",
+    "orden cautelar"
+   ],
+   "legalBasis": "Decreto 2591 de 1991, artículo 7; Constitución Política, artículo 86."
+  },
+  {
+   "code": "CONSTITUCIONAL-SELECCION-CORTE-13",
+   "area": "constitucional",
+   "category": "Solicitud",
+   "title": "Solicitud ciudadana de selección para revisión ante la Corte Constitucional",
+   "description": "Para solicitar a la Sala de Selección de Tutelas que considere seleccionar un expediente para revisión eventual. La selección es discrecional; conviene radicarla mientras el expediente está en estudio de la Sala.",
+   "body": "# SOLICITUD DE SELECCIÓN PARA REVISIÓN\n\nSeñores\nCORTE CONSTITUCIONAL\nSala de Selección de Tutelas\n\n**Solicitante:** {{cliente_nombre}}\n**Expediente de tutela:** {{radicado}}\n\n## IDENTIFICACIÓN DEL CASO\n\n{{identificacion_caso}}\n\n## ANTECEDENTES RELEVANTES\n\n{{antecedentes_tutela}}\n\n## RAZONES PARA LA SELECCIÓN\n\nSolicito que el expediente sea seleccionado por las siguientes razones constitucionales:\n\n{{razones_seleccion}}\n\nEl caso presenta {{criterio_seleccion}}, relacionado con la unificación de jurisprudencia, asunto novedoso, necesidad de aclarar el alcance de un derecho fundamental, posible desconocimiento del precedente, urgencia de protección, enfoque diferencial, interés general o grave afectación de derechos fundamentales.\n\n## SOLICITUD\n\nSolicito a la Sala de Selección considerar y seleccionar el expediente para revisión eventual, conforme a la Constitución Política, el Decreto 2591 de 1991 y el Reglamento Interno de la Corte Constitucional.\n\n## ANEXOS\n\n{{anexos}}\n\n## NOTIFICACIONES\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nApoderado(a) · T.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "identificacion_caso",
+     "label": "Identificación del expediente y partes"
+    },
+    {
+     "key": "antecedentes_tutela",
+     "label": "Antecedentes procesales"
+    },
+    {
+     "key": "razones_seleccion",
+     "label": "Razones jurídicas y constitucionales para la selección"
+    },
+    {
+     "key": "criterio_seleccion",
+     "label": "Criterio o criterios de selección"
+    },
+    {
+     "key": "anexos",
+     "label": "Anexos"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    }
+   ],
+   "keywords": [
+    "selección tutela",
+    "Corte Constitucional",
+    "revisión eventual",
+    "sala de selección",
+    "solicitud ciudadana"
+   ],
+   "legalBasis": "Constitución Política, artículos 86 y 241 numeral 9; Decreto 2591 de 1991, artículos 31 a 36; Acuerdo 02 de 2015, Reglamento Interno de la Corte Constitucional."
+  },
+  {
+   "code": "CONSTITUCIONAL-CUMPLIMIENTO-14",
+   "area": "constitucional",
+   "category": "Demanda",
+   "title": "Acción de cumplimiento",
+   "description": "Para exigir judicialmente el cumplimiento de una norma con fuerza material de ley o de un acto administrativo que contiene un deber claro y exigible.",
+   "body": "# ACCIÓN DE CUMPLIMIENTO\n\nSeñor(a)\n{{juez_administrativo}}\nE. S. D.\n\n**Accionante:** {{cliente_nombre}}\n**Accionado:** {{autoridad_incumplida}}\n\n## NORMA O ACTO ADMINISTRATIVO INCUMPLIDO\n\n{{norma_incumplida}}\n\n## HECHOS\n\n{{hechos_incumplimiento_norma}}\n\n## RENUENCIA\n\nEl {{fecha_requerimiento}} se solicitó directamente a {{autoridad_incumplida}} el cumplimiento del deber contenido en {{norma_incumplida}}. Dentro de los diez (10) días siguientes la autoridad {{respuesta_renuencia}}, con lo cual se constituyó la renuencia (artículo 8 de la Ley 393 de 1997 y artículo 161, numeral 3, de la Ley 1437 de 2011). Se anexa la prueba de la reclamación y de la renuencia. Si se omite este requisito, se justifica por {{perjuicio_irremediable_cumplimiento}}.\n\n## PRETENSIONES\n\n1. Que se declare que {{autoridad_incumplida}} incumplió el deber contenido en la norma o acto administrativo identificado.\n\n2. Que se ordene el cumplimiento efectivo e integral del deber omitido dentro del término legal.\n\n## FUNDAMENTOS DE PROCEDENCIA\n\nEl mandato es claro, expreso, imperativo y exigible; se dirige contra la autoridad o particular que ejerce función pública; no persigue el cumplimiento de una norma que establezca gastos; y no existe otro instrumento judicial idóneo, salvo el perjuicio grave e inminente indicado.\n\n## PRUEBAS\n\n{{pruebas}}\n\n## JURAMENTO\n\nManifiesto bajo la gravedad del juramento que no he presentado otra acción de cumplimiento por los mismos hechos y derechos ante autoridad alguna.\n\n## NOTIFICACIONES\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nApoderado(a) · T.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_administrativo",
+     "label": "Juez administrativo competente"
+    },
+    {
+     "key": "autoridad_incumplida",
+     "label": "Autoridad o particular que debe cumplir"
+    },
+    {
+     "key": "norma_incumplida",
+     "label": "Norma con fuerza de ley o acto administrativo"
+    },
+    {
+     "key": "hechos_incumplimiento_norma",
+     "label": "Hechos del incumplimiento"
+    },
+    {
+     "key": "fecha_requerimiento",
+     "label": "Fecha de solicitud de cumplimiento"
+    },
+    {
+     "key": "respuesta_renuencia",
+     "label": "Respuesta o silencio de la autoridad"
+    },
+    {
+     "key": "perjuicio_irremediable_cumplimiento",
+     "label": "Justificación para omitir excepcionalmente la renuencia"
+    },
+    {
+     "key": "pruebas",
+     "label": "Pruebas"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    }
+   ],
+   "keywords": [
+    "acción de cumplimiento",
+    "renuencia",
+    "norma incumplida",
+    "acto administrativo",
+    "juez administrativo"
+   ],
+   "legalBasis": "Constitución Política, artículo 87; Ley 393 de 1997 (artículos 8, 9 y 10); Ley 1437 de 2011, artículos 146 y 161 numeral 3."
+  },
+  {
+   "code": "CONSTITUCIONAL-POPULAR-15",
+   "area": "constitucional",
+   "category": "Demanda",
+   "title": "Acción popular para la protección de derechos e intereses colectivos",
+   "description": "Para prevenir el daño contingente, hacer cesar una amenaza o vulneración de derechos e intereses colectivos o restituir las cosas a su estado anterior.",
+   "body": "# ACCIÓN POPULAR\n\nSeñor(a)\n{{juez_competente}}\nE. S. D.\n\n**Actor popular:** {{cliente_nombre}}, identificado(a) con {{cliente_documento}}\n**Demandado:** {{contraparte}}\n\n## DERECHOS E INTERESES COLECTIVOS AMENAZADOS O VULNERADOS\n\n{{derechos_colectivos}}\n\n## HECHOS\n\n{{hechos_accion_popular}}\n\n## PRETENSIONES\n\n1. Que se amparen los derechos e intereses colectivos invocados.\n\n2. Que se ordene a {{contraparte}} cesar la conducta vulneradora y adoptar {{medidas_proteccion_colectiva}}.\n\n3. Que se adopten medidas cautelares o de restablecimiento, si son necesarias.\n\n## RESPONSABILIDAD Y NEXO\n\nLa acción u omisión de {{contraparte}} consiste en {{conducta_demandada}} y tiene relación causal con la amenaza o vulneración descrita.\n\n## REQUISITO DE PROCEDIBILIDAD\n\nEl {{fecha_solicitud_previa}} se solicitó a {{contraparte}} adoptar las medidas necesarias para proteger los derechos colectivos amenazados. Transcurridos quince (15) días, {{respuesta_solicitud_previa}} (artículo 144 de la Ley 1437 de 2011).\n\n## PRUEBAS\n\n{{pruebas}}\n\n## NOTIFICACIONES\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nApoderado(a) · T.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_competente",
+     "label": "Juez administrativo o civil de circuito competente"
+    },
+    {
+     "key": "derechos_colectivos",
+     "label": "Derechos e intereses colectivos"
+    },
+    {
+     "key": "hechos_accion_popular",
+     "label": "Hechos"
+    },
+    {
+     "key": "medidas_proteccion_colectiva",
+     "label": "Medidas solicitadas"
+    },
+    {
+     "key": "conducta_demandada",
+     "label": "Acción u omisión demandada"
+    },
+    {
+     "key": "pruebas",
+     "label": "Pruebas"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    },
+    {
+     "key": "fecha_solicitud_previa",
+     "label": "Fecha de la reclamación previa a la autoridad o particular",
+     "help": "Requisito del art. 144 del CPACA. Solo se omite si hay peligro de un perjuicio irremediable; en ese caso explíquelo en la respuesta."
+    },
+    {
+     "key": "respuesta_solicitud_previa",
+     "label": "Qué pasó con la reclamación",
+     "help": "Ej. «la entidad no respondió» o «la entidad se negó a adoptar las medidas»"
+    }
+   ],
+   "keywords": [
+    "acción popular",
+    "derechos colectivos",
+    "ambiente",
+    "moralidad administrativa",
+    "medida cautelar"
+   ],
+   "legalBasis": "Constitución Política, artículo 88; Ley 472 de 1998 (artículos 2, 4, 9, 14, 15, 16 y 18); Ley 1437 de 2011, artículo 144."
+  },
+  {
+   "code": "CONSTITUCIONAL-GRUPO-16",
+   "area": "constitucional",
+   "category": "Demanda",
+   "title": "Acción de grupo para indemnización de perjuicios",
+   "description": "Para obtener el reconocimiento y pago de perjuicios individuales sufridos por un grupo plural de personas con condiciones uniformes frente a una misma causa. Debe presentarse por medio de abogado (art. 49 de la Ley 472 de 1998).",
+   "body": "# ACCIÓN DE GRUPO\n\nSeñor(a)\n{{juez_competente}}\nE. S. D.\n\n**Demandante y representante del grupo:** {{cliente_nombre}}\n**Demandado:** {{contraparte}}\n\n## INTEGRACIÓN Y CARACTERÍSTICAS DEL GRUPO\n\nEl grupo está integrado por al menos veinte personas que reúnen condiciones uniformes respecto de la causa que originó los perjuicios y de los elementos de la responsabilidad.\n\n{{identificacion_grupo}}\n\n## HECHOS\n\n{{hechos_accion_grupo}}\n\n## PRETENSIONES\n\n1. Que se declare la responsabilidad de {{contraparte}} por los daños causados al grupo.\n\n2. Que se condene al pago de la indemnización de los perjuicios individuales sufridos por cada integrante del grupo.\n\n3. Que la indemnización se pague en los términos del artículo 65 de la Ley 472 de 1998.\n\n## ESTIMACIÓN DE PERJUICIOS\n\n{{estimacion_perjuicios_grupo}}\n\n## PROCEDENCIA Y CADUCIDAD\n\nLa demanda se presenta dentro de los dos (2) años siguientes a la fecha en que se causó el daño o cesó la acción vulnerante causante de este (artículo 47 de la Ley 472 de 1998). {{justificacion_procedencia_grupo}}\n\n## PRUEBAS Y ANEXOS\n\n{{pruebas}}\n\n## NOTIFICACIONES\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nApoderado(a) · T.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_competente",
+     "label": "Juez administrativo o civil de circuito competente"
+    },
+    {
+     "key": "identificacion_grupo",
+     "label": "Identificación de integrantes o criterios de identificación"
+    },
+    {
+     "key": "hechos_accion_grupo",
+     "label": "Hechos comunes"
+    },
+    {
+     "key": "estimacion_perjuicios_grupo",
+     "label": "Estimación de perjuicios"
+    },
+    {
+     "key": "justificacion_procedencia_grupo",
+     "label": "Justificación de procedencia y oportunidad",
+     "help": "Causa común, condiciones uniformes y fecha del daño. Si la demandada es una entidad pública, revise también el artículo 145 del CPACA."
+    },
+    {
+     "key": "pruebas",
+     "label": "Pruebas y anexos"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    }
+   ],
+   "keywords": [
+    "acción de grupo",
+    "indemnización",
+    "perjuicios",
+    "grupo afectado",
+    "responsabilidad"
+   ],
+   "legalBasis": "Constitución Política, artículo 88; Ley 472 de 1998, artículos 3, 46 a 52 y 65; Ley 1437 de 2011, artículo 145."
+  },
+  {
+   "code": "CONSTITUCIONAL-HABEAS-CORPUS-17",
+   "area": "constitucional",
+   "category": "Solicitud",
+   "title": "Acción de habeas corpus",
+   "description": "Para proteger la libertad personal cuando una persona está privada de la libertad con violación de garantías constitucionales o legales o cuando la privación se prolonga ilegalmente. Puede presentarla cualquier persona, sin necesidad de abogado; debe resolverse en 36 horas.",
+   "body": "# ACCIÓN DE HÁBEAS CORPUS\n\nSeñor(a) Juez o Tribunal de la República\n{{juez_habeas_corpus}}\nE. S. D.\n\n**Solicitante:** {{solicitante_habeas}}\n**Persona en cuyo favor se interpone:** {{persona_privada_libertad}}\n\n## IDENTIFICACIÓN DE LA PERSONA PRIVADA DE LA LIBERTAD\n\n**Nombre:** {{persona_privada_libertad}}\n**Documento:** {{documento_persona_privada}}\n**Lugar de reclusión:** {{lugar_reclusion}}\n**Fecha de reclusión:** {{fecha_reclusion}}\n**Autoridad que ordenó la privación de la libertad:** {{autoridad_orden_privacion}}\n\n## HECHOS Y RAZONES DE ILEGALIDAD\n\n{{hechos_habeas_corpus}}\n\nLa privación de la libertad es ilegal o se ha prolongado ilegalmente porque {{razon_ilegalidad_libertad}}.\n\n## SOLICITUDES\n\n1. Que se admita y tramite la acción de hábeas corpus con carácter urgente.\n\n2. Que se verifique directamente la situación jurídica y material de la persona privada de la libertad.\n\n3. Que, comprobada la vulneración de las garantías constitucionales o legales, se ordene inmediatamente la libertad.\n\n## JURAMENTO\n\nBajo la gravedad del juramento manifiesto que ningún otro juez ha asumido el conocimiento de esta solicitud ni ha decidido sobre ella.\n\n## PRUEBAS Y NOTIFICACIONES\n\n{{pruebas}}\n\n{{notificaciones}}\n\nAtentamente,\n\n{{solicitante_habeas}}\n\n{{abogado_nombre}}\nApoderado(a) · T.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_habeas_corpus",
+     "label": "Autoridad judicial competente"
+    },
+    {
+     "key": "solicitante_habeas",
+     "label": "Nombre, documento y residencia del solicitante"
+    },
+    {
+     "key": "persona_privada_libertad",
+     "label": "Persona en cuyo favor se presenta"
+    },
+    {
+     "key": "documento_persona_privada",
+     "label": "Documento de identidad de la persona privada"
+    },
+    {
+     "key": "lugar_reclusion",
+     "label": "Lugar donde se encuentra recluida"
+    },
+    {
+     "key": "fecha_reclusion",
+     "label": "Fecha de reclusión"
+    },
+    {
+     "key": "hechos_habeas_corpus",
+     "label": "Hechos de la privación de libertad"
+    },
+    {
+     "key": "razon_ilegalidad_libertad",
+     "label": "Razón concreta de ilegalidad o prolongación ilegal"
+    },
+    {
+     "key": "pruebas",
+     "label": "Pruebas"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    },
+    {
+     "key": "autoridad_orden_privacion",
+     "label": "Funcionario o autoridad que ordenó la privación",
+     "help": "Si se conoce (art. 4 de la Ley 1095 de 2006)"
+    }
+   ],
+   "keywords": [
+    "habeas corpus",
+    "libertad personal",
+    "detención ilegal",
+    "libertad",
+    "privación ilegal"
+   ],
+   "legalBasis": "Constitución Política, artículo 30; Ley Estatutaria 1095 de 2006 (artículos 1, 3 y 4)."
+  },
+  {
+   "code": "CONSTITUCIONAL-CONTESTACION-TUTELA-18",
+   "area": "constitucional",
+   "category": "Contestación",
+   "title": "Contestación de acción de tutela (informe de la parte accionada)",
+   "description": "Para responder dentro del término fijado por el juez una tutela presentada contra el cliente. Si no se responde, se presumen ciertos los hechos (art. 20 del Decreto 2591 de 1991).",
+   "body": "Señor(a)\n{{juez}}\nE. S. D.\n\n**Referencia:** Acción de tutela\n**Accionante:** {{contraparte}}\n**Accionado:** {{cliente_nombre}}\n**Radicado:** {{radicado}}\n\n{{abogado_nombre}}, en calidad de apoderado(a) de {{cliente_nombre}}, dentro del término concedido en el auto admisorio notificado el {{fecha_notificacion_admision}}, rindo el informe solicitado y doy respuesta a la acción de tutela en los siguientes términos:\n\n## PRONUNCIAMIENTO SOBRE LOS HECHOS\n\n{{pronunciamiento_hechos}}\n\n## ACTUACIONES DE LA PARTE ACCIONADA\n\n{{actuaciones_accionado}}\n\n## ARGUMENTOS DE DEFENSA\n\n{{argumentos_defensa}}\n\n## IMPROCEDENCIA O CARENCIA ACTUAL DE OBJETO\n\n{{improcedencia}}\n\n## SOLICITUD\n\n{{solicitud_contestacion}}\n\n## PRUEBAS\n\n{{pruebas}}\n\n## NOTIFICACIONES\n\nRecibiré notificaciones en {{abogado_correo}} y en {{abogado_direccion}}.\n\nAtentamente,\n\n\n{{abogado_nombre}}\nApoderado(a) · T.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez",
+     "label": "Juez que tramita la tutela"
+    },
+    {
+     "key": "fecha_notificacion_admision",
+     "label": "Fecha de notificación del auto admisorio"
+    },
+    {
+     "key": "pronunciamiento_hechos",
+     "label": "Pronunciamiento sobre cada hecho",
+     "help": "Hecho por hecho: es cierto, no es cierto, es parcialmente cierto o no le consta, con la explicación"
+    },
+    {
+     "key": "actuaciones_accionado",
+     "label": "Lo que ha hecho el accionado frente a la solicitud"
+    },
+    {
+     "key": "argumentos_defensa",
+     "label": "Argumentos de defensa"
+    },
+    {
+     "key": "improcedencia",
+     "label": "Improcedencia, falta de legitimación o hecho superado",
+     "help": "Ej. existencia de otro medio de defensa, falta de inmediatez, falta de legitimación por pasiva, carencia actual de objeto por hecho superado. Escriba «No aplica» si no se alega."
+    },
+    {
+     "key": "solicitud_contestacion",
+     "label": "Lo que se pide al juez",
+     "help": "Ej. «Que se nieguen las pretensiones», «que se declare improcedente», «que se declare la carencia actual de objeto»"
+    },
+    {
+     "key": "pruebas",
+     "label": "Pruebas"
+    }
+   ],
+   "keywords": [
+    "contestación de tutela",
+    "informe",
+    "respuesta tutela",
+    "accionado",
+    "hecho superado",
+    "improcedencia"
+   ],
+   "legalBasis": "Constitución Política, artículo 86; Decreto 2591 de 1991, artículos 19, 20 y 26."
+  },
+  {
+   "code": "CONSTITUCIONAL-CUMPLIMIENTO-FALLO-19",
+   "area": "constitucional",
+   "category": "Solicitud",
+   "title": "Solicitud de cumplimiento de fallo de tutela (antes del desacato)",
+   "description": "Para pedir al juez que haga cumplir el fallo cuando vence el plazo sin cumplimiento, antes de iniciar el incidente de desacato o junto con él.",
+   "body": "Señor(a)\n{{juez_tutela}}\nE. S. D.\n\n**Referencia:** Acción de tutela – solicitud de cumplimiento del fallo\n**Accionante:** {{cliente_nombre}}\n**Accionado:** {{contraparte}}\n**Radicado:** {{radicado}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, informo al despacho que mediante fallo del {{fecha_fallo}} se ordenó a {{contraparte}} {{orden_fallo}}, dentro del término de {{plazo_cumplimiento}}.\n\nEse término venció el {{fecha_vencimiento_orden}} sin que la orden se haya cumplido de manera completa. {{situacion_actual}}\n\n## SOLICITUD\n\nCon fundamento en el artículo 27 del Decreto 2591 de 1991, solicito:\n\n1. Requerir a {{responsable_cumplimiento}} para que cumpla de inmediato la orden impartida e informe al despacho.\n\n2. Requerir a su superior jerárquico para que lo haga cumplir y abra el procedimiento disciplinario correspondiente.\n\n3. Adoptar directamente todas las medidas necesarias para el cabal cumplimiento del fallo.\n\n4. De persistir el incumplimiento, dar trámite al incidente de desacato.\n\n## PRUEBAS\n\n{{pruebas}}\n\n## NOTIFICACIONES\n\nRecibiré notificaciones en {{cliente_correo}}.\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nApoderado(a) · T.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_tutela",
+     "label": "Juez que profirió el fallo"
+    },
+    {
+     "key": "fecha_fallo",
+     "label": "Fecha del fallo"
+    },
+    {
+     "key": "orden_fallo",
+     "label": "Orden impartida"
+    },
+    {
+     "key": "plazo_cumplimiento",
+     "label": "Plazo dado para cumplir",
+     "help": "Ej. 48 horas"
+    },
+    {
+     "key": "fecha_vencimiento_orden",
+     "label": "Fecha en que venció el plazo"
+    },
+    {
+     "key": "situacion_actual",
+     "label": "Situación actual del incumplimiento"
+    },
+    {
+     "key": "responsable_cumplimiento",
+     "label": "Persona responsable del cumplimiento (nombre y cargo)"
+    },
+    {
+     "key": "pruebas",
+     "label": "Pruebas"
+    }
+   ],
+   "keywords": [
+    "cumplimiento fallo tutela",
+    "incumplimiento",
+    "requerimiento",
+    "superior jerárquico",
+    "desacato"
+   ],
+   "legalBasis": "Constitución Política, artículo 86; Decreto 2591 de 1991, artículos 23 y 27."
+  }
+ ]
+}

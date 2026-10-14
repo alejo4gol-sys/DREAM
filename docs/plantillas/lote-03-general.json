@@ -1,0 +1,1063 @@
+{
+ "templates": [
+  {
+   "code": "GENERAL-PODER-01",
+   "area": "general",
+   "category": "Poder",
+   "title": "Minuta de poder general (para elevar a escritura pública)",
+   "description": "Minuta para que la notaría otorgue el poder general por escritura pública. Los poderes generales para toda clase de procesos solo pueden conferirse por escritura pública (art. 74 del CGP).",
+   "body": "# MINUTA DE PODER GENERAL\n\n**Notaría:** {{notaria}}\n**Poderdante:** {{cliente_nombre}}, identificado(a) con {{cliente_documento}}, domiciliado(a) en {{cliente_ciudad}}\n**Apoderado(a):** {{abogado_nombre}}, identificado(a) con {{abogado_documento}}, abogado(a) con T.P. No. {{abogado_tp}} del C. S. de la J.\n\nCompareció {{cliente_nombre}}, mayor de edad, identificado(a) como aparece al pie de su firma, y manifestó que por medio de este instrumento confiere PODER GENERAL, amplio y suficiente, a {{abogado_nombre}}, para que lo(la) represente judicial y extrajudicialmente en toda clase de procesos, actuaciones, trámites y asuntos en los que sea parte, tenga interés o deba intervenir, ante cualquier autoridad judicial, administrativa, notarial o particular.\n\nEn ejercicio de este poder el apoderado podrá presentar demandas y contestarlas, formular excepciones, solicitar y practicar pruebas, asistir a audiencias, interponer y sustentar recursos, solicitar medidas cautelares, recibir notificaciones y realizar los demás actos necesarios para la defensa de los derechos del poderdante.\n\nDe conformidad con el artículo 77 del Código General del Proceso, se confieren expresamente las siguientes facultades dispositivas: {{facultades_especiales}}.\n\nEste poder estará vigente hasta {{vigencia_poder}}.\n\nEn {{ciudad}}, a {{fecha}}.\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\nAcepto,\n\n\n{{abogado_nombre}}\n{{abogado_documento}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "notaria",
+     "label": "Notaría ante la que se otorga"
+    },
+    {
+     "key": "abogado_documento",
+     "label": "Documento del abogado"
+    },
+    {
+     "key": "facultades_especiales",
+     "label": "Facultades dispositivas autorizadas expresamente",
+     "help": "Escriba solo las que autoriza expresamente: recibir, conciliar, transigir, desistir, allanarse, sustituir, reasumir, disponer del derecho en litigio. Escriba «ninguna» si no autoriza ninguna."
+    },
+    {
+     "key": "vigencia_poder",
+     "label": "Vigencia",
+     "help": "Ej. «su revocatoria expresa» o una fecha"
+    }
+   ],
+   "keywords": [
+    "poder general",
+    "representación judicial",
+    "abogado",
+    "escritura pública",
+    "mandato"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 73 a 77; Código Civil, artículos 2142 y siguientes (mandato); Decreto 960 de 1970 (escrituras públicas)."
+  },
+  {
+   "code": "GENERAL-PODER-ESPECIAL-02",
+   "area": "general",
+   "category": "Poder",
+   "title": "Poder especial para proceso o actuación",
+   "description": "Para conferir representación judicial en uno o varios procesos claramente determinados.",
+   "body": "# PODER ESPECIAL\n\nSeñor(a)\n{{autoridad_judicial}}\nE. S. D.\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, confiero poder especial a {{abogado_nombre}}, identificado(a) con {{abogado_documento}}, abogado(a), portador(a) de la tarjeta profesional No. {{abogado_tp}} del C. S. de la J., con correo electrónico {{abogado_correo}} inscrito en el Registro Nacional de Abogados, para que me represente dentro del proceso o actuación identificado con {{radicado}}, promovido por o contra {{contraparte}}, cuyo objeto es {{objeto_proceso}}.\n\nEl apoderado queda facultado para presentar escritos, asistir a audiencias, solicitar y controvertir pruebas, interponer recursos, recibir notificaciones, formular solicitudes, promover incidentes y realizar las actuaciones necesarias para la defensa de mis intereses.\n\nDe conformidad con el artículo 77 del Código General del Proceso, se confieren expresamente las siguientes facultades dispositivas: {{facultades_especiales}}.\n\nSi este poder se confiere por mensaje de datos, se presume auténtico y no requiere presentación personal (artículo 5 de la Ley 2213 de 2022); en caso contrario, se hará presentación personal conforme al artículo 74 del Código General del Proceso.\n\nEn {{ciudad}}, a {{fecha}}.\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\nAcepto,\n\n\n{{abogado_nombre}}\n{{abogado_documento}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "autoridad_judicial",
+     "label": "Despacho o autoridad destinataria"
+    },
+    {
+     "key": "abogado_documento",
+     "label": "Documento del abogado"
+    },
+    {
+     "key": "objeto_proceso",
+     "label": "Objeto del proceso o actuación"
+    },
+    {
+     "key": "facultades_especiales",
+     "label": "Facultades dispositivas autorizadas expresamente",
+     "help": "Escriba solo las que autoriza expresamente: recibir, conciliar, transigir, desistir, allanarse, sustituir, reasumir, disponer del derecho en litigio. Escriba «ninguna» si no autoriza ninguna."
+    }
+   ],
+   "keywords": [
+    "poder especial",
+    "proceso judicial",
+    "apoderado",
+    "representación",
+    "radicado"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 73 a 77; Ley 2213 de 2022, artículo 5."
+  },
+  {
+   "code": "GENERAL-PODER-CONCILIAR-03",
+   "area": "general",
+   "category": "Poder",
+   "title": "Poder especial para conciliar",
+   "description": "Para autorizar expresamente a un abogado a participar y celebrar acuerdos de conciliación.",
+   "body": "# PODER ESPECIAL PARA CONCILIAR\n\nSeñor(a)\n{{centro_conciliacion_o_autoridad}}\nE. S. D.\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, confiero poder especial a {{abogado_nombre}}, identificado(a) con {{abogado_documento}}, abogado(a), con tarjeta profesional No. {{abogado_tp}} del C. S. de la J., para que me represente en la audiencia de conciliación relacionada con {{asunto_conciliacion}}, frente a {{contraparte}}.\n\nAutorizo expresamente al apoderado para asistir a la audiencia, formular propuestas, aceptar o rechazar fórmulas de arreglo, conciliar total o parcialmente, suscribir el acta, recibir comunicaciones y realizar las actuaciones necesarias.\n\nLos límites de la autorización son los siguientes: {{limites_conciliacion}}.\n\nAsistiré personalmente a la audiencia junto con mi apoderado, salvo que concurra alguna de las excepciones legales que permiten la comparecencia solo por medio de apoderado: {{excepcion_asistencia}}.\n\nEn {{ciudad}}, a {{fecha}}.\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\nAcepto,\n\n\n{{abogado_nombre}}\n{{abogado_documento}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "centro_conciliacion_o_autoridad",
+     "label": "Centro, autoridad o despacho"
+    },
+    {
+     "key": "abogado_documento",
+     "label": "Documento del abogado"
+    },
+    {
+     "key": "asunto_conciliacion",
+     "label": "Asunto objeto de conciliación"
+    },
+    {
+     "key": "limites_conciliacion",
+     "label": "Límites económicos o jurídicos de la autorización"
+    },
+    {
+     "key": "excepcion_asistencia",
+     "label": "Excepción para asistir solo por apoderado",
+     "help": "En la conciliación extrajudicial las partes deben asistir personalmente, salvo excepciones (por ejemplo, domicilio en otro circuito o fuera del país). Escriba «No aplica» si el cliente asistirá."
+    }
+   ],
+   "keywords": [
+    "poder para conciliar",
+    "conciliación",
+    "facultades expresas",
+    "acuerdo",
+    "audiencia"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 74 y 77; Ley 2220 de 2022 (asistencia de las partes y facultad expresa para conciliar); Ley 2213 de 2022, artículo 5."
+  },
+  {
+   "code": "GENERAL-PODER-MENSAJE-DATOS-04",
+   "area": "general",
+   "category": "Poder",
+   "title": "Poder especial conferido por mensaje de datos",
+   "description": "Para conferir poder especial por correo electrónico: el cliente lo envía desde su correo al apoderado (o al despacho). Se presume auténtico y no requiere firma manuscrita ni presentación personal. Si el poderdante es persona inscrita en el registro mercantil, debe enviarse desde el correo inscrito para notificaciones judiciales.",
+   "body": "# PODER ESPECIAL CONFERIDO POR MENSAJE DE DATOS\n\nSeñor(a)\n{{autoridad_judicial}}\nE. S. D.\n\nYo, {{cliente_nombre}}, identificado(a) con {{cliente_documento}}, desde el correo electrónico {{cliente_correo}}, manifiesto de manera expresa e inequívoca que confiero poder especial a {{abogado_nombre}}, abogado(a), identificado(a) con {{abogado_documento}}, tarjeta profesional No. {{abogado_tp}} del C. S. de la J., cuyo correo electrónico, que coincide con el inscrito en el Registro Nacional de Abogados, es {{abogado_correo}}, para que me represente dentro del proceso o actuación {{radicado}}, relacionado con {{objeto_proceso}}.\n\nEl apoderado queda facultado para presentar memoriales, asistir a audiencias, solicitar y controvertir pruebas, interponer recursos, recibir notificaciones y ejercer las demás actuaciones necesarias. De conformidad con el artículo 77 del Código General del Proceso, se confieren expresamente las siguientes facultades dispositivas: {{facultades_especiales}}.\n\nEste poder se confiere mediante mensaje de datos, con la sola antefirma, y solicito reconocer personería al abogado designado.\n\n{{cliente_nombre}}\n\nEnviado desde: {{cliente_correo}}\n\nAcepto,\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.\n{{abogado_correo}}",
+   "fields": [
+    {
+     "key": "autoridad_judicial",
+     "label": "Despacho o autoridad"
+    },
+    {
+     "key": "abogado_documento",
+     "label": "Documento del abogado"
+    },
+    {
+     "key": "objeto_proceso",
+     "label": "Objeto del proceso o actuación"
+    },
+    {
+     "key": "facultades_especiales",
+     "label": "Facultades dispositivas autorizadas expresamente",
+     "help": "Escriba solo las que autoriza expresamente: recibir, conciliar, transigir, desistir, allanarse, sustituir, reasumir, disponer del derecho en litigio. Escriba «ninguna» si no autoriza ninguna."
+    }
+   ],
+   "keywords": [
+    "poder por correo",
+    "mensaje de datos",
+    "Ley 2213",
+    "poder digital",
+    "personería"
+   ],
+   "legalBasis": "Ley 2213 de 2022, artículo 5; Código General del Proceso, artículos 74 y 77."
+  },
+  {
+   "code": "GENERAL-PODER-SUSTITUCION-05",
+   "area": "general",
+   "category": "Poder",
+   "title": "Sustitución de poder",
+   "description": "Para que un apoderado sustituya total o parcialmente el poder en otro abogado.",
+   "body": "# SUSTITUCIÓN DE PODER\n\nSeñor(a)\n{{autoridad_judicial}}\nE. S. D.\n\n**Proceso:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n\nYo, {{abogado_nombre}}, abogado(a) con tarjeta profesional No. {{abogado_tp}} del C. S. de la J., actuando como apoderado(a) de {{cliente_nombre}}, sustituyo en {{abogado_sustituto_nombre}}, identificado(a) con {{abogado_sustituto_documento}}, tarjeta profesional No. {{abogado_sustituto_tp}} del C. S. de la J., el poder conferido dentro del proceso de la referencia, en uso de la facultad de sustituir que me fue otorgada y que no está prohibida en el poder.\n\nLa sustitución es {{alcance_sustitucion}} y comprende las facultades de {{facultades_sustituidas}}.\n\nEl abogado sustituto acepta la designación y señala como canal de notificaciones {{abogado_sustituto_correo}}.\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.\n\nAcepto,\n\n{{abogado_sustituto_nombre}}\nT.P. No. {{abogado_sustituto_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "autoridad_judicial",
+     "label": "Despacho o autoridad"
+    },
+    {
+     "key": "abogado_sustituto_nombre",
+     "label": "Nombre del abogado sustituto"
+    },
+    {
+     "key": "abogado_sustituto_documento",
+     "label": "Documento del abogado sustituto"
+    },
+    {
+     "key": "abogado_sustituto_tp",
+     "label": "Tarjeta profesional del abogado sustituto"
+    },
+    {
+     "key": "alcance_sustitucion",
+     "label": "Alcance de la sustitución",
+     "help": "Total o limitado a una actuación"
+    },
+    {
+     "key": "facultades_sustituidas",
+     "label": "Facultades sustituidas"
+    },
+    {
+     "key": "abogado_sustituto_correo",
+     "label": "Correo del abogado sustituto"
+    }
+   ],
+   "keywords": [
+    "sustitución de poder",
+    "apoderado",
+    "abogado sustituto",
+    "personería",
+    "poder"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 75 y 77."
+  },
+  {
+   "code": "GENERAL-PODER-REVOCATORIA-06",
+   "area": "general",
+   "category": "Memorial",
+   "title": "Revocatoria de poder y designación de nuevo apoderado",
+   "description": "Para informar al despacho la revocatoria del poder y, cuando corresponda, la designación de un nuevo abogado.",
+   "body": "# REVOCATORIA DE PODER\n\nSeñor(a)\n{{autoridad_judicial}}\nE. S. D.\n\n**Proceso:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n\nYo, {{cliente_nombre}}, identificado(a) con {{cliente_documento}}, manifiesto que revoco el poder conferido a {{abogado_anterior_nombre}} dentro del proceso de la referencia.\n\nA partir de la radicación de este escrito designo como nuevo apoderado a {{abogado_nombre}}, abogado(a) con tarjeta profesional No. {{abogado_tp}} del C. S. de la J., quien ejercerá la representación en los términos del poder que se adjunta.\n\nSolicito reconocer personería al nuevo apoderado, comunicar la decisión al abogado anterior y realizar las anotaciones correspondientes.\n\nEl poder anterior termina con la radicación de este escrito. La revocatoria se presenta sin perjuicio de que el apoderado anterior pueda solicitar la regulación de sus honorarios dentro de los treinta (30) días siguientes a la notificación del auto que la admita (artículo 76 del Código General del Proceso).\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\nAcepto,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "autoridad_judicial",
+     "label": "Despacho o autoridad"
+    },
+    {
+     "key": "abogado_anterior_nombre",
+     "label": "Abogado cuyo poder se revoca"
+    }
+   ],
+   "keywords": [
+    "revocatoria de poder",
+    "cambio de abogado",
+    "designación",
+    "personería",
+    "apoderado"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 74 y 76."
+  },
+  {
+   "code": "GENERAL-PODER-RENUNCIA-07",
+   "area": "general",
+   "category": "Memorial",
+   "title": "Renuncia al poder",
+   "description": "Para informar al despacho la renuncia del apoderado, acreditando la comunicación enviada al cliente.",
+   "body": "# RENUNCIA AL PODER\n\nSeñor(a)\n{{autoridad_judicial}}\nE. S. D.\n\n**Proceso:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n\nYo, {{abogado_nombre}}, abogado(a) con tarjeta profesional No. {{abogado_tp}} del C. S. de la J., manifiesto que renuncio al poder conferido por {{cliente_nombre}} dentro del proceso de la referencia.\n\nLa renuncia fue comunicada al poderdante el {{fecha_comunicacion_cliente}} mediante {{medio_comunicacion}}, como se acredita con el documento anexo.\n\nSolicito tener por presentada la renuncia, que pone término al poder cinco (5) días después de radicado este memorial con la comunicación enviada al poderdante (artículo 76 del Código General del Proceso).\n\n## ANEXOS\n\n1. Comunicación enviada al poderdante.\n\n2. Constancia de entrega o recepción.\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "autoridad_judicial",
+     "label": "Despacho o autoridad"
+    },
+    {
+     "key": "fecha_comunicacion_cliente",
+     "label": "Fecha de comunicación al cliente"
+    },
+    {
+     "key": "medio_comunicacion",
+     "label": "Medio utilizado para comunicar la renuncia"
+    }
+   ],
+   "keywords": [
+    "renuncia de poder",
+    "terminación mandato",
+    "abogado",
+    "cliente",
+    "memorial"
+   ],
+   "legalBasis": "Código General del Proceso, artículo 76; Ley 1123 de 2007, artículo 28."
+  },
+  {
+   "code": "GENERAL-CONTRATO-HONORARIOS-FIJOS-08",
+   "area": "general",
+   "category": "Contrato",
+   "title": "Contrato de prestación de servicios profesionales con honorarios fijos",
+   "description": "Para contratar servicios jurídicos con una remuneración fija, obligaciones de medio y alcance definido.",
+   "body": "# CONTRATO DE PRESTACIÓN DE SERVICIOS PROFESIONALES\n\nEntre {{cliente_nombre}}, identificado(a) con {{cliente_documento}}, quien en adelante se denominará EL CLIENTE, y {{abogado_nombre}}, identificado(a) con {{abogado_documento}}, abogado(a) con tarjeta profesional No. {{abogado_tp}} del C. S. de la J., quien en adelante se denominará EL ABOGADO, se celebra el presente contrato, que se rige por las siguientes cláusulas:\n\n## OBJETO\n\nEL ABOGADO prestará servicios profesionales consistentes en {{objeto_servicios}} relacionados con {{caso_titulo}}.\n\n## ALCANCE Y ETAPAS\n\n{{alcance_etapas}}\n\n## HONORARIOS Y FORMA DE PAGO\n\nEL CLIENTE pagará la suma fija de {{honorarios_fijos}}, así: {{forma_pago_honorarios}}. Los gastos, expensas, impuestos, desplazamientos y actuaciones no incluidas estarán a cargo de {{responsable_gastos}}.\n\n## OBLIGACIONES DEL ABOGADO\n\nActuar con diligencia, informar el avance del asunto, guardar reserva profesional, advertir los riesgos jurídicos y realizar las actuaciones comprendidas en el alcance contratado.\n\n## OBLIGACIONES DEL CLIENTE\n\nEntregar información veraz y completa, suministrar oportunamente documentos, atender citaciones, pagar los honorarios y gastos pactados y comunicar cualquier cambio de contacto.\n\n## NATURALEZA DE LA OBLIGACIÓN\n\nLa obligación profesional es de medio y no garantiza un resultado específico, salvo estipulación expresa y legalmente válida.\n\n## DURACIÓN Y TERMINACIÓN\n\nEl contrato inicia el {{fecha_inicio_contrato}} y terminará por {{causales_terminacion}}.\n\n## CONFIDENCIALIDAD Y DATOS\n\nLas partes observarán el deber de confidencialidad y la normativa sobre protección de datos personales.\n\n## NOTIFICACIONES\n\nEL CLIENTE: {{cliente_correo}}. EL ABOGADO: {{abogado_correo}}.\n\n## IMPUESTOS\n\nA los honorarios se sumará el IVA cuando EL ABOGADO sea responsable de este impuesto, y se practicarán las retenciones que correspondan según la ley tributaria: {{regimen_tributario}}.\n\n## MÉRITO EJECUTIVO\n\nEl presente contrato contiene obligaciones claras, expresas y exigibles, y presta mérito ejecutivo para el cobro de los honorarios causados.\n\nPara constancia se firma en {{ciudad}}, a {{fecha}}.\n\n\nEL CLIENTE\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\nEL ABOGADO\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "abogado_documento",
+     "label": "Documento del abogado"
+    },
+    {
+     "key": "objeto_servicios",
+     "label": "Servicios jurídicos contratados"
+    },
+    {
+     "key": "alcance_etapas",
+     "label": "Alcance, actuaciones y exclusiones"
+    },
+    {
+     "key": "honorarios_fijos",
+     "label": "Valor de honorarios fijos"
+    },
+    {
+     "key": "forma_pago_honorarios",
+     "label": "Forma y fechas de pago"
+    },
+    {
+     "key": "responsable_gastos",
+     "label": "Responsable de gastos y expensas"
+    },
+    {
+     "key": "fecha_inicio_contrato",
+     "label": "Fecha de inicio"
+    },
+    {
+     "key": "causales_terminacion",
+     "label": "Causales de terminación"
+    },
+    {
+     "key": "regimen_tributario",
+     "label": "Régimen de IVA del abogado",
+     "help": "Ej. «EL ABOGADO no es responsable de IVA» o «responsable de IVA; se facturará electrónicamente»"
+    }
+   ],
+   "keywords": [
+    "contrato abogado",
+    "honorarios fijos",
+    "prestación de servicios",
+    "cliente",
+    "servicios jurídicos"
+   ],
+   "legalBasis": "Código Civil, artículos 1495, 1602, 1603 y 2142 y siguientes; Ley 1123 de 2007, artículo 28 numeral 8 y artículo 35 numeral 1; Código General del Proceso, artículo 422."
+  },
+  {
+   "code": "GENERAL-CONTRATO-CUOTA-LITIS-09",
+   "area": "general",
+   "category": "Contrato",
+   "title": "Contrato de prestación de servicios con cuota litis",
+   "description": "Para pactar honorarios variables como porcentaje del resultado económico favorable del asunto.",
+   "body": "# CONTRATO DE PRESTACIÓN DE SERVICIOS PROFESIONALES CON CUOTA LITIS\n\nEntre {{cliente_nombre}}, identificado(a) con {{cliente_documento}}, quien en adelante se denominará EL CLIENTE, y {{abogado_nombre}}, identificado(a) con {{abogado_documento}}, abogado(a) con tarjeta profesional No. {{abogado_tp}} del C. S. de la J., quien en adelante se denominará EL ABOGADO, se celebra el presente contrato, que se rige por las siguientes cláusulas:\n\n## OBJETO\n\nEL ABOGADO asumirá la gestión profesional de {{objeto_servicios}} relacionada con {{caso_titulo}}.\n\n## CUOTA LITIS\n\nSi se obtiene un resultado económico favorable, EL CLIENTE pagará a EL ABOGADO el {{porcentaje_cuota_litis}}% del valor efectivamente reconocido, pagado, recuperado o recibido como consecuencia del asunto, según la siguiente base: {{base_calculo_cuota_litis}}.\n\nEl derecho al honorario variable se causará cuando ocurra {{evento_causacion_honorario}}. La cuota comprende {{actuaciones_incluidas}} y no comprende {{actuaciones_excluidas}}.\n\n## GASTOS\n\nLos gastos de la gestión serán asumidos por {{responsable_gastos}} y se manejarán así: {{regla_gastos}}.\n\n## INFORMACIÓN Y RIESGOS\n\nEL ABOGADO informará periódicamente el avance del asunto. Las obligaciones profesionales son de medio y no existe garantía de resultado.\n\n## TERMINACIÓN\n\nLa terminación anticipada, revocatoria del poder o transacción directa entre las partes producirá los efectos económicos pactados en {{efectos_terminacion_anticipada}}.\n\n## NOTIFICACIONES\n\n{{cliente_correo}}\n\n{{abogado_correo}}\n\n## IMPUESTOS\n\nA los honorarios se sumará el IVA cuando EL ABOGADO sea responsable de este impuesto, y se practicarán las retenciones que correspondan según la ley tributaria: {{regimen_tributario}}.\n\n## MÉRITO EJECUTIVO\n\nEl presente contrato contiene obligaciones claras, expresas y exigibles, y presta mérito ejecutivo para el cobro de los honorarios causados.\n\nPara constancia se firma en {{ciudad}}, a {{fecha}}.\n\n\nEL CLIENTE\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\nEL ABOGADO\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "objeto_servicios",
+     "label": "Servicios jurídicos"
+    },
+    {
+     "key": "porcentaje_cuota_litis",
+     "label": "Porcentaje de cuota litis",
+     "help": "Debe ser proporcional al trabajo: cobrar una remuneración desproporcionada aprovechando la necesidad o inexperiencia del cliente es falta disciplinaria (art. 35 num. 1 de la Ley 1123 de 2007)"
+    },
+    {
+     "key": "base_calculo_cuota_litis",
+     "label": "Base de cálculo"
+    },
+    {
+     "key": "evento_causacion_honorario",
+     "label": "Evento que causa el honorario"
+    },
+    {
+     "key": "actuaciones_incluidas",
+     "label": "Actuaciones incluidas"
+    },
+    {
+     "key": "actuaciones_excluidas",
+     "label": "Actuaciones excluidas"
+    },
+    {
+     "key": "responsable_gastos",
+     "label": "Responsable de gastos"
+    },
+    {
+     "key": "regla_gastos",
+     "label": "Regla para gastos y expensas"
+    },
+    {
+     "key": "efectos_terminacion_anticipada",
+     "label": "Efectos económicos de terminación anticipada"
+    },
+    {
+     "key": "abogado_documento",
+     "label": "Documento del abogado"
+    },
+    {
+     "key": "regimen_tributario",
+     "label": "Régimen de IVA del abogado",
+     "help": "Ej. «EL ABOGADO no es responsable de IVA» o «responsable de IVA; se facturará electrónicamente»"
+    }
+   ],
+   "keywords": [
+    "cuota litis",
+    "honorarios variables",
+    "porcentaje",
+    "resultado",
+    "abogado"
+   ],
+   "legalBasis": "Código Civil, artículos 1495, 1602, 1603 y 2142 y siguientes; Ley 1123 de 2007, artículo 28 numeral 8 y artículo 35 numeral 1; Código General del Proceso, artículo 422."
+  },
+  {
+   "code": "GENERAL-CONTRATO-HONORARIO-MIXTO-10",
+   "area": "general",
+   "category": "Contrato",
+   "title": "Contrato de prestación de servicios con honorario mixto",
+   "description": "Para combinar una suma fija con una cuota variable o prima de éxito.",
+   "body": "# CONTRATO DE PRESTACIÓN DE SERVICIOS PROFESIONALES CON HONORARIO MIXTO\n\nEntre {{cliente_nombre}}, identificado(a) con {{cliente_documento}}, quien en adelante se denominará EL CLIENTE, y {{abogado_nombre}}, identificado(a) con {{abogado_documento}}, abogado(a) con tarjeta profesional No. {{abogado_tp}} del C. S. de la J., quien en adelante se denominará EL ABOGADO, se celebra el presente contrato, que se rige por las siguientes cláusulas:\n\n## OBJETO Y ALCANCE\n\n{{objeto_y_alcance}}\n\n## HONORARIO FIJO\n\nEL CLIENTE pagará una suma fija de {{honorario_fijo_mixto}}, en la forma siguiente: {{forma_pago_fijo}}.\n\n## COMPONENTE VARIABLE\n\nAdicionalmente, si se obtiene {{evento_exito}}, EL CLIENTE pagará una prima de éxito o participación del {{porcentaje_exito}}% sobre {{base_porcentaje_exito}}. El pago se realizará dentro de {{plazo_pago_exito}} días siguientes a {{momento_pago_exito}}.\n\n## GASTOS Y ACTUACIONES ADICIONALES\n\n{{gastos_y_adicionales}}\n\n## OBLIGACIONES Y RIESGOS\n\nLas obligaciones del abogado son de medio. El resultado no está garantizado. El cliente deberá suministrar información completa y pagar oportunamente los valores pactados.\n\n## TERMINACIÓN\n\n{{terminacion_contrato}}\n\n## IMPUESTOS\n\nA los honorarios se sumará el IVA cuando EL ABOGADO sea responsable de este impuesto, y se practicarán las retenciones que correspondan según la ley tributaria: {{regimen_tributario}}.\n\n## MÉRITO EJECUTIVO\n\nEl presente contrato contiene obligaciones claras, expresas y exigibles, y presta mérito ejecutivo para el cobro de los honorarios causados.\n\nPara constancia se firma en {{ciudad}}, a {{fecha}}.\n\n\nEL CLIENTE\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\nEL ABOGADO\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "objeto_y_alcance",
+     "label": "Objeto y alcance"
+    },
+    {
+     "key": "honorario_fijo_mixto",
+     "label": "Valor fijo"
+    },
+    {
+     "key": "forma_pago_fijo",
+     "label": "Forma de pago del componente fijo"
+    },
+    {
+     "key": "evento_exito",
+     "label": "Resultado que activa el componente variable"
+    },
+    {
+     "key": "porcentaje_exito",
+     "label": "Porcentaje de éxito"
+    },
+    {
+     "key": "base_porcentaje_exito",
+     "label": "Base sobre la que se calcula"
+    },
+    {
+     "key": "plazo_pago_exito",
+     "label": "Plazo para el pago"
+    },
+    {
+     "key": "momento_pago_exito",
+     "label": "Momento a partir del cual se cuenta el plazo"
+    },
+    {
+     "key": "gastos_y_adicionales",
+     "label": "Gastos y actuaciones adicionales"
+    },
+    {
+     "key": "terminacion_contrato",
+     "label": "Reglas de terminación"
+    },
+    {
+     "key": "abogado_documento",
+     "label": "Documento del abogado"
+    },
+    {
+     "key": "regimen_tributario",
+     "label": "Régimen de IVA del abogado",
+     "help": "Ej. «EL ABOGADO no es responsable de IVA» o «responsable de IVA; se facturará electrónicamente»"
+    }
+   ],
+   "keywords": [
+    "honorario mixto",
+    "prima de éxito",
+    "cuota litis",
+    "honorario fijo",
+    "contrato abogado"
+   ],
+   "legalBasis": "Código Civil, artículos 1495, 1602, 1603 y 2142 y siguientes; Ley 1123 de 2007, artículo 28 numeral 8 y artículo 35 numeral 1; Código General del Proceso, artículo 422."
+  },
+  {
+   "code": "GENERAL-CONTRATO-ETAPAS-11",
+   "area": "general",
+   "category": "Contrato",
+   "title": "Contrato de prestación de servicios por etapas",
+   "description": "Para pactar honorarios independientes por fases o hitos de una actuación jurídica.",
+   "body": "# CONTRATO DE PRESTACIÓN DE SERVICIOS PROFESIONALES POR ETAPAS\n\nEntre {{cliente_nombre}}, identificado(a) con {{cliente_documento}}, quien en adelante se denominará EL CLIENTE, y {{abogado_nombre}}, identificado(a) con {{abogado_documento}}, abogado(a) con tarjeta profesional No. {{abogado_tp}} del C. S. de la J., quien en adelante se denominará EL ABOGADO, se celebra el presente contrato, que se rige por las siguientes cláusulas:\n\n## OBJETO\n\n{{objeto_servicios_etapas}}\n\n## ETAPAS Y HONORARIOS\n\nEtapa 1: {{etapa_1}}. Honorario: {{honorario_etapa_1}}. Forma de causación: {{causacion_etapa_1}}.\n\nEtapa 2: {{etapa_2}}. Honorario: {{honorario_etapa_2}}. Forma de causación: {{causacion_etapa_2}}.\n\nEtapa 3: {{etapa_3}}. Honorario: {{honorario_etapa_3}}. Forma de causación: {{causacion_etapa_3}}.\n\nLas etapas adicionales se pactarán por escrito antes de iniciar la actuación correspondiente.\n\n## GASTOS\n\n{{regla_gastos_etapas}}\n\n## INFORMACIÓN Y TERMINACIÓN\n\nEL ABOGADO informará el avance de cada etapa. El contrato podrá terminar por {{causales_terminacion_etapas}}, sin perjuicio del pago de las etapas causadas.\n\n## NOTIFICACIONES\n\n{{cliente_correo}}\n\n{{abogado_correo}}\n\n## IMPUESTOS\n\nA los honorarios se sumará el IVA cuando EL ABOGADO sea responsable de este impuesto, y se practicarán las retenciones que correspondan según la ley tributaria: {{regimen_tributario}}.\n\n## MÉRITO EJECUTIVO\n\nEl presente contrato contiene obligaciones claras, expresas y exigibles, y presta mérito ejecutivo para el cobro de los honorarios causados.\n\nPara constancia se firma en {{ciudad}}, a {{fecha}}.\n\n\nEL CLIENTE\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\nEL ABOGADO\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "objeto_servicios_etapas",
+     "label": "Objeto de los servicios"
+    },
+    {
+     "key": "etapa_1",
+     "label": "Descripción de la etapa 1"
+    },
+    {
+     "key": "honorario_etapa_1",
+     "label": "Honorario de la etapa 1"
+    },
+    {
+     "key": "causacion_etapa_1",
+     "label": "Causación de la etapa 1"
+    },
+    {
+     "key": "etapa_2",
+     "label": "Descripción de la etapa 2"
+    },
+    {
+     "key": "honorario_etapa_2",
+     "label": "Honorario de la etapa 2"
+    },
+    {
+     "key": "causacion_etapa_2",
+     "label": "Causación de la etapa 2"
+    },
+    {
+     "key": "etapa_3",
+     "label": "Descripción de la etapa 3"
+    },
+    {
+     "key": "honorario_etapa_3",
+     "label": "Honorario de la etapa 3"
+    },
+    {
+     "key": "causacion_etapa_3",
+     "label": "Causación de la etapa 3"
+    },
+    {
+     "key": "regla_gastos_etapas",
+     "label": "Regla sobre gastos"
+    },
+    {
+     "key": "causales_terminacion_etapas",
+     "label": "Causales de terminación"
+    },
+    {
+     "key": "abogado_documento",
+     "label": "Documento del abogado"
+    },
+    {
+     "key": "regimen_tributario",
+     "label": "Régimen de IVA del abogado",
+     "help": "Ej. «EL ABOGADO no es responsable de IVA» o «responsable de IVA; se facturará electrónicamente»"
+    }
+   ],
+   "keywords": [
+    "honorarios por etapas",
+    "hitos procesales",
+    "contrato abogado",
+    "etapas",
+    "servicios profesionales"
+   ],
+   "legalBasis": "Código Civil, artículos 1495, 1602, 1603 y 2142 y siguientes; Ley 1123 de 2007, artículo 28 numeral 8 y artículo 35 numeral 1; Código General del Proceso, artículo 422."
+  },
+  {
+   "code": "GENERAL-PROPUESTA-HONORARIOS-12",
+   "area": "general",
+   "category": "Propuesta",
+   "title": "Propuesta de honorarios profesionales",
+   "description": "Para presentar al potencial cliente el alcance, metodología, honorarios, gastos y condiciones del servicio jurídico.",
+   "body": "# PROPUESTA DE HONORARIOS PROFESIONALES\n\nSeñor(a)\n{{cliente_nombre}}\n\n{{ciudad}}, {{fecha}}\n\n**Asunto:** Propuesta de servicios jurídicos para {{caso_titulo}}\n\n## CONTEXTO\n\n{{caso_descripcion}}\n\n## SERVICIOS PROPUESTOS\n\n{{servicios_propuestos}}\n\n## ALCANCE Y EXCLUSIONES\n\n{{alcance_exclusiones}}\n\n## HONORARIOS\n\nLa propuesta económica es la siguiente: {{estructura_honorarios}}.\n\nLos gastos, impuestos, desplazamientos, notificaciones, copias, peritajes y demás expensas estarán a cargo de {{responsable_gastos_propuesta}}.\n\n## METODOLOGÍA Y COMUNICACIÓN\n\n{{metodologia_comunicacion}}\n\n## VIGENCIA Y ACEPTACIÓN\n\nLos valores no incluyen IVA cuando este aplique. Esta propuesta estará vigente hasta {{fecha_vigencia_propuesta}}. La aceptación podrá realizarse mediante firma, correo electrónico, pago inicial o suscripción del contrato definitivo.\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.\n{{abogado_correo}}",
+   "fields": [
+    {
+     "key": "servicios_propuestos",
+     "label": "Servicios incluidos"
+    },
+    {
+     "key": "alcance_exclusiones",
+     "label": "Alcance y exclusiones"
+    },
+    {
+     "key": "estructura_honorarios",
+     "label": "Estructura y valor de honorarios"
+    },
+    {
+     "key": "responsable_gastos_propuesta",
+     "label": "Responsable de gastos"
+    },
+    {
+     "key": "metodologia_comunicacion",
+     "label": "Metodología y canales de comunicación"
+    },
+    {
+     "key": "fecha_vigencia_propuesta",
+     "label": "Fecha de vencimiento de la propuesta"
+    }
+   ],
+   "keywords": [
+    "propuesta de honorarios",
+    "cotización jurídica",
+    "servicios legales",
+    "abogado",
+    "cliente"
+   ],
+   "legalBasis": "Código Civil, artículos 1495, 1602 y 1603; Ley 1123 de 2007."
+  },
+  {
+   "code": "GENERAL-PAZ-SALVO-13",
+   "area": "general",
+   "category": "Constancia",
+   "title": "Paz y salvo de servicios jurídicos",
+   "description": "Para dejar constancia del pago y cierre de obligaciones económicas entre abogado y cliente.",
+   "body": "# PAZ Y SALVO DE SERVICIOS JURÍDICOS\n\n{{abogado_nombre}}, abogado(a) con tarjeta profesional No. {{abogado_tp}} del C. S. de la J., hace constar que {{cliente_nombre}}, identificado(a) con {{cliente_documento}}, se encuentra a paz y salvo por concepto de los honorarios y gastos correspondientes a {{servicios_realizados}}.\n\nEl presente paz y salvo comprende los valores causados y pagados hasta {{fecha_corte}} y no implica declaración sobre obligaciones futuras, actuaciones no contratadas, gastos posteriores ni derechos de terceros, salvo lo expresamente indicado: {{salvedades}}.\n\nSe expide en {{ciudad}}, a {{fecha}}.\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.\n\nRecibido,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}",
+   "fields": [
+    {
+     "key": "servicios_realizados",
+     "label": "Servicios o asunto cubierto"
+    },
+    {
+     "key": "fecha_corte",
+     "label": "Fecha de corte"
+    },
+    {
+     "key": "salvedades",
+     "label": "Salvedades o obligaciones excluidas"
+    }
+   ],
+   "keywords": [
+    "paz y salvo",
+    "honorarios",
+    "cierre de cuenta",
+    "abogado",
+    "cliente"
+   ],
+   "legalBasis": "Código Civil, artículos 1625 y siguientes; Código de Comercio cuando resulte aplicable."
+  },
+  {
+   "code": "GENERAL-CUENTA-COBRO-14",
+   "area": "general",
+   "category": "Cuenta de cobro",
+   "title": "Cuenta de cobro de servicios jurídicos",
+   "description": "Para solicitar el pago de honorarios o gastos causados por servicios profesionales. Úsela solo si no está obligado(a) a facturar electrónicamente; si lo está, debe expedir factura electrónica.",
+   "body": "# CUENTA DE COBRO\n\n{{abogado_nombre}}, identificado(a) con {{abogado_documento}}, tarjeta profesional No. {{abogado_tp}} del C. S. de la J., presenta cuenta de cobro a {{cliente_nombre}} por los siguientes conceptos:\n\n## CONCEPTOS\n\n{{conceptos_cobro}}\n\n**Subtotal:** {{subtotal_cobro}}\n**Impuestos o retenciones:** {{impuestos_retenciones}}\n**Total a pagar:** {{total_cobro}}\n\n## CONDICIONES DE PAGO\n\nEl pago deberá realizarse antes del {{fecha_pago}} mediante {{medio_pago}} a la cuenta o canal {{datos_pago}}.\n\n{{declaracion_tributaria}}\n\nLa cuenta corresponde a servicios efectivamente prestados conforme al contrato o acuerdo de honorarios celebrado entre las partes.\n\nEn {{ciudad}}, a {{fecha}}.\n\n\n{{abogado_nombre}}\n{{abogado_documento}}\n{{abogado_correo}}",
+   "fields": [
+    {
+     "key": "abogado_documento",
+     "label": "Documento del abogado"
+    },
+    {
+     "key": "conceptos_cobro",
+     "label": "Conceptos cobrados"
+    },
+    {
+     "key": "subtotal_cobro",
+     "label": "Subtotal"
+    },
+    {
+     "key": "impuestos_retenciones",
+     "label": "Impuestos y retenciones"
+    },
+    {
+     "key": "total_cobro",
+     "label": "Total"
+    },
+    {
+     "key": "fecha_pago",
+     "label": "Fecha límite de pago"
+    },
+    {
+     "key": "medio_pago",
+     "label": "Medio de pago"
+    },
+    {
+     "key": "datos_pago",
+     "label": "Datos bancarios o de pago"
+    },
+    {
+     "key": "declaracion_tributaria",
+     "label": "Declaración tributaria",
+     "help": "Ej. «Declaro que no soy responsable de IVA ni estoy obligado(a) a expedir factura electrónica, y que mis ingresos corresponden a rentas de trabajo». Verifique su situación con su contador."
+    }
+   ],
+   "keywords": [
+    "cuenta de cobro",
+    "honorarios",
+    "facturación",
+    "servicios jurídicos",
+    "pago"
+   ],
+   "legalBasis": "Código Civil, artículos 1495 y 1602; Estatuto Tributario, artículos 615 a 617; Resolución DIAN 000165 de 2023."
+  },
+  {
+   "code": "GENERAL-DATOS-CLIENTE-15",
+   "area": "general",
+   "category": "Autorización",
+   "title": "Autorización de tratamiento de datos personales del cliente",
+   "description": "Para obtener autorización informada del cliente para recolectar, usar, almacenar y conservar sus datos personales en la prestación del servicio jurídico.",
+   "body": "# AUTORIZACIÓN PARA EL TRATAMIENTO DE DATOS PERSONALES\n\nYo, {{cliente_nombre}}, identificado(a) con {{cliente_documento}}, autorizo a {{responsable_datos}}, con domicilio en {{abogado_direccion}}, para recolectar, almacenar, usar, circular y conservar mis datos personales con las siguientes finalidades: gestionar la relación profesional, elaborar documentos, ejercer la representación, comunicarse conmigo, cumplir obligaciones legales, atender requerimientos de autoridades y conservar el expediente físico o digital.\n\nFui informado(a) de que no estoy obligado(a) a autorizar el tratamiento de mis datos sensibles ni a responder preguntas sobre ellos. Autorizo el tratamiento de datos sensibles estrictamente necesarios para la prestación del servicio, incluidos los relativos a salud, situación familiar, información biométrica o antecedentes, cuando sean indispensables para el asunto y con las medidas de seguridad correspondientes: {{autorizacion_datos_sensibles}}.\n\nDeclaro que fui informado(a) de mis derechos a conocer, actualizar, rectificar, solicitar prueba de la autorización, conocer el uso dado a mis datos, presentar quejas ante la Superintendencia de Industria y Comercio y solicitar la supresión o revocatoria cuando proceda.\n\nEl responsable atenderá solicitudes en {{abogado_correo}} y conservará los datos durante {{periodo_conservacion_datos}}.\n\nEn {{ciudad}}, a {{fecha}}.\n\n\n{{cliente_nombre}}\n{{cliente_documento}}",
+   "fields": [
+    {
+     "key": "autorizacion_datos_sensibles",
+     "label": "Autorización para datos sensibles"
+    },
+    {
+     "key": "periodo_conservacion_datos",
+     "label": "Periodo o criterio de conservación"
+    },
+    {
+     "key": "responsable_datos",
+     "label": "Responsable del tratamiento",
+     "help": "Nombre del abogado o de la firma (razón social y NIT)"
+    }
+   ],
+   "keywords": [
+    "protección de datos",
+    "autorización",
+    "cliente",
+    "datos sensibles",
+    "Ley 1581"
+   ],
+   "legalBasis": "Constitución Política, artículo 15; Ley Estatutaria 1581 de 2012, artículos 5, 6, 8, 9 y 12; Decreto 1074 de 2015 (Decreto 1377 de 2013 compilado)."
+  },
+  {
+   "code": "GENERAL-CONFIDENCIALIDAD-16",
+   "area": "general",
+   "category": "Contrato",
+   "title": "Acuerdo de confidencialidad abogado-cliente",
+   "description": "Para regular la reserva de la información suministrada por el cliente durante y después de la relación profesional.",
+   "body": "# ACUERDO DE CONFIDENCIALIDAD\n\nEntre {{cliente_nombre}}, identificado(a) con {{cliente_documento}}, y {{abogado_nombre}}, abogado(a) con tarjeta profesional No. {{abogado_tp}} del C. S. de la J., se celebra el presente acuerdo.\n\n## INFORMACIÓN CONFIDENCIAL\n\nSe considera confidencial toda información jurídica, comercial, financiera, personal, estratégica, técnica, documental, digital o verbal relacionada con {{caso_titulo}}, así como la información entregada por el cliente, sus vinculados o terceros autorizados.\n\n## OBLIGACIONES\n\nEL ABOGADO utilizará la información únicamente para la prestación de los servicios contratados, limitará su acceso a quienes deban conocerla, adoptará medidas razonables de seguridad y no la revelará ni utilizará, aun en virtud de requerimiento de autoridad, salvo autorización escrita del cliente o necesidad de hacer revelaciones para evitar la comisión de un delito (artículo 34, literal f, de la Ley 1123 de 2007).\n\nEL CLIENTE se compromete a entregar información veraz, mantener reserva sobre las estrategias jurídicas y no divulgar documentos o comunicaciones protegidas por el secreto profesional.\n\n## EXCEPCIONES\n\nNo será confidencial la información que sea pública, ya estuviera legítimamente en poder de la parte receptora, o sea recibida de un tercero autorizado sin deber de reserva. Estas excepciones no limitan el secreto profesional del abogado.\n\n## VIGENCIA\n\nLas obligaciones de reserva estarán vigentes durante la relación profesional y después de su terminación por el tiempo que impongan la ley, el secreto profesional y la naturaleza de la información.\n\nEn {{ciudad}}, a {{fecha}}.\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [],
+   "keywords": [
+    "confidencialidad",
+    "secreto profesional",
+    "abogado",
+    "cliente",
+    "reserva"
+   ],
+   "legalBasis": "Constitución Política, artículo 74; Ley 1123 de 2007, artículo 28 numeral 9 y artículo 34 literal f; Ley 1581 de 2012."
+  },
+  {
+   "code": "GENERAL-MEMORIAL-IMPULSO-17",
+   "area": "general",
+   "category": "Memorial",
+   "title": "Memorial de impulso procesal",
+   "description": "Para solicitar al despacho que adopte la actuación pendiente y dé continuidad al trámite.",
+   "body": "# SOLICITUD DE IMPULSO PROCESAL\n\nSeñor(a)\n{{autoridad_judicial}}\nE. S. D.\n\n**Proceso:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n**Parte solicitante:** {{cliente_nombre}}\n\nRespetuosamente, y teniendo en cuenta los términos para dictar providencias (artículo 120 del Código General del Proceso), solicito impartir impulso procesal y adoptar la actuación pendiente consistente en {{actuacion_pendiente}}.\n\n## ANTECEDENTES\n\n{{antecedentes_impulso}}\n\n## SOLICITUD\n\nSolicito que se profiera la decisión, se fije audiencia, se practique la prueba o se realice la actuación indicada, y que se informe cualquier requerimiento pendiente para continuar el trámite.\n\nEste memorial se remite simultáneamente a los demás sujetos procesales a sus canales digitales conocidos: {{constancia_envio_partes}}.\n\n## NOTIFICACIONES\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "autoridad_judicial",
+     "label": "Despacho o autoridad"
+    },
+    {
+     "key": "actuacion_pendiente",
+     "label": "Actuación cuyo impulso se solicita"
+    },
+    {
+     "key": "antecedentes_impulso",
+     "label": "Antecedentes"
+    },
+    {
+     "key": "constancia_envio_partes",
+     "label": "Constancia de envío a las demás partes"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    }
+   ],
+   "keywords": [
+    "impulso procesal",
+    "memorial",
+    "juzgado",
+    "actuación pendiente",
+    "proceso"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 2, 42, 78 numeral 14, 117, 120 y 121; Ley 2213 de 2022, artículo 3."
+  },
+  {
+   "code": "GENERAL-MEMORIAL-COPIAS-18",
+   "area": "general",
+   "category": "Solicitud",
+   "title": "Solicitud de copias y certificaciones",
+   "description": "Para solicitar copias auténticas, simples o digitales, certificaciones de actuaciones y constancias del expediente.",
+   "body": "# SOLICITUD DE COPIAS Y CERTIFICACIONES\n\nSeñor(a)\n{{autoridad_judicial}}\nE. S. D.\n\n**Proceso:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n\nYo, {{abogado_nombre}}, actuando como apoderado(a) de {{cliente_nombre}}, solicito la expedición y remisión de las siguientes copias o certificaciones:\n\n{{copias_solicitadas}}\n\nSolicito que sean remitidas al correo {{abogado_correo}} o habilitadas para descarga mediante el canal digital del despacho. Manifiesto que la solicitud no comprende información sometida a reserva, o que cuento con legitimación para acceder a ella.\n\nSi se generan costos de reproducción, solicito informar su valor y medio de pago.\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "autoridad_judicial",
+     "label": "Despacho o autoridad"
+    },
+    {
+     "key": "copias_solicitadas",
+     "label": "Copias, certificaciones o constancias solicitadas"
+    }
+   ],
+   "keywords": [
+    "copias",
+    "certificaciones",
+    "expediente",
+    "constancia",
+    "juzgado"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 114 y 115; Ley 2213 de 2022, artículo 4."
+  },
+  {
+   "code": "GENERAL-MEMORIAL-ACCESO-19",
+   "area": "general",
+   "category": "Solicitud",
+   "title": "Solicitud de acceso al expediente",
+   "description": "Para solicitar acceso físico o digital al expediente y a las piezas procesales disponibles.",
+   "body": "# SOLICITUD DE ACCESO AL EXPEDIENTE\n\nSeñor(a)\n{{autoridad_judicial}}\nE. S. D.\n\n**Proceso:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n\nYo, {{abogado_nombre}}, actuando como apoderado(a) de {{cliente_nombre}}, solicito habilitar o restablecer el acceso al expediente físico o digital del proceso de la referencia.\n\n## JUSTIFICACIÓN\n\n{{justificacion_acceso_expediente}}\n\nSolicito remitir el enlace, habilitar el usuario correspondiente, informar la fecha y condiciones de consulta física o proporcionar las piezas procesales necesarias para ejercer el derecho de defensa.\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.\n{{abogado_correo}}",
+   "fields": [
+    {
+     "key": "autoridad_judicial",
+     "label": "Despacho o autoridad"
+    },
+    {
+     "key": "justificacion_acceso_expediente",
+     "label": "Razón de la solicitud de acceso"
+    }
+   ],
+   "keywords": [
+    "acceso expediente",
+    "expediente digital",
+    "consulta",
+    "copias",
+    "defensa"
+   ],
+   "legalBasis": "Constitución Política, artículos 29 y 229; Código General del Proceso, artículos 2 y 114; Ley 2213 de 2022, artículo 4."
+  },
+  {
+   "code": "GENERAL-MEMORIAL-NOTIFICACIONES-20",
+   "area": "general",
+   "category": "Memorial",
+   "title": "Cambio de dirección o canal de notificaciones",
+   "description": "Para informar al despacho y a los demás sujetos procesales el cambio de dirección física o electrónica.",
+   "body": "# CAMBIO DE DIRECCIÓN O CANAL DE NOTIFICACIONES\n\nSeñor(a)\n{{autoridad_judicial}}\nE. S. D.\n\n**Proceso:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n\nYo, {{abogado_nombre}}, actuando como apoderado(a) de {{cliente_nombre}}, informo que, a partir de la fecha, el canal digital y la dirección para recibir notificaciones serán los siguientes:\n\n**Correo electrónico:** {{nuevo_correo_notificaciones}}\n**Dirección física:** {{nueva_direccion_notificaciones}}\n**Teléfono:** {{nuevo_telefono_notificaciones}}\n\nSolicito actualizar la información en el expediente y comunicar el cambio a los sujetos procesales. El presente escrito será enviado simultáneamente a las demás partes por los canales conocidos.\n\n## CONSTANCIA DE ENVÍO\n\n{{constancia_envio_cambio}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "autoridad_judicial",
+     "label": "Despacho o autoridad"
+    },
+    {
+     "key": "nuevo_correo_notificaciones",
+     "label": "Nuevo correo electrónico",
+     "help": "Si cambia el correo del abogado, actualícelo también en el Registro Nacional de Abogados (SIRNA)"
+    },
+    {
+     "key": "nueva_direccion_notificaciones",
+     "label": "Nueva dirección física"
+    },
+    {
+     "key": "nuevo_telefono_notificaciones",
+     "label": "Nuevo teléfono"
+    },
+    {
+     "key": "constancia_envio_cambio",
+     "label": "Constancia de envío a las demás partes"
+    }
+   ],
+   "keywords": [
+    "cambio de correo",
+    "notificaciones",
+    "dirección",
+    "actualización",
+    "memorial"
+   ],
+   "legalBasis": "Código General del Proceso, artículo 78 numerales 5 y 14; Ley 2213 de 2022, artículos 3 y 5."
+  },
+  {
+   "code": "GENERAL-MEMORIAL-APORTE-DOCUMENTOS-21",
+   "area": "general",
+   "category": "Memorial",
+   "title": "Aporte de documentos al expediente",
+   "description": "Para allegar documentos, soportes o información al expediente con identificación de su finalidad probatoria.",
+   "body": "# APORTE DE DOCUMENTOS\n\nSeñor(a)\n{{autoridad_judicial}}\nE. S. D.\n\n**Proceso:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n\nYo, {{abogado_nombre}}, actuando como apoderado(a) de {{cliente_nombre}}, allego los documentos relacionados en el acápite de anexos para que sean incorporados y valorados en la oportunidad procesal correspondiente.\n\n## DOCUMENTOS Y FINALIDAD\n\n{{documentos_y_finalidad}}\n\nManifiesto que los documentos se aportan en original o copia, indicando cuando corresponde la ubicación del original: {{ubicacion_originales}}.\n\nEl presente memorial y sus anexos fueron enviados simultáneamente a los demás sujetos procesales, salvo que se trate de una solicitud exceptuada de traslado: {{constancia_envio_documentos}}.\n\n## ANEXOS\n\n{{anexos}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "autoridad_judicial",
+     "label": "Despacho o autoridad"
+    },
+    {
+     "key": "documentos_y_finalidad",
+     "label": "Relación de documentos y finalidad probatoria",
+     "help": "Indique cada documento y el hecho que prueba. Recuerde que las pruebas deben aportarse en las oportunidades procesales (art. 173 del CGP); fuera de ellas pueden no ser valoradas."
+    },
+    {
+     "key": "ubicacion_originales",
+     "label": "Ubicación de originales"
+    },
+    {
+     "key": "constancia_envio_documentos",
+     "label": "Constancia de envío a las demás partes"
+    },
+    {
+     "key": "anexos",
+     "label": "Anexos"
+    }
+   ],
+   "keywords": [
+    "aporte de documentos",
+    "pruebas",
+    "anexos",
+    "memorial",
+    "expediente"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 78 numeral 14, 164, 173, 244 y 245; Ley 2213 de 2022, artículo 3."
+  },
+  {
+   "code": "GENERAL-MEMORIAL-DESISTIMIENTO-22",
+   "area": "general",
+   "category": "Solicitud",
+   "title": "Desistimiento de pretensiones o actuación procesal",
+   "description": "Para solicitar la terminación por desistimiento de la demanda, recurso, incidente, excepción u otra actuación, cuando sea legalmente procedente.",
+   "body": "# DESISTIMIENTO\n\nSeñor(a)\n{{autoridad_judicial}}\nE. S. D.\n\n**Proceso:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n\nYo, {{cliente_nombre}}, por conducto de mi apoderado {{abogado_nombre}}, manifiesto que desisto de {{objeto_desistimiento}}.\n\nEl desistimiento es {{caracteristicas_desistimiento}} y lo coadyuva el apoderado, quien cuenta con facultad expresa para desistir (artículo 315, numeral 2, del Código General del Proceso). Solicito que se acepte, se produzcan sus efectos legales y se ordene la terminación o actuación consecuente.\n\nManifiesto conocer que el desistimiento de las pretensiones implica la renuncia a ellas y produce los efectos de una sentencia absolutoria con efectos de cosa juzgada (artículo 314 del Código General del Proceso).\n\nRespecto de costas, solicito {{solicitud_costas}}.\n\nSi existe reconvención, incidente u otra actuación independiente, manifiesto lo siguiente: {{otras_actuaciones}}.\n\n## ANEXOS\n\n{{anexos_desistimiento}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "autoridad_judicial",
+     "label": "Despacho o autoridad"
+    },
+    {
+     "key": "objeto_desistimiento",
+     "label": "Pretensión, demanda, recurso, incidente o actuación objeto del desistimiento"
+    },
+    {
+     "key": "caracteristicas_desistimiento",
+     "label": "Características del desistimiento",
+     "help": "Total, parcial, incondicional o sujeto a acuerdo"
+    },
+    {
+     "key": "solicitud_costas",
+     "label": "Solicitud sobre costas",
+     "help": "Ej. «que no se condene en costas por existir acuerdo con la contraparte» (art. 316 del CGP)"
+    },
+    {
+     "key": "otras_actuaciones",
+     "label": "Información sobre reconvención u otras actuaciones"
+    },
+    {
+     "key": "anexos_desistimiento",
+     "label": "Anexos"
+    }
+   ],
+   "keywords": [
+    "desistimiento",
+    "terminación proceso",
+    "recurso",
+    "pretensiones",
+    "memorial"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 314 a 316; Código Civil cuando se trate de derechos disponibles."
+  },
+  {
+   "code": "GENERAL-AUDIENCIA-VIRTUAL-23",
+   "area": "general",
+   "category": "Solicitud",
+   "title": "Solicitud de audiencia virtual",
+   "description": "Para solicitar que una audiencia o diligencia se realice mediante tecnologías de la información y las comunicaciones.",
+   "body": "# SOLICITUD DE AUDIENCIA VIRTUAL\n\nSeñor(a)\n{{autoridad_judicial}}\nE. S. D.\n\n**Proceso:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n\nYo, {{abogado_nombre}}, actuando como apoderado(a) de {{cliente_nombre}}, solicito que la audiencia o diligencia programada para {{fecha_audiencia}} se realice de manera virtual.\n\n## FUNDAMENTOS\n\nLa solicitud se fundamenta en {{razones_audiencia_virtual}}. Los intervinientes cuentan con los medios tecnológicos necesarios y podrán conectarse desde {{lugar_conexion}}.\n\n## DATOS DE CONEXIÓN\n\n**Correo del abogado:** {{abogado_correo}}\n**Correo del cliente:** {{cliente_correo}}\n**Teléfono de contacto:** {{cliente_telefono}}\n\nLa parte se compromete a comparecer oportunamente, mantener conexión estable, observar las instrucciones del despacho y garantizar identidad, privacidad y adecuada participación.\n\n## SOLICITUD\n\nSolicito autorizar la audiencia virtual, informar la plataforma y enlace de conexión y adoptar las medidas necesarias para garantizar el debido proceso y la contradicción.\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "autoridad_judicial",
+     "label": "Despacho o autoridad"
+    },
+    {
+     "key": "fecha_audiencia",
+     "label": "Fecha y hora de la audiencia"
+    },
+    {
+     "key": "razones_audiencia_virtual",
+     "label": "Razones para solicitar modalidad virtual"
+    },
+    {
+     "key": "lugar_conexion",
+     "label": "Lugar desde el que se conectarán los intervinientes"
+    }
+   ],
+   "keywords": [
+    "audiencia virtual",
+    "videoconferencia",
+    "audiencia",
+    "Ley 2213",
+    "conexión"
+   ],
+   "legalBasis": "Ley 2213 de 2022, artículos 1, 2 y 7; Código General del Proceso, artículo 103."
+  },
+  {
+   "code": "GENERAL-CONSTANCIA-24",
+   "area": "general",
+   "category": "Constancia",
+   "title": "Constancia de envío, comparecencia o actuación",
+   "description": "Para dejar constancia formal de una comunicación, entrega, comparecencia, inasistencia, envío simultáneo o actuación profesional.",
+   "body": "# CONSTANCIA\n\n{{abogado_nombre}}, abogado(a) con tarjeta profesional No. {{abogado_tp}} del C. S. de la J., deja constancia de que el día {{fecha_hecho}} ocurrió lo siguiente:\n\n{{hecho_constatado}}\n\nLa actuación se realizó mediante {{medio_actuacion}} y se dirigió a {{destinatario_constancia}}. Como soporte se adjuntan {{soportes_constancia}}.\n\nCuando se trate de un escrito sujeto a envío simultáneo, se deja constancia de que fue remitido al despacho y a los demás sujetos procesales a los canales digitales conocidos, así: {{envio_simultaneo}}.\n\nLa presente constancia se expide para los fines procesales, contractuales o administrativos pertinentes.\n\nEn {{ciudad}}, a {{fecha}}.\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.\n{{abogado_correo}}",
+   "fields": [
+    {
+     "key": "hecho_constatado",
+     "label": "Hecho o actuación que se deja en constancia"
+    },
+    {
+     "key": "medio_actuacion",
+     "label": "Medio utilizado"
+    },
+    {
+     "key": "destinatario_constancia",
+     "label": "Destinatario"
+    },
+    {
+     "key": "soportes_constancia",
+     "label": "Soportes anexos"
+    },
+    {
+     "key": "envio_simultaneo",
+     "label": "Detalle del envío simultáneo"
+    },
+    {
+     "key": "fecha_hecho",
+     "label": "Fecha y hora del hecho"
+    }
+   ],
+   "keywords": [
+    "constancia",
+    "envío",
+    "comparecencia",
+    "inasistencia",
+    "actuación"
+   ],
+   "legalBasis": "Ley 2213 de 2022, artículos 3, 4 y 7; Código General del Proceso, artículos 103 y 111."
+  },
+  {
+   "code": "GENERAL-PODER-PERSONA-JURIDICA-25",
+   "area": "general",
+   "category": "Poder",
+   "title": "Poder especial otorgado por persona jurídica",
+   "description": "Para que el representante legal de una sociedad o entidad confiera poder especial a un abogado en un proceso determinado.",
+   "body": "Señor(a)\n{{autoridad_judicial}}\nE. S. D.\n\n**Referencia:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n\n{{representante_legal}}, identificado(a) con {{documento_representante}}, en calidad de representante legal de {{cliente_nombre}}, NIT {{cliente_documento}}, según certificado de existencia y representación legal expedido por {{entidad_certificado}} que se adjunta, confiero poder especial, amplio y suficiente a {{abogado_nombre}}, identificado(a) con {{abogado_documento}}, abogado(a) con tarjeta profesional No. {{abogado_tp}} del C. S. de la J., con correo electrónico {{abogado_correo}} inscrito en el Registro Nacional de Abogados, para que represente a la entidad en el proceso de la referencia, promovido por o contra {{contraparte}}.\n\nEl apoderado queda facultado para presentar escritos, asistir a audiencias, solicitar y controvertir pruebas, interponer recursos y realizar las actuaciones necesarias para la defensa de los intereses de la entidad.\n\nDe conformidad con el artículo 77 del Código General del Proceso, se confieren expresamente las siguientes facultades dispositivas: {{facultades_especiales}}.\n\nCuando este poder se remita por mensaje de datos, se envía desde la dirección de correo electrónico inscrita en el registro mercantil para recibir notificaciones judiciales (artículo 5 de la Ley 2213 de 2022).\n\nEn {{ciudad}}, a {{fecha}}.\n\n\n{{representante_legal}}\nRepresentante legal de {{cliente_nombre}}\n\nAcepto,\n\n\n{{abogado_nombre}}\n{{abogado_documento}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "autoridad_judicial",
+     "label": "Despacho o autoridad"
+    },
+    {
+     "key": "representante_legal",
+     "label": "Nombre del representante legal"
+    },
+    {
+     "key": "documento_representante",
+     "label": "Documento del representante legal"
+    },
+    {
+     "key": "entidad_certificado",
+     "label": "Entidad que expide el certificado",
+     "help": "Ej. Cámara de Comercio de Cali"
+    },
+    {
+     "key": "abogado_documento",
+     "label": "Documento del abogado"
+    },
+    {
+     "key": "facultades_especiales",
+     "label": "Facultades dispositivas autorizadas expresamente",
+     "help": "Escriba solo las que autoriza expresamente: recibir, conciliar, transigir, desistir, allanarse, sustituir, reasumir, disponer del derecho en litigio. Escriba «ninguna» si no autoriza ninguna."
+    }
+   ],
+   "keywords": [
+    "poder",
+    "persona jurídica",
+    "sociedad",
+    "representante legal",
+    "empresa"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 54, 74 y 77; Ley 2213 de 2022, artículo 5."
+  },
+  {
+   "code": "GENERAL-RECIBO-DINEROS-26",
+   "area": "general",
+   "category": "Constancia",
+   "title": "Recibo de honorarios o dineros del cliente",
+   "description": "Para dejar soporte cada vez que el abogado recibe dineros del cliente (honorarios, gastos o sumas recaudadas), como lo exige el deber de lealtad y honradez.",
+   "body": "# RECIBO\n\n**No.** {{numero_recibo}}\n**Fecha:** {{fecha}}\n**Valor:** {{valor_recibido}}\n\n{{abogado_nombre}}, abogado(a) con tarjeta profesional No. {{abogado_tp}} del C. S. de la J., declara que recibió de {{cliente_nombre}}, identificado(a) con {{cliente_documento}}, la suma de {{valor_recibido}} ({{valor_letras}}), por concepto de {{concepto_recibo}}, relacionado con el asunto «{{caso_titulo}}».\n\nForma de pago: {{forma_pago_recibo}}.\n\nSaldo pendiente después de este pago: {{saldo_pendiente}}.\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "numero_recibo",
+     "label": "Número de recibo"
+    },
+    {
+     "key": "valor_recibido",
+     "label": "Valor recibido"
+    },
+    {
+     "key": "valor_letras",
+     "label": "Valor en letras"
+    },
+    {
+     "key": "concepto_recibo",
+     "label": "Concepto",
+     "help": "Honorarios (anticipo, cuota o saldo), gastos del proceso o dineros recaudados para el cliente"
+    },
+    {
+     "key": "forma_pago_recibo",
+     "label": "Forma de pago"
+    },
+    {
+     "key": "saldo_pendiente",
+     "label": "Saldo pendiente"
+    }
+   ],
+   "keywords": [
+    "recibo",
+    "honorarios",
+    "pago",
+    "anticipo",
+    "dineros del cliente"
+   ],
+   "legalBasis": "Ley 1123 de 2007, artículo 28 numeral 8."
+  }
+ ]
+}

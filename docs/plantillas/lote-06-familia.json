@@ -1,0 +1,1394 @@
+{
+ "templates": [
+  {
+   "code": "FAMILIA-DIVORCIO-MUTUO-JUDICIAL-01",
+   "area": "familia",
+   "category": "Demanda",
+   "title": "Divorcio de mutuo acuerdo judicial",
+   "description": "Para solicitar judicialmente el divorcio de matrimonio civil o la cesación de efectos civiles de matrimonio religioso por acuerdo de ambos cónyuges.",
+   "body": "# DEMANDA DE DIVORCIO (O CESACIÓN DE EFECTOS CIVILES) POR MUTUO ACUERDO\n\nSeñor(a)\n{{juez_familia}}\nE. S. D.\n\n**Solicitantes:** {{conyuge_1}} y {{conyuge_2}}\n**Asunto:** {{tipo_disolucion_matrimonial}} por mutuo acuerdo (jurisdicción voluntaria)\n\n{{abogado_nombre}}, abogado(a) con T.P. No. {{abogado_tp}} del C. S. de la J., obrando como apoderado(a) común de {{conyuge_1}}, identificado(a) con {{documento_conyuge_1}}, y de {{conyuge_2}}, identificado(a) con {{documento_conyuge_2}}, según los poderes que se anexan, solicito decretar {{tipo_disolucion_matrimonial}} del matrimonio celebrado el {{fecha_matrimonio}}, con fundamento en la causal 9.ª del artículo 154 del Código Civil (consentimiento de ambos cónyuges).\n\n## HECHOS\n\n{{hechos_divorcio_mutuo}}\n\n## ACUERDO DE LOS CÓNYUGES\n\nLos cónyuges acuerdan lo siguiente:\n\n1. Residencia separada: {{acuerdo_residencia}}\n\n2. Obligaciones alimentarias entre cónyuges: {{acuerdo_alimentos_conyuges}}\n\n3. Hijos menores de edad: {{existencia_hijos_menores}}\n\n4. Custodia y cuidado personal: {{acuerdo_custodia}}\n\n5. Régimen de visitas: {{acuerdo_visitas}}\n\n6. Alimentos de los hijos: {{acuerdo_alimentos_hijos}}\n\n7. Sociedad conyugal: {{acuerdo_sociedad_conyugal}}\n\n## PRETENSIONES\n\n1. Decretar {{tipo_disolucion_matrimonial}} del matrimonio de {{conyuge_1}} y {{conyuge_2}}.\n\n2. Aprobar el acuerdo presentado por los cónyuges.\n\n3. Declarar disuelta la sociedad conyugal y en estado de liquidación.\n\n4. Ordenar la inscripción de la sentencia en el registro civil de matrimonio y en el de nacimiento de cada cónyuge.\n\n## FUNDAMENTOS DE DERECHO\n\nCódigo Civil, artículos 152, 154 (numeral 9) y 160; Código General del Proceso, artículos 577 (numeral 10) y siguientes; Ley 25 de 1992. Si hay hijos menores de edad, solicito notificar al Defensor de Familia y al Ministerio Público.\n\n## PRUEBAS Y ANEXOS\n\n{{anexos_divorcio_mutuo}}\n\n## NOTIFICACIONES\n\n{{notificaciones_familia}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.\n\nCoadyuvamos la solicitud y ratificamos el acuerdo,\n\n\n{{conyuge_1}}\n{{documento_conyuge_1}}\n\n\n{{conyuge_2}}\n{{documento_conyuge_2}}",
+   "fields": [
+    {
+     "key": "juez_familia",
+     "label": "Juzgado de familia competente",
+     "help": "Juez de Familia (Reparto) del domicilio de cualquiera de los cónyuges."
+    },
+    {
+     "key": "conyuge_1",
+     "label": "Nombre del cónyuge 1"
+    },
+    {
+     "key": "conyuge_2",
+     "label": "Nombre del cónyuge 2"
+    },
+    {
+     "key": "tipo_disolucion_matrimonial",
+     "label": "Divorcio civil o cesación de efectos civiles de matrimonio religioso",
+     "help": "Escriba «el divorcio» (matrimonio civil) o «la cesación de los efectos civiles» (matrimonio religioso)."
+    },
+    {
+     "key": "fecha_matrimonio",
+     "label": "Fecha y lugar del matrimonio"
+    },
+    {
+     "key": "hechos_divorcio_mutuo",
+     "label": "Hechos"
+    },
+    {
+     "key": "acuerdo_residencia",
+     "label": "Acuerdo sobre residencias"
+    },
+    {
+     "key": "acuerdo_alimentos_conyuges",
+     "label": "Acuerdo sobre alimentos entre cónyuges"
+    },
+    {
+     "key": "existencia_hijos_menores",
+     "label": "Información sobre hijos menores",
+     "help": "Nombres y edades, o «No hay hijos menores de edad». Si no hay, escriba «No aplica» en custodia, visitas y alimentos de hijos."
+    },
+    {
+     "key": "acuerdo_custodia",
+     "label": "Acuerdo de custodia"
+    },
+    {
+     "key": "acuerdo_visitas",
+     "label": "Acuerdo de visitas"
+    },
+    {
+     "key": "acuerdo_alimentos_hijos",
+     "label": "Acuerdo de alimentos de los hijos"
+    },
+    {
+     "key": "acuerdo_sociedad_conyugal",
+     "label": "Acuerdo sobre sociedad conyugal",
+     "help": "Ej. «Se liquidará de común acuerdo ante notaría» o «No hay bienes ni deudas sociales». Si hubo capitulaciones, indíquelo."
+    },
+    {
+     "key": "anexos_divorcio_mutuo",
+     "label": "Registros civiles, registro de matrimonio, poderes y demás anexos",
+     "help": "Poderes de ambos cónyuges; registro civil de matrimonio; registros civiles de nacimiento de los cónyuges y de los hijos."
+    },
+    {
+     "key": "notificaciones_familia",
+     "label": "Notificaciones"
+    },
+    {
+     "key": "documento_conyuge_1",
+     "label": "Documento del cónyuge 1"
+    },
+    {
+     "key": "documento_conyuge_2",
+     "label": "Documento del cónyuge 2"
+    }
+   ],
+   "keywords": [
+    "divorcio mutuo acuerdo",
+    "juez de familia",
+    "cesación efectos civiles",
+    "acuerdo cónyuges",
+    "sociedad conyugal",
+    "jurisdicción voluntaria",
+    "causal 9"
+   ],
+   "legalBasis": "Código Civil, artículos 152, 154 (numeral 9, modificado por la Ley 25 de 1992) y 160; Código General del Proceso, artículos 21, 28 y 577 (numeral 10); Ley 25 de 1992."
+  },
+  {
+   "code": "FAMILIA-DIVORCIO-MUTUO-NOTARIAL-02",
+   "area": "familia",
+   "category": "Solicitud",
+   "title": "Divorcio de mutuo acuerdo ante notaría",
+   "description": "Para tramitar ante notario el divorcio civil o la cesación de efectos civiles de matrimonio religioso por mutuo acuerdo, mediante abogado.",
+   "body": "# SOLICITUD DE DIVORCIO (O CESACIÓN DE EFECTOS CIVILES) DE MUTUO ACUERDO ANTE NOTARIO\n\nSeñor(a)\nNotario(a) {{notaria}}\nCiudad\n\n**Solicitantes:** {{conyuge_1}} y {{conyuge_2}}\n\n{{abogado_nombre}}, abogado(a) con T.P. No. {{abogado_tp}} del C. S. de la J., obrando como apoderado(a) de {{conyuge_1}}, identificado(a) con {{documento_conyuge_1}}, y de {{conyuge_2}}, identificado(a) con {{documento_conyuge_2}}, según los poderes que se anexan, solicito que se formalice mediante escritura pública {{tipo_disolucion_notarial}}, por mutuo acuerdo.\n\n## IDENTIFICACIÓN DEL MATRIMONIO\n\n{{datos_matrimonio_notarial}}\n\n## ACUERDO\n\nLos cónyuges manifiestan su voluntad de {{tipo_disolucion_notarial}} y acuerdan:\n\n{{acuerdo_notarial_divorcio}}\n\n## HIJOS MENORES DE EDAD\n\n{{hijos_menores_notarial}}\n\n## PETICIONES\n\n1. Admitir la solicitud.\n\n2. Si existen hijos menores de edad, notificar al Defensor de Familia del lugar para que rinda su concepto sobre el acuerdo en lo relativo a ellos.\n\n3. Autorizar la escritura pública de divorcio o cesación de efectos civiles, que disuelve la sociedad conyugal, y ordenar su inscripción en el registro civil.\n\n## ANEXOS\n\n{{anexos_notariales_divorcio}}\n\nEn {{ciudad}}, a {{fecha}}.\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "notaria",
+     "label": "Notaría",
+     "help": "Ej. «Quinto del Círculo de Cali». Puede ser cualquier notaría del país."
+    },
+    {
+     "key": "conyuge_1",
+     "label": "Cónyuge 1"
+    },
+    {
+     "key": "conyuge_2",
+     "label": "Cónyuge 2"
+    },
+    {
+     "key": "tipo_disolucion_notarial",
+     "label": "Divorciarse o cesar los efectos civiles",
+     "help": "Escriba «divorciarse» (matrimonio civil) o «cesar los efectos civiles de su matrimonio religioso»."
+    },
+    {
+     "key": "datos_matrimonio_notarial",
+     "label": "Datos del matrimonio",
+     "help": "Fecha, lugar, notaría o parroquia y serial o indicativo del registro civil de matrimonio."
+    },
+    {
+     "key": "acuerdo_notarial_divorcio",
+     "label": "Acuerdo integral",
+     "help": "Debe regular, como mínimo, las obligaciones alimentarias entre los cónyuges (si las hay o no) y el estado de la sociedad conyugal."
+    },
+    {
+     "key": "anexos_notariales_divorcio",
+     "label": "Registros civiles, registro de matrimonio, poderes y anexos",
+     "help": "Poderes de ambos cónyuges; registro civil de matrimonio; registros civiles de nacimiento de los cónyuges y de los hijos menores."
+    },
+    {
+     "key": "hijos_menores_notarial",
+     "label": "Hijos menores de edad y acuerdo sobre ellos",
+     "help": "Nombres y edades, y lo acordado sobre custodia, cuidado personal, visitas y alimentos. Si no hay, escriba «No hay hijos menores de edad»."
+    },
+    {
+     "key": "documento_conyuge_1",
+     "label": "Documento del cónyuge 1"
+    },
+    {
+     "key": "documento_conyuge_2",
+     "label": "Documento del cónyuge 2"
+    }
+   ],
+   "keywords": [
+    "divorcio notarial",
+    "mutuo acuerdo",
+    "notaría",
+    "escritura pública",
+    "Defensor de Familia"
+   ],
+   "legalBasis": "Ley 962 de 2005, artículo 34; Decreto 4436 de 2005 (compilado en el Decreto 1069 de 2015); Código Civil, artículos 152, 154 (numeral 9) y 160; Ley 25 de 1992."
+  },
+  {
+   "code": "FAMILIA-DIVORCIO-CONTENCIOSO-03",
+   "area": "familia",
+   "category": "Demanda",
+   "title": "Divorcio contencioso o cesación de efectos civiles",
+   "description": "Para solicitar judicialmente el divorcio o la cesación de efectos civiles con fundamento en una o varias causales legales.",
+   "body": "# DEMANDA DE DIVORCIO CONTENCIOSO\n\nSeñor(a)\n{{juez_familia}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandado:** {{conyuge_demandado}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, por medio de apoderado(a), presento demanda verbal para obtener {{tipo_disolucion_contenciosa}}, contra {{conyuge_demandado}}, identificado(a) con {{documento_demandado}}, con base en lo siguiente:\n\n## PRETENSIONES\n\n1. Decretar {{tipo_disolucion_contenciosa}} del matrimonio celebrado entre las partes el {{fecha_matrimonio}}.\n\n2. Declarar disuelta la sociedad conyugal y ordenar su liquidación.\n\n3. Regular la custodia, visitas y alimentos de los hijos menores, si corresponde.\n\n4. Declarar que {{conyuge_demandado}} dio lugar al divorcio y condenarlo(a) a suministrar alimentos a {{cliente_nombre}}, como cónyuge inocente (artículo 411, numeral 4, del Código Civil), en la cuantía de {{alimentos_conyuge_inocente}}.\n\n5. {{pretension_perjuicios}}\n\n6. Ordenar la inscripción de la sentencia en el registro civil de matrimonio y en el de nacimiento de cada cónyuge.\n\n## HECHOS\n\n{{hechos_divorcio_contencioso}}\n\n## CAUSALES\n\nSe invocan las causales {{causales_divorcio}} del artículo 154 del Código Civil (modificado por la Ley 25 de 1992), explicadas así:\n\n{{explicacion_causales_divorcio}}\n\n## OPORTUNIDAD\n\n{{oportunidad_causal}}\n\n## REQUISITO DE PROCEDIBILIDAD\n\n{{requisito_conciliacion}}\n\n## PRUEBAS\n\n{{pruebas_divorcio_contencioso}}\n\n## MEDIDAS CAUTELARES Y PROVISIONALES\n\nCon fundamento en el artículo 598 del Código General del Proceso, solicito: {{medidas_provisionales_familia}}\n\n## JURAMENTO ESTIMATORIO\n\n{{juramento_estimatorio}}\n\n## ANEXOS\n\n{{anexos_divorcio_contencioso}}\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## NOTIFICACIONES\n\n{{notificaciones_familia}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_familia",
+     "label": "Juzgado de familia competente",
+     "help": "Juez de Familia (Reparto) del domicilio del demandado, o del domicilio común anterior si el demandante lo conserva (art. 28 num. 2 del CGP). Primera instancia, proceso verbal."
+    },
+    {
+     "key": "conyuge_demandado",
+     "label": "Cónyuge demandado"
+    },
+    {
+     "key": "tipo_disolucion_contenciosa",
+     "label": "Divorcio civil o cesación de efectos civiles",
+     "help": "Escriba «el divorcio» (matrimonio civil) o «la cesación de los efectos civiles» (matrimonio religioso)."
+    },
+    {
+     "key": "hechos_divorcio_contencioso",
+     "label": "Hechos"
+    },
+    {
+     "key": "causales_divorcio",
+     "label": "Causales invocadas",
+     "help": "Por número del art. 154 del Código Civil, ej. «1.ª y 3.ª». La 8.ª exige separación de cuerpos de más de dos años."
+    },
+    {
+     "key": "explicacion_causales_divorcio",
+     "label": "Explicación de las causales"
+    },
+    {
+     "key": "pruebas_divorcio_contencioso",
+     "label": "Pruebas"
+    },
+    {
+     "key": "medidas_provisionales_familia",
+     "label": "Medidas provisionales",
+     "help": "Ej. residencia separada, custodia provisional, alimentos provisionales, embargo y secuestro de bienes sociales o inscripción de la demanda (art. 598 del CGP)."
+    },
+    {
+     "key": "anexos_divorcio_contencioso",
+     "label": "Anexos"
+    },
+    {
+     "key": "notificaciones_familia",
+     "label": "Notificaciones",
+     "help": "Dirección física y electrónica de las partes y del apoderado (art. 82 num. 10 del CGP y art. 6 de la Ley 2213 de 2022)."
+    },
+    {
+     "key": "documento_demandado",
+     "label": "Documento del cónyuge demandado"
+    },
+    {
+     "key": "fecha_matrimonio",
+     "label": "Fecha y lugar del matrimonio"
+    },
+    {
+     "key": "oportunidad_causal",
+     "label": "Oportunidad de la demanda",
+     "help": "Causales 1.ª y 7.ª: dentro del año siguiente a cuando se conocieron y máximo dos años después de ocurridas (art. 156 C.C.). Según la C-985 de 2010, ese término solo limita las sanciones (alimentos), no el divorcio. Para las demás causales: «No aplica término»."
+    },
+    {
+     "key": "alimentos_conyuge_inocente",
+     "label": "Alimentos solicitados para el cónyuge inocente",
+     "help": "Si no se piden, elimine la pretensión 4 en la revisión."
+    },
+    {
+     "key": "pretension_perjuicios",
+     "label": "Pretensión de perjuicios (opcional)",
+     "help": "Ej. «Condenar al demandado a pagar los perjuicios causados por ___». Si no se piden, escriba «No se solicitan perjuicios». Si se piden, diligencie el juramento estimatorio."
+    },
+    {
+     "key": "juramento_estimatorio",
+     "label": "Juramento estimatorio",
+     "help": "Solo si se piden perjuicios: estimación razonada bajo juramento, discriminando cada concepto (art. 206 del CGP). Si no, escriba «No aplica»."
+    },
+    {
+     "key": "requisito_conciliacion",
+     "label": "Requisito de procedibilidad",
+     "help": "Constancia de conciliación fallida (centro de conciliación, defensor o comisario de familia, notario) cuando sea requisito (Ley 2220 de 2022), o por qué no se exige: se piden medidas cautelares, se desconoce el domicilio del demandado o hay violencia intrafamiliar."
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital y envío de la demanda",
+     "help": "Canal digital de las partes (art. 6 de la Ley 2213 de 2022) y constancia de envío simultáneo de la demanda y sus anexos al demandado, salvo que se pidan medidas cautelares o se desconozca su dirección."
+    }
+   ],
+   "keywords": [
+    "divorcio contencioso",
+    "causales artículo 154",
+    "cesación efectos civiles",
+    "cónyuge culpable",
+    "juez de familia"
+   ],
+   "legalBasis": "Código Civil, artículos 152, 154, 156, 160 y 411 (numeral 4); Ley 25 de 1992; Código General del Proceso, artículos 22, 28, 82, 206, 368, 388 y 598; Ley 2213 de 2022, artículo 6; Ley 2220 de 2022."
+  },
+  {
+   "code": "FAMILIA-SOCIEDAD-CONYUGAL-04",
+   "area": "familia",
+   "category": "Demanda",
+   "title": "Liquidación de sociedad conyugal o patrimonial",
+   "description": "Para liquidar judicialmente una sociedad conyugal o patrimonial previamente disuelta.",
+   "body": "# DEMANDA DE LIQUIDACIÓN DE SOCIEDAD CONYUGAL O PATRIMONIAL\n\nSeñor(a)\n{{juez_familia}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandado:** {{otro_conyuge_o_companero}}\n**Radicado:** {{radicado}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, por medio de apoderado(a), solicito la liquidación de la sociedad {{tipo_sociedad}} conformada con {{otro_conyuge_o_companero}}, en los términos del artículo 523 del Código General del Proceso.\n\n## ANTECEDENTES DE DISOLUCIÓN\n\nLa sociedad fue disuelta mediante {{causa_disolucion_sociedad}} el {{fecha_disolucion_sociedad}}.\n\n## ACTIVO SOCIAL\n\n{{activos_sociedad}}\n\n## PASIVO SOCIAL\n\n{{pasivos_sociedad}}\n\n## PRETENSIONES\n\n1. Admitir la demanda de liquidación.\n\n2. Ordenar el emplazamiento de los acreedores de la sociedad.\n\n3. Tener por relacionados el activo y el pasivo social, con su valor estimado.\n\n4. Señalar fecha para la diligencia de inventarios y avalúos.\n\n5. Decretar la partición, aprobarla y adjudicar los bienes conforme a los derechos de las partes.\n\n## PRUEBAS Y ANEXOS\n\n{{pruebas_liquidacion_sociedad}}\n\n## NOTIFICACIONES\n\n{{notificaciones_familia}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_familia",
+     "label": "Juzgado de familia",
+     "help": "Si la sociedad se disolvió por sentencia, la demanda se presenta ante el mismo juez que la dictó y se tramita en el mismo expediente (art. 523 del CGP). Indique ese radicado en el caso."
+    },
+    {
+     "key": "otro_conyuge_o_companero",
+     "label": "Otro cónyuge o compañero permanente"
+    },
+    {
+     "key": "causa_disolucion_sociedad",
+     "label": "Causa de disolución",
+     "help": "Ej. «sentencia de divorcio del Juzgado X de Familia de Cali» o «sentencia que declaró la unión marital y la sociedad patrimonial»."
+    },
+    {
+     "key": "fecha_disolucion_sociedad",
+     "label": "Fecha de disolución"
+    },
+    {
+     "key": "activos_sociedad",
+     "label": "Relación de activos, valor y soportes",
+     "help": "Cada bien con su identificación (matrícula, placa, número de cuenta), valor estimado y soporte. Separe los bienes propios de cada cónyuge, que no se reparten."
+    },
+    {
+     "key": "pasivos_sociedad",
+     "label": "Relación de pasivos, acreedores y soportes"
+    },
+    {
+     "key": "pruebas_liquidacion_sociedad",
+     "label": "Pruebas y anexos"
+    },
+    {
+     "key": "tipo_sociedad",
+     "label": "Tipo de sociedad",
+     "help": "Escriba «conyugal» o «patrimonial»."
+    },
+    {
+     "key": "notificaciones_familia",
+     "label": "Notificaciones",
+     "help": "Dirección física y electrónica de las partes y del apoderado (art. 82 num. 10 del CGP y art. 6 de la Ley 2213 de 2022)."
+    }
+   ],
+   "keywords": [
+    "liquidación sociedad conyugal",
+    "sociedad patrimonial",
+    "inventarios",
+    "avalúos",
+    "partición"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 501, 523 y 598; Código Civil, artículos 1771 a 1848; Ley 28 de 1932; Ley 54 de 1990, artículos 5 a 8 (modificada por la Ley 979 de 2005)."
+  },
+  {
+   "code": "FAMILIA-UNION-MARITAL-05",
+   "area": "familia",
+   "category": "Demanda",
+   "title": "Declaración de unión marital de hecho y sociedad patrimonial",
+   "description": "Para solicitar la declaración judicial de existencia de una unión marital de hecho y, cuando proceda, de la sociedad patrimonial.",
+   "body": "# DEMANDA DE DECLARACIÓN DE UNIÓN MARITAL DE HECHO\n\nSeñor(a)\n{{juez_familia}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandado:** {{companero_demandado}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, por medio de apoderado(a), presento demanda verbal de declaración de existencia de unión marital de hecho y de sociedad patrimonial contra {{companero_demandado}}.\n\n## PRETENSIONES\n\n1. Declarar que entre {{cliente_nombre}} y {{companero_demandado}} existió una unión marital de hecho desde {{fecha_inicio_union}} hasta {{fecha_final_union}}.\n\n2. Declarar que entre los compañeros permanentes existió una sociedad patrimonial durante el mismo período.\n\n3. Declarar disuelta la sociedad patrimonial y en estado de liquidación, la cual se adelantará en los términos del artículo 523 del Código General del Proceso.\n\n4. Ordenar la inscripción de la sentencia en el registro civil de nacimiento de cada compañero.\n\n## HECHOS\n\n{{hechos_union_marital}}\n\n## PRESUPUESTOS PATRIMONIALES\n\n{{presupuestos_sociedad_patrimonial}}\n\n## REQUISITO DE PROCEDIBILIDAD\n\n{{requisito_conciliacion}}\n\n## MEDIDAS CAUTELARES\n\n{{medidas_union_marital}}\n\n## PRUEBAS\n\n{{pruebas_union_marital}}\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## NOTIFICACIONES\n\n{{notificaciones_familia}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_familia",
+     "label": "Juzgado de familia",
+     "help": "Juez de Familia (Reparto) del domicilio del demandado, o del domicilio común anterior si el demandante lo conserva (art. 28 num. 2 del CGP). Primera instancia, proceso verbal."
+    },
+    {
+     "key": "companero_demandado",
+     "label": "Compañero permanente demandado",
+     "help": "Si el compañero falleció, la demanda se dirige contra sus herederos determinados e indeterminados."
+    },
+    {
+     "key": "fecha_inicio_union",
+     "label": "Fecha de inicio de la unión"
+    },
+    {
+     "key": "fecha_final_union",
+     "label": "Fecha final",
+     "help": "Fecha de la separación física y definitiva, del matrimonio de uno de ellos con un tercero o de la muerte. Las acciones para disolver y liquidar la sociedad patrimonial prescriben en un año contado desde esa fecha (art. 8 de la Ley 54 de 1990)."
+    },
+    {
+     "key": "hechos_union_marital",
+     "label": "Hechos de convivencia permanente y singular"
+    },
+    {
+     "key": "presupuestos_sociedad_patrimonial",
+     "label": "Presupuestos de la sociedad patrimonial",
+     "help": "Unión de más de dos años; si alguno tenía impedimento para casarse, que su sociedad conyugal anterior estaba disuelta (art. 2 de la Ley 54 de 1990, modificado por la Ley 979 de 2005)."
+    },
+    {
+     "key": "pruebas_union_marital",
+     "label": "Pruebas",
+     "help": "Testimonios, documentos, fotografías, afiliaciones a salud como beneficiario, declaraciones extrajuicio, etc."
+    },
+    {
+     "key": "medidas_union_marital",
+     "label": "Medidas cautelares",
+     "help": "Ej. inscripción de la demanda y embargo y secuestro de bienes que puedan ser objeto de gananciales (art. 598 del CGP). Si no se piden, escriba «No se solicitan»."
+    },
+    {
+     "key": "requisito_conciliacion",
+     "label": "Requisito de procedibilidad",
+     "help": "Constancia de conciliación fallida (centro de conciliación, defensor o comisario de familia, notario) cuando sea requisito (Ley 2220 de 2022), o por qué no se exige: se piden medidas cautelares, se desconoce el domicilio del demandado o hay violencia intrafamiliar."
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital y envío de la demanda",
+     "help": "Canal digital de las partes (art. 6 de la Ley 2213 de 2022) y constancia de envío simultáneo de la demanda y sus anexos al demandado, salvo que se pidan medidas cautelares o se desconozca su dirección."
+    },
+    {
+     "key": "notificaciones_familia",
+     "label": "Notificaciones",
+     "help": "Dirección física y electrónica de las partes y del apoderado (art. 82 num. 10 del CGP y art. 6 de la Ley 2213 de 2022)."
+    }
+   ],
+   "keywords": [
+    "unión marital de hecho",
+    "sociedad patrimonial",
+    "compañeros permanentes",
+    "convivencia",
+    "declaración"
+   ],
+   "legalBasis": "Ley 54 de 1990, artículos 1, 2, 4, 5, 6, 7 y 8 (modificada por la Ley 979 de 2005); Código General del Proceso, artículos 22, 28, 368, 523 y 598; Ley 2213 de 2022, artículo 6; Ley 2220 de 2022."
+  },
+  {
+   "code": "FAMILIA-ALIMENTOS-FIJACION-06",
+   "area": "familia",
+   "category": "Demanda",
+   "title": "Demanda de fijación de cuota alimentaria",
+   "description": "Para solicitar la fijación judicial de alimentos a favor de un niño, niña, adolescente o persona legitimada.",
+   "body": "# DEMANDA DE FIJACIÓN DE ALIMENTOS\n\nSeñor(a)\n{{juez_familia}}\nE. S. D.\n\n**Demandante:** {{alimentario_o_representante}}\n**Demandado:** {{alimentante}}\n\n{{alimentario_o_representante}}, por medio de apoderado(a), presento demanda verbal sumaria de fijación de cuota alimentaria a favor de {{alimentario}} y contra {{alimentante}}, identificado(a) con {{documento_alimentante}}.\n\n## PRETENSIONES\n\n1. Fijar cuota alimentaria mensual de {{cuota_solicitada}}.\n\n2. Ordenar el pago de gastos extraordinarios por {{gastos_extraordinarios}}.\n\n3. Ordenar que la cuota se descuente directamente de la nómina del demandado, oficiando al pagador {{pagador_alimentante}}, y decretar las demás medidas para asegurar su cumplimiento (artículo 130 de la Ley 1098 de 2006).\n\n4. Ordenar que la cuota se reajuste cada año en el mismo porcentaje del incremento del salario mínimo legal, salvo que el juez fije otro criterio.\n\n5. Fijar alimentos provisionales desde la admisión de la demanda (artículo 129 de la Ley 1098 de 2006 y artículo 397 del Código General del Proceso).\n\n## HECHOS\n\n{{hechos_alimentos}}\n\n## NECESIDADES Y CAPACIDAD ECONÓMICA\n\nNecesidades del alimentario: {{necesidades_alimentario}}.\n\nCapacidad económica del alimentante: {{capacidad_alimentante}}.\n\nSi no se acredita la capacidad económica del demandado, solicito presumir que devenga al menos el salario mínimo legal (artículo 129 de la Ley 1098 de 2006).\n\n## REQUISITO DE PROCEDIBILIDAD\n\n{{requisito_conciliacion}}\n\n## PRUEBAS Y ANEXOS\n\n{{pruebas_alimentos}}\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## NOTIFICACIONES\n\n{{notificaciones_familia}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_familia",
+     "label": "Juzgado de familia",
+     "help": "Juez de Familia (Reparto). Si el niño, niña o adolescente es demandante o demandado, es competente de forma privativa el juez de su domicilio o residencia (art. 28 num. 2 del CGP). Se tramita en única instancia por el proceso verbal sumario."
+    },
+    {
+     "key": "alimentario_o_representante",
+     "label": "Demandante (alimentario o su representante)",
+     "help": "Ej. «María Pérez, en representación de su hija menor Ana Gómez Pérez»."
+    },
+    {
+     "key": "alimentante",
+     "label": "Alimentante"
+    },
+    {
+     "key": "cuota_solicitada",
+     "label": "Cuota mensual solicitada"
+    },
+    {
+     "key": "gastos_extraordinarios",
+     "label": "Gastos extraordinarios",
+     "help": "Ej. «el 50 % de los gastos de matrícula, uniformes, útiles y salud no cubiertos por la EPS»."
+    },
+    {
+     "key": "hechos_alimentos",
+     "label": "Hechos"
+    },
+    {
+     "key": "necesidades_alimentario",
+     "label": "Necesidades del alimentario"
+    },
+    {
+     "key": "capacidad_alimentante",
+     "label": "Capacidad económica del alimentante"
+    },
+    {
+     "key": "pruebas_alimentos",
+     "label": "Pruebas",
+     "help": "Registro civil de nacimiento del alimentario (prueba del parentesco), soportes de gastos y prueba de los ingresos o bienes del demandado."
+    },
+    {
+     "key": "alimentario",
+     "label": "Alimentario (beneficiario de la cuota)"
+    },
+    {
+     "key": "documento_alimentante",
+     "label": "Documento del alimentante"
+    },
+    {
+     "key": "pagador_alimentante",
+     "label": "Empleador o pagador del alimentante",
+     "help": "Si no se conoce, escriba «que el demandado informe»."
+    },
+    {
+     "key": "requisito_conciliacion",
+     "label": "Requisito de procedibilidad",
+     "help": "Constancia de conciliación fallida (centro de conciliación, defensor o comisario de familia, notario) cuando sea requisito (Ley 2220 de 2022), o por qué no se exige: se piden medidas cautelares, se desconoce el domicilio del demandado o hay violencia intrafamiliar."
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital y envío de la demanda",
+     "help": "Canal digital de las partes (art. 6 de la Ley 2213 de 2022) y constancia de envío simultáneo de la demanda y sus anexos al demandado, salvo que se pidan medidas cautelares o se desconozca su dirección."
+    },
+    {
+     "key": "notificaciones_familia",
+     "label": "Notificaciones",
+     "help": "Dirección física y electrónica de las partes y del apoderado (art. 82 num. 10 del CGP y art. 6 de la Ley 2213 de 2022)."
+    }
+   ],
+   "keywords": [
+    "alimentos",
+    "cuota alimentaria",
+    "menor",
+    "alimentante",
+    "juez de familia"
+   ],
+   "legalBasis": "Ley 1098 de 2006, artículos 24, 129 y 130; Código Civil, artículos 411 y siguientes; Código General del Proceso, artículos 21, 28, 82, 390 y 397; Ley 2213 de 2022, artículo 6; Ley 2220 de 2022."
+  },
+  {
+   "code": "FAMILIA-ALIMENTOS-MODIFICACION-07",
+   "area": "familia",
+   "category": "Demanda",
+   "title": "Demanda de aumento, disminución o exoneración de alimentos",
+   "description": "Para modificar o terminar una cuota alimentaria por cambio de necesidades, capacidad económica o cumplimiento de la edad y condiciones legales.",
+   "body": "# DEMANDA DE MODIFICACIÓN O EXONERACIÓN DE ALIMENTOS\n\nSeñor(a)\n{{juez_familia}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandado:** {{beneficiario_o_obligado}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, por medio de apoderado(a), presento demanda verbal sumaria de {{tipo_modificacion_alimentos}} de cuota alimentaria.\n\n## DECISIÓN O ACUERDO VIGENTE\n\nLa cuota fue fijada mediante {{titulo_cuota_vigente}} por valor de {{cuota_actual}}.\n\n## CAMBIO DE CIRCUNSTANCIAS\n\n{{cambio_circunstancias_alimentos}}\n\n## PRETENSIONES\n\n1. {{pretension_modificacion}}\n\n2. Regular los gastos extraordinarios y ordenar la actualización del mecanismo de pago (descuento por nómina u otro).\n\n## REQUISITO DE PROCEDIBILIDAD\n\n{{requisito_conciliacion}}\n\n## PRUEBAS\n\n{{pruebas_modificacion_alimentos}}\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## NOTIFICACIONES\n\n{{notificaciones_familia}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_familia",
+     "label": "Juzgado de familia",
+     "help": "Si la cuota la fijó un juez, ante ese mismo juez. En otro caso, Juez de Familia (Reparto) del domicilio del niño, niña o adolescente (art. 28 num. 2 del CGP). Única instancia, verbal sumario."
+    },
+    {
+     "key": "beneficiario_o_obligado",
+     "label": "Beneficiario u obligado"
+    },
+    {
+     "key": "titulo_cuota_vigente",
+     "label": "Sentencia, acta o acuerdo vigente",
+     "help": "Sentencia, acta de conciliación ante defensor o comisario de familia, o acuerdo, con fecha y autoridad."
+    },
+    {
+     "key": "cuota_actual",
+     "label": "Cuota actual"
+    },
+    {
+     "key": "cambio_circunstancias_alimentos",
+     "label": "Cambio de necesidades o capacidad económica",
+     "help": "Si quien demanda es el obligado y pide disminución o exoneración, conviene acreditar que está al día en las cuotas."
+    },
+    {
+     "key": "tipo_modificacion_alimentos",
+     "label": "Aumento, disminución o exoneración",
+     "help": "Escriba «aumento», «disminución» o «exoneración»."
+    },
+    {
+     "key": "pruebas_modificacion_alimentos",
+     "label": "Pruebas"
+    },
+    {
+     "key": "pretension_modificacion",
+     "label": "Pretensión principal",
+     "help": "Ej. «Aumentar la cuota a $___ mensuales» / «Disminuir la cuota a $___» / «Exonerar al demandante de la obligación desde ___, porque el alimentario cumplió 25 años y no estudia»."
+    },
+    {
+     "key": "requisito_conciliacion",
+     "label": "Requisito de procedibilidad",
+     "help": "Constancia de conciliación fallida (centro de conciliación, defensor o comisario de familia, notario) cuando sea requisito (Ley 2220 de 2022), o por qué no se exige: se piden medidas cautelares, se desconoce el domicilio del demandado o hay violencia intrafamiliar."
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital y envío de la demanda",
+     "help": "Canal digital de las partes (art. 6 de la Ley 2213 de 2022) y constancia de envío simultáneo de la demanda y sus anexos al demandado, salvo que se pidan medidas cautelares o se desconozca su dirección."
+    },
+    {
+     "key": "notificaciones_familia",
+     "label": "Notificaciones",
+     "help": "Dirección física y electrónica de las partes y del apoderado (art. 82 num. 10 del CGP y art. 6 de la Ley 2213 de 2022)."
+    }
+   ],
+   "keywords": [
+    "aumento alimentos",
+    "disminución alimentos",
+    "exoneración alimentos",
+    "modificación cuota",
+    "familia"
+   ],
+   "legalBasis": "Ley 1098 de 2006, artículos 129 y 130; Código Civil, artículos 411 y siguientes, y 422; Código General del Proceso, artículos 21, 28, 390 y 397; Ley 2213 de 2022, artículo 6; Ley 2220 de 2022."
+  },
+  {
+   "code": "FAMILIA-CUSTODIA-VISITAS-08",
+   "area": "familia",
+   "category": "Demanda",
+   "title": "Custodia, cuidado personal y regulación de visitas",
+   "description": "Para solicitar judicialmente la custodia, el cuidado personal y un régimen de visitas conforme al interés superior del niño.",
+   "body": "# DEMANDA DE CUSTODIA Y REGULACIÓN DE VISITAS\n\nSeñor(a)\n{{juez_familia}}\nE. S. D.\n\n**Solicitante:** {{cliente_nombre}}\n**Otro progenitor:** {{otro_progenitor}}\n**Niño, niña o adolescente:** {{hijo_menor}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, por medio de apoderado(a), presento demanda verbal sumaria de custodia, cuidado personal y regulación de visitas contra {{otro_progenitor}}.\n\n## PRETENSIONES\n\n1. Otorgar el cuidado personal y custodia a {{persona_custodia_solicitada}}.\n\n2. Fijar el régimen de visitas, comunicaciones y vacaciones así: {{regimen_visitas_solicitado}}.\n\n3. Adoptar medidas provisionales mientras se decide el proceso.\n\n4. Regular alimentos y demás aspectos conexos cuando sea necesario.\n\n## HECHOS\n\n{{hechos_custodia_visitas}}\n\n## INTERÉS SUPERIOR\n\nLa solicitud atiende el interés superior, la protección integral, la estabilidad emocional, la salud y la educación del niño, niña o adolescente. Solicito escuchar su opinión, según su edad y madurez (artículo 26 de la Ley 1098 de 2006), y ordenar las valoraciones psicosociales que el despacho considere necesarias.\n\n## REQUISITO DE PROCEDIBILIDAD\n\n{{requisito_conciliacion}}\n\n## PRUEBAS\n\n{{pruebas_custodia_visitas}}\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## NOTIFICACIONES\n\n{{notificaciones_familia}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_familia",
+     "label": "Juzgado de familia",
+     "help": "Juez de Familia (Reparto). Si el niño, niña o adolescente es demandante o demandado, es competente de forma privativa el juez de su domicilio o residencia (art. 28 num. 2 del CGP). Se tramita en única instancia por el proceso verbal sumario."
+    },
+    {
+     "key": "otro_progenitor",
+     "label": "Otro progenitor"
+    },
+    {
+     "key": "hijo_menor",
+     "label": "Identificación del niño, niña o adolescente",
+     "help": "Nombre, documento (NUIP) y edad."
+    },
+    {
+     "key": "persona_custodia_solicitada",
+     "label": "Persona a quien se solicita otorgar custodia"
+    },
+    {
+     "key": "regimen_visitas_solicitado",
+     "label": "Régimen de visitas solicitado"
+    },
+    {
+     "key": "hechos_custodia_visitas",
+     "label": "Hechos"
+    },
+    {
+     "key": "pruebas_custodia_visitas",
+     "label": "Pruebas"
+    },
+    {
+     "key": "requisito_conciliacion",
+     "label": "Requisito de procedibilidad",
+     "help": "Constancia de conciliación fallida (centro de conciliación, defensor o comisario de familia, notario) cuando sea requisito (Ley 2220 de 2022), o por qué no se exige: se piden medidas cautelares, se desconoce el domicilio del demandado o hay violencia intrafamiliar."
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital y envío de la demanda",
+     "help": "Canal digital de las partes (art. 6 de la Ley 2213 de 2022) y constancia de envío simultáneo de la demanda y sus anexos al demandado, salvo que se pidan medidas cautelares o se desconozca su dirección."
+    },
+    {
+     "key": "notificaciones_familia",
+     "label": "Notificaciones",
+     "help": "Dirección física y electrónica de las partes y del apoderado (art. 82 num. 10 del CGP y art. 6 de la Ley 2213 de 2022)."
+    }
+   ],
+   "keywords": [
+    "custodia",
+    "cuidado personal",
+    "visitas",
+    "niño",
+    "interés superior"
+   ],
+   "legalBasis": "Constitución Política, artículo 44; Ley 1098 de 2006, artículos 8, 9, 14, 22, 23, 26 y 129; Código General del Proceso, artículos 21, 28 y 390; Ley 2213 de 2022, artículo 6; Ley 2220 de 2022."
+  },
+  {
+   "code": "FAMILIA-PERMISO-SALIDA-09",
+   "area": "familia",
+   "category": "Solicitud",
+   "title": "Solicitud de permiso de salida del país de niño, niña o adolescente (Defensor o Juez de Familia)",
+   "description": "Para cuando el otro progenitor no da el permiso, no se conoce su paradero o no puede otorgarlo. Si el otro progenitor sí está de acuerdo, use la autorización notarial (FAMILIA-AUTORIZACION-SALIDA-19).",
+   "body": "# SOLICITUD DE PERMISO DE SALIDA DEL PAÍS\n\nSeñor(a)\n{{autoridad_permiso_salida}}\nE. S. D.\n\n**Solicitante:** {{cliente_nombre}}\n**Otro progenitor:** {{otro_progenitor_salida}}\n**Niño, niña o adolescente:** {{menor_viaje}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, en calidad de {{parentesco_solicitante}} de {{menor_viaje}}, identificado(a) con {{menor_documento}}, solicito que se otorgue el permiso para su salida del país, quien viajará con {{acompanante_menor}}.\n\n## DATOS OBLIGATORIOS DEL VIAJE\n\n**Destino:** {{destino_viaje}}\n**Propósito:** {{proposito_viaje}}\n**Fecha de salida:** {{fecha_salida_viaje}}\n**Fecha de regreso:** {{fecha_regreso_viaje}}\n**Tiempo de permanencia:** {{tiempo_permanencia_viaje}}\n\n## HECHOS\n\n{{hechos_permiso_salida}}\n\n## SITUACIÓN DEL OTRO PROGENITOR\n\n{{situacion_otro_progenitor}}\n\n## PETICIONES\n\n1. Conceder el permiso solicitado.\n\n2. Ordenar que la decisión se comunique a Migración Colombia.\n\n3. Adoptar las medidas necesarias para proteger los derechos del menor.\n\n## ANEXOS\n\nRegistro civil, documentos de identidad, prueba del viaje, custodia y demás soportes: {{anexos_permiso_salida}}.\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "autoridad_permiso_salida",
+     "label": "Autoridad",
+     "help": "Defensor de Familia del ICBF (si se desconoce el paradero del otro progenitor o no puede darlo) o Juez de Familia (Reparto) cuando hay desacuerdo; ante el juez se tramita por el proceso verbal sumario (art. 390 del CGP)."
+    },
+    {
+     "key": "menor_viaje",
+     "label": "Nombre del menor"
+    },
+    {
+     "key": "menor_documento",
+     "label": "Documento del menor"
+    },
+    {
+     "key": "acompanante_menor",
+     "label": "Persona acompañante"
+    },
+    {
+     "key": "destino_viaje",
+     "label": "Lugar de destino"
+    },
+    {
+     "key": "proposito_viaje",
+     "label": "Propósito del viaje"
+    },
+    {
+     "key": "fecha_salida_viaje",
+     "label": "Fecha de salida"
+    },
+    {
+     "key": "fecha_regreso_viaje",
+     "label": "Fecha de regreso"
+    },
+    {
+     "key": "tiempo_permanencia_viaje",
+     "label": "Tiempo de permanencia"
+    },
+    {
+     "key": "hechos_permiso_salida",
+     "label": "Hechos"
+    },
+    {
+     "key": "situacion_otro_progenitor",
+     "label": "Consentimiento, negativa, ausencia o desconocimiento del paradero",
+     "help": "Explique si se niega, si se desconoce su paradero (y qué se hizo para ubicarlo) o si no puede otorgarlo. No se requiere su permiso si fue privado o suspendido de la patria potestad: aporte la sentencia."
+    },
+    {
+     "key": "anexos_permiso_salida",
+     "label": "Anexos",
+     "help": "Registro civil de nacimiento, documentos de identidad, tiquetes o itinerario, carta de invitación o soporte del propósito, prueba de la custodia y de la situación del otro progenitor."
+    },
+    {
+     "key": "otro_progenitor_salida",
+     "label": "Otro progenitor"
+    },
+    {
+     "key": "parentesco_solicitante",
+     "label": "Calidad del solicitante",
+     "help": "Ej. «madre», «padre», «representante legal»."
+    }
+   ],
+   "keywords": [
+    "permiso salida país",
+    "salida del país",
+    "menor de edad",
+    "Migración Colombia",
+    "Defensor de Familia",
+    "viaje"
+   ],
+   "legalBasis": "Ley 1098 de 2006, artículo 110; Código General del Proceso, artículos 21 y 390."
+  },
+  {
+   "code": "FAMILIA-PATERNIDAD-10",
+   "area": "familia",
+   "category": "Demanda",
+   "title": "Investigación o impugnación de paternidad y maternidad",
+   "description": "Para establecer judicialmente la filiación o controvertir una filiación existente mediante prueba genética y demás medios probatorios.",
+   "body": "# DEMANDA DE INVESTIGACIÓN O IMPUGNACIÓN DE FILIACIÓN\n\nSeñor(a)\n{{juez_familia}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandado:** {{demandado_filiacion}}\n**Tipo de acción:** {{tipo_accion_filiacion}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, por medio de apoderado(a), presento demanda verbal de {{tipo_accion_filiacion}} contra {{demandado_filiacion}}.\n\n## PRETENSIONES\n\n1. Declarar o impugnar la filiación respecto de {{persona_filiacion}}.\n\n2. Ordenar la práctica de prueba genética de ADN a las personas necesarias.\n\n3. Ordenar la corrección o modificación del registro civil de nacimiento.\n\n4. Adoptar las decisiones sobre alimentos, patria potestad, custodia o visitas que sean consecuencia de la filiación.\n\n## HECHOS\n\n{{hechos_filiacion}}\n\n## OPORTUNIDAD\n\n{{caducidad_filiacion}}\n\n## PRUEBAS\n\nSolicito decretar la prueba genética de ADN, con un índice de probabilidad superior al 99,9 % (Ley 721 de 2001 y artículo 386 del Código General del Proceso). Además: {{pruebas_adicionales_filiacion}}\n\n## ANEXOS\n\n{{anexos_filiacion}}\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## NOTIFICACIONES\n\n{{notificaciones_familia}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_familia",
+     "label": "Juzgado de familia",
+     "help": "Juez de Familia (Reparto), primera instancia. Si el niño, niña o adolescente es parte, el de su domicilio (art. 28 num. 2 del CGP)."
+    },
+    {
+     "key": "demandado_filiacion",
+     "label": "Demandado",
+     "help": "En investigación, el presunto padre o madre (o sus herederos si falleció). En impugnación, debe vincularse también al hijo y, si es menor, a su representante."
+    },
+    {
+     "key": "tipo_accion_filiacion",
+     "label": "Investigación o impugnación",
+     "help": "Escriba «investigación de paternidad», «impugnación de paternidad», «investigación de maternidad» o «impugnación de maternidad»."
+    },
+    {
+     "key": "persona_filiacion",
+     "label": "Persona cuya filiación se discute"
+    },
+    {
+     "key": "hechos_filiacion",
+     "label": "Hechos"
+    },
+    {
+     "key": "pruebas_adicionales_filiacion",
+     "label": "Pruebas adicionales"
+    },
+    {
+     "key": "anexos_filiacion",
+     "label": "Anexos"
+    },
+    {
+     "key": "caducidad_filiacion",
+     "label": "Oportunidad (impugnación)",
+     "help": "Impugnación: dentro de los 140 días siguientes a cuando se supo que no se es el padre o la madre biológicos (arts. 216 y ss. C.C., Ley 1060 de 2006). El hijo puede impugnar en cualquier tiempo. En investigación: «No aplica término»."
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital y envío de la demanda",
+     "help": "Canal digital de las partes (art. 6 de la Ley 2213 de 2022) y constancia de envío simultáneo de la demanda y sus anexos al demandado, salvo que se pidan medidas cautelares o se desconozca su dirección."
+    },
+    {
+     "key": "notificaciones_familia",
+     "label": "Notificaciones",
+     "help": "Dirección física y electrónica de las partes y del apoderado (art. 82 num. 10 del CGP y art. 6 de la Ley 2213 de 2022)."
+    }
+   ],
+   "keywords": [
+    "paternidad",
+    "maternidad",
+    "filiación",
+    "ADN",
+    "impugnación"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 22, 28, 368 y 386; Ley 721 de 2001; Ley 75 de 1968; Código Civil, artículos 213 a 248 (modificados por la Ley 1060 de 2006); Ley 2213 de 2022, artículo 6."
+  },
+  {
+   "code": "FAMILIA-SUCESION-NOTARIAL-11",
+   "area": "familia",
+   "category": "Solicitud",
+   "title": "Sucesión notarial",
+   "description": "Para liquidar una sucesión ante notario cuando todos los interesados son plenamente capaces y existe acuerdo.",
+   "body": "# SOLICITUD DE LIQUIDACIÓN DE HERENCIA ANTE NOTARÍA\n\nSeñor(a)\nNotario(a) {{notaria_sucesion}}\nCiudad\n\n**Causante:** {{causante}}\n\n{{abogado_nombre}}, abogado(a) con T.P. No. {{abogado_tp}} del C. S. de la J., obrando como apoderado(a) de todos los interesados, quienes son plenamente capaces y están de acuerdo, según los poderes que se anexan, solicito tramitar la liquidación de la sucesión de {{causante}}, quien falleció el {{fecha_defuncion}} y tuvo su último domicilio en {{ultimo_domicilio_causante}}.\n\n## DATOS DEL CAUSANTE\n\n{{datos_causante}}\n\n## INTERESADOS Y CALIDADES\n\n{{interesados_sucesion}}\n\nLos interesados aceptan la herencia {{forma_aceptacion}}.\n\n## DECLARACIÓN BAJO JURAMENTO\n\nLos solicitantes declaran bajo la gravedad del juramento, que se entiende prestado con la firma de los poderes, que no conocen otros interesados de igual o mejor derecho que el que ellos tienen, ni la existencia de otros legatarios o acreedores distintos de los relacionados.\n\n## INVENTARIO Y AVALÚOS\n\nActivo: {{activo_herencial}}\n\nPasivo: {{pasivo_herencial}}\n\nAvalúos: {{avaluos_herenciales}}\n\n## TRABAJO DE PARTICIÓN Y ADJUDICACIÓN\n\n{{particion_adjudicacion_notarial}}\n\n## SOLICITUDES\n\n1. Aceptar la solicitud y ordenar el emplazamiento de quienes se crean con derecho a intervenir, mediante edicto, así como la comunicación a la DIAN (artículo 844 del Estatuto Tributario).\n\n2. Reconocer a los interesados y sus derechos hereditarios.\n\n3. Autorizar la escritura pública de partición y adjudicación.\n\n4. Ordenar el registro de los bienes adjudicados.\n\n## ANEXOS\n\n{{anexos_sucesion_notarial}}\n\nEn {{ciudad}}, a {{fecha}}.\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "notaria_sucesion",
+     "label": "Notaría competente",
+     "help": "La del último domicilio del causante en Colombia; si tuvo varios, la del asiento principal de sus negocios. Ej. «Quinto del Círculo de Cali»."
+    },
+    {
+     "key": "causante",
+     "label": "Nombre del causante"
+    },
+    {
+     "key": "datos_causante",
+     "label": "Datos adicionales del causante",
+     "help": "Documento, estado civil, si dejó testamento y si tuvo sociedad conyugal o patrimonial vigente."
+    },
+    {
+     "key": "interesados_sucesion",
+     "label": "Herederos, legatarios, cónyuge o compañero permanente",
+     "help": "Nombre, documento y calidad de cada uno (heredero, legatario, cónyuge o compañero permanente, cesionario). Si hay cónyuge, indique si opta por gananciales o porción conyugal."
+    },
+    {
+     "key": "activo_herencial",
+     "label": "Activo herencial"
+    },
+    {
+     "key": "pasivo_herencial",
+     "label": "Pasivo herencial"
+    },
+    {
+     "key": "avaluos_herenciales",
+     "label": "Avalúos",
+     "help": "Inmuebles: avalúo catastral como mínimo. Vehículos y demás bienes: valor comercial o el que acuerden los interesados."
+    },
+    {
+     "key": "particion_adjudicacion_notarial",
+     "label": "Trabajo de partición y adjudicación"
+    },
+    {
+     "key": "anexos_sucesion_notarial",
+     "label": "Registros civiles, certificado de defunción, títulos y anexos",
+     "help": "Poderes de todos los interesados; registro civil de defunción; registros civiles que prueban el parentesco o el matrimonio; títulos y certificados de tradición; paz y salvos y avalúos."
+    },
+    {
+     "key": "fecha_defuncion",
+     "label": "Fecha de fallecimiento"
+    },
+    {
+     "key": "ultimo_domicilio_causante",
+     "label": "Último domicilio del causante"
+    },
+    {
+     "key": "forma_aceptacion",
+     "label": "Forma de aceptación de la herencia",
+     "help": "Escriba «con beneficio de inventario» o «pura y simplemente»."
+    }
+   ],
+   "keywords": [
+    "sucesión notarial",
+    "herencia",
+    "partición",
+    "adjudicación",
+    "notaría"
+   ],
+   "legalBasis": "Decreto 902 de 1988, modificado por el Decreto 1729 de 1989; Código Civil, artículos 1008 y siguientes; Estatuto Tributario, artículo 844."
+  },
+  {
+   "code": "FAMILIA-SUCESION-JUDICIAL-12",
+   "area": "familia",
+   "category": "Demanda",
+   "title": "Proceso judicial de sucesión",
+   "description": "Para liquidar judicialmente una sucesión testada, intestada o mixta cuando no existe acuerdo total o hay interesados incapaces o controversias.",
+   "body": "# DEMANDA DE SUCESIÓN\n\nSeñor(a)\n{{juez_sucesion}}\nE. S. D.\n\n**Interesado:** {{cliente_nombre}}\n**Causante:** {{causante}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, en calidad de {{calidad_interesado}}, por medio de apoderado(a), solicito declarar abierto el proceso de sucesión de {{causante}}, fallecido(a) el {{fecha_defuncion}}, cuyo último domicilio fue {{ultimo_domicilio_causante}}.\n\n## PRETENSIONES\n\n1. Declarar abierto el proceso de sucesión {{tipo_sucesion}} de {{causante}}.\n\n2. Reconocer a {{cliente_nombre}} como {{calidad_interesado}}, quien acepta la herencia {{forma_aceptacion}}.\n\n3. Ordenar el emplazamiento de todos los que se crean con derecho a intervenir y la notificación de los interesados conocidos: {{interesados_sucesion_judicial}}.\n\n4. Informar a la DIAN la apertura del proceso (artículo 844 del Estatuto Tributario).\n\n5. Señalar fecha para la diligencia de inventarios y avalúos.\n\n6. Decretar la partición y aprobarla, adjudicando los bienes a los interesados.\n\n## HECHOS\n\n{{hechos_sucesion_judicial}}\n\n## INVENTARIO ESTIMADO DE BIENES Y DEUDAS\n\n{{bienes_deudas_sucesion}}\n\n## TESTAMENTO\n\n{{informacion_testamento}}\n\n## PRUEBAS Y ANEXOS\n\n{{anexos_sucesion_judicial}}\n\n## NOTIFICACIONES\n\n{{notificaciones_familia}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_sucesion",
+     "label": "Juez competente",
+     "help": "Por el valor de los bienes relictos (avalúo catastral para inmuebles): mayor cuantía (más de 150 SMMLV), Juez de Familia; menor cuantía, Juez Civil Municipal; mínima cuantía, Juez Civil Municipal en única instancia. El del último domicilio del causante (art. 28 num. 12 del CGP)."
+    },
+    {
+     "key": "causante",
+     "label": "Causante"
+    },
+    {
+     "key": "tipo_sucesion",
+     "label": "Testada, intestada o mixta"
+    },
+    {
+     "key": "interesados_sucesion_judicial",
+     "label": "Herederos, legatarios y demás interesados",
+     "help": "Nombre, calidad y dirección física y electrónica de los herederos, legatarios, cónyuge o compañero conocidos."
+    },
+    {
+     "key": "hechos_sucesion_judicial",
+     "label": "Hechos"
+    },
+    {
+     "key": "bienes_deudas_sucesion",
+     "label": "Bienes, derechos y deudas",
+     "help": "Relación de bienes con su avalúo (art. 444 del CGP) y de deudas con sus soportes. Separe los bienes de la sociedad conyugal o patrimonial."
+    },
+    {
+     "key": "informacion_testamento",
+     "label": "Información del testamento"
+    },
+    {
+     "key": "anexos_sucesion_judicial",
+     "label": "Anexos",
+     "help": "Poder; registro civil de defunción; prueba del parentesco o calidad; copia del testamento si lo hay; certificados de tradición; avalúos."
+    },
+    {
+     "key": "calidad_interesado",
+     "label": "Calidad del demandante",
+     "help": "Ej. «hijo(a) y heredero(a)», «cónyuge sobreviviente», «cesionario(a) de derechos herenciales»."
+    },
+    {
+     "key": "fecha_defuncion",
+     "label": "Fecha de fallecimiento"
+    },
+    {
+     "key": "ultimo_domicilio_causante",
+     "label": "Último domicilio del causante"
+    },
+    {
+     "key": "forma_aceptacion",
+     "label": "Forma de aceptación",
+     "help": "Escriba «con beneficio de inventario» o «pura y simplemente»."
+    },
+    {
+     "key": "notificaciones_familia",
+     "label": "Notificaciones",
+     "help": "Dirección física y electrónica de las partes y del apoderado (art. 82 num. 10 del CGP y art. 6 de la Ley 2213 de 2022)."
+    }
+   ],
+   "keywords": [
+    "sucesión judicial",
+    "herederos",
+    "testamento",
+    "inventarios",
+    "partición"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 17, 18, 22, 26 (numeral 5), 28 (numeral 12), 444 y 487 a 523; Código Civil, libro tercero (sucesiones); Estatuto Tributario, artículo 844."
+  },
+  {
+   "code": "FAMILIA-INVENTARIO-AVALUOS-13",
+   "area": "familia",
+   "category": "Solicitud",
+   "title": "Inventario y avalúos en sucesión o liquidación",
+   "description": "Para presentar en la diligencia judicial de inventarios y avalúos de una sucesión o de la liquidación de una sociedad conyugal o patrimonial.",
+   "body": "# INVENTARIO Y AVALÚOS\n\nSeñor(a)\n{{despacho}}\nE. S. D.\n\n**Proceso o trámite:** {{tipo_tramite_familia}}\n**Radicado:** {{radicado}}\n\n{{abogado_nombre}}, apoderado(a) de {{cliente_nombre}}, presento el escrito de inventario y avalúos para la diligencia, {{forma_presentacion_inventario}}.\n\n## ACTIVOS\n\n{{inventario_activos_familia}}\n\n## PASIVOS\n\nSolo se incluyen las deudas que consten en título que preste mérito ejecutivo, o las que sean aceptadas expresamente por todos los interesados.\n\n{{inventario_pasivos_familia}}\n\n## BIENES EXCLUIDOS, RECOMPENSAS Y COMPENSACIONES\n\n{{bienes_excluidos_recompensas}}\n\n## AVALÚOS\n\n{{avaluos_familia}}\n\n## SOLICITUD\n\nSolicito aprobar el inventario y los avalúos, resolver las objeciones que se formulen y continuar con la partición (artículo 501 del Código General del Proceso).\n\n## ANEXOS\n\n{{anexos_inventario_familia}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "tipo_tramite_familia",
+     "label": "Sucesión, liquidación conyugal o patrimonial"
+    },
+    {
+     "key": "inventario_activos_familia",
+     "label": "Activos",
+     "help": "Cada partida numerada: bien, identificación (matrícula, cédula catastral, placa) y valor. En liquidación de sociedad, solo los bienes sociales."
+    },
+    {
+     "key": "inventario_pasivos_familia",
+     "label": "Pasivos"
+    },
+    {
+     "key": "bienes_excluidos_recompensas",
+     "label": "Bienes propios, excluidos, recompensas y compensaciones"
+    },
+    {
+     "key": "avaluos_familia",
+     "label": "Avalúos",
+     "help": "Inmuebles: avalúo catastral incrementado en un 50 % o dictamen pericial (art. 444 del CGP). Otros bienes: valor comercial."
+    },
+    {
+     "key": "anexos_inventario_familia",
+     "label": "Anexos"
+    },
+    {
+     "key": "forma_presentacion_inventario",
+     "label": "Forma de presentación",
+     "help": "Escriba «de común acuerdo con los demás interesados» o «a nombre de mi poderdante»."
+    }
+   ],
+   "keywords": [
+    "inventario",
+    "avalúos",
+    "sucesión",
+    "sociedad conyugal",
+    "partición"
+   ],
+   "legalBasis": "Código General del Proceso, artículos 444, 501, 502 y 523; Código Civil, normas sucesorales y de liquidación de sociedades."
+  },
+  {
+   "code": "FAMILIA-APOYOS-JUDICIALES-14",
+   "area": "familia",
+   "category": "Demanda",
+   "title": "Adjudicación judicial de apoyos",
+   "description": "Para solicitar al juez de familia la designación de apoyos formales para actos jurídicos concretos de una persona adulta con discapacidad.",
+   "body": "# DEMANDA DE ADJUDICACIÓN JUDICIAL DE APOYOS\n\nSeñor(a)\n{{juez_familia}}\nE. S. D.\n\n**Titular del acto jurídico:** {{persona_titular_apoyos}}\n**Solicitante:** {{solicitante_apoyos}}\n**Proceso:** {{modalidad_apoyos}}\n\n## LEGITIMACIÓN\n\n{{legitimacion_apoyos}}\n\n## ACTOS PARA LOS QUE SE SOLICITAN APOYOS\n\n{{actos_juridicos_apoyos}}\n\n## VOLUNTAD Y PREFERENCIAS\n\n{{voluntad_preferencias_titular}}\n\n## PERSONAS PROPUESTAS COMO APOYO\n\n{{personas_propuestas_apoyo}}\n\n## NECESIDADES DE APOYO Y AJUSTES RAZONABLES\n\n{{necesidades_apoyo_ajustes}}\n\n## VALORACIÓN DE APOYOS\n\n{{valoracion_apoyos}}\n\n## PRETENSIONES\n\n1. Adjudicar a {{persona_titular_apoyos}} los apoyos formales para los actos jurídicos concretos indicados, designando como persona de apoyo a {{personas_propuestas_apoyo}}.\n\n2. Determinar el alcance, las funciones, la duración (máximo cinco años) y las salvaguardias de los apoyos.\n\n3. Garantizar la participación directa de la persona titular y los ajustes razonables necesarios.\n\n## ANEXOS\n\n{{anexos_apoyos}}\n\n## NOTIFICACIONES\n\n{{notificaciones_familia}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_familia",
+     "label": "Juzgado de familia del domicilio del titular"
+    },
+    {
+     "key": "persona_titular_apoyos",
+     "label": "Persona titular del acto jurídico"
+    },
+    {
+     "key": "solicitante_apoyos",
+     "label": "Solicitante"
+    },
+    {
+     "key": "actos_juridicos_apoyos",
+     "label": "Actos jurídicos concretos"
+    },
+    {
+     "key": "voluntad_preferencias_titular",
+     "label": "Voluntad y preferencias"
+    },
+    {
+     "key": "personas_propuestas_apoyo",
+     "label": "Personas propuestas como apoyo",
+     "help": "Nombre, documento y relación con el titular. Deben aceptar la designación."
+    },
+    {
+     "key": "necesidades_apoyo_ajustes",
+     "label": "Necesidades y ajustes razonables"
+    },
+    {
+     "key": "valoracion_apoyos",
+     "label": "Valoración de apoyos",
+     "help": "Aporte el informe de valoración de apoyos (entidad pública o privada) o solicite que el juez la ordene."
+    },
+    {
+     "key": "anexos_apoyos",
+     "label": "Anexos"
+    },
+    {
+     "key": "modalidad_apoyos",
+     "label": "Modalidad del proceso",
+     "help": "Escriba «Jurisdicción voluntaria, promovido por la persona titular (art. 586 del CGP)» o «Verbal sumario, promovido por persona distinta del titular (art. 396 del CGP)»."
+    },
+    {
+     "key": "legitimacion_apoyos",
+     "label": "Legitimación",
+     "help": "Si lo promueve el titular: que actúa por sí mismo. Si lo promueve un tercero: por qué el titular está absolutamente imposibilitado para expresar su voluntad por cualquier medio o formato, y por qué el acto lo beneficia (art. 38 de la Ley 1996 de 2019)."
+    },
+    {
+     "key": "notificaciones_familia",
+     "label": "Notificaciones",
+     "help": "Dirección física y electrónica de las partes y del apoderado (art. 82 num. 10 del CGP y art. 6 de la Ley 2213 de 2022)."
+    }
+   ],
+   "keywords": [
+    "adjudicación de apoyos",
+    "Ley 1996",
+    "discapacidad",
+    "capacidad legal",
+    "juez de familia"
+   ],
+   "legalBasis": "Ley 1996 de 2019, artículos 9 y 32 a 38; Código General del Proceso, artículos 396 y 586 (modificados por la Ley 1996 de 2019)."
+  },
+  {
+   "code": "FAMILIA-ACUERDO-APOYOS-15",
+   "area": "familia",
+   "category": "Documento",
+   "title": "Acuerdo de apoyos",
+   "description": "Minuta para formalizar, por escritura pública ante notario o en acta ante conciliador extrajudicial en derecho, los apoyos que elige una persona mayor de edad para actos jurídicos concretos.",
+   "body": "# ACUERDO DE APOYOS\n\n**Ante:** {{autoridad_acuerdo_apoyos}}\n\nEntre {{persona_titular_apoyos}}, mayor de edad, identificado(a) con {{documento_titular}}, quien en adelante se denominará LA PERSONA TITULAR, y {{persona_apoyo_1}}, mayor de edad, identificado(a) con {{documento_apoyo}}, quien en adelante se denominará LA PERSONA DE APOYO, se celebra el presente acuerdo de apoyos, de conformidad con la Ley 1996 de 2019.\n\n## ACTOS JURÍDICOS\n\nLos apoyos se requieren para los siguientes actos jurídicos concretos: {{actos_acuerdo_apoyos}}.\n\n## VOLUNTAD Y PREFERENCIAS\n\nLA PERSONA TITULAR manifiesta que su voluntad y preferencias son: {{voluntad_acuerdo_apoyos}}.\n\n## FUNCIONES DEL APOYO\n\nLA PERSONA DE APOYO podrá: {{funciones_apoyo}}.\n\nEl apoyo no sustituye la voluntad de LA PERSONA TITULAR. LA PERSONA DE APOYO solo podrá representarla en los actos en que aquí se le autorice expresamente.\n\n## OBLIGACIONES DE LA PERSONA DE APOYO\n\nLA PERSONA DE APOYO actuará de buena fe, respetando la voluntad y preferencias de LA PERSONA TITULAR, mantendrá la confidencialidad de su información y le rendirá cuentas de su gestión.\n\n## SALVAGUARDIAS Y CONFLICTOS DE INTERÉS\n\n{{salvaguardias_apoyos}}\n\n## DURACIÓN Y TERMINACIÓN\n\nEl acuerdo tendrá vigencia hasta {{vigencia_acuerdo_apoyos}}. LA PERSONA TITULAR podrá modificarlo o terminarlo en cualquier momento, y LA PERSONA DE APOYO podrá renunciar en los términos de la ley.\n\n## ACEPTACIÓN\n\nLA PERSONA DE APOYO acepta la designación y declara conocer sus obligaciones.\n\nEn {{ciudad}}, a {{fecha}}.\n\n\nLA PERSONA TITULAR\n{{persona_titular_apoyos}}\n{{documento_titular}}\n\n\nLA PERSONA DE APOYO\n{{persona_apoyo_1}}\n{{documento_apoyo}}",
+   "fields": [
+    {
+     "key": "persona_titular_apoyos",
+     "label": "Persona titular del acto jurídico"
+    },
+    {
+     "key": "persona_apoyo_1",
+     "label": "Persona de apoyo",
+     "help": "Persona natural mayor de edad o persona jurídica. Si son varias, nómbrelas y diga cómo actúan."
+    },
+    {
+     "key": "actos_acuerdo_apoyos",
+     "label": "Actos jurídicos concretos"
+    },
+    {
+     "key": "voluntad_acuerdo_apoyos",
+     "label": "Voluntad y preferencias"
+    },
+    {
+     "key": "funciones_apoyo",
+     "label": "Funciones autorizadas",
+     "help": "Ej. «asistir en la comprensión de los documentos y en la comunicación de la decisión», «representar en la firma de ___» (solo si se autoriza expresamente)."
+    },
+    {
+     "key": "salvaguardias_apoyos",
+     "label": "Salvaguardias y manejo de conflictos de interés"
+    },
+    {
+     "key": "vigencia_acuerdo_apoyos",
+     "label": "Vigencia",
+     "help": "Fecha o plazo. Máximo cinco (5) años, prorrogables (Ley 1996 de 2019)."
+    },
+    {
+     "key": "autoridad_acuerdo_apoyos",
+     "label": "Notaría o conciliador",
+     "help": "Ej. «Notaría Quinta del Círculo de Cali» o «Centro de Conciliación ___, conciliador(a) ___». El notario o conciliador debe entrevistar a la persona titular sin la persona de apoyo."
+    },
+    {
+     "key": "documento_titular",
+     "label": "Documento de la persona titular"
+    },
+    {
+     "key": "documento_apoyo",
+     "label": "Documento de la persona de apoyo"
+    }
+   ],
+   "keywords": [
+    "acuerdo de apoyos",
+    "Ley 1996",
+    "notaría",
+    "discapacidad",
+    "capacidad legal"
+   ],
+   "legalBasis": "Ley 1996 de 2019, artículos 15 a 20 (acuerdos de apoyo); Decreto 1069 de 2015, adicionado por el Decreto 1429 de 2020."
+  },
+  {
+   "code": "FAMILIA-DIRECTIVAS-ANTICIPADAS-16",
+   "area": "familia",
+   "category": "Documento",
+   "title": "Directivas anticipadas",
+   "description": "Minuta para que una persona mayor de edad deje establecidas, por escritura pública ante notario o en acta ante conciliador, sus decisiones sobre actos jurídicos futuros (salud, finanzas, asuntos personales).",
+   "body": "# DIRECTIVAS ANTICIPADAS\n\n**Ante:** {{autoridad_directivas}}\n\nYo, {{cliente_nombre}}, identificado(a) con {{cliente_documento}}, mayor de edad, manifiesto de manera libre, consciente e informada mi voluntad y preferencias para los siguientes actos futuros:\n\n## DECISIONES DE SALUD\n\n{{directivas_salud}}\n\n## DECISIONES PERSONALES Y FAMILIARES\n\n{{directivas_personales}}\n\n## DECISIONES FINANCIERAS O PATRIMONIALES\n\n{{directivas_financieras}}\n\n## PERSONA DE APOYO\n\nDesigno como persona de apoyo a {{persona_apoyo_directiva}}, quien podrá asistir en la comunicación, comprensión y ejecución de estas directivas dentro de los límites aquí establecidos.\n\n## CLÁUSULA DE VOLUNTAD PERENNE\n\n{{voluntad_perenne}}\n\n## VIGENCIA, MODIFICACIÓN Y REVOCACIÓN\n\nEstas directivas rigen desde {{fecha_vigencia_directiva}} y podrán modificarse, sustituirse o revocarse en cualquier momento, mediante el mismo trámite con el que se otorgaron. Las decisiones sobre salud se incorporarán a mi historia clínica.\n\nDeclaro que comprendo el alcance de este documento y que expresa mi voluntad y preferencias.\n\nEn {{ciudad}}, a {{fecha}}.\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\nAcepto la designación como persona de apoyo,\n\n\n{{persona_apoyo_directiva}}\n{{documento_apoyo_directiva}}",
+   "fields": [
+    {
+     "key": "directivas_salud",
+     "label": "Decisiones anticipadas de salud",
+     "help": "Ej. tratamientos que acepta o rechaza, donación de órganos, voluntad anticipada sobre cuidados al final de la vida."
+    },
+    {
+     "key": "directivas_personales",
+     "label": "Decisiones personales y familiares"
+    },
+    {
+     "key": "directivas_financieras",
+     "label": "Decisiones financieras o patrimoniales"
+    },
+    {
+     "key": "persona_apoyo_directiva",
+     "label": "Persona de apoyo"
+    },
+    {
+     "key": "fecha_vigencia_directiva",
+     "label": "Fecha de vigencia"
+    },
+    {
+     "key": "autoridad_directivas",
+     "label": "Notaría o conciliador",
+     "help": "Ej. «Notaría Quinta del Círculo de Cali» o «Centro de Conciliación ___, conciliador(a) ___»."
+    },
+    {
+     "key": "voluntad_perenne",
+     "label": "Cláusula de voluntad perenne (opcional)",
+     "help": "Si la persona lo desea: «Declaro que, si en el futuro manifiesto una voluntad contraria a estas directivas, no deberá tenerse en cuenta». Si no, escriba «No se incluye»."
+    },
+    {
+     "key": "documento_apoyo_directiva",
+     "label": "Documento de la persona de apoyo"
+    }
+   ],
+   "keywords": [
+    "directivas anticipadas",
+    "Ley 1996",
+    "voluntad",
+    "apoyos",
+    "decisiones de salud"
+   ],
+   "legalBasis": "Ley 1996 de 2019, artículos 21 a 31 (directivas anticipadas); Decreto 1069 de 2015, adicionado por el Decreto 1429 de 2020."
+  },
+  {
+   "code": "FAMILIA-CAPITULACIONES-17",
+   "area": "familia",
+   "category": "Contrato",
+   "title": "Capitulaciones matrimoniales",
+   "description": "Minuta de escritura pública para que los futuros cónyuges, antes del matrimonio, inventaríen sus bienes y regulen o excluyan bienes de la sociedad conyugal.",
+   "body": "# MINUTA DE CAPITULACIONES MATRIMONIALES\n\n**Notaría:** {{notaria_capitulaciones}}\n\nComparecieron {{futuro_conyuge_1}}, mayor de edad, identificado(a) con {{documento_conyuge_1}}, domiciliado(a) en {{domicilio_conyuge_1}}, y {{futuro_conyuge_2}}, mayor de edad, identificado(a) con {{documento_conyuge_2}}, domiciliado(a) en {{domicilio_conyuge_2}}, quienes manifestaron que proyectan contraer matrimonio y que, antes de celebrarlo, otorgan las siguientes capitulaciones matrimoniales:\n\n## PRIMERA. INVENTARIO DE BIENES Y DEUDAS\n\nCada contrayente aporta los bienes y tiene las deudas que se relacionan a continuación, con su valor: {{bienes_aportados_capitulaciones}}.\n\n## SEGUNDA. DONACIONES\n\n{{donaciones_capitulaciones}}.\n\n## TERCERA. EXCLUSIONES Y ACUERDOS PATRIMONIALES\n\nLos contrayentes acuerdan excluir de la sociedad conyugal o regular, dentro de los límites legales, los siguientes bienes, frutos, rentas y pasivos: {{acuerdos_patrimoniales_capitulaciones}}.\n\n## CUARTA. LÍMITES\n\nEstas capitulaciones no contienen estipulaciones contrarias a las buenas costumbres ni a las leyes, ni en detrimento de los derechos y obligaciones que las leyes señalan a cada cónyuge respecto del otro o de los descendientes comunes (artículo 1773 del Código Civil).\n\n## QUINTA. INMUTABILIDAD\n\nLos contrayentes conocen que, celebrado el matrimonio, estas capitulaciones no podrán alterarse, aunque sea con el consentimiento de ambos (artículo 1778 del Código Civil), y que solo producirán efectos si el matrimonio se celebra.\n\n## SEXTA. DECLARACIONES\n\nLos contrayentes declaran que celebran este acuerdo libremente, con plena capacidad y conocimiento de sus efectos.\n\nEn {{ciudad}}, a {{fecha}}.\n\n\n{{futuro_conyuge_1}}\n{{documento_conyuge_1}}\n\n\n{{futuro_conyuge_2}}\n{{documento_conyuge_2}}",
+   "fields": [
+    {
+     "key": "futuro_conyuge_1",
+     "label": "Futuro cónyuge 1"
+    },
+    {
+     "key": "futuro_conyuge_2",
+     "label": "Futuro cónyuge 2"
+    },
+    {
+     "key": "bienes_aportados_capitulaciones",
+     "label": "Bienes aportados",
+     "help": "Inventario de cada uno: bien, identificación (matrícula, placa, cuenta) y valor; y sus deudas. Es obligatorio en la escritura."
+    },
+    {
+     "key": "donaciones_capitulaciones",
+     "label": "Donaciones",
+     "help": "Ej. «El contrayente 1 dona a la contrayente 2 ___». Si no hay, escriba «No se realizan donaciones por causa del matrimonio»."
+    },
+    {
+     "key": "acuerdos_patrimoniales_capitulaciones",
+     "label": "Exclusiones y acuerdos patrimoniales"
+    },
+    {
+     "key": "notaria_capitulaciones",
+     "label": "Notaría"
+    },
+    {
+     "key": "documento_conyuge_1",
+     "label": "Documento del futuro cónyuge 1"
+    },
+    {
+     "key": "domicilio_conyuge_1",
+     "label": "Domicilio del futuro cónyuge 1"
+    },
+    {
+     "key": "documento_conyuge_2",
+     "label": "Documento del futuro cónyuge 2"
+    },
+    {
+     "key": "domicilio_conyuge_2",
+     "label": "Domicilio del futuro cónyuge 2"
+    }
+   ],
+   "keywords": [
+    "capitulaciones",
+    "matrimonio",
+    "sociedad conyugal",
+    "bienes propios",
+    "escritura pública"
+   ],
+   "legalBasis": "Código Civil, artículos 1771 a 1780; Decreto 960 de 1970 (Estatuto del Notariado)."
+  },
+  {
+   "code": "FAMILIA-CONCILIACION-18",
+   "area": "familia",
+   "category": "Solicitud",
+   "title": "Solicitud de conciliación extrajudicial en asuntos de familia",
+   "description": "Para citar a la otra parte a conciliar alimentos, custodia, visitas, unión marital, liquidación de sociedad u otros asuntos de familia, antes de demandar.",
+   "body": "Señor(a)\n{{autoridad_conciliacion_familia}}\nCiudad\n\n**Convocante:** {{cliente_nombre}}\n**Convocado:** {{contraparte}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, {{actuacion_convocante}}, solicito citar a audiencia de conciliación a {{contraparte}}, identificado(a) con {{documento_convocado}}, sobre el siguiente asunto: {{asunto_conciliacion_familia}}.\n\n## HECHOS\n\n{{hechos_conciliacion}}\n\n## PROPUESTA O PRETENSIONES\n\n{{pretensiones_conciliacion}}\n\n## NIÑOS, NIÑAS O ADOLESCENTES INVOLUCRADOS\n\n{{nna_conciliacion}}\n\n## PRUEBAS Y ANEXOS\n\n{{pruebas_conciliacion}}\n\n## NOTIFICACIONES\n\n**Convocante:** {{cliente_correo}}, {{cliente_telefono}}. Convocado: {{direccion_convocado}}.\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "autoridad_conciliacion_familia",
+     "label": "Autoridad o centro de conciliación",
+     "help": "Comisario(a) de Familia, Defensor(a) de Familia del ICBF, centro de conciliación, notario o conciliador en equidad."
+    },
+    {
+     "key": "actuacion_convocante",
+     "label": "Cómo actúa el convocante",
+     "help": "Ej. «en nombre propio y en representación de mi hija menor ___, por medio de apoderado(a)». Si va sin abogado, borre el bloque de firma del abogado."
+    },
+    {
+     "key": "documento_convocado",
+     "label": "Documento del convocado"
+    },
+    {
+     "key": "asunto_conciliacion_familia",
+     "label": "Asunto",
+     "help": "Ej. fijación de cuota alimentaria; custodia y visitas; liquidación de la sociedad patrimonial."
+    },
+    {
+     "key": "hechos_conciliacion",
+     "label": "Hechos"
+    },
+    {
+     "key": "pretensiones_conciliacion",
+     "label": "Propuesta o pretensiones"
+    },
+    {
+     "key": "nna_conciliacion",
+     "label": "Niños, niñas o adolescentes",
+     "help": "Nombre y edad. Si no hay, escriba «No aplica»."
+    },
+    {
+     "key": "pruebas_conciliacion",
+     "label": "Pruebas y anexos",
+     "help": "Registros civiles, soportes de gastos e ingresos, etc."
+    },
+    {
+     "key": "direccion_convocado",
+     "label": "Dirección física y electrónica del convocado"
+    }
+   ],
+   "keywords": [
+    "conciliación familia",
+    "requisito de procedibilidad",
+    "comisaría de familia",
+    "defensor de familia",
+    "alimentos",
+    "custodia",
+    "visitas"
+   ],
+   "legalBasis": "Ley 2220 de 2022; Ley 1098 de 2006; Código General del Proceso, artículo 590 (parágrafo 1)."
+  },
+  {
+   "code": "FAMILIA-AUTORIZACION-SALIDA-19",
+   "area": "familia",
+   "category": "Documento",
+   "title": "Autorización del padre o la madre para salida del país de un menor de edad",
+   "description": "Permiso que firma el progenitor que no viaja, para autenticar ante notario o autoridad consular, cuando un niño, niña o adolescente sale del país con el otro progenitor o con un tercero.",
+   "body": "# AUTORIZACIÓN DE SALIDA DEL PAÍS DE MENOR DE EDAD\n\nYo, {{progenitor_autoriza}}, mayor de edad, identificado(a) con {{documento_progenitor_autoriza}}, en calidad de {{calidad_autoriza}} de {{menor_viaje}}, identificado(a) con {{menor_documento}}, nacido(a) el {{fecha_nacimiento_menor}}, AUTORIZO su salida del país en los siguientes términos:\n\n**Acompañante:** {{acompanante_menor}}\n**Destino:** {{destino_viaje}}\n**Propósito:** {{proposito_viaje}}\n**Fecha de salida:** {{fecha_salida_viaje}}\n**Fecha de regreso:** {{fecha_regreso_viaje}}\n\nEsta autorización se otorga únicamente para el viaje descrito.\n\nEn {{ciudad}}, a {{fecha}}.\n\n\n{{progenitor_autoriza}}\n{{documento_progenitor_autoriza}}\n{{telefono_progenitor_autoriza}}",
+   "fields": [
+    {
+     "key": "progenitor_autoriza",
+     "label": "Padre o madre que autoriza"
+    },
+    {
+     "key": "documento_progenitor_autoriza",
+     "label": "Documento de quien autoriza"
+    },
+    {
+     "key": "calidad_autoriza",
+     "label": "Calidad",
+     "help": "«padre», «madre» o «representante legal»."
+    },
+    {
+     "key": "menor_viaje",
+     "label": "Nombre del menor"
+    },
+    {
+     "key": "menor_documento",
+     "label": "Documento del menor (NUIP o pasaporte)"
+    },
+    {
+     "key": "fecha_nacimiento_menor",
+     "label": "Fecha de nacimiento del menor"
+    },
+    {
+     "key": "acompanante_menor",
+     "label": "Persona con quien viaja",
+     "help": "Nombre y documento."
+    },
+    {
+     "key": "destino_viaje",
+     "label": "Lugar de destino"
+    },
+    {
+     "key": "proposito_viaje",
+     "label": "Propósito del viaje"
+    },
+    {
+     "key": "fecha_salida_viaje",
+     "label": "Fecha de salida"
+    },
+    {
+     "key": "fecha_regreso_viaje",
+     "label": "Fecha de regreso al país"
+    },
+    {
+     "key": "telefono_progenitor_autoriza",
+     "label": "Teléfono de contacto de quien autoriza"
+    }
+   ],
+   "keywords": [
+    "permiso salida país",
+    "autorización viaje menor",
+    "notaría",
+    "Migración Colombia",
+    "menor de edad"
+   ],
+   "legalBasis": "Ley 1098 de 2006, artículo 110."
+  },
+  {
+   "code": "FAMILIA-VIOLENCIA-INTRAFAMILIAR-20",
+   "area": "familia",
+   "category": "Solicitud",
+   "title": "Solicitud de medida de protección por violencia intrafamiliar",
+   "description": "Para pedir a la Comisaría de Familia medidas de protección inmediatas a favor de quien sufre violencia dentro del grupo familiar.",
+   "body": "Señor(a)\nComisario(a) de Familia {{comisaria}}\nCiudad\n\n**Solicitante:** {{cliente_nombre}}\n**Presunto agresor:** {{presunto_agresor}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, {{actuacion_solicitante_vif}}, solicito que se adopten medidas de protección por hechos de violencia en el contexto familiar cometidos por {{presunto_agresor}}, quien es {{relacion_agresor}}.\n\n## HECHOS\n\n{{hechos_vif}}\n\n## PERSONAS AFECTADAS\n\n{{personas_afectadas_vif}}\n\n## MEDIDAS SOLICITADAS\n\n1. Medida de protección provisional inmediata.\n\n2. {{medidas_proteccion_solicitadas}}\n\n3. Que, surtido el trámite, se imponga medida de protección definitiva.\n\n## PRUEBAS\n\n{{pruebas_vif}}\n\n## NOTIFICACIONES\n\n**Solicitante:** {{datos_contacto_seguro}}. Presunto agresor: {{direccion_agresor}}.\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}",
+   "fields": [
+    {
+     "key": "comisaria",
+     "label": "Comisaría de Familia",
+     "help": "La del lugar donde ocurrieron los hechos. Si no hay comisario, puede acudirse al juez civil o promiscuo municipal."
+    },
+    {
+     "key": "actuacion_solicitante_vif",
+     "label": "Cómo actúa el solicitante",
+     "help": "Ej. «en nombre propio» o «en nombre propio y de mis hijos menores ___». Si actúa por medio de abogado, agréguelo en la revisión."
+    },
+    {
+     "key": "presunto_agresor",
+     "label": "Presunto agresor"
+    },
+    {
+     "key": "relacion_agresor",
+     "label": "Relación con la víctima",
+     "help": "Ej. cónyuge, compañero permanente, excompañero, padre, hijo, otro miembro del grupo familiar."
+    },
+    {
+     "key": "hechos_vif",
+     "label": "Hechos",
+     "help": "Qué pasó, cuándo y dónde, en orden. Incluya antecedentes y si hay armas o amenazas."
+    },
+    {
+     "key": "personas_afectadas_vif",
+     "label": "Personas afectadas",
+     "help": "Nombre, edad y relación; indique si hay niños, niñas, adolescentes o personas mayores."
+    },
+    {
+     "key": "medidas_proteccion_solicitadas",
+     "label": "Medidas específicas",
+     "help": "Ej. desalojo del agresor de la vivienda; prohibición de acercarse o comunicarse; protección policial; tratamiento terapéutico; decisión provisional sobre custodia, visitas y alimentos."
+    },
+    {
+     "key": "pruebas_vif",
+     "label": "Pruebas",
+     "help": "Dictamen de Medicina Legal, historias clínicas, fotografías, mensajes, testigos, denuncia penal si existe."
+    },
+    {
+     "key": "datos_contacto_seguro",
+     "label": "Datos de contacto seguros del solicitante",
+     "help": "No ponga la dirección si el agresor no debe conocerla."
+    },
+    {
+     "key": "direccion_agresor",
+     "label": "Dirección del presunto agresor"
+    }
+   ],
+   "keywords": [
+    "violencia intrafamiliar",
+    "medida de protección",
+    "comisaría de familia",
+    "maltrato",
+    "Ley 294",
+    "desalojo"
+   ],
+   "legalBasis": "Ley 294 de 1996 (modificada por la Ley 575 de 2000 y la Ley 1257 de 2008); Ley 2126 de 2021 (comisarías de familia)."
+  }
+ ]
+}

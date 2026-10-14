@@ -1,0 +1,1292 @@
+{
+ "templates": [
+  {
+   "code": "LABORAL-RECLAMACION-ADMINISTRATIVA-01",
+   "area": "laboral",
+   "category": "Reclamación",
+   "title": "Reclamación escrita al empleador (y reclamación administrativa ante entidad pública)",
+   "description": "Para reclamar al empleador el pago de salarios, prestaciones, indemnizaciones u otros derechos. Interrumpe la prescripción por una sola vez (art. 489 CST). Si el empleador es una entidad pública, agota la reclamación administrativa previa a la demanda (art. 6 CPTSS).",
+   "body": "# RECLAMACIÓN DE DERECHOS LABORALES\n\nSeñores\n{{empleador}}\nCiudad\n\n**Trabajador:** {{cliente_nombre}}\n**Asunto:** Reclamación de derechos laborales\n\nYo, {{cliente_nombre}}, identificado(a) con {{cliente_documento}}, quien laboró al servicio de ustedes como {{cargo_reclamante}} desde el {{fecha_inicio_laboral}} {{estado_vinculo}}, solicito el reconocimiento y pago de los derechos que se indican a continuación.\n\n## HECHOS\n\n{{hechos_reclamacion_laboral}}\n\n## RECLAMACIONES\n\n1. {{reclamacion_1}}\n\n2. {{reclamacion_2}}\n\n3. {{reclamacion_3}}\n\n4. Los demás salarios, prestaciones sociales, vacaciones, aportes e indemnizaciones a que tenga derecho.\n\n## LIQUIDACIÓN PROVISIONAL\n\n{{liquidacion_reclamacion_laboral}}\n\nSolicito respuesta escrita, clara y de fondo. Esta reclamación escrita se presenta, entre otros efectos, para interrumpir la prescripción de los derechos aquí determinados, en los términos de los artículos 489 del Código Sustantivo del Trabajo y 151 del Código Procesal del Trabajo y de la Seguridad Social.\n\n## ANEXOS\n\n{{anexos_reclamacion_laboral}}\n\n## NOTIFICACIONES\n\n{{notificaciones_laborales}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "empleador",
+     "label": "Empleador",
+     "help": "Nombre o razón social del empleador. Si es entidad pública, esta reclamación es requisito para demandar; si no responde en un mes, se entiende negada (art. 6 del CPTSS)."
+    },
+    {
+     "key": "fecha_inicio_laboral",
+     "label": "Fecha de inicio de la relación laboral"
+    },
+    {
+     "key": "hechos_reclamacion_laboral",
+     "label": "Hechos"
+    },
+    {
+     "key": "reclamacion_1",
+     "label": "Primera reclamación",
+     "help": "Concreta y con valor, ej. «Cesantías de 2025 por $___». La prescripción es de 3 años desde que cada derecho se hizo exigible (art. 488 CST) y solo se interrumpe por lo que se reclame en concreto."
+    },
+    {
+     "key": "reclamacion_2",
+     "label": "Segunda reclamación",
+     "help": "Si no aplica, escriba «No aplica»."
+    },
+    {
+     "key": "reclamacion_3",
+     "label": "Tercera reclamación",
+     "help": "Si no aplica, escriba «No aplica»."
+    },
+    {
+     "key": "liquidacion_reclamacion_laboral",
+     "label": "Liquidación provisional"
+    },
+    {
+     "key": "anexos_reclamacion_laboral",
+     "label": "Anexos",
+     "help": "Contrato, desprendibles de nómina, carta de terminación, liquidación recibida, etc. Conserve la prueba de radicación con fecha."
+    },
+    {
+     "key": "notificaciones_laborales",
+     "label": "Notificaciones",
+     "help": "Dirección física y electrónica de las partes y del apoderado (art. 25 del CPTSS y art. 6 de la Ley 2213 de 2022)."
+    },
+    {
+     "key": "cargo_reclamante",
+     "label": "Cargo desempeñado"
+    },
+    {
+     "key": "estado_vinculo",
+     "label": "Estado del vínculo",
+     "help": "Ej. «hasta el 30 de junio de 2026, cuando terminó el contrato» o «y continúa vigente»."
+    }
+   ],
+   "keywords": [
+    "reclamación laboral",
+    "reclamación administrativa",
+    "interrumpir prescripción",
+    "salarios",
+    "prestaciones",
+    "empleador",
+    "entidad pública"
+   ],
+   "legalBasis": "Código Sustantivo del Trabajo, artículos 488 y 489; Código Procesal del Trabajo y de la Seguridad Social, artículos 6 y 151; Constitución Política, artículos 23, 25 y 53."
+  },
+  {
+   "code": "LABORAL-DEMANDA-ORDINARIA-PRIMERA-02",
+   "area": "laboral",
+   "category": "Demanda",
+   "title": "Demanda ordinaria laboral de primera instancia",
+   "description": "Para reclamar derechos laborales de mayor cuantía o asuntos que corresponden al trámite ordinario laboral de primera instancia.",
+   "body": "# DEMANDA ORDINARIA LABORAL DE PRIMERA INSTANCIA\n\nSeñor(a)\n{{juez_laboral}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandado:** {{empleador}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, domiciliado(a) en {{cliente_ciudad}}, por medio de apoderado(a), presento demanda ordinaria laboral de primera instancia contra {{empleador}}, representado(a) legalmente por {{representante_demandado}}, para que se hagan las siguientes declaraciones y condenas.\n\n## PRETENSIONES\n\n1. Declarar que entre las partes existió un contrato de trabajo desde {{fecha_inicio_laboral}} hasta {{fecha_terminacion_laboral}} o que permanece vigente.\n\n2. Declarar que el empleador adeuda {{derechos_reclamados_laborales}}.\n\n3. Condenar al demandado a pagar: {{valor_pretensiones_laborales}}.\n\n4. Condenar a lo que resulte probado ultra y extra petita, en los términos del artículo 50 del Código Procesal del Trabajo y de la Seguridad Social.\n\n5. Condenar en costas y agencias en derecho.\n\n## HECHOS\n\n{{hechos_demanda_laboral}}\n\n## FUNDAMENTOS DE DERECHO\n\n{{fundamentos_demanda_laboral}}\n\n## LIQUIDACIÓN Y PRESCRIPCIÓN\n\n{{liquidacion_demanda_laboral}}\n\n\n\n## RECLAMACIÓN PREVIA\n\n{{reclamacion_previa}}\n\n## CUANTÍA\n\nPara efectos de la competencia, estimo la cuantía en {{cuantia_laboral}}.\n\n## PRUEBAS\n\n{{pruebas_demanda_laboral}}\n\n## ANEXOS\n\n{{anexos_demanda_laboral}}\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## NOTIFICACIONES\n\n{{notificaciones_laborales}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_laboral",
+     "label": "Juzgado laboral competente",
+     "help": "Juez Laboral del Circuito (Reparto) del domicilio del demandado o del último lugar donde se prestó el servicio, a elección del demandante (art. 5 del CPTSS). Si la cuantía no excede 20 SMMLV, Juez Municipal de Pequeñas Causas Laborales, en única instancia (art. 12 del CPTSS)."
+    },
+    {
+     "key": "empleador",
+     "label": "Empleador demandado"
+    },
+    {
+     "key": "fecha_inicio_laboral",
+     "label": "Fecha de inicio"
+    },
+    {
+     "key": "fecha_terminacion_laboral",
+     "label": "Fecha de terminación o vínculo vigente"
+    },
+    {
+     "key": "derechos_reclamados_laborales",
+     "label": "Derechos reclamados"
+    },
+    {
+     "key": "valor_pretensiones_laborales",
+     "label": "Condenas solicitadas",
+     "help": "Cada concepto con su valor, ej. cesantías, intereses, prima, vacaciones, indemnización por despido (art. 64 CST), indemnización moratoria (art. 65 CST) o, en su defecto, indexación; sanción por no consignar cesantías (art. 99 Ley 50 de 1990); aportes a pensión."
+    },
+    {
+     "key": "hechos_demanda_laboral",
+     "label": "Hechos",
+     "help": "Clasificados y numerados, uno por párrafo (art. 25 num. 7 del CPTSS)."
+    },
+    {
+     "key": "fundamentos_demanda_laboral",
+     "label": "Fundamentos jurídicos"
+    },
+    {
+     "key": "liquidacion_demanda_laboral",
+     "label": "Liquidación y análisis de prescripción",
+     "help": "Liquidación de cada concepto. Tenga en cuenta la prescripción de 3 años (arts. 488 CST y 151 CPTSS) y su interrupción por la reclamación escrita."
+    },
+    {
+     "key": "pruebas_demanda_laboral",
+     "label": "Pruebas"
+    },
+    {
+     "key": "anexos_demanda_laboral",
+     "label": "Anexos",
+     "help": "Poder; certificado de existencia y representación legal del demandado, si es persona jurídica; documentos relacionados en las pruebas."
+    },
+    {
+     "key": "notificaciones_laborales",
+     "label": "Notificaciones",
+     "help": "Dirección física y electrónica de las partes y del apoderado (art. 25 del CPTSS y art. 6 de la Ley 2213 de 2022)."
+    },
+    {
+     "key": "representante_demandado",
+     "label": "Representante legal del demandado",
+     "help": "Si es persona natural, escriba «quien actúa en nombre propio» y ajuste el texto."
+    },
+    {
+     "key": "reclamacion_previa",
+     "label": "Reclamación previa",
+     "help": "Si el demandado es una entidad pública, aporte la reclamación administrativa y su respuesta, o la prueba de que pasó un mes sin respuesta (art. 6 del CPTSS). Si es un empleador privado, indique la reclamación escrita que interrumpió la prescripción, o «No aplica»."
+    },
+    {
+     "key": "cuantia_laboral",
+     "label": "Cuantía",
+     "help": "Suma de las pretensiones económicas a la fecha de la demanda. Más de 20 SMMLV: primera instancia; hasta 20 SMMLV: única instancia (art. 12 del CPTSS)."
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital y envío de la demanda",
+     "help": "Canal digital de las partes, testigos y peritos (art. 6 de la Ley 2213 de 2022) y constancia de envío simultáneo de la demanda y sus anexos al demandado, salvo que se pidan medidas cautelares o se desconozca su dirección."
+    }
+   ],
+   "keywords": [
+    "demanda laboral",
+    "ordinario laboral",
+    "salarios",
+    "prestaciones",
+    "indemnización"
+   ],
+   "legalBasis": "Código Procesal del Trabajo y de la Seguridad Social, artículos 5, 6, 12, 25, 25A, 26, 50, 74 y siguientes; Código Sustantivo del Trabajo, artículos 22, 23, 24, 64, 65, 127, 186, 249, 306, 488 y 489; Ley 50 de 1990, artículo 99; Ley 52 de 1975; Ley 2213 de 2022, artículo 6."
+  },
+  {
+   "code": "LABORAL-DEMANDA-UNICA-03",
+   "area": "laboral",
+   "category": "Demanda",
+   "title": "Demanda ordinaria laboral de única instancia",
+   "description": "Para asuntos laborales de menor cuantía sometidos al trámite de única instancia.",
+   "body": "# DEMANDA ORDINARIA LABORAL DE ÚNICA INSTANCIA\n\nSeñor(a)\n{{juez_laboral}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandado:** {{empleador}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, por medio de apoderado(a), presento demanda ordinaria laboral de única instancia contra {{empleador}}.\n\n## PRETENSIONES\n\n{{pretensiones_unica_instancia}}\n\n## HECHOS\n\n{{hechos_unica_instancia}}\n\n## CUANTÍA\n\nLa cuantía se estima en {{cuantia_unica_instancia}}, que no excede de veinte (20) salarios mínimos legales mensuales vigentes, por lo que el asunto se tramita en única instancia (artículo 12 del Código Procesal del Trabajo y de la Seguridad Social).\n\n## FUNDAMENTOS Y PRUEBAS\n\n{{fundamentos_pruebas_unica_instancia}}\n\n## ANEXOS\n\n{{anexos_unica_instancia}}\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## NOTIFICACIONES\n\n{{notificaciones_laborales}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_laboral",
+     "label": "Juzgado laboral competente",
+     "help": "Juez Municipal de Pequeñas Causas Laborales (Reparto). Donde no exista, el juez laboral del circuito o, en su defecto, el civil del circuito."
+    },
+    {
+     "key": "empleador",
+     "label": "Demandado"
+    },
+    {
+     "key": "pretensiones_unica_instancia",
+     "label": "Pretensiones"
+    },
+    {
+     "key": "hechos_unica_instancia",
+     "label": "Hechos"
+    },
+    {
+     "key": "cuantia_unica_instancia",
+     "label": "Cuantía"
+    },
+    {
+     "key": "fundamentos_pruebas_unica_instancia",
+     "label": "Fundamentos y pruebas"
+    },
+    {
+     "key": "anexos_unica_instancia",
+     "label": "Anexos",
+     "help": "Poder; certificado de existencia y representación legal del demandado, si es persona jurídica; documentos relacionados en las pruebas."
+    },
+    {
+     "key": "notificaciones_laborales",
+     "label": "Notificaciones",
+     "help": "Dirección física y electrónica de las partes y del apoderado (art. 25 del CPTSS y art. 6 de la Ley 2213 de 2022)."
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital y envío de la demanda",
+     "help": "Canal digital de las partes, testigos y peritos (art. 6 de la Ley 2213 de 2022) y constancia de envío simultáneo de la demanda y sus anexos al demandado, salvo que se pidan medidas cautelares o se desconozca su dirección."
+    }
+   ],
+   "keywords": [
+    "única instancia",
+    "demanda laboral",
+    "menor cuantía",
+    "juzgado laboral",
+    "reclamación"
+   ],
+   "legalBasis": "Código Procesal del Trabajo y de la Seguridad Social, artículos 5, 12, 25, 26 y 70 a 73; Código Sustantivo del Trabajo; Ley 2213 de 2022, artículo 6."
+  },
+  {
+   "code": "LABORAL-CONTESTACION-04",
+   "area": "laboral",
+   "category": "Contestación",
+   "title": "Contestación de demanda laboral",
+   "description": "Para responder las pretensiones y hechos de una demanda laboral y formular excepciones de mérito.",
+   "body": "# CONTESTACIÓN DE DEMANDA LABORAL\n\nSeñor(a)\n{{juzgado_laboral}}\nE. S. D.\n\n**Proceso:** {{tipo_proceso}}\n**Radicado:** {{radicado}}\n**Demandante:** {{demandante_laboral}}\n**Demandado:** {{cliente_nombre}}\n\n{{abogado_nombre}}, apoderado(a) de {{cliente_nombre}}, dentro del término de traslado de diez (10) días (artículo 74 del Código Procesal del Trabajo y de la Seguridad Social), contesto la demanda así:\n\n## PRONUNCIAMIENTO SOBRE LAS PRETENSIONES\n\n{{respuesta_pretensiones_laborales}}\n\n## PRONUNCIAMIENTO SOBRE LOS HECHOS\n\n{{respuesta_hechos_laborales}}\n\n## HECHOS, FUNDAMENTOS Y RAZONES DE LA DEFENSA\n\n{{razones_defensa_laboral}}\n\n## EXCEPCIONES PREVIAS\n\n{{excepciones_previas_laborales}}\n\n## EXCEPCIONES DE MÉRITO\n\n{{excepciones_laborales}}\n\n## PRUEBAS\n\n{{pruebas_contestacion_laboral}}\n\n## ANEXOS\n\n{{anexos_contestacion_laboral}}\n\n## PETICIONES\n\n1. Negar las pretensiones de la demanda.\n\n2. Declarar probadas las excepciones propuestas.\n\n3. Condenar en costas si hay lugar.\n\n## NOTIFICACIONES\n\n{{notificaciones_laborales}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juzgado_laboral",
+     "label": "Juzgado laboral",
+     "help": "Si es el despacho del caso, puede dejarlo como aparece."
+    },
+    {
+     "key": "demandante_laboral",
+     "label": "Demandante"
+    },
+    {
+     "key": "respuesta_pretensiones_laborales",
+     "label": "Respuesta a cada pretensión",
+     "help": "Pronunciamiento expreso y concreto sobre cada pretensión: se opone, se allana o se atiene a lo probado."
+    },
+    {
+     "key": "respuesta_hechos_laborales",
+     "label": "Respuesta expresa a los hechos",
+     "help": "Por cada hecho: si se admite, se niega o no le consta; en los dos últimos casos, explique por qué (art. 31 del CPTSS). La falta de contestación es indicio grave en contra."
+    },
+    {
+     "key": "excepciones_laborales",
+     "label": "Excepciones de mérito",
+     "help": "Ej. pago, prescripción, inexistencia de la obligación, compensación, buena fe (frente a la indemnización moratoria). Cada una con su fundamento."
+    },
+    {
+     "key": "pruebas_contestacion_laboral",
+     "label": "Pruebas"
+    },
+    {
+     "key": "notificaciones_laborales",
+     "label": "Notificaciones",
+     "help": "Dirección física y electrónica de las partes y del apoderado (art. 25 del CPTSS y art. 6 de la Ley 2213 de 2022)."
+    },
+    {
+     "key": "razones_defensa_laboral",
+     "label": "Hechos, fundamentos y razones de la defensa"
+    },
+    {
+     "key": "excepciones_previas_laborales",
+     "label": "Excepciones previas",
+     "help": "Se resuelven en la primera audiencia (art. 32 del CPTSS). Si no hay, escriba «No se proponen»."
+    },
+    {
+     "key": "anexos_contestacion_laboral",
+     "label": "Anexos",
+     "help": "Poder; prueba de existencia y representación; documentos pedidos en la demanda que estén en su poder; pruebas documentales (art. 31 par. 1 del CPTSS)."
+    }
+   ],
+   "keywords": [
+    "contestación laboral",
+    "demanda laboral",
+    "excepciones",
+    "empleador",
+    "defensa"
+   ],
+   "legalBasis": "Código Procesal del Trabajo y de la Seguridad Social, artículos 31, 32, 74 y 77; Código General del Proceso, aplicable por remisión del artículo 145 del CPTSS."
+  },
+  {
+   "code": "LABORAL-LIQUIDACION-PRESTACIONES-05",
+   "area": "laboral",
+   "category": "Liquidación",
+   "title": "Liquidación de prestaciones sociales",
+   "description": "Para calcular salarios pendientes, cesantías, intereses a las cesantías, prima de servicios, vacaciones e indemnizaciones al terminar el vínculo.",
+   "body": "# LIQUIDACIÓN DE PRESTACIONES SOCIALES\n\n**Trabajador:** {{cliente_nombre}}\n**Empleador:** {{empleador}}\n**Periodo:** {{fecha_inicio_liquidacion}} a {{fecha_fin_liquidacion}}\n**Salario base:** {{salario_base_liquidacion}}\n\n## CONCEPTOS\n\n**Salarios pendientes:** {{salarios_pendientes}}\n**Cesantías:** {{formula_cesantias}} = {{valor_cesantias}}\n**Intereses a las cesantías:** {{formula_intereses_cesantias}} = {{valor_intereses_cesantias}}\n**Prima de servicios:** {{formula_prima}} = {{valor_prima}}\n**Vacaciones:** {{formula_vacaciones}} = {{valor_vacaciones}}\n**Indemnización:** {{formula_indemnizacion}} = {{valor_indemnizacion}}\n**Otros conceptos:** {{otros_conceptos_liquidacion_laboral}}\n\n**Total bruto:** {{total_bruto_liquidacion_laboral}}\n**Deducciones autorizadas:** {{deducciones_liquidacion_laboral}}\n**Total neto:** {{total_neto_liquidacion_laboral}}\n\n## OBSERVACIONES\n\n{{observaciones_liquidacion_laboral}}\n\nEsta liquidación es un cálculo provisional que depende de la modalidad del contrato, el salario, los factores salariales, los pagos realizados y las circunstancias que se prueben.\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "empleador",
+     "label": "Empleador"
+    },
+    {
+     "key": "fecha_inicio_liquidacion",
+     "label": "Inicio del periodo"
+    },
+    {
+     "key": "fecha_fin_liquidacion",
+     "label": "Fin del periodo"
+    },
+    {
+     "key": "salario_base_liquidacion",
+     "label": "Salario base y factores salariales",
+     "help": "Salario mensual y factores salariales. Si el salario es variable, el promedio del último año (art. 253 CST). El auxilio de transporte se incluye para cesantías y prima, no para vacaciones."
+    },
+    {
+     "key": "salarios_pendientes",
+     "label": "Salarios pendientes"
+    },
+    {
+     "key": "formula_cesantias",
+     "label": "Fórmula y periodo de cesantías",
+     "help": "Salario base × días trabajados / 360 (art. 249 CST)."
+    },
+    {
+     "key": "valor_cesantias",
+     "label": "Valor de cesantías"
+    },
+    {
+     "key": "formula_intereses_cesantias",
+     "label": "Fórmula de intereses",
+     "help": "Cesantías × días trabajados × 12 % / 360 (Ley 52 de 1975)."
+    },
+    {
+     "key": "valor_intereses_cesantias",
+     "label": "Valor de intereses"
+    },
+    {
+     "key": "formula_prima",
+     "label": "Fórmula de prima",
+     "help": "Salario base × días trabajados en el semestre / 360 (art. 306 CST)."
+    },
+    {
+     "key": "valor_prima",
+     "label": "Valor de prima"
+    },
+    {
+     "key": "formula_vacaciones",
+     "label": "Fórmula de vacaciones",
+     "help": "Salario básico sin auxilio de transporte × días trabajados / 720 (15 días hábiles por año, proporcionales: art. 189 CST y Ley 995 de 2005)."
+    },
+    {
+     "key": "valor_vacaciones",
+     "label": "Valor de vacaciones"
+    },
+    {
+     "key": "formula_indemnizacion",
+     "label": "Fórmula de indemnización",
+     "help": "Solo si hubo despido sin justa causa (art. 64 CST): término fijo, salarios del tiempo faltante; indefinido con salario inferior a 10 SMMLV, 30 días el primer año y 20 por cada año adicional. Si no aplica: «No aplica»."
+    },
+    {
+     "key": "valor_indemnizacion",
+     "label": "Valor de indemnización"
+    },
+    {
+     "key": "otros_conceptos_liquidacion_laboral",
+     "label": "Otros conceptos"
+    },
+    {
+     "key": "total_bruto_liquidacion_laboral",
+     "label": "Total bruto"
+    },
+    {
+     "key": "deducciones_liquidacion_laboral",
+     "label": "Deducciones autorizadas",
+     "help": "Solo las autorizadas por la ley o por escrito por el trabajador para cada caso (arts. 59 y 149 CST)."
+    },
+    {
+     "key": "total_neto_liquidacion_laboral",
+     "label": "Total neto"
+    },
+    {
+     "key": "observaciones_liquidacion_laboral",
+     "label": "Observaciones"
+    }
+   ],
+   "keywords": [
+    "liquidación laboral",
+    "cesantías",
+    "prima",
+    "vacaciones",
+    "prestaciones"
+   ],
+   "legalBasis": "Código Sustantivo del Trabajo, artículos 59, 64, 127, 149, 186, 189, 249, 253 y 306; Ley 52 de 1975; Ley 995 de 2005; Ley 1 de 1963 (auxilio de transporte)."
+  },
+  {
+   "code": "LABORAL-DESPIDO-SIN-JUSTA-CAUSA-06",
+   "area": "laboral",
+   "category": "Demanda",
+   "title": "Demanda por despido sin justa causa",
+   "description": "Para solicitar indemnización y demás derechos derivados de la terminación unilateral sin justa causa comprobada.",
+   "body": "# DEMANDA POR DESPIDO SIN JUSTA CAUSA\n\nSeñor(a)\n{{juez_laboral}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandado:** {{empleador}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, por medio de apoderado(a), presento demanda ordinaria laboral de {{instancia_laboral}} contra {{empleador}}.\n\n## PRETENSIONES\n\n1. Declarar que entre las partes existió un contrato de trabajo {{modalidad_contrato}} desde el {{fecha_inicio_laboral}}, que el empleador terminó unilateralmente y sin justa causa el {{fecha_despido}}.\n\n2. Condenar al demandado a pagar la indemnización por despido sin justa causa del artículo 64 del Código Sustantivo del Trabajo.\n\n3. Condenar al pago de salarios, prestaciones, vacaciones, aportes e intereses pendientes.\n\n4. Condenar a la indemnización moratoria del artículo 65 del Código Sustantivo del Trabajo o, subsidiariamente, a la indexación de las sumas adeudadas.\n\n5. Condenar en costas y agencias en derecho.\n\n## HECHOS\n\n{{hechos_despido_sin_justa_causa}}\n\n## FUNDAMENTOS\n\n{{fundamentos_despido_sin_justa_causa}}\n\n## LIQUIDACIÓN\n\n{{liquidacion_despido_sin_justa_causa}}\n\n## CUANTÍA\n\nPara efectos de la competencia, estimo la cuantía en {{cuantia_laboral}}.\n\n## PRUEBAS\n\n{{pruebas_despido_sin_justa_causa}}\n\n## ANEXOS\n\n{{anexos_despido}}\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## NOTIFICACIONES\n\n{{notificaciones_laborales}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_laboral",
+     "label": "Juzgado laboral",
+     "help": "Juez Laboral del Circuito (Reparto) del domicilio del demandado o del último lugar donde se prestó el servicio, a elección del demandante (art. 5 del CPTSS). Si la cuantía no excede 20 SMMLV, Juez Municipal de Pequeñas Causas Laborales, en única instancia (art. 12 del CPTSS)."
+    },
+    {
+     "key": "empleador",
+     "label": "Empleador"
+    },
+    {
+     "key": "fecha_despido",
+     "label": "Fecha del despido"
+    },
+    {
+     "key": "hechos_despido_sin_justa_causa",
+     "label": "Hechos",
+     "help": "Incluya cómo se comunicó el despido y qué motivo se dio. Al terminar, el empleador debe indicar la causa y no puede alegar después otras (art. 66 CST)."
+    },
+    {
+     "key": "fundamentos_despido_sin_justa_causa",
+     "label": "Fundamentos jurídicos"
+    },
+    {
+     "key": "liquidacion_despido_sin_justa_causa",
+     "label": "Liquidación de indemnización y acreencias",
+     "help": "Art. 64 CST: término fijo, salarios del tiempo faltante; obra o labor, tiempo faltante con mínimo 15 días; indefinido con salario inferior a 10 SMMLV, 30 días el primer año y 20 por cada año adicional (10 SMMLV o más: 20 y 15)."
+    },
+    {
+     "key": "pruebas_despido_sin_justa_causa",
+     "label": "Pruebas"
+    },
+    {
+     "key": "instancia_laboral",
+     "label": "Instancia",
+     "help": "«primera instancia» (más de 20 SMMLV) o «única instancia» (hasta 20 SMMLV)."
+    },
+    {
+     "key": "modalidad_contrato",
+     "label": "Modalidad del contrato",
+     "help": "Ej. «a término indefinido», «a término fijo de un año», «por duración de la obra o labor»."
+    },
+    {
+     "key": "fecha_inicio_laboral",
+     "label": "Fecha de inicio del contrato"
+    },
+    {
+     "key": "anexos_despido",
+     "label": "Anexos",
+     "help": "Poder; certificado de existencia y representación legal del demandado, si es persona jurídica; documentos relacionados en las pruebas."
+    },
+    {
+     "key": "cuantia_laboral",
+     "label": "Cuantía",
+     "help": "Suma de las pretensiones económicas a la fecha de la demanda. Más de 20 SMMLV: primera instancia; hasta 20 SMMLV: única instancia (art. 12 del CPTSS)."
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital y envío de la demanda",
+     "help": "Canal digital de las partes, testigos y peritos (art. 6 de la Ley 2213 de 2022) y constancia de envío simultáneo de la demanda y sus anexos al demandado, salvo que se pidan medidas cautelares o se desconozca su dirección."
+    },
+    {
+     "key": "notificaciones_laborales",
+     "label": "Notificaciones",
+     "help": "Dirección física y electrónica de las partes y del apoderado (art. 25 del CPTSS y art. 6 de la Ley 2213 de 2022)."
+    }
+   ],
+   "keywords": [
+    "despido sin justa causa",
+    "indemnización",
+    "terminación contrato",
+    "salarios",
+    "laboral"
+   ],
+   "legalBasis": "Código Sustantivo del Trabajo, artículos 61, 62, 64, 65 y 66 (modificados por la Ley 789 de 2002); Código Procesal del Trabajo y de la Seguridad Social, artículos 5, 12, 25 y 26; Ley 2213 de 2022, artículo 6."
+  },
+  {
+   "code": "LABORAL-REINTEGRO-FUERO-07",
+   "area": "laboral",
+   "category": "Demanda",
+   "title": "Demanda de reintegro por estabilidad laboral reforzada (salud, maternidad, paternidad o prepensión)",
+   "description": "Para pedir el reintegro y los pagos por despido de un trabajador con estabilidad laboral reforzada sin autorización del inspector de trabajo. Para el fuero sindical use la acción de reintegro especial (LABORAL-FUERO-SINDICAL-16).",
+   "body": "# DEMANDA DE REINTEGRO POR ESTABILIDAD LABORAL REFORZADA\n\nSeñor(a)\n{{juez_laboral}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandado:** {{empleador}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, por medio de apoderado(a), presento demanda ordinaria laboral de primera instancia contra {{empleador}}.\n\n## PRETENSIONES\n\n1. Declarar ineficaz la terminación del contrato de trabajo ocurrida el {{fecha_terminacion_reforzada}}, por haberse producido sin la autorización del inspector de trabajo, estando {{cliente_nombre}} amparado(a) por {{tipo_proteccion_reforzada}}.\n\n2. Ordenar el reintegro al cargo o a uno compatible, sin solución de continuidad.\n\n3. Condenar al pago de los salarios, prestaciones sociales y aportes a la seguridad social dejados de percibir desde la desvinculación hasta el reintegro efectivo.\n\n4. Condenar al pago de la indemnización especial: {{indemnizacion_especial}}.\n\n5. Condenar en costas.\n\n## HECHOS\n\n{{hechos_estabilidad_laboral}}\n\n## CONDICIÓN PROTEGIDA Y CONOCIMIENTO DEL EMPLEADOR\n\n{{condicion_protegida}}\n\nEl empleador conocía la situación por {{conocimiento_empleador_estabilidad}}. La autorización administrativa requerida {{situacion_autorizacion_despido}}.\n\n## CUANTÍA\n\nPara efectos de la competencia, estimo la cuantía en {{cuantia_laboral}}.\n\n## PRUEBAS\n\n{{pruebas_estabilidad_laboral}}\n\n## ANEXOS\n\n{{anexos_estabilidad}}\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## NOTIFICACIONES\n\n{{notificaciones_laborales}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_laboral",
+     "label": "Juzgado laboral",
+     "help": "Juez Laboral del Circuito (Reparto) del domicilio del demandado o del último lugar donde se prestó el servicio, a elección del demandante (art. 5 del CPTSS). Si la cuantía no excede 20 SMMLV, Juez Municipal de Pequeñas Causas Laborales, en única instancia (art. 12 del CPTSS)."
+    },
+    {
+     "key": "empleador",
+     "label": "Empleador"
+    },
+    {
+     "key": "fecha_terminacion_reforzada",
+     "label": "Fecha de terminación"
+    },
+    {
+     "key": "tipo_proteccion_reforzada",
+     "label": "Fuero o estabilidad protegida",
+     "help": "Ej. «estabilidad laboral reforzada por razones de salud (art. 26 de la Ley 361 de 1997)», «fuero de maternidad (art. 239 CST)», «fuero de paternidad (Ley 2141 de 2021)», «condición de prepensionado»."
+    },
+    {
+     "key": "hechos_estabilidad_laboral",
+     "label": "Hechos"
+    },
+    {
+     "key": "condicion_protegida",
+     "label": "Condición de protección"
+    },
+    {
+     "key": "conocimiento_empleador_estabilidad",
+     "label": "Prueba del conocimiento del empleador"
+    },
+    {
+     "key": "situacion_autorizacion_despido",
+     "label": "Autorización del inspector de trabajo",
+     "help": "Ej. «no fue solicitada» o «fue solicitada pero no concedida». Escríbalo como continuación de la frase."
+    },
+    {
+     "key": "pruebas_estabilidad_laboral",
+     "label": "Pruebas"
+    },
+    {
+     "key": "indemnizacion_especial",
+     "label": "Indemnización especial",
+     "help": "Salud: 180 días de salario (art. 26 Ley 361 de 1997). Maternidad: 60 días de salario (art. 239 CST), además de las semanas de licencia no disfrutadas. Si no aplica, «No aplica»."
+    },
+    {
+     "key": "anexos_estabilidad",
+     "label": "Anexos",
+     "help": "Poder; certificado de existencia y representación legal del demandado, si es persona jurídica; documentos relacionados en las pruebas. Historia clínica, incapacidades, prueba del embarazo o de la condición."
+    },
+    {
+     "key": "cuantia_laboral",
+     "label": "Cuantía",
+     "help": "Suma de las pretensiones económicas a la fecha de la demanda. Más de 20 SMMLV: primera instancia; hasta 20 SMMLV: única instancia (art. 12 del CPTSS)."
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital y envío de la demanda",
+     "help": "Canal digital de las partes, testigos y peritos (art. 6 de la Ley 2213 de 2022) y constancia de envío simultáneo de la demanda y sus anexos al demandado, salvo que se pidan medidas cautelares o se desconozca su dirección."
+    },
+    {
+     "key": "notificaciones_laborales",
+     "label": "Notificaciones",
+     "help": "Dirección física y electrónica de las partes y del apoderado (art. 25 del CPTSS y art. 6 de la Ley 2213 de 2022)."
+    }
+   ],
+   "keywords": [
+    "reintegro",
+    "estabilidad laboral reforzada",
+    "discapacidad",
+    "salud",
+    "embarazo",
+    "maternidad",
+    "paternidad",
+    "prepensionado"
+   ],
+   "legalBasis": "Constitución Política, artículos 13, 25, 43, 47 y 53; Ley 361 de 1997, artículo 26; Código Sustantivo del Trabajo, artículos 239, 240 y 241 (modificados por la Ley 1822 de 2017 y la Ley 2141 de 2021); Código Procesal del Trabajo y de la Seguridad Social, artículos 25 y 26."
+  },
+  {
+   "code": "LABORAL-ACOSO-08",
+   "area": "laboral",
+   "category": "Queja",
+   "title": "Queja por acoso laboral",
+   "description": "Para solicitar medidas preventivas, correctivas y sancionatorias frente a conductas persistentes y demostrables de acoso laboral.",
+   "body": "# QUEJA POR ACOSO LABORAL\n\nSeñores\n{{comite_convivencia_o_autoridad}}\nCiudad\n\n**Quejoso:** {{cliente_nombre}}\n**Presunto acosador:** {{presunto_acosador}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, quien se desempeña como {{cargo_quejoso}} en {{empleador_quejoso}}, presento queja por presuntas conductas de acoso laboral, con fundamento en la Ley 1010 de 2006.\n\n## HECHOS\n\n{{hechos_acoso_laboral}}\n\n## MODALIDAD DE ACOSO\n\nLos hechos podrían corresponder a {{modalidad_acoso}}, pues han producido {{afectaciones_acoso}}.\n\n## PRUEBAS\n\n{{pruebas_acoso_laboral}}\n\n## SOLICITUDES\n\n1. Activar el procedimiento preventivo y confidencial correspondiente.\n\n2. Escuchar a las personas involucradas y recibir las pruebas.\n\n3. Adoptar medidas preventivas y correctivas, incluida la protección contra represalias.\n\n4. Remitir o informar a la autoridad competente cuando corresponda.\n\n5. Mantener la reserva de la información.\n\n## NOTIFICACIONES\n\n{{notificaciones_laborales}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}",
+   "fields": [
+    {
+     "key": "comite_convivencia_o_autoridad",
+     "label": "Comité de Convivencia, Inspector de Trabajo u otra autoridad",
+     "help": "Comité de Convivencia Laboral de la empresa, o Inspector de Trabajo, Inspector de Policía, Personero o Defensoría del Pueblo (art. 9 de la Ley 1010). Para servidores públicos, también la Procuraduría."
+    },
+    {
+     "key": "presunto_acosador",
+     "label": "Presunto acosador"
+    },
+    {
+     "key": "hechos_acoso_laboral",
+     "label": "Relación cronológica de conductas",
+     "help": "Conductas en orden, con fechas, lugar y quién estuvo presente. Deben ser persistentes y demostrables (art. 7 de la Ley 1010). Las acciones caducan a los 3 años (art. 18, modificado por la Ley 2209 de 2022)."
+    },
+    {
+     "key": "modalidad_acoso",
+     "label": "Maltrato, persecución, discriminación, entorpecimiento, inequidad o desprotección",
+     "help": "Maltrato, persecución, discriminación, entorpecimiento, inequidad o desprotección laboral (art. 2 de la Ley 1010)."
+    },
+    {
+     "key": "afectaciones_acoso",
+     "label": "Afectaciones laborales, psicológicas o personales"
+    },
+    {
+     "key": "pruebas_acoso_laboral",
+     "label": "Pruebas y testigos"
+    },
+    {
+     "key": "cargo_quejoso",
+     "label": "Cargo del quejoso"
+    },
+    {
+     "key": "empleador_quejoso",
+     "label": "Empleador"
+    },
+    {
+     "key": "notificaciones_laborales",
+     "label": "Notificaciones",
+     "help": "Dirección física y electrónica de las partes y del apoderado (art. 25 del CPTSS y art. 6 de la Ley 2213 de 2022)."
+    }
+   ],
+   "keywords": [
+    "acoso laboral",
+    "Ley 1010",
+    "Comité de Convivencia",
+    "queja",
+    "represalias"
+   ],
+   "legalBasis": "Ley 1010 de 2006, artículos 1, 2, 7, 8, 9, 10, 11 y 18 (este último modificado por la Ley 2209 de 2022); resoluciones del Ministerio del Trabajo sobre comités de convivencia laboral."
+  },
+  {
+   "code": "LABORAL-CONCILIACION-INSPECTOR-09",
+   "area": "laboral",
+   "category": "Solicitud",
+   "title": "Solicitud de conciliación ante inspector de trabajo",
+   "description": "Para solicitar audiencia de conciliación sobre derechos laborales individuales disponibles y controversias conciliables.",
+   "body": "# SOLICITUD DE CONCILIACIÓN LABORAL\n\nSeñor(a)\nInspector(a) de Trabajo y Seguridad Social\n{{direccion_territorial_trabajo}}\nCiudad\n\n**Solicitante:** {{cliente_nombre}}\n**Citado:** {{empleador}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, {{actuacion_solicitante}}, solicito citar a {{empleador}}, identificado(a) con {{nit_citado}}, a audiencia de conciliación.\n\n## HECHOS\n\n{{hechos_conciliacion_laboral}}\n\n## DERECHOS Y PRETENSIONES\n\n{{pretensiones_conciliacion_laboral}}\n\n## FÓRMULA DE ARREGLO\n\n{{formula_conciliacion_laboral}}\n\n## CUANTÍA\n\n{{cuantia_conciliacion_laboral}}\n\nSolicito citar a las partes, realizar la audiencia y dejar constancia de lo acordado o de la imposibilidad de conciliar. La solicitud se limita a derechos individuales disponibles y no implica renuncia a derechos ciertos e irrenunciables.\n\n## ANEXOS\n\n{{anexos_conciliacion_laboral}}\n\n## NOTIFICACIONES\n\n{{notificaciones_laborales}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "direccion_territorial_trabajo",
+     "label": "Dirección territorial o inspección"
+    },
+    {
+     "key": "empleador",
+     "label": "Empleador citado"
+    },
+    {
+     "key": "hechos_conciliacion_laboral",
+     "label": "Hechos"
+    },
+    {
+     "key": "pretensiones_conciliacion_laboral",
+     "label": "Derechos y pretensiones"
+    },
+    {
+     "key": "formula_conciliacion_laboral",
+     "label": "Fórmula de arreglo",
+     "help": "La conciliación laboral no es requisito para demandar. El acta hace tránsito a cosa juzgada y presta mérito ejecutivo; no puede incluir renuncia a derechos ciertos e indiscutibles."
+    },
+    {
+     "key": "cuantia_conciliacion_laboral",
+     "label": "Cuantía"
+    },
+    {
+     "key": "anexos_conciliacion_laboral",
+     "label": "Anexos"
+    },
+    {
+     "key": "notificaciones_laborales",
+     "label": "Notificaciones",
+     "help": "Dirección física y electrónica de las partes y del apoderado (art. 25 del CPTSS y art. 6 de la Ley 2213 de 2022)."
+    },
+    {
+     "key": "actuacion_solicitante",
+     "label": "Cómo actúa el solicitante",
+     "help": "Ej. «en nombre propio» o «por medio de apoderado(a)». Si va sin abogado, borre su firma en la revisión."
+    },
+    {
+     "key": "nit_citado",
+     "label": "NIT o documento del citado"
+    }
+   ],
+   "keywords": [
+    "conciliación laboral",
+    "inspector de trabajo",
+    "Ministerio del Trabajo",
+    "acuerdo",
+    "acreencias"
+   ],
+   "legalBasis": "Código Procesal del Trabajo y de la Seguridad Social, artículos 19, 20 y 78; Código Sustantivo del Trabajo, artículos 14, 15 y 486; Ley 2220 de 2022."
+  },
+  {
+   "code": "LABORAL-CARTA-TERMINACION-10",
+   "area": "laboral",
+   "category": "Comunicación",
+   "title": "Carta de terminación del contrato de trabajo",
+   "description": "Para comunicar la terminación del contrato por vencimiento del plazo, finalización de obra, justa causa, mutuo acuerdo o decisión sin justa causa.",
+   "body": "# CARTA DE TERMINACIÓN DEL CONTRATO DE TRABAJO\n\n{{ciudad}}, {{fecha}}\n\nSeñor(a)\n{{trabajador_destinatario}}\n{{documento_trabajador}}\nCiudad\n\n**Asunto:** Terminación del contrato de trabajo\n\nPor medio de la presente se comunica que el contrato de trabajo celebrado el {{fecha_contrato_terminacion}} terminará el {{fecha_efectiva_terminacion}} por la siguiente causa: {{causa_terminacion_laboral}}.\n\n{{hechos_justa_causa}}\n\nLa empresa pagará la liquidación definitiva de salarios, prestaciones, vacaciones e indemnizaciones que resulten procedentes, y entregará los soportes de afiliación y pago al Sistema de Seguridad Social.\n\n{{indemnizacion_terminacion}}\n\nDe conformidad con el parágrafo 1 del artículo 65 del Código Sustantivo del Trabajo, se informa el estado de pago de las cotizaciones a la seguridad social y de los aportes parafiscales de los últimos tres meses, y se adjuntan los comprobantes: {{soportes_seguridad_social_terminacion}}.\n\nSe entregará la certificación laboral y la orden para el examen médico de egreso, que debe practicarse dentro de los cinco (5) días siguientes.\n\nAtentamente,\n\n\n{{representante_empleador}}\n{{cargo_representante}}\n{{empleador}}\n\n\nRecibido por el trabajador: ____________________ Fecha: __________",
+   "fields": [
+    {
+     "key": "trabajador_destinatario",
+     "label": "Trabajador destinatario"
+    },
+    {
+     "key": "fecha_contrato_terminacion",
+     "label": "Fecha del contrato"
+    },
+    {
+     "key": "fecha_efectiva_terminacion",
+     "label": "Fecha efectiva de terminación"
+    },
+    {
+     "key": "causa_terminacion_laboral",
+     "label": "Causa de terminación",
+     "help": "Ej. «vencimiento del término pactado, del cual se dio preaviso con 30 días de anticipación (art. 46 CST)», «terminación de la obra o labor», «justa causa (art. 62 CST, literal A, numeral __)» o «decisión unilateral sin justa causa»."
+    },
+    {
+     "key": "hechos_justa_causa",
+     "label": "Hechos de la justa causa",
+     "help": "Si es justa causa, escriba los hechos concretos y la norma o cláusula: después no podrán alegarse otros motivos (art. 66 CST). Indique si se escuchó al trabajador en descargos. Si no aplica, escriba «No aplica» y bórrelo en la revisión."
+    },
+    {
+     "key": "indemnizacion_terminacion",
+     "label": "Indemnización reconocida",
+     "help": "Si es sin justa causa: «Se reconocerá la indemnización del artículo 64 del CST por $___». Si no aplica, bórrelo en la revisión."
+    },
+    {
+     "key": "soportes_seguridad_social_terminacion",
+     "label": "Soportes de seguridad social"
+    },
+    {
+     "key": "documento_trabajador",
+     "label": "Documento del trabajador"
+    },
+    {
+     "key": "empleador",
+     "label": "Empleador"
+    },
+    {
+     "key": "representante_empleador",
+     "label": "Quien firma por el empleador"
+    },
+    {
+     "key": "cargo_representante",
+     "label": "Cargo de quien firma"
+    }
+   ],
+   "keywords": [
+    "carta terminación",
+    "despido",
+    "justa causa",
+    "contrato laboral",
+    "liquidación"
+   ],
+   "legalBasis": "Código Sustantivo del Trabajo, artículos 46, 61, 62, 64, 65 (parágrafo 1) y 66; Ley 789 de 2002; Resolución 2346 de 2007 del Ministerio de la Protección Social (exámenes de egreso)."
+  },
+  {
+   "code": "LABORAL-CONTRATO-FIJO-11",
+   "area": "laboral",
+   "category": "Contrato",
+   "title": "Contrato de trabajo a término fijo",
+   "description": "Para formalizar una relación laboral con término fijo escrito, funciones, salario, jornada y reglas de prórroga.",
+   "body": "# CONTRATO DE TRABAJO A TÉRMINO FIJO\n\nEntre {{empleador_contrato}}, identificado(a) con {{nit_empleador_contrato}}, representado(a) por {{representante_empleador_contrato}}, quien en adelante se denominará EL EMPLEADOR, y {{trabajador_contrato}}, identificado(a) con {{documento_trabajador_contrato}}, domiciliado(a) en {{domicilio_trabajador}}, quien en adelante se denominará EL TRABAJADOR, se celebra el presente contrato de trabajo, que se rige por las siguientes cláusulas:\n\n## CARGO Y FUNCIONES\n\nEL TRABAJADOR prestará personalmente los servicios de {{cargo_trabajador}} y cumplirá {{funciones_trabajador}} en {{lugar_trabajo}}.\n\n## DURACIÓN\n\nEl contrato inicia el {{fecha_inicio_contrato_laboral}} y termina el {{fecha_fin_contrato_laboral}}. Si ninguna de las partes avisa por escrito su decisión de no prorrogarlo con una antelación no inferior a treinta (30) días, se entenderá prorrogado por un período igual al inicialmente pactado, en los términos del artículo 46 del Código Sustantivo del Trabajo. La duración total, con sus prórrogas, no podrá exceder de cuatro (4) años.\n\n## SALARIO Y JORNADA\n\nEl salario será de {{salario_contrato_laboral}}, pagadero {{periodicidad_pago_laboral}}. La jornada será {{jornada_laboral}}.\n\n## OBLIGACIONES Y SEGURIDAD SOCIAL\n\nEL EMPLEADOR afiliará a EL TRABAJADOR al Sistema de Seguridad Social Integral (salud, pensión y riesgos laborales) y a la caja de compensación familiar, y pagará los aportes a su cargo. EL TRABAJADOR cumplirá el reglamento, las instrucciones legítimas y las obligaciones de seguridad y salud en el trabajo.\n\n## PERÍODO DE PRUEBA\n\nSe pacta un período de prueba de {{periodo_prueba_laboral}}, durante el cual cualquiera de las partes podrá terminar el contrato sin previo aviso y sin indemnización (artículos 76 a 80 del Código Sustantivo del Trabajo).\n\n## TERMINACIÓN\n\n{{reglas_terminacion_contrato_fijo}}\n\nPara constancia se firma en dos ejemplares, en {{ciudad}}, a {{fecha}}.\n\n\nEL EMPLEADOR\n{{representante_empleador_contrato}}\n{{empleador_contrato}}\n{{nit_empleador_contrato}}\n\n\nEL TRABAJADOR\n{{trabajador_contrato}}\n{{documento_trabajador_contrato}}",
+   "fields": [
+    {
+     "key": "empleador_contrato",
+     "label": "Empleador"
+    },
+    {
+     "key": "trabajador_contrato",
+     "label": "Trabajador"
+    },
+    {
+     "key": "cargo_trabajador",
+     "label": "Cargo"
+    },
+    {
+     "key": "funciones_trabajador",
+     "label": "Funciones"
+    },
+    {
+     "key": "lugar_trabajo",
+     "label": "Lugar de trabajo"
+    },
+    {
+     "key": "fecha_inicio_contrato_laboral",
+     "label": "Fecha de inicio"
+    },
+    {
+     "key": "fecha_fin_contrato_laboral",
+     "label": "Fecha de terminación",
+     "help": "El contrato a término fijo debe constar por escrito y no puede superar 4 años en total (art. 46 CST, modificado por la Ley 2466 de 2025)."
+    },
+    {
+     "key": "salario_contrato_laboral",
+     "label": "Salario",
+     "help": "No inferior al salario mínimo o al proporcional por jornada. Salario integral: mínimo 13 SMMLV (art. 132 CST)."
+    },
+    {
+     "key": "periodicidad_pago_laboral",
+     "label": "Periodicidad de pago"
+    },
+    {
+     "key": "jornada_laboral",
+     "label": "Jornada",
+     "help": "Máximo 42 horas semanales desde el 15 de julio de 2026 (Ley 2101 de 2021). Trabajo diurno de 6:00 a. m. a 7:00 p. m. (art. 160 CST, modificado por la Ley 2466 de 2025)."
+    },
+    {
+     "key": "periodo_prueba_laboral",
+     "label": "Periodo de prueba",
+     "help": "Máximo 2 meses. En contratos de menos de un año, no más de la quinta parte del término (art. 78 CST). Si no se pacta, escriba «cero días» o borre la cláusula."
+    },
+    {
+     "key": "reglas_terminacion_contrato_fijo",
+     "label": "Reglas especiales de terminación",
+     "help": "Ej. «El contrato terminará por las causas de los artículos 61 y 62 del CST. La terminación sin justa causa dará lugar a la indemnización del artículo 64.»"
+    },
+    {
+     "key": "nit_empleador_contrato",
+     "label": "NIT o documento del empleador"
+    },
+    {
+     "key": "representante_empleador_contrato",
+     "label": "Representante legal del empleador"
+    },
+    {
+     "key": "documento_trabajador_contrato",
+     "label": "Documento del trabajador"
+    },
+    {
+     "key": "domicilio_trabajador",
+     "label": "Domicilio del trabajador"
+    }
+   ],
+   "keywords": [
+    "contrato término fijo",
+    "contrato laboral",
+    "empleador",
+    "trabajador",
+    "prórroga"
+   ],
+   "legalBasis": "Código Sustantivo del Trabajo, artículos 23, 46 (modificado por la Ley 2466 de 2025), 57, 58, 61, 62, 64 y 76 a 80; Ley 2101 de 2021."
+  },
+  {
+   "code": "LABORAL-CONTRATO-INDEFINIDO-12",
+   "area": "laboral",
+   "category": "Contrato",
+   "title": "Contrato de trabajo a término indefinido",
+   "description": "Para formalizar una relación laboral indefinida mientras subsistan las causas que originaron el vínculo.",
+   "body": "# CONTRATO DE TRABAJO A TÉRMINO INDEFINIDO\n\nEntre {{empleador_contrato}}, identificado(a) con {{nit_empleador_contrato}}, representado(a) por {{representante_empleador_contrato}}, quien en adelante se denominará EL EMPLEADOR, y {{trabajador_contrato}}, identificado(a) con {{documento_trabajador_contrato}}, domiciliado(a) en {{domicilio_trabajador}}, quien en adelante se denominará EL TRABAJADOR, se celebra el presente contrato de trabajo, que se rige por las siguientes cláusulas:\n\n## OBJETO Y FUNCIONES\n\nEL TRABAJADOR prestará servicios personales como {{cargo_trabajador}}, ejecutando {{funciones_trabajador}} en {{lugar_trabajo}}.\n\n## DURACIÓN\n\nEl contrato inicia el {{fecha_inicio_contrato_laboral}} y tendrá duración indefinida mientras subsistan las causas que le dieron origen y la materia del trabajo.\n\n## SALARIO, JORNADA Y PRESTACIONES\n\n**Salario:** {{salario_contrato_laboral}}, pagadero {{periodicidad_pago_laboral}}.\n**Jornada:** {{jornada_laboral}}.\n\nEL EMPLEADOR reconocerá salarios, prestaciones, vacaciones, recargos y demás derechos legales o convencionales.\n\n## SEGURIDAD SOCIAL\n\nEL EMPLEADOR afiliará a EL TRABAJADOR al Sistema de Seguridad Social Integral (salud, pensión y riesgos laborales) y a la caja de compensación familiar, y pagará los aportes a su cargo.\n\n## OBLIGACIONES ESPECIALES\n\n{{obligaciones_contrato_indefinido}}\n\n## PERÍODO DE PRUEBA\n\nSe pacta un período de prueba de {{periodo_prueba_laboral}}, durante el cual cualquiera de las partes podrá terminar el contrato sin previo aviso y sin indemnización.\n\n## TERMINACIÓN\n\n{{periodo_terminacion_indefinido}}\n\nPara constancia se firma en dos ejemplares, en {{ciudad}}, a {{fecha}}.\n\n\nEL EMPLEADOR\n{{representante_empleador_contrato}}\n{{empleador_contrato}}\n{{nit_empleador_contrato}}\n\n\nEL TRABAJADOR\n{{trabajador_contrato}}\n{{documento_trabajador_contrato}}",
+   "fields": [
+    {
+     "key": "empleador_contrato",
+     "label": "Empleador"
+    },
+    {
+     "key": "trabajador_contrato",
+     "label": "Trabajador"
+    },
+    {
+     "key": "cargo_trabajador",
+     "label": "Cargo"
+    },
+    {
+     "key": "funciones_trabajador",
+     "label": "Funciones"
+    },
+    {
+     "key": "lugar_trabajo",
+     "label": "Lugar de trabajo"
+    },
+    {
+     "key": "fecha_inicio_contrato_laboral",
+     "label": "Fecha de inicio"
+    },
+    {
+     "key": "salario_contrato_laboral",
+     "label": "Salario",
+     "help": "No inferior al salario mínimo o al proporcional por jornada. Salario integral: mínimo 13 SMMLV (art. 132 CST)."
+    },
+    {
+     "key": "jornada_laboral",
+     "label": "Jornada",
+     "help": "Máximo 42 horas semanales desde el 15 de julio de 2026 (Ley 2101 de 2021). Trabajo diurno de 6:00 a. m. a 7:00 p. m. (art. 160 CST, modificado por la Ley 2466 de 2025)."
+    },
+    {
+     "key": "obligaciones_contrato_indefinido",
+     "label": "Obligaciones especiales"
+    },
+    {
+     "key": "periodo_terminacion_indefinido",
+     "label": "Reglas de terminación",
+     "help": "Ej. «El contrato terminará por las causas de los artículos 61 y 62 del CST. La terminación sin justa causa dará lugar a la indemnización del artículo 64.»"
+    },
+    {
+     "key": "nit_empleador_contrato",
+     "label": "NIT o documento del empleador"
+    },
+    {
+     "key": "representante_empleador_contrato",
+     "label": "Representante legal del empleador"
+    },
+    {
+     "key": "documento_trabajador_contrato",
+     "label": "Documento del trabajador"
+    },
+    {
+     "key": "domicilio_trabajador",
+     "label": "Domicilio del trabajador"
+    },
+    {
+     "key": "periodicidad_pago_laboral",
+     "label": "Periodicidad de pago"
+    },
+    {
+     "key": "periodo_prueba_laboral",
+     "label": "Período de prueba",
+     "help": "Máximo 2 meses (art. 78 CST)."
+    }
+   ],
+   "keywords": [
+    "contrato indefinido",
+    "contrato laboral",
+    "vínculo laboral",
+    "salario",
+    "prestaciones"
+   ],
+   "legalBasis": "Código Sustantivo del Trabajo, artículos 23, 47 (modificado por la Ley 2466 de 2025), 57, 58, 61, 62, 64 y 76 a 80; Ley 2101 de 2021."
+  },
+  {
+   "code": "LABORAL-CONTRATO-OBRA-13",
+   "area": "laboral",
+   "category": "Contrato",
+   "title": "Contrato de trabajo por duración de obra o labor",
+   "description": "Para contratar trabajadores durante una obra o labor determinada descrita de manera precisa y detallada.",
+   "body": "# CONTRATO DE TRABAJO POR DURACIÓN DE OBRA O LABOR\n\nEntre {{empleador_contrato}}, identificado(a) con {{nit_empleador_contrato}}, representado(a) por {{representante_empleador_contrato}}, quien en adelante se denominará EL EMPLEADOR, y {{trabajador_contrato}}, identificado(a) con {{documento_trabajador_contrato}}, domiciliado(a) en {{domicilio_trabajador}}, quien en adelante se denominará EL TRABAJADOR, se celebra el presente contrato de trabajo, que se rige por las siguientes cláusulas:\n\n## OBRA O LABOR DETERMINADA\n\nLa obra o labor específica es {{obra_labor_determinada}}. Sus actividades, alcance y resultado esperado son {{alcance_obra_labor}}.\n\n## DURACIÓN\n\nEl contrato inicia el {{fecha_inicio_obra_labor}} y terminará cuando finalice la obra o labor descrita, previa verificación documentada de su culminación.\n\n## CARGO, SALARIO Y JORNADA\n\n**Cargo:** {{cargo_trabajador}}.\n**Salario:** {{salario_contrato_laboral}}.\n**Jornada:** {{jornada_laboral}}.\n\n## SEGURIDAD SOCIAL\n\nEL EMPLEADOR afiliará a EL TRABAJADOR al Sistema de Seguridad Social Integral (salud, pensión y riesgos laborales) y a la caja de compensación familiar, y pagará los aportes a su cargo.\n\n## OBLIGACIONES\n\n{{obligaciones_obra_labor}}\n\nEl contrato se celebra por escrito y la obra o labor se describe de forma precisa. Si EL TRABAJADOR continúa prestando servicios después de terminada la obra o labor, el contrato se entenderá celebrado a término indefinido.\n\nPara constancia se firma en dos ejemplares, en {{ciudad}}, a {{fecha}}.\n\n\nEL EMPLEADOR\n{{representante_empleador_contrato}}\n{{empleador_contrato}}\n{{nit_empleador_contrato}}\n\n\nEL TRABAJADOR\n{{trabajador_contrato}}\n{{documento_trabajador_contrato}}",
+   "fields": [
+    {
+     "key": "empleador_contrato",
+     "label": "Empleador"
+    },
+    {
+     "key": "trabajador_contrato",
+     "label": "Trabajador"
+    },
+    {
+     "key": "obra_labor_determinada",
+     "label": "Obra o labor contratada",
+     "help": "Debe describirse de forma precisa y detallada; no basta con el cargo (art. 45 CST, modificado por la Ley 2466 de 2025)."
+    },
+    {
+     "key": "alcance_obra_labor",
+     "label": "Alcance detallado"
+    },
+    {
+     "key": "fecha_inicio_obra_labor",
+     "label": "Fecha de inicio"
+    },
+    {
+     "key": "cargo_trabajador",
+     "label": "Cargo"
+    },
+    {
+     "key": "salario_contrato_laboral",
+     "label": "Salario",
+     "help": "No inferior al salario mínimo o al proporcional por jornada. Salario integral: mínimo 13 SMMLV (art. 132 CST)."
+    },
+    {
+     "key": "jornada_laboral",
+     "label": "Jornada",
+     "help": "Máximo 42 horas semanales desde el 15 de julio de 2026 (Ley 2101 de 2021). Trabajo diurno de 6:00 a. m. a 7:00 p. m. (art. 160 CST, modificado por la Ley 2466 de 2025)."
+    },
+    {
+     "key": "obligaciones_obra_labor",
+     "label": "Obligaciones"
+    },
+    {
+     "key": "nit_empleador_contrato",
+     "label": "NIT o documento del empleador"
+    },
+    {
+     "key": "representante_empleador_contrato",
+     "label": "Representante legal del empleador"
+    },
+    {
+     "key": "documento_trabajador_contrato",
+     "label": "Documento del trabajador"
+    },
+    {
+     "key": "domicilio_trabajador",
+     "label": "Domicilio del trabajador"
+    }
+   ],
+   "keywords": [
+    "obra o labor",
+    "contrato laboral",
+    "contrato temporal",
+    "proyecto",
+    "terminación obra"
+   ],
+   "legalBasis": "Código Sustantivo del Trabajo, artículos 45 (modificado por la Ley 2466 de 2025), 61 y 64; Ley 2101 de 2021."
+  },
+  {
+   "code": "LABORAL-OTROSI-14",
+   "area": "laboral",
+   "category": "Contrato",
+   "title": "Otrosí al contrato de trabajo",
+   "description": "Para modificar por escrito salario, cargo, jornada, lugar, modalidad, funciones, beneficios u otras condiciones laborales.",
+   "body": "# OTROSÍ AL CONTRATO DE TRABAJO\n\nEntre {{empleador_contrato}}, identificado(a) con {{nit_empleador_contrato}}, representado(a) por {{representante_empleador_contrato}}, en adelante EL EMPLEADOR, y {{trabajador_contrato}}, identificado(a) con {{documento_trabajador_contrato}}, en adelante EL TRABAJADOR, se suscribe el presente otrosí al contrato de trabajo celebrado el {{fecha_contrato_original}}.\n\n## MODIFICACIONES\n\nA partir del {{fecha_efectos_otrosi}}, las partes acuerdan modificar lo siguiente:\n\n{{modificaciones_otrosi}}\n\nLas demás cláusulas del contrato original permanecen vigentes. Este acuerdo no implica renuncia a derechos mínimos, ciertos e irrenunciables ni desconoce garantías legales, constitucionales o convencionales.\n\n## CONSTANCIA\n\nLas partes declaran que comprenden el alcance de la modificación y la suscriben libremente.\n\nEn {{ciudad}}, a {{fecha}}.\n\n\nEL EMPLEADOR\n{{representante_empleador_contrato}}\n{{empleador_contrato}}\n{{nit_empleador_contrato}}\n\n\nEL TRABAJADOR\n{{trabajador_contrato}}\n{{documento_trabajador_contrato}}",
+   "fields": [
+    {
+     "key": "empleador_contrato",
+     "label": "Empleador"
+    },
+    {
+     "key": "trabajador_contrato",
+     "label": "Trabajador"
+    },
+    {
+     "key": "fecha_contrato_original",
+     "label": "Fecha del contrato original"
+    },
+    {
+     "key": "fecha_efectos_otrosi",
+     "label": "Fecha de efectos"
+    },
+    {
+     "key": "modificaciones_otrosi",
+     "label": "Modificaciones pactadas",
+     "help": "Cláusula por cláusula. No puede desmejorar los mínimos legales; el cambio de condiciones esenciales requiere consentimiento del trabajador."
+    },
+    {
+     "key": "nit_empleador_contrato",
+     "label": "NIT o documento del empleador"
+    },
+    {
+     "key": "representante_empleador_contrato",
+     "label": "Representante legal del empleador"
+    },
+    {
+     "key": "documento_trabajador_contrato",
+     "label": "Documento del trabajador"
+    }
+   ],
+   "keywords": [
+    "otrosí laboral",
+    "modificación contrato",
+    "salario",
+    "cargo",
+    "jornada"
+   ],
+   "legalBasis": "Código Sustantivo del Trabajo, artículos 13, 14, 23, 43, 55 y 57; Código Civil, artículo 1602."
+  },
+  {
+   "code": "LABORAL-PAZ-SALVO-15",
+   "area": "laboral",
+   "category": "Constancia",
+   "title": "Paz y salvo laboral",
+   "description": "Para dejar constancia de la liquidación y pago de las obligaciones laborales, con las salvedades expresamente indicadas.",
+   "body": "# PAZ Y SALVO LABORAL\n\n{{trabajador_laboral}}, identificado(a) con {{trabajador_documento_laboral}}, declara recibir de {{empleador}} la suma de {{valor_paz_salvo_laboral}} por concepto de {{conceptos_pagados_laboral}}, correspondiente al vínculo laboral desarrollado entre {{fecha_inicio_paz_salvo}} y {{fecha_fin_paz_salvo}}.\n\nEl pago comprende los conceptos relacionados en la liquidación anexa: salarios, cesantías, intereses a las cesantías, prima, vacaciones, indemnización y demás valores allí indicados.\n\nEste documento se expide con las siguientes salvedades: {{salvedades_paz_salvo_laboral}}.\n\nLa constancia no implica renuncia a derechos ciertos e irrenunciables ni a conceptos no incluidos o no pagados efectivamente.\n\nEn {{ciudad}}, a {{fecha}}.\n\n\nEL TRABAJADOR\n{{trabajador_laboral}}\n{{trabajador_documento_laboral}}\n\n\nEL EMPLEADOR\n{{representante_paz_salvo}}\n{{empleador}}",
+   "fields": [
+    {
+     "key": "trabajador_laboral",
+     "label": "Trabajador"
+    },
+    {
+     "key": "trabajador_documento_laboral",
+     "label": "Documento del trabajador"
+    },
+    {
+     "key": "empleador",
+     "label": "Empleador"
+    },
+    {
+     "key": "valor_paz_salvo_laboral",
+     "label": "Valor pagado"
+    },
+    {
+     "key": "conceptos_pagados_laboral",
+     "label": "Conceptos pagados"
+    },
+    {
+     "key": "fecha_inicio_paz_salvo",
+     "label": "Inicio del vínculo"
+    },
+    {
+     "key": "fecha_fin_paz_salvo",
+     "label": "Fin del vínculo"
+    },
+    {
+     "key": "salvedades_paz_salvo_laboral",
+     "label": "Salvedades",
+     "help": "Conceptos que el trabajador no acepta o reclamará. Si no hay, «Ninguna». Las salvedades deben quedar escritas para no generar discusión."
+    },
+    {
+     "key": "representante_paz_salvo",
+     "label": "Quien firma por el empleador"
+    }
+   ],
+   "keywords": [
+    "paz y salvo laboral",
+    "liquidación",
+    "prestaciones",
+    "terminación",
+    "pago"
+   ],
+   "legalBasis": "Código Sustantivo del Trabajo, artículos 13, 14, 15, 65 y 340; Código Civil, artículos 1625 y siguientes."
+  },
+  {
+   "code": "LABORAL-FUERO-SINDICAL-16",
+   "area": "laboral",
+   "category": "Demanda",
+   "title": "Acción de reintegro por fuero sindical",
+   "description": "Para el trabajador con fuero sindical despedido, trasladado o desmejorado sin autorización judicial previa. Prescribe en dos meses.",
+   "body": "# DEMANDA ESPECIAL DE FUERO SINDICAL (ACCIÓN DE REINTEGRO)\n\nSeñor(a)\n{{juez_laboral}}\nE. S. D.\n\n**Demandante:** {{cliente_nombre}}\n**Demandado:** {{empleador}}\n**Organización sindical:** {{sindicato}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, por medio de apoderado(a), presento demanda especial de fuero sindical, acción de reintegro, contra {{empleador}}, conforme a los artículos 113 y siguientes del Código Procesal del Trabajo y de la Seguridad Social.\n\n## PRETENSIONES\n\n1. Declarar que, al {{fecha_despido}}, {{cliente_nombre}} estaba amparado(a) por fuero sindical como {{calidad_aforado}} de {{sindicato}}.\n\n2. Declarar que el demandado lo(la) {{accion_empleador}} sin la calificación judicial previa de una justa causa.\n\n3. Ordenar el reintegro al mismo cargo o a otro de igual o superior categoría, en las mismas condiciones.\n\n4. Condenar al pago de los salarios dejados de percibir, a título de indemnización, desde el despido hasta el reintegro.\n\n5. Condenar en costas.\n\n## HECHOS\n\n{{hechos_fuero_sindical}}\n\n## OPORTUNIDAD\n\nLa demanda se presenta dentro de los dos (2) meses siguientes al despido (artículo 118A del Código Procesal del Trabajo y de la Seguridad Social).\n\n## PRUEBAS\n\n{{pruebas_fuero_sindical}}\n\n## ANEXOS\n\nPoder; certificado de existencia y representación del demandado; constancia de inscripción de la organización sindical y de la junta directiva o comisión en el Ministerio del Trabajo; comunicación de despido. {{anexos_fuero_sindical}}\n\n## CANAL DIGITAL Y ENVÍO DE LA DEMANDA\n\n{{envio_demanda}}\n\n## NOTIFICACIONES\n\n{{notificaciones_laborales}}\n\nSolicito notificar a la organización sindical {{sindicato}}.\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_laboral",
+     "label": "Juez laboral",
+     "help": "Juez Laboral del Circuito (Reparto). Primera instancia."
+    },
+    {
+     "key": "empleador",
+     "label": "Empleador demandado"
+    },
+    {
+     "key": "sindicato",
+     "label": "Organización sindical"
+    },
+    {
+     "key": "fecha_despido",
+     "label": "Fecha del despido, traslado o desmejora"
+    },
+    {
+     "key": "calidad_aforado",
+     "label": "Calidad del aforado",
+     "help": "Ej. «miembro de la junta directiva», «fundador», «miembro de la comisión estatutaria de reclamos» (art. 406 CST)."
+    },
+    {
+     "key": "accion_empleador",
+     "label": "Acción del empleador",
+     "help": "Ej. «despidió», «trasladó», «desmejoró en sus condiciones de trabajo»."
+    },
+    {
+     "key": "hechos_fuero_sindical",
+     "label": "Hechos"
+    },
+    {
+     "key": "pruebas_fuero_sindical",
+     "label": "Pruebas"
+    },
+    {
+     "key": "anexos_fuero_sindical",
+     "label": "Otros anexos"
+    },
+    {
+     "key": "envio_demanda",
+     "label": "Canal digital y envío de la demanda",
+     "help": "Canal digital de las partes, testigos y peritos (art. 6 de la Ley 2213 de 2022) y constancia de envío simultáneo de la demanda y sus anexos al demandado, salvo que se pidan medidas cautelares o se desconozca su dirección."
+    },
+    {
+     "key": "notificaciones_laborales",
+     "label": "Notificaciones",
+     "help": "Dirección física y electrónica de las partes y del apoderado (art. 25 del CPTSS y art. 6 de la Ley 2213 de 2022)."
+    }
+   ],
+   "keywords": [
+    "fuero sindical",
+    "reintegro",
+    "sindicato",
+    "acción de reintegro",
+    "junta directiva",
+    "despido aforado"
+   ],
+   "legalBasis": "Constitución Política, artículo 39; Código Sustantivo del Trabajo, artículos 405, 406, 408 y 410; Código Procesal del Trabajo y de la Seguridad Social, artículos 113, 114, 117, 118 y 118A; Ley 2213 de 2022, artículo 6."
+  },
+  {
+   "code": "LABORAL-AUTORIZACION-DESPIDO-17",
+   "area": "laboral",
+   "category": "Solicitud",
+   "title": "Solicitud de autorización para terminar el contrato de trabajador con estabilidad reforzada",
+   "description": "Para que el empleador pida al inspector de trabajo autorización antes de terminar el contrato de una trabajadora embarazada o en lactancia, o de un trabajador con afectación de salud o discapacidad.",
+   "body": "Señor(a)\nInspector(a) de Trabajo y Seguridad Social\n{{direccion_territorial_trabajo}}\nCiudad\n\n**Solicitante:** {{cliente_nombre}}\n**Trabajador:** {{trabajador_protegido}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, por medio de apoderado(a), solicito autorización para terminar el contrato de trabajo de {{trabajador_protegido}}, identificado(a) con {{documento_trabajador_protegido}}, quien se desempeña como {{cargo_trabajador_protegido}} desde el {{fecha_inicio_protegido}}.\n\n## CONDICIÓN DE PROTECCIÓN\n\n{{condicion_proteccion}}\n\n## CAUSA DE LA TERMINACIÓN\n\n{{causa_autorizacion}}\n\nLa terminación no obedece a la condición de salud, al embarazo o a la lactancia del trabajador, sino a la causa objetiva expuesta.\n\n## PRUEBAS\n\n{{pruebas_autorizacion}}\n\n## PETICIÓN\n\nQue, previa citación y audiencia del trabajador, se autorice la terminación del contrato de trabajo.\n\n## NOTIFICACIONES\n\n**Solicitante:** {{abogado_correo}}. Trabajador: {{direccion_trabajador_protegido}}.\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "direccion_territorial_trabajo",
+     "label": "Dirección territorial o inspección"
+    },
+    {
+     "key": "trabajador_protegido",
+     "label": "Trabajador"
+    },
+    {
+     "key": "documento_trabajador_protegido",
+     "label": "Documento del trabajador"
+    },
+    {
+     "key": "cargo_trabajador_protegido",
+     "label": "Cargo"
+    },
+    {
+     "key": "fecha_inicio_protegido",
+     "label": "Fecha de inicio del contrato"
+    },
+    {
+     "key": "condicion_proteccion",
+     "label": "Condición de protección",
+     "help": "Embarazo o lactancia (arts. 239 y 240 CST) o afectación de salud o discapacidad (art. 26 Ley 361 de 1997)."
+    },
+    {
+     "key": "causa_autorizacion",
+     "label": "Causa de la terminación",
+     "help": "Justa causa del art. 62 CST con sus hechos, o causa objetiva (en salud, incompatibilidad insuperable con el cargo, previa evaluación de reubicación)."
+    },
+    {
+     "key": "pruebas_autorizacion",
+     "label": "Pruebas",
+     "help": "Contrato, descargos, evidencias de la causa, conceptos médicos y evaluación de reubicación cuando se trate de salud."
+    },
+    {
+     "key": "direccion_trabajador_protegido",
+     "label": "Dirección física y electrónica del trabajador"
+    }
+   ],
+   "keywords": [
+    "autorización despido",
+    "inspector de trabajo",
+    "estabilidad reforzada",
+    "embarazo",
+    "discapacidad",
+    "Ley 361"
+   ],
+   "legalBasis": "Código Sustantivo del Trabajo, artículos 239 y 240; Ley 361 de 1997, artículo 26; Código Sustantivo del Trabajo, artículo 62."
+  },
+  {
+   "code": "LABORAL-CITACION-DESCARGOS-18",
+   "area": "laboral",
+   "category": "Comunicación",
+   "title": "Citación a diligencia de descargos",
+   "description": "Para que el empleador cite al trabajador a rendir descargos antes de imponer una sanción disciplinaria o de terminar el contrato por justa causa.",
+   "body": "{{ciudad}}, {{fecha}}\n\nSeñor(a)\n{{trabajador_descargos}}\n{{cargo_trabajador_descargos}}\nCiudad\n\n**Asunto:** Citación a diligencia de descargos\n\nPor medio de la presente se le cita a diligencia de descargos el {{fecha_hora_descargos}}, en {{lugar_descargos}}, para que se pronuncie sobre los siguientes hechos:\n\n{{hechos_descargos}}\n\nEstos hechos podrían constituir una falta según {{norma_incumplida}}.\n\nEn la diligencia podrá presentar sus explicaciones, aportar y pedir pruebas, y estar acompañado(a) {{acompanamiento_descargos}}. Se anexan las pruebas que tiene la empresa: {{pruebas_empresa_descargos}}.\n\nSi no asiste sin justificación, la empresa decidirá con base en las pruebas disponibles.\n\nAtentamente,\n\n\n{{representante_empleador}}\n{{cargo_representante}}\n{{empleador}}\n\n\nRecibido: ____________________ Fecha: __________",
+   "fields": [
+    {
+     "key": "trabajador_descargos",
+     "label": "Trabajador citado"
+    },
+    {
+     "key": "cargo_trabajador_descargos",
+     "label": "Cargo del trabajador"
+    },
+    {
+     "key": "fecha_hora_descargos",
+     "label": "Fecha y hora de la diligencia",
+     "help": "Dé un plazo razonable para preparar la defensa."
+    },
+    {
+     "key": "lugar_descargos",
+     "label": "Lugar o enlace de la diligencia"
+    },
+    {
+     "key": "hechos_descargos",
+     "label": "Hechos concretos",
+     "help": "Qué ocurrió, cuándo y dónde, sin calificar de antemano."
+    },
+    {
+     "key": "norma_incumplida",
+     "label": "Norma o cláusula presuntamente incumplida",
+     "help": "Ej. «el artículo __ del reglamento interno de trabajo», «la cláusula __ del contrato», «el art. 58 del CST»."
+    },
+    {
+     "key": "acompanamiento_descargos",
+     "label": "Acompañamiento",
+     "help": "Ej. «de dos compañeros de trabajo» o «de dos representantes del sindicato, si está afiliado» (art. 115 CST), o lo que prevea el reglamento interno."
+    },
+    {
+     "key": "pruebas_empresa_descargos",
+     "label": "Pruebas que tiene la empresa"
+    },
+    {
+     "key": "empleador",
+     "label": "Empleador"
+    },
+    {
+     "key": "representante_empleador",
+     "label": "Quien firma por el empleador"
+    },
+    {
+     "key": "cargo_representante",
+     "label": "Cargo de quien firma"
+    }
+   ],
+   "keywords": [
+    "descargos",
+    "proceso disciplinario",
+    "citación",
+    "justa causa",
+    "sanción",
+    "debido proceso"
+   ],
+   "legalBasis": "Constitución Política, artículo 29; Código Sustantivo del Trabajo, artículos 111 a 115 y 62; reglamento interno de trabajo de la empresa."
+  }
+ ]
+}

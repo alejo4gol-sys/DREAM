@@ -1,0 +1,981 @@
+{
+ "templates": [
+  {
+   "code": "PENAL-DENUNCIA-01",
+   "area": "penal",
+   "category": "Denuncia",
+   "title": "Denuncia penal",
+   "description": "Para poner en conocimiento de la Fiscalía General de la Nación o de la autoridad competente hechos que puedan constituir una conducta punible investigable de oficio. No requiere abogado; se presenta bajo juramento.",
+   "body": "# DENUNCIA PENAL\n\nSeñores\nFISCALÍA GENERAL DE LA NACIÓN\n{{fiscalia_seccional}}\nE. S. D.\n\n**Denunciante:** {{cliente_nombre}}\n**Denunciado:** {{denunciado}}\n**Asunto:** Denuncia penal por {{delito_presunto}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, presento denuncia penal contra {{denunciado}} y contra las demás personas que resulten responsables, por los hechos que se exponen.\n\n## HECHOS\n\n{{hechos_denuncia}}\n\n## IDENTIFICACIÓN DEL DENUNCIADO\n\n{{identificacion_denunciado}}\n\n## TIEMPO, MODO Y LUGAR\n\nLos hechos ocurrieron el {{fecha_hechos}}, en {{lugar_hechos}}.\n\n## CALIFICACIÓN JURÍDICA PROVISIONAL\n\nLos hechos podrían corresponder a {{delito_presunto}}, sin perjuicio de la adecuación jurídica que realice la Fiscalía.\n\n## ELEMENTOS DE CONOCIMIENTO\n\n{{elementos_conocimiento}}\n\n## SOLICITUDES DE INVESTIGACIÓN\n\nSolicito adelantar las actividades investigativas necesarias, recaudar los elementos materiales probatorios y la evidencia física pertinente, identificar a los responsables y ejercer la acción penal cuando haya mérito.\n\n## MANIFESTACIÓN SOBRE DENUNCIAS PREVIAS\n\nManifiesto que estos mismos hechos {{denuncia_previa}}.\n\nFormulo esta denuncia bajo la gravedad del juramento, que se entiende prestado con su presentación, y declaro conocer las consecuencias penales de la falsa denuncia (artículos 435 y 436 del Código Penal).\n\n## NOTIFICACIONES\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "fiscalia_seccional",
+     "label": "Fiscalía o seccional destinataria",
+     "help": "Ej. Fiscalía General de la Nación - Seccional Bogotá"
+    },
+    {
+     "key": "denunciado",
+     "label": "Persona o entidad denunciada"
+    },
+    {
+     "key": "delito_presunto",
+     "label": "Delito presunto o descripción jurídica"
+    },
+    {
+     "key": "hechos_denuncia",
+     "label": "Relación detallada de los hechos"
+    },
+    {
+     "key": "identificacion_denunciado",
+     "label": "Datos de identificación del denunciado",
+     "help": "Nombre, documento, dirección, teléfono, señales particulares. Si no se conoce, escriba «Se desconoce; se solicita su individualización»."
+    },
+    {
+     "key": "elementos_conocimiento",
+     "label": "Documentos, testigos y demás elementos de conocimiento"
+    },
+    {
+     "key": "denuncia_previa",
+     "label": "Indicar si los hechos ya fueron denunciados"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    },
+    {
+     "key": "fecha_hechos",
+     "label": "Fecha (o época) de los hechos"
+    },
+    {
+     "key": "lugar_hechos",
+     "label": "Lugar de los hechos",
+     "help": "Municipio y dirección o sitio"
+    }
+   ],
+   "keywords": [
+    "denuncia penal",
+    "Fiscalía",
+    "delito",
+    "investigación",
+    "noticia criminal"
+   ],
+   "legalBasis": "Constitución Política, artículos 29 y 250; Ley 906 de 2004, artículos 66 a 69; Código Penal (Ley 599 de 2000), artículos 435 y 436."
+  },
+  {
+   "code": "PENAL-QUERELLA-02",
+   "area": "penal",
+   "category": "Querella",
+   "title": "Querella penal por delito querellable",
+   "description": "Para promover la acción penal respecto de una conducta que requiere querella como condición de procesabilidad.",
+   "body": "# QUERELLA PENAL\n\nSeñores\nFISCALÍA GENERAL DE LA NACIÓN\n{{fiscalia_seccional}}\nE. S. D.\n\n**Querellante legítimo:** {{cliente_nombre}}\n**Querellado:** {{querellado}}\n**Asunto:** Querella por {{delito_querellable}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, en calidad de víctima y querellante legítimo, formulo querella contra {{querellado}} y contra quienes resulten responsables.\n\n## HECHOS\n\n{{hechos_querella}}\n\n## IDENTIFICACIÓN DEL QUERELLADO\n\n{{identificacion_querellado}}\n\n## CALIDAD DE VÍCTIMA Y QUERELLANTE LEGÍTIMO\n\n{{fundamento_legitimacion_querella}}\n\n## DELITO Y PERJUICIOS\n\nLos hechos podrían constituir {{delito_querellable}} y han ocasionado los siguientes daños: {{perjuicios}}.\n\n## SOLICITUDES\n\n1. Que se admita la presente querella.\n\n2. Que se convoque a la conciliación preprocesal cuando legalmente proceda.\n\n3. Que, de no lograrse acuerdo, se adelante la actuación penal correspondiente.\n\n4. Que se me reconozca la calidad de víctima y se me informe sobre las actuaciones procesales.\n\n## OPORTUNIDAD\n\nLa querella se presenta dentro de los seis (6) meses siguientes a la comisión de la conducta (artículo 73 de la Ley 906 de 2004), pues {{justificacion_oportunidad}}.\n\n## PRUEBAS Y ANEXOS\n\n{{pruebas}}\n\n## NOTIFICACIONES\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "fiscalia_seccional",
+     "label": "Fiscalía o seccional destinataria"
+    },
+    {
+     "key": "querellado",
+     "label": "Persona querellada"
+    },
+    {
+     "key": "delito_querellable",
+     "label": "Conducta punible querellable",
+     "help": "Verifique que la conducta esté en el art. 74 de la Ley 906 de 2004 (modificado, entre otras, por la Ley 1826 de 2017)"
+    },
+    {
+     "key": "hechos_querella",
+     "label": "Hechos"
+    },
+    {
+     "key": "identificacion_querellado",
+     "label": "Datos del querellado"
+    },
+    {
+     "key": "fundamento_legitimacion_querella",
+     "label": "Fundamento de la calidad de víctima y querellante"
+    },
+    {
+     "key": "perjuicios",
+     "label": "Perjuicios ocasionados"
+    },
+    {
+     "key": "justificacion_oportunidad",
+     "label": "Justificación de presentación oportuna",
+     "help": "Fecha de los hechos y, si aplica, la fuerza mayor o caso fortuito que impidió conocerlos o presentarla antes"
+    },
+    {
+     "key": "pruebas",
+     "label": "Pruebas y anexos"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    }
+   ],
+   "keywords": [
+    "querella",
+    "delito querellable",
+    "víctima",
+    "Fiscalía",
+    "querellante"
+   ],
+   "legalBasis": "Constitución Política, artículo 250; Ley 906 de 2004, artículos 70 a 74 y 522; Ley 1826 de 2017 (procedimiento penal abreviado y acusador privado)."
+  },
+  {
+   "code": "PENAL-CONCILIACION-PREPROCESAL-03",
+   "area": "penal",
+   "category": "Solicitud",
+   "title": "Solicitud de conciliación preprocesal penal",
+   "description": "Para solicitar la conciliación obligatoria como requisito de procedibilidad en delitos querellables.",
+   "body": "# SOLICITUD DE CONCILIACIÓN PREPROCESAL PENAL\n\nSeñores\n{{entidad_conciliacion}}\nE. S. D.\n\n**Solicitante:** {{cliente_nombre}}\n**Citado (querellado):** {{contraparte}}\n**Conducta:** {{delito_querellable}}\n\n## HECHOS\n\n{{hechos_conciliacion_penal}}\n\n## PRETENSIONES RESTAURATIVAS\n\n{{pretensiones_conciliacion}}\n\n## FÓRMULA DE REPARACIÓN\n\n{{formula_reparacion}}\n\n## SOLICITUD\n\nComo requisito de procedibilidad para ejercer la acción penal (artículo 522 de la Ley 906 de 2004), solicito citar a las partes a diligencia de conciliación preprocesal. En caso de acuerdo, solicito que se deje constancia en el acta y se remita a la Fiscalía para los efectos legales. En caso de no lograrse acuerdo o de inasistencia injustificada del citado, solicito que se expida la constancia correspondiente.\n\n## ANEXOS\n\n{{anexos}}\n\n## NOTIFICACIONES\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "entidad_conciliacion",
+     "label": "Fiscal, centro de conciliación o conciliador",
+     "help": "Ante el fiscal que corresponda, un centro de conciliación o un conciliador reconocido (art. 522 de la Ley 906 de 2004)"
+    },
+    {
+     "key": "delito_querellable",
+     "label": "Delito querellable"
+    },
+    {
+     "key": "hechos_conciliacion_penal",
+     "label": "Hechos"
+    },
+    {
+     "key": "pretensiones_conciliacion",
+     "label": "Pretensiones de reparación o restauración"
+    },
+    {
+     "key": "formula_reparacion",
+     "label": "Fórmula de arreglo propuesta"
+    },
+    {
+     "key": "anexos",
+     "label": "Anexos"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    }
+   ],
+   "keywords": [
+    "conciliación penal",
+    "conciliación preprocesal",
+    "delito querellable",
+    "reparación",
+    "querella"
+   ],
+   "legalBasis": "Ley 906 de 2004, artículos 518 a 522; Ley 1826 de 2017; Ley 2220 de 2022 en lo pertinente."
+  },
+  {
+   "code": "PENAL-AUDIENCIA-PRECLUSION-04",
+   "area": "penal",
+   "category": "Solicitud",
+   "title": "Solicitud de audiencia de preclusión",
+   "description": "Para solicitar ante el juez de conocimiento la preclusión cuando concurre una causal legal. En la investigación la pide la Fiscalía; en el juicio, también la defensa o el Ministerio Público por las causales 1 y 3.",
+   "body": "# SOLICITUD DE AUDIENCIA DE PRECLUSIÓN\n\nSeñor(a)\n{{juez_conocimiento}}\nE. S. D.\n\n**Solicitante:** {{cliente_nombre}}\n**Calidad:** {{calidad_procesal}}\n**Radicado:** {{radicado}}\n\n## ANTECEDENTES\n\n{{antecedentes_proceso_penal}}\n\n## CAUSAL DE PRECLUSIÓN\n\nSolicito la preclusión con fundamento en el numeral {{causal_preclusion}} del artículo 332 de la Ley 906 de 2004, consistente en {{fundamento_causal_preclusion}}.\n\n## FUNDAMENTOS\n\n{{fundamentos_preclusion}}\n\n## SOLICITUDES\n\n1. Que se fije fecha y hora para audiencia de preclusión.\n\n2. Que, después de escuchar a los intervinientes, se decrete la preclusión de la investigación respecto de {{persona_investigada}}.\n\n3. Que se adopten las consecuencias previstas en el artículo 334 de la Ley 906 de 2004, incluida la cesación de las medidas de aseguramiento y la libertad inmediata cuando haya lugar.\n\n## PRUEBAS Y ANEXOS\n\n{{pruebas}}\n\n## NOTIFICACIONES\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_conocimiento",
+     "label": "Juez de conocimiento competente"
+    },
+    {
+     "key": "calidad_procesal",
+     "label": "Quién solicita la preclusión",
+     "help": "En la investigación la solicita la Fiscalía (art. 331). En el juzgamiento también pueden pedirla el Ministerio Público o la defensa, solo por las causales 1 y 3 del art. 332 (parágrafo)."
+    },
+    {
+     "key": "antecedentes_proceso_penal",
+     "label": "Antecedentes procesales"
+    },
+    {
+     "key": "causal_preclusion",
+     "label": "Causal del artículo 332 de la Ley 906 de 2004",
+     "help": "1 imposibilidad de iniciar o continuar la acción penal; 2 causal excluyente de responsabilidad; 3 inexistencia del hecho; 4 atipicidad; 5 ausencia de intervención del imputado; 6 imposibilidad de desvirtuar la presunción de inocencia; 7 vencimiento del término del art. 294"
+    },
+    {
+     "key": "fundamento_causal_preclusion",
+     "label": "Explicación de la causal"
+    },
+    {
+     "key": "fundamentos_preclusion",
+     "label": "Fundamentos fácticos y jurídicos"
+    },
+    {
+     "key": "persona_investigada",
+     "label": "Persona respecto de quien se solicita la preclusión"
+    },
+    {
+     "key": "pruebas",
+     "label": "Pruebas y anexos"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    }
+   ],
+   "keywords": [
+    "preclusión",
+    "audiencia penal",
+    "juez de conocimiento",
+    "atipicidad",
+    "inexistencia del hecho"
+   ],
+   "legalBasis": "Constitución Política, artículos 29 y 250; Ley 906 de 2004, artículos 331 a 335."
+  },
+  {
+   "code": "PENAL-AUDIENCIA-CONTROL-GARANTIAS-05",
+   "area": "penal",
+   "category": "Solicitud",
+   "title": "Solicitud de audiencia de control de garantías",
+   "description": "Plantilla general para que la defensa, la víctima o el Ministerio Público soliciten una audiencia preliminar ante el juez de control de garantías (libertad, control de legalidad, revocatoria de medida, prueba anticipada, entre otras).",
+   "body": "# SOLICITUD DE AUDIENCIA DE CONTROL DE GARANTÍAS\n\nSeñor(a)\n{{juez_control_garantias}}\nE. S. D.\n\n**Solicitante:** {{solicitante_audiencia}}\n**Indiciado o imputado:** {{imputado}}\n**Radicado:** {{radicado}}\n\n## AUDIENCIA SOLICITADA\n\n{{tipo_audiencia}}\n\n## ANTECEDENTES\n\n{{antecedentes_audiencia}}\n\n## FUNDAMENTOS DE LA SOLICITUD\n\n{{fundamentos_audiencia}}\n\n## INFORMACIÓN PARA LA CITACIÓN\n\n**Fiscalía:** {{fiscalia_asignada}}\n**Defensa:** {{defensa_contacto}}\n**Víctima o representante:** {{victima_contacto}}\n**Lugar de reclusión (si la persona está privada de la libertad):** {{lugar_reclusion}}\n\n## PETICIÓN\n\nSolicito fijar fecha y hora para la audiencia indicada, realizar las citaciones correspondientes y permitir la intervención de los sujetos procesales conforme a la Ley 906 de 2004.\n\n## ANEXOS\n\n{{anexos}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.\n{{abogado_correo}}",
+   "fields": [
+    {
+     "key": "juez_control_garantias",
+     "label": "Juez de control de garantías competente"
+    },
+    {
+     "key": "solicitante_audiencia",
+     "label": "Persona o autoridad solicitante"
+    },
+    {
+     "key": "imputado",
+     "label": "Indiciado o imputado"
+    },
+    {
+     "key": "tipo_audiencia",
+     "label": "Tipo de audiencia",
+     "help": "Ej. control de legalidad posterior, solicitud de libertad, revocatoria o sustitución de medida, control de legalidad de la orden de captura, audiencia de solicitud de pruebas anticipadas"
+    },
+    {
+     "key": "antecedentes_audiencia",
+     "label": "Antecedentes"
+    },
+    {
+     "key": "fundamentos_audiencia",
+     "label": "Fundamentos de la solicitud"
+    },
+    {
+     "key": "fiscalia_asignada",
+     "label": "Fiscalía asignada"
+    },
+    {
+     "key": "defensa_contacto",
+     "label": "Datos de la defensa"
+    },
+    {
+     "key": "victima_contacto",
+     "label": "Datos de la víctima o representante"
+    },
+    {
+     "key": "lugar_reclusion",
+     "label": "Lugar de reclusión",
+     "help": "Si aplica"
+    },
+    {
+     "key": "anexos",
+     "label": "Anexos"
+    }
+   ],
+   "keywords": [
+    "audiencia penal",
+    "control de garantías",
+    "legalización",
+    "imputación",
+    "medida de aseguramiento"
+   ],
+   "legalBasis": "Ley 906 de 2004, artículos 2, 153 a 156, 284, 297, 306 a 318."
+  },
+  {
+   "code": "PENAL-LIBERTAD-06",
+   "area": "penal",
+   "category": "Solicitud",
+   "title": "Solicitud de libertad por vencimiento de términos",
+   "description": "Para solicitar la libertad inmediata del imputado o acusado cuando se configura una causal de libertad por vencimiento de términos.",
+   "body": "# SOLICITUD DE LIBERTAD POR VENCIMIENTO DE TÉRMINOS\n\nSeñor(a)\n{{juez_control_garantias}}\nE. S. D.\n\n**Solicitante:** {{imputado}}\n**Defensor:** {{abogado_nombre}}\n**Radicado:** {{radicado}}\n\n## SITUACIÓN PROCESAL\n\n{{situacion_procesal}}\n\n## CÓMPUTO DE TÉRMINOS\n\n**Fecha de imputación:** {{fecha_imputacion}}\n**Fecha de presentación del escrito de acusación:** {{fecha_acusacion}}\n**Fecha de inicio del juicio oral:** {{fecha_inicio_juicio}}\n**Días transcurridos:** {{dias_transcurridos}}\n**Días que deben excluirse y razón:** {{dias_excluidos}}\n\n## CAUSAL INVOCADA\n\nLa solicitud se fundamenta en el numeral {{numeral_articulo_317}} del artículo 317 de la Ley 906 de 2004, modificado por la Ley 1786 de 2016, porque {{explicacion_vencimiento}}. El vencimiento del término no obedece a maniobras dilatorias de la defensa.\n\n## SOLICITUDES\n\n1. Que se reconozca el vencimiento del término legal.\n\n2. Que se ordene la libertad inmediata de {{imputado}}, bajo las obligaciones o medidas no privativas que legalmente correspondan.\n\n3. Que se expidan las comunicaciones necesarias al establecimiento de reclusión y a las autoridades competentes.\n\n## PRUEBAS\n\n{{pruebas_terminos}}\n\n## NOTIFICACIONES\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_control_garantias",
+     "label": "Juez de control de garantías competente"
+    },
+    {
+     "key": "imputado",
+     "label": "Imputado o acusado privado de la libertad"
+    },
+    {
+     "key": "situacion_procesal",
+     "label": "Situación procesal actual"
+    },
+    {
+     "key": "fecha_imputacion",
+     "label": "Fecha de formulación de imputación"
+    },
+    {
+     "key": "fecha_acusacion",
+     "label": "Fecha de presentación de acusación"
+    },
+    {
+     "key": "fecha_inicio_juicio",
+     "label": "Fecha de inicio del juicio oral"
+    },
+    {
+     "key": "dias_transcurridos",
+     "label": "Cómputo de días transcurridos"
+    },
+    {
+     "key": "dias_excluidos",
+     "label": "Días excluidos del cómputo",
+     "help": "No se computa el tiempo de maniobras dilatorias de la defensa ni las causas razonables del parágrafo del art. 317 (Ley 1786 de 2016)"
+    },
+    {
+     "key": "numeral_articulo_317",
+     "label": "Numeral del artículo 317 invocado",
+     "help": "Num. 4: 60 días desde la imputación sin acusación ni solicitud de preclusión. Num. 5: 120 días desde la acusación sin inicio del juicio. Num. 6: 150 días desde el inicio del juicio sin lectura del fallo. Los términos se duplican en los casos del parágrafo 1."
+    },
+    {
+     "key": "explicacion_vencimiento",
+     "label": "Explicación del vencimiento"
+    },
+    {
+     "key": "pruebas_terminos",
+     "label": "Pruebas y constancias procesales"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    }
+   ],
+   "keywords": [
+    "libertad",
+    "vencimiento de términos",
+    "artículo 317",
+    "detención preventiva",
+    "control de garantías"
+   ],
+   "legalBasis": "Ley 906 de 2004, artículos 2, 295, 317 y 318, modificados por la Ley 1786 de 2016; Constitución Política, artículos 28 y 29."
+  },
+  {
+   "code": "PENAL-SUSTITUCION-MEDIDA-07",
+   "area": "penal",
+   "category": "Solicitud",
+   "title": "Solicitud de revocatoria o sustitución de medida de aseguramiento",
+   "description": "Para solicitar la revocatoria o sustitución de una medida de aseguramiento cuando han desaparecido o variado sus requisitos.",
+   "body": "# SOLICITUD DE REVOCATORIA O SUSTITUCIÓN DE MEDIDA DE ASEGURAMIENTO\n\nSeñor(a)\n{{juez_control_garantias}}\nE. S. D.\n\n**Solicitante:** {{imputado}}\n**Defensor:** {{abogado_nombre}}\n**Radicado:** {{radicado}}\n\n## ANTECEDENTES DE LA MEDIDA\n\n{{antecedentes_medida}}\n\n## CAMBIO DE CIRCUNSTANCIAS\n\nDesde la imposición de la medida han ocurrido los siguientes hechos: {{cambio_circunstancias}}.\n\n## DESAPARICIÓN DE LOS REQUISITOS\n\nConforme al artículo 318 de la Ley 906 de 2004, los elementos materiales probatorios o la información legalmente obtenida que se aportan permiten inferir razonablemente que han desaparecido o se han debilitado los requisitos del artículo 308 de la Ley 906 de 2004, porque {{explicacion_desaparicion_requisitos}}.\n\nLas medidas no privativas de la libertad resultan suficientes para garantizar {{finalidad_medida}}.\n\n## SOLICITUDES\n\n1. Que se revoque la medida de aseguramiento.\n\n2. Subsidiariamente, que se sustituya por {{medida_sustitutiva}}.\n\n{{causal_sustitucion_314}}\n\n3. Que se fijen únicamente obligaciones razonables, necesarias y proporcionales.\n\n## PRUEBAS\n\n{{pruebas_medida}}\n\n## NOTIFICACIONES\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_control_garantias",
+     "label": "Juez de control de garantías"
+    },
+    {
+     "key": "imputado",
+     "label": "Imputado o acusado"
+    },
+    {
+     "key": "antecedentes_medida",
+     "label": "Antecedentes de la medida impuesta"
+    },
+    {
+     "key": "cambio_circunstancias",
+     "label": "Cambio de circunstancias"
+    },
+    {
+     "key": "explicacion_desaparicion_requisitos",
+     "label": "Razones por las que desaparecieron o variaron los requisitos"
+    },
+    {
+     "key": "finalidad_medida",
+     "label": "Finalidad que se garantiza"
+    },
+    {
+     "key": "medida_sustitutiva",
+     "label": "Medida sustitutiva solicitada"
+    },
+    {
+     "key": "pruebas_medida",
+     "label": "Pruebas"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    },
+    {
+     "key": "causal_sustitucion_314",
+     "label": "Causal del art. 314 (si pide detención domiciliaria)",
+     "help": "Ej. mayor de 65 años, gestante o lactante, enfermedad grave, madre o padre cabeza de familia. Escriba «No aplica» si no se invoca."
+    }
+   ],
+   "keywords": [
+    "revocatoria",
+    "sustitución",
+    "medida de aseguramiento",
+    "detención",
+    "libertad"
+   ],
+   "legalBasis": "Ley 906 de 2004, artículos 2, 295, 296, 308, 314, 315 y 318; Constitución Política, artículos 28 y 29."
+  },
+  {
+   "code": "PENAL-MEMORIAL-VICTIMA-08",
+   "area": "penal",
+   "category": "Memorial",
+   "title": "Memorial de reconocimiento e intervención de víctima",
+   "description": "Para solicitar el reconocimiento de la calidad de víctima, acceso a información, protección e intervención en el proceso penal. La víctima puede actuar sin abogado, pero desde la audiencia preparatoria debe estar asistida por uno (art. 137 num. 3).",
+   "body": "# MEMORIAL DE RECONOCIMIENTO E INTERVENCIÓN DE VÍCTIMA\n\nSeñor(a)\n{{juez_o_fiscal}}\nE. S. D.\n\n**Víctima:** {{cliente_nombre}}\n**Procesado o indiciado:** {{imputado}}\n**Radicado:** {{radicado}}\n\n## CALIDAD DE VÍCTIMA\n\n{{fundamento_calidad_victima}}\n\n## HECHOS Y DAÑOS\n\n{{hechos_victima}}\n\nLos daños ocasionados comprenden {{danos_victima}}.\n\n## SOLICITUDES\n\n1. Que se reconozca a {{cliente_nombre}} como víctima e interviniente especial.\n\n2. Que se reconozca la representación judicial de {{abogado_nombre}}, conforme al poder que se adjunta.\n\n3. Que se permita el acceso a la información y a las actuaciones procesales conforme a la ley.\n\n4. Que se adopten medidas de atención y protección frente a {{riesgo_victima}}, si son necesarias.\n\n5. Que se tenga presente la intención de promover el incidente de reparación integral cuando proceda.\n\n## PRUEBAS\n\n{{pruebas_victima}}\n\n## NOTIFICACIONES\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_o_fiscal",
+     "label": "Fiscalía o juez destinatario"
+    },
+    {
+     "key": "imputado",
+     "label": "Indiciado, imputado o acusado"
+    },
+    {
+     "key": "fundamento_calidad_victima",
+     "label": "Fundamento de la calidad de víctima"
+    },
+    {
+     "key": "hechos_victima",
+     "label": "Hechos"
+    },
+    {
+     "key": "danos_victima",
+     "label": "Daños materiales e inmateriales"
+    },
+    {
+     "key": "riesgo_victima",
+     "label": "Riesgo o amenaza para la víctima"
+    },
+    {
+     "key": "pruebas_victima",
+     "label": "Pruebas"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    }
+   ],
+   "keywords": [
+    "víctima",
+    "reconocimiento",
+    "intervención penal",
+    "protección",
+    "reparación"
+   ],
+   "legalBasis": "Ley 906 de 2004, artículos 11, 132 a 137, 340 y 342; Constitución Política, artículos 29, 229 y 250."
+  },
+  {
+   "code": "PENAL-PODER-VICTIMA-09",
+   "area": "penal",
+   "category": "Poder",
+   "title": "Poder especial para representar a víctima en proceso penal",
+   "description": "Para conferir representación judicial a un abogado en una investigación o proceso penal.",
+   "body": "# PODER ESPECIAL PARA REPRESENTAR A VÍCTIMA\n\nSeñor(a)\n{{autoridad_penal}}\nE. S. D.\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, confiero poder especial, amplio y suficiente a {{abogado_nombre}}, identificado(a) con {{abogado_documento}}, abogado(a) titulado(a), portador(a) de la tarjeta profesional No. {{abogado_tp}} del C. S. de la J., correo electrónico {{abogado_correo}}, para que me represente como víctima dentro de la actuación penal identificada con el radicado {{radicado}}, relacionada con {{caso_descripcion}}.\n\nEl apoderado queda facultado para solicitar mi reconocimiento como víctima, consultar y obtener copias del expediente, intervenir en audiencias, solicitar medidas de protección, aportar y solicitar pruebas, presentar memoriales, interponer recursos, participar en mecanismos de justicia restaurativa, promover el incidente de reparación integral y realizar las actuaciones necesarias para la defensa de mis derechos a la verdad, justicia y reparación.\n\nLas facultades de recibir, conciliar, transigir, desistir y sustituir solo se ejercerán cuando estén expresamente autorizadas: {{facultades_especiales}}.\n\nAcepto que las notificaciones se reciban en {{abogado_correo}}.\n\nEn {{ciudad}}, a {{fecha}}.\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\nAcepto,\n\n\n{{abogado_nombre}}\n{{abogado_documento}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "autoridad_penal",
+     "label": "Fiscalía o despacho judicial"
+    },
+    {
+     "key": "abogado_documento",
+     "label": "Documento del abogado"
+    },
+    {
+     "key": "facultades_especiales",
+     "label": "Facultades especiales autorizadas",
+     "help": "Indicar expresamente si se autoriza recibir, conciliar, transigir, desistir o sustituir"
+    }
+   ],
+   "keywords": [
+    "poder penal",
+    "víctima",
+    "representación judicial",
+    "apoderado",
+    "proceso penal"
+   ],
+   "legalBasis": "Ley 906 de 2004, artículos 11, 132, 137 y 340; Código General del Proceso, artículos 74 a 77 (por remisión del artículo 25 de la Ley 906 de 2004); Ley 2213 de 2022, artículo 5 (poder por mensaje de datos)."
+  },
+  {
+   "code": "PENAL-REPARACION-INTEGRAL-10",
+   "area": "penal",
+   "category": "Solicitud",
+   "title": "Incidente de reparación integral",
+   "description": "Para solicitar la reparación integral de los daños causados por la conducta punible después de la firmeza de la sentencia condenatoria. Caduca a los 30 días de la firmeza del fallo.",
+   "body": "# INCIDENTE DE REPARACIÓN INTEGRAL\n\nSeñor(a)\n{{juez_conocimiento}}\nE. S. D.\n\n**Incidentante:** {{cliente_nombre}}\n**Condenado:** {{condenado}}\n**Radicado:** {{radicado}}\n\n## SENTENCIA CONDENATORIA\n\nLa sentencia condenatoria quedó en firme el {{fecha_ejecutoria_sentencia}}, por lo que esta solicitud se presenta dentro de los treinta (30) días siguientes (artículo 106 de la Ley 906 de 2004), que declaró la responsabilidad penal de {{condenado}} por {{delito_sentencia}}.\n\n## HECHOS Y DAÑOS\n\n{{hechos_danos}}\n\n## PRETENSIÓN DE REPARACIÓN INTEGRAL\n\nSolicito que se ordene {{forma_reparacion_integral}}.\n\nLa indemnización solicitada por perjuicios materiales asciende a {{perjuicios_materiales}} y por perjuicios inmateriales a {{perjuicios_inmateriales}}, sin perjuicio de las medidas de restitución, rehabilitación, satisfacción y garantías de no repetición que correspondan.\n\n## TERCERO CIVILMENTE RESPONSABLE Y ASEGURADOR\n\nSolicito citar a {{tercero_civilmente_responsable}} y a {{asegurador}}, si legalmente procede.\n\n## PRUEBAS\n\n{{pruebas_reparacion}}\n\n## SOLICITUDES\n\n1. Que se convoque a la audiencia de reparación integral.\n\n2. Que se admita la pretensión y se cite al condenado y a los demás sujetos cuya comparecencia sea procedente.\n\n3. Que se intente la conciliación y, de no lograrse, se practiquen las pruebas y se dicte sentencia de reparación.\n\n## NOTIFICACIONES\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_conocimiento",
+     "label": "Juez que profirió la sentencia"
+    },
+    {
+     "key": "condenado",
+     "label": "Persona declarada penalmente responsable"
+    },
+    {
+     "key": "fecha_ejecutoria_sentencia",
+     "label": "Fecha de ejecutoria de la sentencia"
+    },
+    {
+     "key": "delito_sentencia",
+     "label": "Delito por el que se profirió condena"
+    },
+    {
+     "key": "hechos_danos",
+     "label": "Hechos y daños"
+    },
+    {
+     "key": "forma_reparacion_integral",
+     "label": "Forma de reparación solicitada"
+    },
+    {
+     "key": "perjuicios_materiales",
+     "label": "Perjuicios materiales"
+    },
+    {
+     "key": "perjuicios_inmateriales",
+     "label": "Perjuicios inmateriales"
+    },
+    {
+     "key": "tercero_civilmente_responsable",
+     "label": "Tercero civilmente responsable",
+     "help": "Indicar No aplica si no se solicita citación"
+    },
+    {
+     "key": "asegurador",
+     "label": "Asegurador",
+     "help": "Indicar No aplica si no se solicita citación"
+    },
+    {
+     "key": "pruebas_reparacion",
+     "label": "Pruebas"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    }
+   ],
+   "keywords": [
+    "reparación integral",
+    "incidente",
+    "víctima",
+    "perjuicios",
+    "sentencia condenatoria"
+   ],
+   "legalBasis": "Ley 906 de 2004, artículos 102 a 108, modificados por la Ley 1395 de 2010; Constitución Política, artículos 229 y 250."
+  },
+  {
+   "code": "PENAL-RECURSO-11",
+   "area": "penal",
+   "category": "Recurso",
+   "title": "Recurso de apelación (sustentación escrita) o recurso contra decisión notificada por escrito",
+   "description": "En la Ley 906 los recursos contra autos se interponen y sustentan oralmente en la audiencia. Use esta plantilla para sustentar por escrito la apelación de la sentencia (5 días siguientes a la audiencia de lectura de fallo) o para recurrir decisiones notificadas por escrito (por ejemplo, del juez de ejecución de penas).",
+   "body": "# RECURSO DE REPOSICIÓN Y APELACIÓN\n\nSeñor(a)\n{{despacho_penal}}\nE. S. D.\n\n**Recurrente:** {{cliente_nombre}}\n**Radicado:** {{radicado}}\n**Decisión recurrida:** {{decision_recurrida}}\n\nDentro de la oportunidad legal {{oportunidad_recurso}}, interpongo y sustento el recurso de {{tipo_recurso}} contra la decisión proferida el {{fecha_decision}}, por las siguientes razones:\n\n## HECHOS Y ANTECEDENTES\n\n{{antecedentes_recurso}}\n\n## MOTIVOS DE INCONFORMIDAD\n\n{{motivos_recurso}}\n\n## FUNDAMENTOS JURÍDICOS\n\n{{fundamentos_recurso}}\n\n## SOLICITUD\n\nSolicito que se revoque o modifique la decisión recurrida y, en su lugar, se resuelva {{decision_solicitada}}.\n\nSi se trata de apelación, solicito concederla en el efecto que legalmente corresponda (artículo 177 de la Ley 906 de 2004) y remitir la actuación al superior. Cuando el único recurrente sea la defensa, el superior no podrá agravar la situación del condenado (artículo 31 de la Constitución).\n\n## NOTIFICACIONES\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "despacho_penal",
+     "label": "Despacho penal destinatario"
+    },
+    {
+     "key": "decision_recurrida",
+     "label": "Decisión recurrida"
+    },
+    {
+     "key": "fecha_decision",
+     "label": "Fecha de la decisión"
+    },
+    {
+     "key": "tipo_recurso",
+     "label": "Tipo de recurso",
+     "help": "Reposición (no procede contra la sentencia), apelación, o reposición y en subsidio apelación"
+    },
+    {
+     "key": "antecedentes_recurso",
+     "label": "Antecedentes"
+    },
+    {
+     "key": "motivos_recurso",
+     "label": "Motivos de inconformidad"
+    },
+    {
+     "key": "fundamentos_recurso",
+     "label": "Fundamentos jurídicos"
+    },
+    {
+     "key": "decision_solicitada",
+     "label": "Decisión que se solicita"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    },
+    {
+     "key": "oportunidad_recurso",
+     "label": "Oportunidad",
+     "help": "Ej. «dentro de los cinco (5) días siguientes a la audiencia de lectura de fallo (art. 179 de la Ley 906 de 2004)» o «dentro del término de ejecutoria del auto notificado el …»"
+    }
+   ],
+   "keywords": [
+    "recurso penal",
+    "reposición",
+    "apelación",
+    "auto",
+    "sentencia"
+   ],
+   "legalBasis": "Ley 906 de 2004, artículos 20, 176 a 179F (modificados y adicionados por la Ley 1395 de 2010); Constitución Política, artículos 29 y 31."
+  },
+  {
+   "code": "PENAL-REDENCION-PENA-12",
+   "area": "penal",
+   "category": "Solicitud",
+   "title": "Solicitud de redención de pena",
+   "description": "Para solicitar al juez de ejecución de penas el reconocimiento de tiempo de redención por trabajo, estudio o enseñanza.",
+   "body": "# SOLICITUD DE REDENCIÓN DE PENA\n\nSeñor(a)\n{{juez_ejecucion_penas}}\nE. S. D.\n\n**Solicitante:** {{condenado}}\n**Radicado de ejecución:** {{radicado_ejecucion}}\n\n## SITUACIÓN PENAL\n\n{{situacion_ejecucion}}\n\n## ACTIVIDADES DE REDENCIÓN\n\nEl solicitante realizó las siguientes actividades durante la privación de la libertad:\n\n{{actividades_redencion}}\n\nPeriodo: {{periodo_redencion}}\n\nHoras o jornadas certificadas: {{horas_certificadas}}\n\n## SOLICITUDES\n\n1. Que se reconozca la redención de pena por {{tipo_actividad_redencion}}.\n\n2. Que se realice el cómputo correspondiente conforme a la ley.\n\n3. Que se actualice el tiempo cumplido y se comunique la decisión al establecimiento penitenciario.\n\n## ANEXOS\n\n{{anexos_redencion}}\n\n## NOTIFICACIONES\n\n{{notificaciones}}\n\nAtentamente,\n\n\n{{condenado}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_ejecucion_penas",
+     "label": "Juez de ejecución de penas competente"
+    },
+    {
+     "key": "condenado",
+     "label": "Persona condenada"
+    },
+    {
+     "key": "radicado_ejecucion",
+     "label": "Radicado de ejecución de penas"
+    },
+    {
+     "key": "situacion_ejecucion",
+     "label": "Situación jurídica y tiempo de condena"
+    },
+    {
+     "key": "actividades_redencion",
+     "label": "Trabajo, estudio o enseñanza realizados"
+    },
+    {
+     "key": "periodo_redencion",
+     "label": "Periodo de las actividades"
+    },
+    {
+     "key": "horas_certificadas",
+     "label": "Horas o jornadas certificadas"
+    },
+    {
+     "key": "tipo_actividad_redencion",
+     "label": "Tipo de actividad"
+    },
+    {
+     "key": "anexos_redencion",
+     "label": "Certificaciones y anexos",
+     "help": "Certificados de cómputo de horas y de calificación de conducta expedidos por el establecimiento (art. 101 de la Ley 65 de 1993)"
+    },
+    {
+     "key": "notificaciones",
+     "label": "Direcciones y correos de notificación"
+    }
+   ],
+   "keywords": [
+    "redención",
+    "pena",
+    "trabajo",
+    "estudio",
+    "juez de ejecución"
+   ],
+   "legalBasis": "Ley 65 de 1993, artículos 82, 97, 98, 100, 101 y 103A (adicionado por la Ley 1709 de 2014); Ley 906 de 2004, artículo 38."
+  },
+  {
+   "code": "PENAL-PERMISO-ADMINISTRATIVO-13",
+   "area": "penal",
+   "category": "Solicitud",
+   "title": "Solicitud de permiso administrativo hasta de 72 horas",
+   "description": "Para solicitar el permiso administrativo de hasta 72 horas. Lo propone el establecimiento penitenciario y lo aprueba el juez de ejecución de penas.",
+   "body": "# SOLICITUD DE PERMISO ADMINISTRATIVO HASTA DE 72 HORAS\n\nSeñor(a)\n{{juez_ejecucion_penas}}\nE. S. D.\n\n**Con copia a:** Dirección de {{establecimiento_penitenciario}}\n**Solicitante:** {{condenado}}\n**Documento:** {{condenado_documento}}\n\n## SITUACIÓN PENITENCIARIA\n\n{{situacion_penitenciaria}}\n\n## CUMPLIMIENTO DE REQUISITOS\n\nEl solicitante se encuentra en fase de mediana seguridad: {{fase_mediana_seguridad}}.\n\nHa descontado más de la tercera parte de la pena impuesta: {{proporcion_pena_descontada}}.\n\nNo registra requerimientos de otra autoridad judicial: {{sin_requerimientos}}.\n\nNo registra fuga ni tentativa de fuga: {{sin_fuga}}.\n\nHa trabajado, estudiado o enseñado durante la reclusión y observado buena conducta: {{conducta_certificada}}.\n\n## EXCLUSIONES LEGALES\n\nEl delito por el que fue condenado no está excluido de beneficios administrativos: {{verificacion_exclusiones}}.\n\n## MOTIVO DEL PERMISO\n\n{{motivo_permiso}}\n\n## SOLICITUD\n\nSolicito aprobar el permiso administrativo hasta por setenta y dos horas, requerir al establecimiento para que remita la documentación y el concepto del Consejo de Disciplina, y fijar las condiciones de salida.\n\n## ANEXOS\n\n{{anexos_permiso}}\n\nAtentamente,\n\n\n{{condenado}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "establecimiento_penitenciario",
+     "label": "Establecimiento penitenciario"
+    },
+    {
+     "key": "condenado",
+     "label": "Persona condenada"
+    },
+    {
+     "key": "condenado_documento",
+     "label": "Documento de la persona condenada"
+    },
+    {
+     "key": "situacion_penitenciaria",
+     "label": "Situación penitenciaria"
+    },
+    {
+     "key": "fase_mediana_seguridad",
+     "label": "Acreditación de fase de mediana seguridad"
+    },
+    {
+     "key": "proporcion_pena_descontada",
+     "label": "Proporción o tiempo de pena descontada"
+    },
+    {
+     "key": "sin_requerimientos",
+     "label": "Certificación de ausencia de requerimientos"
+    },
+    {
+     "key": "sin_fuga",
+     "label": "Certificación sobre fuga o tentativa"
+    },
+    {
+     "key": "conducta_certificada",
+     "label": "Certificación de conducta y actividades"
+    },
+    {
+     "key": "motivo_permiso",
+     "label": "Motivo del permiso"
+    },
+    {
+     "key": "anexos_permiso",
+     "label": "Anexos"
+    },
+    {
+     "key": "juez_ejecucion_penas",
+     "label": "Juez de ejecución de penas que vigila la condena",
+     "help": "Aprueba los beneficios administrativos (art. 38 num. 5 de la Ley 906 de 2004)"
+    },
+    {
+     "key": "verificacion_exclusiones",
+     "label": "Verificación de exclusiones",
+     "help": "Revise art. 68A del Código Penal, art. 199 de la Ley 1098 de 2006 y demás prohibiciones especiales"
+    }
+   ],
+   "keywords": [
+    "permiso 72 horas",
+    "INPEC",
+    "beneficio administrativo",
+    "condenado",
+    "fase de mediana seguridad"
+   ],
+   "legalBasis": "Ley 65 de 1993, artículos 146 y 147; Ley 906 de 2004, artículo 38 numeral 5; Código Penal, artículo 68A; Ley 1709 de 2014; reglamentación compilada en el Decreto 1069 de 2015."
+  },
+  {
+   "code": "PENAL-PRISION-DOMICILIARIA-14",
+   "area": "penal",
+   "category": "Solicitud",
+   "title": "Solicitud de prisión domiciliaria",
+   "description": "Para solicitar la sustitución de la pena de prisión o de la detención preventiva por prisión domiciliaria cuando se cumplen los requisitos legales.",
+   "body": "# SOLICITUD DE PRISIÓN DOMICILIARIA\n\nSeñor(a)\n{{juez_competente}}\nE. S. D.\n\n**Solicitante:** {{condenado_o_imputado}}\n**Radicado:** {{radicado}}\n\n## ANTECEDENTES\n\n{{antecedentes_prision_domiciliaria}}\n\n## LUGAR DE CUMPLIMIENTO\n\nLa medida se cumpliría en {{direccion_residencia}}, inmueble cuyo titular o residente es {{responsable_residencia}}.\n\n## CUMPLIMIENTO DE REQUISITOS\n\nLa pena mínima legal aplicable es {{pena_minima_legal}}. El delito no está comprendido en las prohibiciones legales aplicables: {{verificacion_exclusiones}}. Se acredita el arraigo familiar y social mediante {{prueba_arraigo}}.\n\nEl solicitante se compromete a prestar la caución y a cumplir las obligaciones del artículo 38B, numeral 4, del Código Penal: no cambiar de residencia sin autorización, reparar los daños en el plazo fijado salvo incapacidad material, comparecer ante la autoridad y permitir los controles.\n\n## CONDICIONES FAMILIARES O HUMANITARIAS\n\n{{condiciones_familiares_humanitarias}}\n\n## SOLICITUDES\n\n1. Que se conceda la prisión domiciliaria en {{direccion_residencia}}.\n\n2. Subsidiariamente, que se autorice el mecanismo sustitutivo que resulte procedente.\n\n3. Que se fijen las obligaciones, caución y mecanismos de control correspondientes.\n\n## PRUEBAS Y ANEXOS\n\n{{pruebas_domiciliaria}}\n\nAtentamente,\n\n\n{{condenado_o_imputado}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_competente",
+     "label": "Juez de conocimiento o de ejecución de penas"
+    },
+    {
+     "key": "condenado_o_imputado",
+     "label": "Persona condenada o imputada"
+    },
+    {
+     "key": "antecedentes_prision_domiciliaria",
+     "label": "Antecedentes procesales o de ejecución"
+    },
+    {
+     "key": "direccion_residencia",
+     "label": "Dirección de residencia propuesta"
+    },
+    {
+     "key": "responsable_residencia",
+     "label": "Titular o responsable del inmueble"
+    },
+    {
+     "key": "pena_minima_legal",
+     "label": "Pena mínima legal aplicable",
+     "help": "Para el art. 38B del Código Penal la pena mínima prevista para el delito debe ser de 8 años o menos. Para el art. 38G, haber cumplido la mitad de la condena."
+    },
+    {
+     "key": "verificacion_exclusiones",
+     "label": "Verificación de exclusiones legales",
+     "help": "Art. 68A del Código Penal, art. 199 de la Ley 1098 de 2006 y exclusiones del art. 38G"
+    },
+    {
+     "key": "prueba_arraigo",
+     "label": "Pruebas de arraigo familiar y social"
+    },
+    {
+     "key": "condiciones_familiares_humanitarias",
+     "label": "Condiciones familiares o humanitarias",
+     "help": "Ej. madre o padre cabeza de familia (Ley 750 de 2002), enfermedad muy grave (art. 68 del Código Penal). Escriba «No aplica» si no se invoca."
+    },
+    {
+     "key": "pruebas_domiciliaria",
+     "label": "Pruebas y anexos"
+    }
+   ],
+   "keywords": [
+    "prisión domiciliaria",
+    "detención domiciliaria",
+    "arraigo",
+    "sustitución de pena",
+    "ejecución de penas"
+   ],
+   "legalBasis": "Código Penal (Ley 599 de 2000), artículos 38, 38B, 38C, 38D, 38G, 68 y 68A, modificados por la Ley 1709 de 2014; Ley 750 de 2002; Ley 906 de 2004, artículo 314 (detención domiciliaria durante el proceso)."
+  },
+  {
+   "code": "PENAL-VIGILANCIA-ELECTRONICA-15",
+   "area": "penal",
+   "category": "Solicitud",
+   "title": "Solicitud de vigilancia electrónica",
+   "description": "Para solicitar que la prisión o detención domiciliaria se cumpla con vigilancia electrónica, o la sustitución por este mecanismo cuando la ley lo permita. Verifique la norma vigente antes de usarla.",
+   "body": "# SOLICITUD DE VIGILANCIA ELECTRÓNICA\n\nSeñor(a)\n{{juez_ejecucion_penas}}\nE. S. D.\n\n**Solicitante:** {{condenado}}\n**Radicado:** {{radicado}}\n\n## SITUACIÓN DE EJECUCIÓN\n\n{{situacion_ejecucion_electronica}}\n\n## CUMPLIMIENTO DE REQUISITOS\n\nNorma en que se fundamenta la solicitud: {{norma_vigilancia}}.\n\nLa pena impuesta es de {{duracion_pena}}. El solicitante no registra antecedentes penales impeditivos: {{antecedentes_penales}}. Se compromete a suscribir el acta, prestar la caución y cumplir las restricciones de movilidad.\n\nLa reparación de los perjuicios fue realizada o se acredita la incapacidad material para efectuarla: {{reparacion_o_incapacidad}}.\n\n## DOMICILIO Y CONTROL\n\nEl mecanismo se cumpliría en {{direccion_vigilancia}}. El solicitante acepta el control del INPEC y las condiciones que imponga el juez.\n\n## SOLICITUD\n\nSolicito sustituir la pena de prisión por vigilancia a través de mecanismo de seguridad electrónica y ordenar las comunicaciones necesarias al INPEC.\n\n## ANEXOS\n\n{{anexos_vigilancia}}\n\nAtentamente,\n\n\n{{condenado}}\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_ejecucion_penas",
+     "label": "Juez de ejecución de penas"
+    },
+    {
+     "key": "condenado",
+     "label": "Persona condenada"
+    },
+    {
+     "key": "situacion_ejecucion_electronica",
+     "label": "Situación de ejecución de la pena"
+    },
+    {
+     "key": "duracion_pena",
+     "label": "Duración de la pena impuesta"
+    },
+    {
+     "key": "antecedentes_penales",
+     "label": "Información sobre antecedentes penales"
+    },
+    {
+     "key": "reparacion_o_incapacidad",
+     "label": "Reparación de perjuicios o incapacidad material"
+    },
+    {
+     "key": "direccion_vigilancia",
+     "label": "Dirección donde se cumplirá la medida"
+    },
+    {
+     "key": "anexos_vigilancia",
+     "label": "Anexos"
+    },
+    {
+     "key": "norma_vigilancia",
+     "label": "Norma aplicable",
+     "help": "Ej. art. 38D del Código Penal (domiciliaria con vigilancia electrónica). Verifique la vigencia y los requisitos de la norma que invoque."
+    }
+   ],
+   "keywords": [
+    "vigilancia electrónica",
+    "brazalete",
+    "INPEC",
+    "pena sustitutiva",
+    "ejecución de penas"
+   ],
+   "legalBasis": "Código Penal (Ley 599 de 2000), artículos 38B y 38D, modificados por la Ley 1709 de 2014; Ley 65 de 1993 y Ley 1709 de 2014. Verifique la norma vigente que regula la vigilancia electrónica en el caso concreto."
+  },
+  {
+   "code": "PENAL-LIBERTAD-CONDICIONAL-16",
+   "area": "penal",
+   "category": "Solicitud",
+   "title": "Solicitud de libertad condicional",
+   "description": "Para solicitar al juez de ejecución de penas la libertad condicional cuando el condenado ha cumplido las tres quintas partes de la pena y reúne los demás requisitos.",
+   "body": "Señor(a)\n{{juez_ejecucion_penas}}\nE. S. D.\n\n**Solicitante:** {{condenado}}\n**Radicado de ejecución:** {{radicado_ejecucion}}\n\n{{abogado_nombre}}, en calidad de defensor(a) de {{condenado}}, solicito se conceda la libertad condicional, con fundamento en el artículo 64 del Código Penal, modificado por la Ley 1709 de 2014, y en el artículo 471 de la Ley 906 de 2004.\n\n## SITUACIÓN DE EJECUCIÓN\n\nEl condenado cumple una pena de {{pena_impuesta}} por el delito de {{delito_condena}}. A la fecha ha descontado {{tiempo_descontado}}, incluida la redención reconocida, lo que supera las tres quintas (3/5) partes de la pena.\n\n## REQUISITOS\n\n1. **Tiempo cumplido:** {{computo_tiempo}}\n\n2. **Adecuado desempeño y comportamiento durante el tratamiento penitenciario:** {{conducta_tratamiento}}\n\n3. **Arraigo familiar y social:** {{arraigo}}\n\n4. **Reparación a la víctima o aseguramiento del pago:** {{reparacion_victima}}\n\n5. **Valoración de la conducta punible:** {{valoracion_conducta}}\n\n## EXCLUSIONES\n\n{{verificacion_exclusiones}}\n\n## SOLICITUD\n\n1. Que se conceda la libertad condicional a {{condenado}}, con el periodo de prueba que corresponda.\n\n2. Que se fijen las obligaciones del artículo 65 del Código Penal y la caución que se estime procedente.\n\n3. Que se ordene al establecimiento remitir la cartilla biográfica, los certificados de cómputo y conducta y la resolución favorable del Consejo de Disciplina, si aún no obran en el expediente.\n\n## ANEXOS\n\n{{anexos}}\n\nAtentamente,\n\n\n{{condenado}}\n\n\n{{abogado_nombre}}\nDefensor(a) · T.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "juez_ejecucion_penas",
+     "label": "Juez de ejecución de penas"
+    },
+    {
+     "key": "condenado",
+     "label": "Persona condenada"
+    },
+    {
+     "key": "radicado_ejecucion",
+     "label": "Radicado de ejecución"
+    },
+    {
+     "key": "pena_impuesta",
+     "label": "Pena impuesta"
+    },
+    {
+     "key": "delito_condena",
+     "label": "Delito de la condena"
+    },
+    {
+     "key": "tiempo_descontado",
+     "label": "Tiempo descontado (físico más redención)"
+    },
+    {
+     "key": "computo_tiempo",
+     "label": "Cómputo detallado del tiempo"
+    },
+    {
+     "key": "conducta_tratamiento",
+     "label": "Desempeño y conducta en el tratamiento penitenciario",
+     "help": "Calificaciones de conducta y concepto favorable del Consejo de Disciplina"
+    },
+    {
+     "key": "arraigo",
+     "label": "Pruebas del arraigo familiar y social"
+    },
+    {
+     "key": "reparacion_victima",
+     "label": "Reparación a la víctima",
+     "help": "Pago, acuerdo, garantía o prueba de insolvencia"
+    },
+    {
+     "key": "valoracion_conducta",
+     "label": "Argumentos sobre la valoración de la conducta punible"
+    },
+    {
+     "key": "verificacion_exclusiones",
+     "label": "Verificación de exclusiones",
+     "help": "Art. 68A del Código Penal, art. 199 de la Ley 1098 de 2006 y demás prohibiciones especiales"
+    },
+    {
+     "key": "anexos",
+     "label": "Anexos"
+    }
+   ],
+   "keywords": [
+    "libertad condicional",
+    "tres quintas partes",
+    "juez de ejecución",
+    "ejecución de penas",
+    "redención",
+    "arraigo"
+   ],
+   "legalBasis": "Código Penal (Ley 599 de 2000), artículos 64, 65 y 68A, modificados por la Ley 1709 de 2014; Ley 906 de 2004, artículos 38 y 471."
+  },
+  {
+   "code": "PENAL-PODER-DEFENSA-17",
+   "area": "penal",
+   "category": "Poder",
+   "title": "Poder para defensor de confianza",
+   "description": "Para designar abogado de confianza que asuma la defensa técnica de un indiciado, imputado, acusado o condenado.",
+   "body": "Señor(a)\n{{autoridad_penal}}\nE. S. D.\n\n**Referencia:** Designación de defensor de confianza\n**Radicado:** {{radicado}}\n\n{{cliente_nombre}}, identificado(a) con {{cliente_documento}}, en calidad de {{calidad_defendido}}, designo como defensor(a) de confianza a {{abogado_nombre}}, abogado(a) con tarjeta profesional No. {{abogado_tp}} del C. S. de la J., correo electrónico {{abogado_correo}}, para que asuma mi defensa técnica en la actuación de la referencia, desde la etapa en que se encuentre hasta su terminación, incluida la ejecución de la pena si a ello hubiere lugar.\n\nMi defensor(a) queda facultado(a) para ejercer todas las facultades previstas en el artículo 125 de la Ley 906 de 2004 y, en especial, para asistirme en audiencias, solicitar y controvertir pruebas, interponer recursos, solicitar libertad o la revocatoria o sustitución de medidas, y sustituir este poder. {{facultades_adicionales}}\n\nEn {{ciudad}}, a {{fecha}}.\n\n\n{{cliente_nombre}}\n{{cliente_documento}}\n\nAcepto,\n\n\n{{abogado_nombre}}\nT.P. No. {{abogado_tp}} del C. S. de la J.",
+   "fields": [
+    {
+     "key": "autoridad_penal",
+     "label": "Fiscalía o juzgado"
+    },
+    {
+     "key": "calidad_defendido",
+     "label": "Calidad procesal",
+     "help": "Indiciado, imputado, acusado o condenado"
+    },
+    {
+     "key": "facultades_adicionales",
+     "label": "Facultades adicionales",
+     "help": "Ej. para celebrar preacuerdos o negociaciones con la Fiscalía, siempre con el consentimiento del defendido. Puede dejarse vacío."
+    }
+   ],
+   "keywords": [
+    "poder",
+    "defensor de confianza",
+    "defensa técnica",
+    "imputado",
+    "penal"
+   ],
+   "legalBasis": "Constitución Política, artículo 29; Ley 906 de 2004, artículos 8, 118 a 125; Ley 2213 de 2022, artículo 5."
+  }
+ ]
+}
